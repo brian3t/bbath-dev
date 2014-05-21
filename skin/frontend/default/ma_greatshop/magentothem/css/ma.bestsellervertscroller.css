@@ -1,0 +1,72 @@
+.ma-bestseller-vertscroller-wrap .jcarousel-container {
+}
+#ma-bestseller-vertscroller-right, #ma-bestseller-vertscroller-left {
+	height: 5555px !important;
+}
+
+.ma-bestseller-vertscroller-wrap  .jcarousel-container-vertical {
+    padding: 0 0 20px;
+}
+.ma-bestseller-vertscroller-wrap  .jcarousel-clip {
+    overflow: hidden;
+    padding: 0 0 20px;
+}
+.ma-bestseller-vertscroller-wrap  .jcarousel-clip-vertical {
+
+}
+.ma-bestseller-vertscroller-wrap  .jcarousel-item {
+
+}
+.ma-bestseller-vertscroller-wrap .product-image {
+	float: left;
+	margin: 0 10px 0 0 ;
+	padding: 6px;
+	border: 1px solid #c3c3c3;
+}
+.ma-bestseller-vertscroller-wrap .product-name  {
+	margin: 0 0 5px;
+}
+
+.ma-bestseller-vertscroller-wrap  .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+.ma-bestseller-vertscroller-wrap .block-content { padding: 20px 10px 10px; height: 300px;}
+.ma-bestseller-vertscroller-wrap .block-content li.item {
+	padding: 10px 0 0 0 !important;
+	border-top: 1px solid #c3c3c3;
+	clear: both;
+	overflow: hidden;
+	
+}
+.ma-bestseller-vertscroller-wrap .block-content li.item.first { border: none; padding: 0 !important;}
+.ma-bestseller-vertscroller-wrap .ratings .amount { display: none;}
+
+/**
+ *  Vertical Buttons
+ */
+.ma-bestseller-vertscroller-wrap .jcarousel-next-vertical, 
+.ma-bestseller-vertscroller-wrap  .jcarousel-prev-vertical {
+    background: transparent url(../images/arrow-updown.png) no-repeat 0 0;
+	width: 60px;
+	height: 14px;
+	position: absolute;
+	left: 35%;
+	cursor: pointer;
+}
+.ma-bestseller-vertscroller-wrap .jcarousel-next-vertical {
+    bottom: 5px;
+	background-position: 0 100%;
+}
+
+.ma-bestseller-vertscroller-wrap  .jcarousel-next-vertical:hover,
+.ma-bestseller-vertscroller-wrap  .jcarousel-next-vertical:focus {
+    background-position: 0 -28px;
+}
+.ma-bestseller-vertscroller-wrap  .jcarousel-prev-vertical {
+    top: 5px;
+}
+.ma-bestseller-vertscroller-wrap  .jcarousel-prev-vertical:hover,
+.ma-bestseller-vertscroller-wrap  .jcarousel-prev-vertical:focus {
+    background-position: 0 -14px;
+}

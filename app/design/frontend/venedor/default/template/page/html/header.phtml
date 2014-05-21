@@ -1,0 +1,116 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php 
+$venedor = $this->helper('venedor');
+$containerClass = $venedor->getContainerClass();
+$b = $venedor->getConfigGroup();
+$switcher_pos = $b['header']['switcher_position'];
+$switcher_html = $this->getChildHtml('store_language') . $this->getChildHtml('currency');
+$cart_pos = $b['header']['cart_position'];
+$cart_html = $this->getChildHtml('cart_sidebar');
+
+$c1 = ($cart_pos == 'top' && $switcher_pos == 'top') ? 'header-top-below' : 'left';
+?>
+<div class="header-top">
+    <div class="<?php echo $containerClass ?>">
+		<div class="left header-top-left">
+	        <div class="left customer-service">
+	            <span id="customer-service">Customer Service </span>
+				<br/>
+				<span id="phone"><?php echo Mage::getStoreConfig('general/store_information/phone');?></span>
+	        </div>
+			<div class="right header-other-links">
+				<div id="gift-registry">
+					Gift Registry
+				</div>
+				<span id="store-locator">
+					<a href="store-locator" title="Store Locator">Store Locator</a>
+				</span>
+			</div>
+			
+		</div>
+        <div class="right clearfix <?php echo ($cart_pos == 'top' && $switcher_pos == 'top' && $cart_html && $switcher_html) ? 'header-top-both' : '' ?>">
+            <?php if ($cart_pos == 'top') echo $cart_html; ?>
+            <?php if ($switcher_pos == 'top') echo $switcher_html; ?>
+            <div class="<?php echo $c1 ?>">
+            <?php $helper = Mage::helper('customer'); ?>
+                <p class="login-link <?php if ($switcher_pos != 'top' && $cart_pos != 'top') echo 'static' ?>">
+                    <?php if ($helper->isLoggedIn()): ?>
+                        <a href="<?php echo $helper->getLogoutUrl(); ?>"><?php echo $this->__('Logout');?></a>
+                    <?php else: ?>
+                        <a href="<?php echo $helper->getLoginUrl(); ?>"><?php echo $this->__('Login');?></a>
+                     <?php endif; ?> 
+                     <?php echo $cart_html; ?>
+                     <?php echo $this->getAdditionalHtml() ?>
+                </p>
+            </div>
+        </div>        
+    </div>    
+</div>
+<div class="clearfix"></div>
+<div class="header">
+    <div class="<?php echo $containerClass ?>">
+        <div class="clearfix">
+            <?php if ($this->getIsHomePage()):?>
+            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $venedor->getLogo() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+				<div id="social-at-header">
+					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Facebook"><img src="/images/icon-f.png"/></a>
+					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Twitter"><img src="/images/icon-t.png"/></a>
+					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Pinterest"><img src="/images/icon-p.png"/></a>
+					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Google Plus"><img src="/images/icon-g.png"/></a>
+				</div>
+			</h1>
+            <?php else:?>
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $venedor->getLogo() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+            <?php endif?>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+    <div class="header-menu<?php if ($b['header']['menu_position'] == 'right') echo ' header-menu-right' ?>">
+        <div class="<?php echo $containerClass ?>">
+            <!-- <div class="quick-access">
+                <?php //echo $this->getChildHtml('topSearch') ?>
+            </div> -->
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
+        <div class="container-shadow"></div>
+    </div>    
+</div>
+<script>
+//for the mini cart 
+// jQuery('#mini-cart > div.button').hover(function() {
+//   jQuery(this).parent().find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+// }, function() {
+//   jQuery(this).parent().find('.dropdown-menu').stop(true, true).delay(200).fadeOut(8000);
+// });
+jQuery(document).ready(function(){
+	jQuery('li.active').removeClass('active');
+})
+</script>

@@ -1,0 +1,1 @@
+[08-Jul-2013 23:49:40 UTC] PHP Fatal error:  Call to a member function rewrite() on a non-object in /home/bloom/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php on line 166

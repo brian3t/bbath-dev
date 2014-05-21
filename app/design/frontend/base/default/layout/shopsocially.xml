@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <checkout_multishipping_success translate="label">
+        <reference name="before_body_end">
+            <block type="shopsocially/script" name="shopsocially_success" />
+        </reference>
+    </checkout_multishipping_success>
+
+    <checkout_onepage_success translate="label">        
+        <reference name="content">
+            <block type="shopsocially/script" name="shopsocially_success"   after="-">
+                <action method="setTemplate">
+                    <template>shopsocially/social.phtml</template> 
+                </action>
+            </block>
+        </reference>
+<!--        <reference name="before_body_end">
+            <block type="shopsocially/script" name="shopsocially_success" />
+        </reference>-->
+    </checkout_onepage_success>
+	
+    <sales_email_order_items>
+        <reference name="items" >
+            <action method="setTemplate">
+                <template>shopsocially/items.phtml</template>
+            </action>
+            <block type="shopsocially/email" name="shopsocially_email" />
+        </reference>
+    </sales_email_order_items>	
+	
+</layout>

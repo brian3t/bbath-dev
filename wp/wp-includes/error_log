@@ -1,0 +1,3 @@
+[16-Jul-2013 16:49:34 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/bloom/public_html/wp/wp-includes/registration-functions.php on line 7
+[16-Jul-2013 16:49:34 UTC] PHP Stack trace:
+[16-Jul-2013 16:49:34 UTC] PHP   1. {main}() /home/bloom/public_html/wp/wp-includes/registration-functions.php:0

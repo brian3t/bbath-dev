@@ -1,0 +1,58 @@
+<?php
+/**
+ *
+ * @category Bubble
+ * @package Bubble_AttributeOptionPro
+ * @version 1.1.0
+ * @copyright Copyright (c) 2013 BubbleCode (http://shop.bubblecode.net)
+ */
+?>
+<?php
+
+/**
+ * Template for filter items block
+ *
+ * @see Mage_Catalog_Block_Layer_Filter_Abstract
+ */
+?>
+<ol>
+    <?php foreach ($this->getItems() as $_item): ?>
+    <?php $_img = $this->helper('bubble_aop')->getAttributeOptionImage($_item->getValue()); ?>
+	<?php if ($_img): ?>
+		<li class="attr-option-image-li color-attribute-option" style="background:url(<?php echo $this->escapeHtml($_img);?>)">
+	<?php else:?>
+
+
+	<li>
+	<?php endif;?>
+            <?php if ($_item->getCount() > 0): ?>
+	            <?php if ($_img): ?>
+	                <a title="<?php echo $_item->getLabel();if ($this->shouldDisplayProductCount())
+		{echo "(" . $_item->getCount() . ")";}?>"
+			href="<?php echo $this->urlEscape($_item->getUrl()); ?>"></a>
+	        	<?php else:?>
+	                <a
+			href="<?php echo $this->urlEscape($_item->getUrl()); ?>"><?php echo $_item->getLabel(); ?></a>
+	            <?php endif; ?>
+			<?php else: echo $_item->getLabel(); ?>
+            <?php endif; ?>
+            <?php if ($this->shouldDisplayProductCount()): ?>
+            		<?php if (!$_img): ?>
+	                (<?php echo $_item->getCount(); ?>)
+	                <?php endif;?>
+            <?php endif; ?>
+        </li>
+
+
+
+
+
+
+    <?php endforeach ?>
+
+
+
+
+
+
+</ol>

@@ -1,0 +1,32 @@
+button.button, .add-to-links .link-wishlist,
+.add-to-links .link-compare { position: relative !important; z-index: 99999 !important;}
+.header label.select-lang { position: inherit !important;}
+label.select-lang:before { background: none !important;}
+.header .form-currency select { width: auto !important;}
+.ma-newproductslider-container .product-inner { min-height: 230px !important;}
+.ma-newproductslider-container { min-height: 340px !important;}
+.ma-newproductslider-container .newproductslider-item:hover .price-box-item .price-box { left: 40px !important; bottom: -10px !important;}
+.ma-featuredproductslider-container .product-inner, .products-grid .product-inner { min-height: 250px !important;}
+.ma-featuredproductslider-container .featuredproductslider-item:hover .price-box-item .price-box { left: 50px !important; bottom: 10px !important;}
+.products-grid .product-inner .actions { padding: 10px 0 0 !important; }
+.products-grid .item:hover .price-box-item .price-box { left: 50px !important; bottom: 10px !important;}
+.ma-featuredproductslider-container .flex-direction-nav .flex-prev { left: 35% !important;}
+.ma-featuredproductslider-container .flex-direction-nav .flex-next { right: 35% !important;}
+.block-subscribe input.input-text { position: relative; z-index: 99999; width: 160px !important;}
+.block-layered-nav .block-content,
+.ma-bestseller-vertscroller-wrap .block-content,
+.block .block-content, .grid-related { border: 1px solid #f1f1f1; border-top: none;}
+#amount { width: 125px !important;}
+.ma-bestseller-vertscroller-wrap .block-content { height: 300px !important; overflow: hidden !important;}
+.breadcrumbs li { line-height: 5px !important;}
+.product-view .product-options-bottom .add-to-cart button.button { clear: both !important;}
+.product-shop .product-options-bottom { margin-top: 15px !important;}
+.ma-upsellslider-container .flex-direction-nav .flex-prev { left: 33%;}
+.ma-upsellslider-container .flex-direction-nav .flex-next { right: 33%;}
+
+.ma-featuredproductslider-container .product-inner,
+.products-grid .item .product-inner,
+.ma-newproductslider-container .product-inner { display: none !important;}
+.ma-featuredproductslider-container .featuredproductslider-item:hover .product-inner,
+.products-grid .item:hover .product-inner,
+.ma-newproductslider-container .newproductslider-item:hover .product-inner{ display: block !important;}

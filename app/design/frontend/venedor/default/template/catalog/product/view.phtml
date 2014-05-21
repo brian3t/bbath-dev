@@ -1,0 +1,282 @@
+<?php
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php 
+$venedor = $this->helper('venedor');
+$b = $venedor->getConfigGroup();
+$rowClass = $venedor->getRowClass();
+$spanClass = $venedor->getSpanClass();
+
+$_helper = $this->helper('catalog/output');
+?>
+<?php $_product = $this->getProduct(); ?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="product-view">
+    <div class="product-essential">
+    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+        <div class="no-display">
+            <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+            <input type="hidden" name="related_product" id="related-products-field" value="" />
+        </div>
+        
+        <div class="product-essential-inner <?php echo $rowClass ?>">
+            <div class="<?php echo $spanClass ?>6 product-img-box">
+                <?php echo $this->getChildHtml('media') ?>
+                <?php // show price and new, save sales in media.phtml
+                //echo $this->getPriceHtml($_product) ?>
+            </div>
+            <div class="<?php echo $spanClass ?>6 product-shop">
+                <div class="product-name">
+                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                </div>
+
+                <div class="price-review">
+                	<?php echo $this->getPriceHtml($_product, true) ?>
+                </div>
+                
+                <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+               
+                <?php echo $this->getChildHtml('alert_urls') ?>
+                <?php echo $this->getChildHtml('product_type_data') ?>
+                <?php //echo $this->getChildHtml('product_brand') ?>
+                <?php echo $this->getTierPriceHtml() ?>
+                
+                <?php echo $this->getChildHtml('extrahint') ?>
+
+                <?php if (!$this->hasOptions()):?>
+                    <div class="add-to-box">
+                        <?php if($_product->isSaleable()): ?>
+                            <?php echo $this->getChildHtml('addtocart') ?>
+                        <?php endif; ?>
+                        <div class="add-links-wrap clearfix">
+                            <?php echo $this->getChildHtml('addto') ?>
+                        </div>
+                    </div>
+                    <?php echo $this->getChildHtml('extra_buttons') ?>
+                <?php elseif (!$_product->isSaleable()): ?>
+                    <div class="add-to-box">
+                        <?php echo $this->getChildHtml('addto') ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php echo $this->getChildHtml('other');?>
+                
+                <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                    <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+                    <div class="add-to-box">
+                        <?php echo $this->getChildChildHtml('container1', '', true, true);
+						$typeId = $_product->getTypeId();
+						if ($typeId === 'bundle'):?>
+						<script type="text/javascript" src="/js/egghead/bundle_color_options_bb.js"></script>
+					<?php endif?>
+                     </div>
+                <?php endif;?>
+                <? if(Mage::app()->getStore()->getCode() == 'default'): ?>
+				<div id="social-product">
+					<div>
+						<a href="#" id="pin-it"></a>
+						<div class="fb-like" data-href="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true">
+						</div>
+					</div>
+				</div>
+		            	<div id="registries">
+		            		
+							<!-- Start AddToMyRegistry Button Tag --> 
+							 <script id='scriptMyRegistryWebWidgetButtonScript' type='text/javascript'> 
+							 document.write("<a id='ImgAddToMyRegistryButton' onmouseover='ImgAddToMyRegistryButton_onmouseover(this);' onmouseout='ImgAddToMyRegistryButton_onmouseout(this);' onclick='CreateAddToMyRegistryWidget();'>Add To Your Gift Registry</a>"); 
+							 function ImgAddToMyRegistryButton_onmouseover(elementParam) 
+							 {elementParam.src = '/images/gift-registry.png';} 
+							 function ImgAddToMyRegistryButton_onmouseout(elementParam) 
+							 {elementParam.src = '/images/gift-registry.png';} 
+							 </script> 
+							 <!-- End AddToMyRegistry Button Tag -->
+							
+							<!-- Start AddToMyRegistry Tag -->
+							<script id='MyRegistryWebWidgetScript' type='text/javascript'> 
+							var mrUserCustom = new Object(); 
+							Assign_mrUserCustomObject_Values(); 
+							function Assign_mrUserCustomObject_Values() { 
+							mrUserCustom.isWebWidgetCall = true
+							mrUserCustom.storeName = null;
+							mrUserCustom.storeLogo  = null;
+							mrUserCustom.signUpLogo  = null;
+							mrUserCustom.imageSrc = GetElementByIdIfExists_src('main_img');
+							mrUserCustom.giftTitle = null;
+							mrUserCustom.giftPrice = null;
+							mrUserCustom.size = null;
+							mrUserCustom.sizeControl = null
+							mrUserCustom.sizerequired = false;
+							mrUserCustom.sizeincorrectvalue = false;
+							mrUserCustom.sizeerrormessage = 'Please select a value for Size';
+							mrUserCustom.color = null;
+							mrUserCustom.colorControl = GetElementByIdOrName('select_1');
+							mrUserCustom.colorrequired = false;
+							mrUserCustom.colorincorrectvalue = false;
+							mrUserCustom.colorerrormessage = 'Please select a value for Color';
+							mrUserCustom.notes = null;
+							mrUserCustom.notesControl = null
+							mrUserCustom.notesrequired = false;
+							mrUserCustom.notesincorrectvalue = false;
+							mrUserCustom.noteserrormessage = 'Please select a value for Notes';
+							mrUserCustom.currencySelectedIndex = 27;
+							mrUserCustom.giftLocation = null;
+							mrUserCustom.webwidgetBackgroundColor = null;
+							mrUserCustom.webwidgetButtonImageUrl = '/images/gift-registry.png';
+							mrUserCustom.mraddtoregistrypanelleft = null;
+							mrUserCustom.mraddtoregistrypaneltop = null;
+							} 
+							
+							function GetElementByIdOrName(elementIdOrName) {var mr_element = document.getElementById(elementIdOrName);if (mr_element == null) {if (document.getElementsByName(elementIdOrName).length > 0) {mr_element = document.getElementsByName(elementIdOrName)[0];}}if (mr_element == null) {return null;}else if (mr_element.type) {if (mr_element.type == 'select-one') {return mr_element;}else if (mr_element.type == 'text') {return mr_element;}else {}}else if (mr_element.innerHTML) {return mr_element;}else {return null;} }
+							function GetElementValueByIdOrName(elementIdOrName) {var mr_element = document.getElementById(elementIdOrName);if (mr_element == null) {if (document.getElementsByName(elementIdOrName).length > 0) {mr_element = document.getElementsByName(elementIdOrName)[0];}}if (mr_element == null) {return null;}else if (mr_element.type) {if (mr_element.type == 'select-one') {return mr_element.options[mr_element.selectedIndex].text;}else if (mr_element.type == 'text') {return mr_element.value;}else {}}else if (mr_element.innerHTML) {return mr_element.innerHTML;}else {return null;}}
+							function fControlFunction(controlClientId) { var control = document.getElementById(controlClientId); if (control != null && (control.type == 'text' || control.type == 'hidden')) { if (control.value != null) { return control.value; } else { return -1; } } else if (control != null && control.type == 'select-one') { var idx = control.selectedIndex; var selected_text = control.options[idx].text; if (selected_text != null) { return selected_text; } else { return -1; } } else if (control != null && control.type == 'radio') { if (getRadioCheckedValue(document.getElementsByName(controlClientId))) { return getRadioCheckedValue(document.getElementsByName(controlClientId)); } else { return -1; } } else if (control != null && control.type == 'checkbox') { if (getCheckedValue(document.getElementsByName(controlClientId))) { return getCheckedValue(document.getElementsByName(controlClientId)); } else { return -1; } } else if (control != null){return control.innerHTML;}} function getRadioCheckedValue(radioObj) { if (!radioObj) return null; var radioLength = radioObj.length; if (radioLength == undefined) if (radioObj.checked) return radioObj.value; else return null; for (var i = 0; i < radioLength; i++) { if (radioObj[i].checked) { return radioObj[i].value; } } return null; } function getCheckedValue(radioObj) { if (!radioObj) return null; var radioLength = radioObj.length; if (radioLength == undefined) if (radioObj.checked) return radioObj.value; else return null; var chbReturnval = ''; var datavail = false; for (var i = 0; i < radioLength; i++) { if (radioObj[i].checked) { datavail = true; chbReturnval += radioObj[i].value + ','; } } if (datavail) { return chbReturnval.substring(0, chbReturnval.length - 1); } else { return null; } }
+							function GetElementByIdIfExists_src(elementId) { if (document.getElementById(elementId)) { return document.getElementById(elementId).src; } else { return null; } }
+							function CreateAddToMyRegistryWidget() { Assign_mrUserCustomObject_Values(); var domainName = 'myregistry.com'; var documentBody = document.getElementsByTagName('body')[0];  var MrDragAndDrop = document.createElement('script'); MrDragAndDrop.id = 'mr_CreateAddToMyRegistryWidget'; MrDragAndDrop.type = 'text/javascript'; MrDragAndDrop.src = 'http://www.' + domainName + '/addgiftmr/widgetjs.aspx'; documentBody.appendChild(MrDragAndDrop); }
+							</script>
+							<!-- End AddToMyRegistry Tag --> 
+		            	
+							<script id='AddToAUWLButton' type='text/javascript' src="/js/amazon-registry.js"></script>
+						</div>
+					<?php endif;?>
+                <div itemprop="description" id="description"><?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?></div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                // Remove custom datetime validators
+                for (var methodName in Validation.methods) {
+                    if (methodName.match(/^validate-datetime-.*/i)) {
+                        delete Validation.methods[methodName];
+                    }
+                }
+
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+    </div>
+
+    <div class="product-collateral">
+
+        <div class="product-info <?php //echo $rowClass ?>">
+       		<?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?>
+        </div>
+        
+		<?php echo $this->getChildHtml('upsell_products') ?>
+
+        <?php //echo $this->getChildHtml('crosssell_products') ?>
+                
+        <?php $_videos = $this->getProduct()->getVideos(); ?>
+		<?php if($_videos): ?>
+		<div id="videos">
+			<h2 class="subtitle"><span class="inline-title"><?php echo $this->__('Videos') ?></span><div class="line"></div></h2>
+			<div class="row">
+	        	<?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_videos, 'videos') ?>
+			</div>
+		</div>
+		<?php endif; ?>
+		<div class="row">
+		    <div class="<?php echo $spanClass ?>12 product-tabs">
+		        <div class="box-additional box-tabs">
+		            <?php 
+		            $info_tabs_html = trim($this->getChildHtml('info_tabs'));
+		            if ($info_tabs_html) 
+		                echo $info_tabs_html; 
+		            ?>
+		        </div>
+		    </div>
+		</div>
+            <script type="text/javascript">
+            //<![CDATA[
+            jQuery(function($){
+                var venedor_product_timer;
+                
+                function venedor_product_resize() {
+                    if (VENEDOR_RESPONSIVE) {
+                        var winWidth = $(window).innerWidth();
+
+                        <?php if ($related_html) : ?>
+                        if (winWidth > 750 && ((!$('body').hasClass('bv3') && winWidth < 963) || ($('body').hasClass('bv3') && winWidth < 975))) {
+                            $('.product-related').removeClass('<?php echo $spanClass ?>3');
+                            $('.product-related').addClass('<?php echo $spanClass ?>12');
+                            $('.product-tabs').removeClass('<?php echo $spanClass ?>9');
+                            $('.product-tabs').addClass('<?php echo $spanClass ?>12');
+                        } else {
+                            $('.product-related').removeClass('<?php echo $spanClass ?>12');
+                            $('.product-related').addClass('<?php echo $spanClass ?>3');
+                            $('.product-tabs').removeClass('<?php echo $spanClass ?>12');
+                            $('.product-tabs').addClass('<?php echo $spanClass ?>9');
+                        }
+                        <?php endif; ?>
+                    }
+                    if (venedor_product_timer) clearTimeout(venedor_product_timer);
+                }
+                
+                <?php // open review tab ?>
+                $("#goto-reviews, #goto-reviews-form").click(function() {
+                    $("#product-tabs #tab-tabreviews").click();
+                });
+                
+                $(window).load(venedor_product_resize);
+
+                $(window).resize(function() {
+                    clearTimeout(venedor_product_timer); 
+                    venedor_product_timer = setTimeout(venedor_product_resize, 200); 
+                });
+            });
+            //]]>
+            </script>
+        </div>    
+
+
+        <?php echo $this->getChildHtml('product_additional_data') ?>
+
+    </div>
+</div>
+

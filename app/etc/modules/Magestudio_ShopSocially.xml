@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to get support of the SmartMax Software, Inc
+ * 
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    Magestudio
+ * @package     Magestudio_ShopSocially
+ * @copyright   Copyright (c) 2010 SmartMax Software, Inc. ( www.sightmax.com )
+ * @author     	Alexey Volvenkov (info@mage-studio.com)
+ * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0) 
+ */
+-->
+      <config>      
+        <modules>   
+          <Magestudio_ShopSocially>
+            <active>true</active>
+            <codePool>local</codePool>
+          </Magestudio_ShopSocially>      
+        </modules>      
+      </config>

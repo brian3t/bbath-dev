@@ -1,0 +1,128 @@
+[16-Mar-2013 03:19:38 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'can't get apc memory size' in /home/bloom/public_html/lib/Zend/Cache.php:209
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Cache/Backend/Apc.php(191): Zend_Cache::throwException('can't get apc m...')
+#1 /home/bloom/public_html/lib/Zend/Cache/Backend/TwoLevels.php(518): Zend_Cache_Backend_Apc->getFillingPercentage()
+#2 /home/bloom/public_html/lib/Zend/Cache/Backend/TwoLevels.php(192): Zend_Cache_Backend_TwoLevels->_getFastFillingPercentage('saving')
+#3 /home/bloom/public_html/lib/Zend/Cache/Core.php(390): Zend_Cache_Backend_TwoLevels->save('a:7:{s:10:"bloc...', 'BB_CORE_CACHE_O...', Array, NULL)
+#4 /home/bloom/public_html/lib/Varien/Cache/Core.php(76): Zend_Cache_Core->save('a:7:{s:10:"bloc...', 'CORE_CACHE_OPTI...', Array, NULL, 8)
+#5 /home/bloom/public_html/app/code/core/Mage/Core/Model/Cache.php(380): Varien_Cache_Core->save('a:7:{s:10:"bloc...', 'CORE_CACHE_OPTI...', Array, NULL)
+#6 /home/bloom/public_html/app/code/core/Mage/Core/Model/Cache.php(45 in /home/bloom/public_html/lib/Zend/Cache.php on line 209
+[16-Mar-2013 03:20:38 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[16-Mar-2013 03:24:12 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[16-Mar-2013 03:26:53 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[16-Mar-2013 03:33:57 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[16-Mar-2013 04:03:34 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[16-Mar-2013 13:31:19 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/bloom/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/bloom/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/bloom/pub...', 'Aitoc_Aitpermis...')
+#7 /home/bloom/public_html/app/code/local/Aitoc/Aitpermissions/M in /home/bloom/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[21-Oct-2013 21:00:35 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/dev/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/dev/publi...', 'Aitoc_Aitpermis...')
+#7 /home/dev/public_html/app/code/local/Aitoc/Aitpermissions/Model/Rewrite/CoreW in /home/dev/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[21-Oct-2013 21:02:31 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Model_Store_Exception' in /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1357
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(829): Mage_Core_Model_App->throwStoreException()
+#1 /home/dev/public_html/app/Mage.php(381): Mage_Core_Model_App->getStore()
+#2 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(341): Mage::getBaseUrl()
+#3 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Model/Platform.php(31): Aitoc_Aitsys_Model_Platform->init()
+#4 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(130): Aitoc_Aitsys_Model_Platform::getInstance()
+#5 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(411): Aitoc_Aitsys_Abstract_Service->platform()
+#6 /home/dev/public_html/app/code/local/Aitoc/Aitsys/Abstract/Service.php(444): Aitoc_Aitsys_Abstract_Service::_initSource('/home/dev/publi...', 'Aitoc_Aitpermis...')
+#7 /home/dev/public_html/app/code/local/Aitoc/Aitpermissions/Model/Rewrite/CoreW in /home/dev/public_html/app/code/core/Mage/Core/Model/App.php on line 1357
+[21-Oct-2013 21:03:18 UTC] PHP Warning:  include(Aitoc/Aitsys/Model/Init/Processor.php): failed to open stream: No such file or directory in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[21-Oct-2013 21:03:18 UTC] PHP Stack trace:
+[21-Oct-2013 21:03:18 UTC] PHP   1. {main}() /home/dev/public_html/shell/cleanAllCache.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   2. Mage_Shell_Abstract->__construct() /home/dev/public_html/shell/cleanAllCache.php:258
+[21-Oct-2013 21:03:18 UTC] PHP   3. Mage::app() /home/dev/public_html/shell/abstract.php:79
+[21-Oct-2013 21:03:18 UTC] PHP   4. Varien_Autoload->autoload() /home/dev/public_html/shell/abstract.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   5. include() /home/dev/public_html/lib/Varien/Autoload.php:93
+[21-Oct-2013 21:03:18 UTC] PHP   6. Varien_Autoload->autoload() /home/dev/public_html/lib/Varien/Autoload.php:0
+[21-Oct-2013 21:03:18 UTC] PHP Warning:  include(Aitoc/Aitsys/Model/Init/Processor.php): failed to open stream: No such file or directory in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[21-Oct-2013 21:03:18 UTC] PHP Stack trace:
+[21-Oct-2013 21:03:18 UTC] PHP   1. {main}() /home/dev/public_html/shell/cleanAllCache.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   2. Mage_Shell_Abstract->__construct() /home/dev/public_html/shell/cleanAllCache.php:258
+[21-Oct-2013 21:03:18 UTC] PHP   3. Mage::app() /home/dev/public_html/shell/abstract.php:79
+[21-Oct-2013 21:03:18 UTC] PHP   4. Varien_Autoload->autoload() /home/dev/public_html/shell/abstract.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   5. include() /home/dev/public_html/lib/Varien/Autoload.php:93
+[21-Oct-2013 21:03:18 UTC] PHP   6. Varien_Autoload->autoload() /home/dev/public_html/lib/Varien/Autoload.php:0
+[21-Oct-2013 21:03:18 UTC] PHP Warning:  include(): Failed opening 'Aitoc/Aitsys/Model/Init/Processor.php' for inclusion (include_path='/home/dev/public_html/app/code/local:/home/dev/public_html/app/code/community:/home/dev/public_html/app/code/core:/home/dev/public_html/lib:.:/usr/lib/php:/usr/local/lib/php') in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[21-Oct-2013 21:03:18 UTC] PHP Stack trace:
+[21-Oct-2013 21:03:18 UTC] PHP   1. {main}() /home/dev/public_html/shell/cleanAllCache.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   2. Mage_Shell_Abstract->__construct() /home/dev/public_html/shell/cleanAllCache.php:258
+[21-Oct-2013 21:03:18 UTC] PHP   3. Mage::app() /home/dev/public_html/shell/abstract.php:79
+[21-Oct-2013 21:03:18 UTC] PHP   4. Varien_Autoload->autoload() /home/dev/public_html/shell/abstract.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   5. include() /home/dev/public_html/lib/Varien/Autoload.php:93
+[21-Oct-2013 21:03:18 UTC] PHP   6. Varien_Autoload->autoload() /home/dev/public_html/lib/Varien/Autoload.php:0
+[21-Oct-2013 21:03:18 UTC] PHP Fatal error:  Class 'Aitoc_Aitsys_Model_Init_Processor' not found in /home/dev/public_html/app/code/local/Mage/Core/Model/App.php on line 26
+[21-Oct-2013 21:03:18 UTC] PHP Stack trace:
+[21-Oct-2013 21:03:18 UTC] PHP   1. {main}() /home/dev/public_html/shell/cleanAllCache.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   2. Mage_Shell_Abstract->__construct() /home/dev/public_html/shell/cleanAllCache.php:258
+[21-Oct-2013 21:03:18 UTC] PHP   3. Mage::app() /home/dev/public_html/shell/abstract.php:79
+[21-Oct-2013 21:03:18 UTC] PHP   4. Varien_Autoload->autoload() /home/dev/public_html/shell/abstract.php:0
+[21-Oct-2013 21:03:18 UTC] PHP   5. include() /home/dev/public_html/lib/Varien/Autoload.php:93
+[21-Oct-2013 21:03:53 UTC] PHP Fatal error:  Call to a member function initCache() on a non-object in /home/dev/public_html/app/code/core/Mage/Core/Model/App.php on line 609
+[21-Oct-2013 21:03:53 UTC] PHP Stack trace:
+[21-Oct-2013 21:03:53 UTC] PHP   1. {main}() /home/dev/public_html/shell/cleanAllCache.php:0
+[21-Oct-2013 21:03:53 UTC] PHP   2. Mage_Shell_Abstract->__construct() /home/dev/public_html/shell/cleanAllCache.php:258
+[21-Oct-2013 21:03:53 UTC] PHP   3. Mage::app() /home/dev/public_html/shell/abstract.php:79
+[21-Oct-2013 21:03:53 UTC] PHP   4. Mage_Core_Model_App->init() /home/dev/public_html/app/Mage.php:615
+[21-Oct-2013 21:03:53 UTC] PHP   5. Mage_Core_Model_App->_initCurrentStore() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:274
+[21-Oct-2013 21:03:53 UTC] PHP   6. Mage_Core_Model_App->_initStores() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:466

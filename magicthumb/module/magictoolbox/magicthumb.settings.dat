@@ -1,0 +1,234 @@
+################################################################################
+#
+# Configure Magic Thumb™ using these settings.
+# Contact support@magictoolbox.com for help.
+#
+################################################################################
+
+
+
+### Positioning and Geometry ###################################################
+
+# Size of thumbnail (in pixels)
+thumb-size = 250
+
+# Size of thumbnail on category pages (in pixels)
+category-thumb-size = 150
+
+# Size of thumbnail depends on
+# allowed values: width, height, both
+size-depends = both
+
+# Allways create square thumbnails
+# allowed values: Yes, No
+square-images = No
+
+# Size of the enlarged image
+# allowed values: original, fit-screen
+image-size = fit-screen
+
+# Precise position of enlarged image (px)
+# The value can be 'center' or coordinates. E.g. 'top:0, left:0' or 'bottom:100, left:100'
+expand-position = center
+
+# Align expanded image relative to screen or thumbnail
+# allowed values: screen, image
+expand-align = screen
+
+
+
+### Multiple images ############################################################
+
+# Size of additional thumbnails (in pixels)
+selector-size = 56
+
+# Where to show selectors on product page
+# allowed values: top, right, bottom, left
+selector-position = bottom
+
+# Show selectors on category page
+# allowed values: Yes, No
+show-selectors-on-category-page = No
+
+# Size of additional thumbnails on category pages (in pixels)
+category-selector-size = 56
+
+# Use individual image titles for additional images?
+# allowed values: Yes, No
+use-individual-titles = Yes
+
+# Use or no additional images as selectors
+# allowed values: Yes, No
+use-selectors = Yes
+
+# Method to switch between multiple images
+# allowed values: click, mouseover
+swap-image = click
+
+# Delay before switching thumbnails (milliseconds: 0 or larger)
+swap-image-delay = 100
+
+
+
+### Initialization #############################################################
+
+# Click to download large image
+# allowed values: Yes, No
+click-to-initialize = No
+
+# Show or not loading box
+# allowed values: Yes, No
+show-loading = Yes
+
+# Text of the loading message
+loading-msg = Loading
+
+# Opacity of the loading box (0 to 100)
+loading-opacity = 75
+
+
+
+### Title and Caption ##########################################################
+
+# Show caption
+# allowed values: Yes, No
+show-caption = Yes
+
+# Caption source
+# allowed values: Title, Short description, Description, All
+caption-source = Description
+
+# Max width of bottom caption (pixels: 0 or larger)
+caption-width = 300
+
+# Max height of bottom caption (pixels: 0 or larger)
+caption-height = 300
+
+# Where to position the caption
+# allowed values: bottom, right, left
+caption-position = bottom
+
+# Speed of the caption slide effect (milliseconds: 0 or larger)
+caption-speed = 250
+
+
+
+### Effects ####################################################################
+
+# Effect while expanding image
+# allowed values: linear, cubic, back, elastic, bounce
+expand-effect = linear
+
+# Effect while restoring image
+# allowed values: linear, cubic, back, elastic, bounce
+restore-effect = linear
+
+# Expand duration (milliseconds: 0-10000)
+expand-speed = 500
+
+# Restore duration (milliseconds: 0-10000, -1: use expand-speed value)
+restore-speed = -1
+
+# Trigger for the enlarge effect
+# allowed values: click, mouseover
+expand-trigger = click
+
+# Delay before mouseover triggers expand effect (milliseconds: 0 or larger)
+expand-trigger-delay = 500
+
+# Trigger to restore image to its small state
+# allowed values: auto, click, mouseout
+restore-trigger = auto
+
+# Show/hide thumbnail when image enlarged
+# allowed values: Yes, No
+keep-thumbnail = Yes
+
+
+
+### Miscellaneous ##############################################################
+
+# Use effect on product page
+# allowed values: Yes, No
+use-effect-on-product-page = Yes
+
+# Use effect on category page
+# allowed values: Yes, No
+use-effect-on-category-page = No
+
+# Link enlarged image to the product page
+# allowed values: Yes, No
+link-to-product-page = Yes
+
+# Options names associated with images separated by commas (e.g 'Color,Size')
+# You should named all product images associated with option values. e.g If option values is 'red', 'blue' and 'white' then you should have 3 images with labels 'red', 'blue' and 'white'
+option-associated-with-images = color
+
+# Ignore magento CSS width/height styles for additional images
+# allowed values: Yes, No
+ignore-magento-css = Yes
+
+# Show message under image?
+# allowed values: Yes, No
+show-message = Yes
+
+# Message under images
+message = Click to enlarge
+
+# Image magick binaries path
+#image-magick-path = /usr/bin
+
+
+
+### Background #################################################################
+
+# Opacity of the background effect (0-100)
+background-opacity = 0
+
+# Fade background color (RGB)
+background-color = #000000
+
+# Speed of the fade effect (milliseconds: 0 or larger)
+background-speed = 200
+
+
+
+### Buttons ####################################################################
+
+# Whether to show navigation buttons
+# allowed values: show, hide, autohide
+buttons = show
+
+# Display button
+# Show all three buttons or just one or two. E.g. 'previous, next' or 'close, next'
+buttons-display = previous, next, close
+
+# Location of navigation buttons
+# allowed values: auto, top left, top right, bottom left, bottom right
+buttons-position = auto
+
+
+
+### Expand mode ################################################################
+
+# Visual effect for switching images
+# allowed values: dissolve, fade, expand
+slideshow-effect = dissolve
+
+# Restart slideshow after last image
+# allowed values: Yes, No
+slideshow-loop = Yes
+
+# Speed of slideshow effect (milliseconds: 0 or larger)
+slideshow-speed = 800
+
+# The z-index for the enlarged image
+z-index = 10001
+
+# Ability to use keyboard shortcuts
+# allowed values: Yes, No
+keyboard = Yes
+
+# Require Ctrl key to permit shortcuts
+# allowed values: Yes, No
+keyboard-ctrl = No

@@ -1,0 +1,191 @@
+<style>
+</style>
+
+
+<?php
+$_product    = $this->getProduct();
+$_attributes = Mage::helper('core')->decorateArray($this->getAllowAttributes());
+
+/*
+Added radio Egghead 2014 02 20
+*/
+define("RADIO_LABEL_COLOR", serialize(array('Color','Blooming Bath Baby Bath Color Choice')));
+?>
+<?php if ($_product->isSaleable() && count($_attributes)):?>
+    <dl>
+    <?php foreach($_attributes as $_attribute): ?>
+        <dt><label class="required"><em>*</em><?php echo $_attribute->getLabel() ?></label></dt>
+		<?php 
+		$radioLabelColor = unserialize(RADIO_LABEL_COLOR);
+		if (in_array($_attribute->getLabel(), $radioLabelColor)):?>
+			<div id="r<?php echo $_attribute->getAttributeId() ?>" class="radio-option"></div>
+
+	        <dd<?php if ($_attribute->decoratedIsLast){?> class="last"<?php }?>>
+	            <div class="input-box">
+	                <select style="display:none" name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]" id="attribute<?php echo $_attribute->getAttributeId() ?>" class="required-entry super-attribute-select">
+                    <?php if ($_img = $this->helper('bubble_aop')->getAttributeImage($_attribute->getProductAttribute())): ?>
+                <dt style="background: url(<?php echo $_img; ?>) no-repeat left center;height: 31px;line-height: 31px;padding: 0 0 0 31px;">
+                <div class="imgwrap-layered-nav" style="background:url('<?php echo $_img?>')">
+  				</div>
+            <?php else: ?>
+                <dt>
+            <?php endif; ?>
+	                  </select>
+	              </div>
+	        </dd>
+		<?php else:?>
+	        <dd<?php if ($_attribute->decoratedIsLast){?> class="last"<?php }?>>
+	            <div class="input-box">
+	                <select name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]" id="attribute<?php echo $_attribute->getAttributeId() ?>" class="required-entry super-attribute-select">
+                    <option value="">Choose an Option...</option>
+	                  </select>
+	              </div>
+	        </dd>
+		<?php endif;?>
+    <?php endforeach; ?>
+    </dl>
+<?php endif;?>
+<script type="text/javascript">
+jQuery.noConflict();
+
+//trigger select event of Magento Prototype
+//
+//
+// Custom prototype function to fire an event
+ // http://stackoverflow.com/questions/460644/trigger-an-event-with-prototype
+function triggerEvent(element, eventName) {
+  // safari, webkit, gecko
+  if (document.createEvent)
+  {
+    var evt = document.createEvent('HTMLEvents');
+    evt.initEvent(eventName, true, true);
+
+    return element.dispatchEvent(evt);
+  }
+
+  // Internet Explorer
+  if (element.fireEvent) {
+    return element.fireEvent('on' + eventName);
+  }
+}
+
+assignValuePuma = function(ele) {
+	ele = jQuery(ele);
+	value = ele.val();
+	selectEle = ele.parent().next().children().first().children().first();
+
+	selectEle.val(value);
+	triggerEvent(selectEle[0],'change');
+;
+};
+</script>
+
+<?php if ($_product->isSaleable() && count($_attributes)):?>
+    <?php foreach($_attributes as $_attribute): ?>
+		<?php if ($_attribute->getLabel() == "Color"):?>
+
+		<?php
+
+		$confAttributes = $_product->getTypeInstance(true)->getConfigurableAttributesAsArray($_product);
+		$confOptions = $confAttributes[0]['values'];
+		
+	    foreach ($confOptions as $index=>$option){
+			$_img = $this->helper('bubble_aop')->getAttributeOptionImage($option['value_index']);
+			if (!empty($_img) && ($_img)){
+				$confOptions[$index]['image_source'] = $this->escapeHtml($_img);
+			}
+	
+	    }
+	
+		echo '<script type="text/javascript">';
+	    echo "var options = " . json_encode($confOptions) . ";";
+		echo '</script>';
+	
+		unset($confAttributes);
+		unset($_img);
+		unset($option);
+		unset($confOptions);
+
+		?>
+		<script>
+		jQuery(document).ready(function() {
+			jQuery("#attribute<?php echo $_attribute->getAttributeId() ?> option").each(function(i, e) {
+			    var attributeId = <?php echo $_attribute->getAttributeId(); ?>;
+				var optionVal = jQuery(this).val();
+				var optionLabel = jQuery(this).text();
+				var optionLabelClass = optionLabel.toString().toLowerCase();
+				if(optionVal == '')
+			    {}
+			    else
+			    {
+				
+					var spanHtml = "";
+					
+					var image_source = "";
+					for (var i in options){
+						if (options[i]['value_index'] == optionVal){
+							image_source = options[i]['image_source'];
+						}
+					}
+					
+					if (image_source !== "") {
+						spanHtml = '<span class="label color-option">';
+						spanHtml += '<span class="border-wrapper">';
+						spanHtml += '<label for=radio' + optionVal + ' title = "' + optionLabel + '"' + ' class= " imgLabel ' + encodeURI(optionLabelClass) + ' " style="background:url(' + image_source + ')">';
+						spanHtml +=								'</label>';
+						spanHtml += '</span>';
+						spanHtml += '</span>';
+					}
+					else {
+						spanHtml = '<label for=radio' + optionVal + ' class= " imgLabel ' + encodeURI(optionLabelClass) + '>' + encodeURI(optionLabel) + '</label>';
+					}
+				
+				    var inputEle = jQuery("<input type='radio' name='r" + attributeId + "' id=radio" + optionVal + " />")
+				        .attr("value", optionVal)
+				        .attr("checked", i == 0)
+				        .click(function (e) {
+				            jQuery("#attribute<?php echo $_attribute->getAttributeId() ?>").val(jQuery(this).val());
+				        })
+				        .appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
+
+				        
+				        jQuery(spanHtml).appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
+					    inputEle.appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
+						jQuery(inputEle).bind('change', function(event){
+								                event.preventDefault();
+								                jQuery(jQuery(this).parent().children('span').children('span.border-wrapper').children('label')).removeClass("selected");
+												jQuery(jQuery(this).prev().children('span.border-wrapper').children('label')).addClass("selected")
+			
+								                assignValuePuma(this);
+								           });
+				    }
+				    
+			});
+		
+		
+			//set the last input of radio group to have class validate-one-required-by-name
+			//only do this if it's not IE7 or IE8 . Those browsers can't handle
+			if ((navigator.userAgent.indexOf("MSIE 7") === -1) && (navigator.userAgent.indexOf("MSIE 8") === -1)) {
+				var setLastInputRadioValidate = function()
+				{
+					radioElements = jQuery('div[id^=r]');
+					for (var i = 0; i < radioElements.length; i++){
+						var lastElement = jQuery(radioElements[i]).children('input').last();
+						lastElement.addClass("validate-one-required-by-name").addClass(" radio product-custom-option ").addClass("validation-failed");
+					}
+				
+				
+				}();
+			}
+			
+		});
+	
+	
+		</script>
+		<?php endif;?>
+	<?php endforeach; ?>
+<?php endif;?>
+
+<script type="text/javascript">
+	var spConfig = new Product.Config(<?php echo $this->getJsonConfig() ?>);
+</script>

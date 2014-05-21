@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<dealerlocator module="dealerlocator">
+			<title>Dealer Locator</title>
+			<sort_order>71</sort_order>               
+			<children>
+				<item1 module="dealerlocator">
+					<title>Manage Dealers</title>
+					<sort_order>0</sort_order>
+					<action>dealerlocator/adminhtml_dealerlocator</action>
+				</item1>
+				<item2 module="dealerlocator">
+					<title>Import Dealers</title>
+					<sort_order>1</sort_order>
+					<action>dealerlocator/adminhtml_import/index</action>
+				</item2>
+			</children>
+		</dealerlocator>
+	</menu>	
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<magebuzz>
+										<title>Dealer Locator Permission Setting</title>
+									</magebuzz>
+								</children>
+							</config>
+						</children>
+					</system>
+					<dealerlocator module="dealerlocator">
+						<title>Dealer Locator</title>
+						<sort_order>71</sort_order>               
+						<children>
+							<item1 module="dealerlocator">
+								<title>Manage Dealers</title>
+								<sort_order>0</sort_order>
+								<action>dealerlocator/adminhtml_dealerlocator</action>
+							</item1>
+							<item2 module="dealerlocator">
+								<title>Import Dealers</title>
+								<sort_order>1</sort_order>
+								<action>dealerlocator/adminhtml_import/index</action>
+							</item2>
+						</children>
+					</dealerlocator>
+				</children>
+			</admin>
+		</resources>
+	</acl>	
+</config>

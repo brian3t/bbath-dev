@@ -1,0 +1,126 @@
+#pt_custommenu {
+    position:relative;
+    z-index:1000;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+div.popup {
+    position:absolute;
+    z-index:3000;
+    display: none;
+    background-color:#fff;
+    text-align:left;
+    width: 904px;
+}
+div.pt_menu, div.popup {
+    padding: 20px;
+}
+div.pt_menu {
+    float: left;
+    padding: 0 !important;
+}
+div.pt_menu a, div.popup a {
+    text-decoration: none;
+    display:block;
+    line-height: 32px;
+}
+.itemMenu h4.level1,
+.itemMenu a.level1{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: #3f3f3f;
+    /*color: #1E7EC8;*/
+}
+.itemMenu h4.level1,
+.itemSubMenu h4.level2 span{
+    color: #333;
+}
+.itemSubMenu h4.level2,
+.itemSubMenu a.level2,
+.itemSubMenu h4.level3,
+.itemSubMenu a.level3,
+.itemMenu a.level1.nochild{
+    color: #6f6f6f;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+div.column {
+    float:left;
+    width:200px; /* column width */
+    margin-right: 15px;
+}
+div.column.last {
+    border-right: 0 none;
+    margin-right: 0;
+    padding-right: 0;
+}
+div.itemSubMenu {
+    background: #f4f6f1;
+    padding: 10px;
+}
+.clearBoth {
+    clear:both;
+}
+.block2{
+    margin-top: 10px;
+}
+#popup_home{
+    display: none !important;
+}
+div.popup .block1{
+    overflow: hidden;
+    /*display: inline-block;*/
+    float: left;
+    /*clear:both;*/
+}
+div.popup .block1:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+div.popup .block1 .column{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+/*show right block*/
+div.popup .floatleft{
+    float: left;
+}
+div.popup .block1.floatleft{
+    /*width: 650px;*/
+}
+div.popup .block2.floatleft{
+    /*width: 250px;*/
+}
+div.popup .blockright img{
+    max-width: 100%;
+} 
+
+
+div.pt_menu .parentMenu p{
+    margin: 0;
+    padding: 0;
+}
+#pt_menu_link .parentMenu ul li{
+    float: left;
+    list-style: none;
+}
+#pt_menu_link .parentMenu ul li a{
+    float: left;
+    padding: 5px 12px 6px 8px;
+    display: block;
+}
+#pt_menu_link{
+    padding: 0;
+}
+.block2{
+/*    display: inline;*/
+    float: left;
+    /*clear:both;*/
+}
+.static-menu-img {
+    float: left;
+    margin: 0 0 25px 0;
+}

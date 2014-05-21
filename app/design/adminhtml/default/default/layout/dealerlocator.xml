@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <dealerlocator_adminhtml_dealerlocator_index>
+        <reference name="content">
+            <block type="dealerlocator/adminhtml_dealerlocator" name="dealerlocator" />
+        </reference>
+    </dealerlocator_adminhtml_dealerlocator_index>
+	<dealerlocator_adminhtml_import_index>
+		<reference name="content">
+			<block type="dealerlocator/adminhtml_import" name="import" />
+		</reference>
+	</dealerlocator_adminhtml_import_index>
+</layout>

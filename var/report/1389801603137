@@ -1,0 +1,8 @@
+a:4:{i:0;s:62:"Module "Eternal_Venedor" requires module "Eternal_CustomMenu".";i:1;s:968:"#0 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/code/core/Mage/Core/Model/Config.php(849): Mage::throwException('Module "Eternal...')
+#1 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/code/core/Mage/Core/Model/Config.php(812): Mage_Core_Model_Config->_sortModuleDepends(Array)
+#2 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/code/core/Mage/Core/Model/Config.php(315): Mage_Core_Model_Config->_loadDeclaredModules()
+#3 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/code/core/Mage/Core/Model/App.php(414): Mage_Core_Model_Config->loadModules()
+#4 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/code/core/Mage/Core/Model/App.php(343): Mage_Core_Model_App->_initModules()
+#5 /Users/tri/websites/bloomingbath.magemojo.com/public_html/app/Mage.php(683): Mage_Core_Model_App->run(Array)
+#6 /Users/tri/websites/bloomingbath.magemojo.com/public_html/index.php(87): Mage::run('', 'store')
+#7 {main}";s:3:"url";s:10:"/eghdadmin";s:11:"script_name";s:10:"/index.php";}

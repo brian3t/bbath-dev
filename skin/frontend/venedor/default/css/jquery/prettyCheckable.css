@@ -1,0 +1,38 @@
+.prettycheckbox,
+.prettyradio {
+    display: inline;
+    padding:0;
+    margin:0;
+}
+
+.prettycheckbox > a,
+.prettyradio > a {
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin:0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+.prettycheckbox > a:focus,
+.prettyradio > a:focus {outline: 0 none;}
+
+.prettycheckbox label,
+.prettyradio label {
+    display: block;
+    float: left;
+    margin: -3px 5px 0;
+    cursor: pointer;
+}
+
+.prettycheckbox.disabled > a,
+.prettyradio.disabled > a,
+.prettycheckbox.disabled label,
+.prettyradio.disabled label{
+    cursor:not-allowed;
+}

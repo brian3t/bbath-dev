@@ -1,0 +1,603 @@
+[27-Mar-2013 18:43:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241939...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[27-Mar-2013 18:43:25 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241939...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[27-Mar-2013 18:44:31 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241939...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[27-Mar-2013 18:44:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241939...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[27-Mar-2013 21:16:04 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241939...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:15:43 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:16:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:28:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:29:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:32:18 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:33:45 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[28-Mar-2013 15:34:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/bloom/public_html/misc/bulk-process.php:23)  in /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/bloom/pub...', 123, Array)
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/bloom/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('admin', NULL)
+#4 /home/bloom/public_html/app/code/core/Mage/Admin/Model/Session.php(69): Mage_Core_ in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[01-Apr-2013 18:34:46 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241474...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[01-Apr-2013 18:34:52 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00241474...', 'ups', '2nd Day Air')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[11-Apr-2013 20:38:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00341196...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[12-Apr-2013 18:39:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Primary ID,Order #,Imported,Aliases,Source,Ship It,Shipped,Ship To Address 1,Shi' at line 1' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Ad in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[12-Apr-2013 18:40:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Primary ID,Order #,Imported,Aliases,Source,Ship It,Shipped,Ship To Address 1,Shi' at line 1' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Ad in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[19-Apr-2013 14:54:21 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 87' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(87): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 87, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00340761...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[02-May-2013 19:10:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Primary ID,Order #,Imported,Aliases,Source,Ship It,Shipped,Ship To Address 1,Shi' at line 1' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Ad in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[02-May-2013 19:11:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Primary ID,Order #,Imported,Aliases,Source,Ship It,Shipped,Ship To Address 1,Shi' at line 1' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Ad in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[14-May-2013 20:26:01 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 95' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(95): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 95, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(46): updateOrder(NULL, '1Z9770A00340427...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[14-May-2013 23:27:10 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Missing argument 5 for updateOrder(), called in /home/bloom/public_html/misc/bulk-process.php on line 28 and defined  in /home/bloom/public_html/misc/bulk-process.php on line 58' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(58): mageCoreErrorHandler(2, 'Missing argumen...', '/home/bloom/pub...', 58, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('19441', '940551169900085...', 'usps', 'Priority Mail')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[14-May-2013 23:49:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Missing argument 5 for updateOrder(), called in /home/bloom/public_html/misc/bulk-process.php on line 28 and defined  in /home/bloom/public_html/misc/bulk-process.php on line 58' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(58): mageCoreErrorHandler(2, 'Missing argumen...', '/home/bloom/pub...', 58, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('19441', '940551169900085...', 'usps', 'Priority Mail')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-May-2013 16:30:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'OrderID' in 'field list'' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/bloom/public_html/misc/bulk-process.php(151): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/bloom/public_html/misc/bul in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[23-May-2013 16:12:40 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[23-May-2013 16:12:52 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[23-May-2013 16:14:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[23-May-2013 16:20:52 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[23-May-2013 16:54:23 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[23-May-2013 16:54:40 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '85123800052', '365145860492658', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[14-Jun-2013 16:51:49 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, 'Blooming Ba', '1ZR8390R0341913...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[14-Jun-2013 16:54:04 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, 'Blooming Ba', '1ZR8390R0341913...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[19-Jun-2013 22:14:22 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, 'Blooming Ba', '1ZR8390R0341365...', 'ups', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[17-Jul-2013 15:50:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'OrderID' in 'field list'' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/bloom/public_html/misc/bulk-process.php(151): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/bloom/public_html/misc/bul in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[23-Jul-2013 16:12:27 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('23017', '250002721', '365145860507437', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[31-Jul-2013 16:15:58 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('23395', '', 'CJ479075701US, ...', 'usps', 'Priority Mail')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[31-Jul-2013 16:17:24 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('23395', '', 'CJ479075701US, ...', 'usps', 'Priority Mail')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[31-Jul-2013 16:17:44 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('23395', '', 'CJ479075701US, ...', 'usps', 'Priority Mail')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[31-Jul-2013 16:22:30 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(28): updateOrder('23395', '', 'CJ479075701US, ...', 'usps', 'Priority Mail')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[05-Aug-2013 17:30:33 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6042116', '365145860510550', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[12-Aug-2013 16:45:49 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6037478', '365145860511595', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Aug-2013 18:09:16 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6048198', '365145860514978', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Aug-2013 18:09:55 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6048198', '365145860514978', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Aug-2013 18:11:51 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6048198', '365145860514978', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Aug-2013 18:17:21 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6048198', '365145860514978', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Aug-2013 18:23:36 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '7777-605595', '365145860514978', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[03-Sep-2013 21:42:45 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '-6063254', '365145860516828', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[03-Sep-2013 22:00:42 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/bloom/public_html/misc/bulk-process.php on line 100' in /home/bloom/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/bloom/public_html/misc/bulk-process.php(100): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/bloom/pub...', 100, Array)
+#1 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder(NULL, '7777-606155', '365145860516828', 'fedex', 'Ground')
+#2 {main}
+  thrown in /home/bloom/public_html/app/code/core/Mage/Core/functions.php on line 245
+[25-Sep-2013 17:25:21 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:25:40 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:31:36 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:32:43 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:33:25 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:44:04 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[25-Sep-2013 17:44:40 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an empty shipment.' in /home/bloom/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/bloom/public_html/app/code/core/Mage/Sales/Model/Order/Shipment.php(556): Mage::throwException('Cannot create a...')
+#1 /home/bloom/public_html/app/code/core/Mage/Core/Model/Abstract.php(316): Mage_Sales_Model_Order_Shipment->_beforeSave()
+#2 /home/bloom/public_html/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#3 /home/bloom/public_html/misc/bulk-process.php(120): Mage_Core_Model_Resource_Transaction->save()
+#4 /home/bloom/public_html/misc/bulk-process.php(48): updateOrder('25521', '250003087', '365145860520597', 'fedex', 'Ground')
+#5 {main}
+  thrown in /home/bloom/public_html/app/Mage.php on line 594
+[21-Oct-2013 16:48:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bloom_magento.bulk_import' doesn't exist' in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/bloom/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/bloom/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/bloom/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/bloom/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('TRUNCATE TABLE ...', Array)
+#5 /home/bloom/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('TRUNCATE TABLE ...', Array)
+#6 /home/bloom/public_html/misc/bulk-import.php(162): Varien_Db_Adapter_Pdo_Mysql->query('TRUNCATE TABLE ...')
+#7 /home/bloom/pu in /home/bloom/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[21-Oct-2013 16:50:19 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/bloom/public_html/misc/bulk-import.php on line 133
+[21-Oct-2013 16:50:19 UTC] PHP Stack trace:
+[21-Oct-2013 16:50:19 UTC] PHP   1. {main}() /home/bloom/public_html/misc/bulk-import.php:0
+[21-Oct-2013 16:50:19 UTC] PHP   2. createOrder() /home/bloom/public_html/misc/bulk-import.php:35
+[21-Oct-2013 16:52:01 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/bloom/public_html/misc/bulk-import.php on line 133
+[21-Oct-2013 16:52:01 UTC] PHP Stack trace:
+[21-Oct-2013 16:52:01 UTC] PHP   1. {main}() /home/bloom/public_html/misc/bulk-import.php:0
+[21-Oct-2013 16:52:01 UTC] PHP   2. createOrder() /home/bloom/public_html/misc/bulk-import.php:35
+[21-Oct-2013 17:36:29 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/bloom/public_html/misc/bulk-import.php on line 133
+[21-Oct-2013 17:36:29 UTC] PHP Stack trace:
+[21-Oct-2013 17:36:29 UTC] PHP   1. {main}() /home/bloom/public_html/misc/bulk-import.php:0
+[21-Oct-2013 17:36:29 UTC] PHP   2. createOrder() /home/bloom/public_html/misc/bulk-import.php:35
+[21-Oct-2013 21:13:00 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 133
+[21-Oct-2013 21:13:00 UTC] PHP Stack trace:
+[21-Oct-2013 21:13:00 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 21:13:00 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:35
+[21-Oct-2013 21:22:03 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 133
+[21-Oct-2013 21:22:03 UTC] PHP Stack trace:
+[21-Oct-2013 21:22:03 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 21:22:03 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:35
+[21-Oct-2013 21:24:35 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dev/public_html/misc/bulk-import.php on line 45
+[21-Oct-2013 21:25:10 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 134
+[21-Oct-2013 21:25:10 UTC] PHP Stack trace:
+[21-Oct-2013 21:25:10 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 21:25:10 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:30
+[21-Oct-2013 21:25:49 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 134
+[21-Oct-2013 21:25:49 UTC] PHP Stack trace:
+[21-Oct-2013 21:25:49 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 21:25:49 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:30
+[21-Oct-2013 21:34:55 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Cannot create an invoice.' in /home/dev/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/dev/public_html/misc/bulk-import.php(144): Mage::throwException('Cannot create a...')
+#1 /home/dev/public_html/misc/bulk-import.php(30): createOrder('YC05955', 'buybuyBaby #300...')
+#2 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 594
+[21-Oct-2013 21:38:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UOM Basis of UOM' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(181): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc/bulk-import.p in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[21-Oct-2013 21:44:36 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 135
+[21-Oct-2013 21:44:36 UTC] PHP Stack trace:
+[21-Oct-2013 21:44:36 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 21:44:36 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:31
+[21-Oct-2013 21:48:53 UTC] PHP Warning:  require_once(app/Mage.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/dev/public_html/misc/test.php on line 3
+[21-Oct-2013 21:48:53 UTC] PHP Stack trace:
+[21-Oct-2013 21:48:53 UTC] PHP   1. {main}() /home/dev/public_html/misc/test.php:0
+[21-Oct-2013 21:48:53 UTC] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'app/Mage.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dev/public_html/misc/test.php on line 3
+[21-Oct-2013 21:48:53 UTC] PHP Stack trace:
+[21-Oct-2013 21:48:53 UTC] PHP   1. {main}() /home/dev/public_html/misc/test.php:0
+[21-Oct-2013 21:49:02 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'The requested Payment Method is not available.' in /home/dev/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Quote/Payment.php(151): Mage::throwException('The requested P...')
+#1 /home/dev/public_html/misc/test.php(50): Mage_Sales_Model_Quote_Payment->importData(Array)
+#2 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 594
+[21-Oct-2013 21:49:43 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/test.php(55): Mage_Sales_Model_Service_Quote->submitAll()
+#4 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 594
+[21-Oct-2013 22:05:37 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: Invalid argument supplied for foreach()  in /home/dev/public_html/misc/bulk-import.php on line 108' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/dev/public_html/misc/bulk-import.php(108): mageCoreErrorHandler(2, 'Invalid argumen...', '/home/dev/publi...', 108, Array)
+#1 /home/dev/public_html/misc/bulk-import.php(31): createOrder('YC38413', 'buybuyBaby #304...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:10:30 UTC] PHP Fatal error:  Call to a member function getIncrementId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 148
+[21-Oct-2013 22:10:30 UTC] PHP Stack trace:
+[21-Oct-2013 22:10:30 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 22:10:30 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:31
+[21-Oct-2013 22:12:44 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:13:58 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:15:58 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:16:41 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:17:59 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:20:04 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:21:29 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:22:48 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:23:39 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:24:04 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:49:40 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 22:50:46 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:113)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('core', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Core/Model/Session.php(42): Mage_Core_Model_Session_Ab in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[21-Oct-2013 23:11:35 UTC] PHP Fatal error:  Call to undefined method Mage_Catalog_Model_Resource_Product_Collection::loadByAttribute() in /home/dev/public_html/misc/bulk-import.php on line 110
+[21-Oct-2013 23:11:35 UTC] PHP Stack trace:
+[21-Oct-2013 23:11:35 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[21-Oct-2013 23:11:35 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:31
+[26-Nov-2013 19:52:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/dev/public_html/misc/bulk-import.php on line 46
+[26-Nov-2013 20:38:32 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 107
+[26-Nov-2013 20:38:32 UTC] PHP Stack trace:
+[26-Nov-2013 20:38:32 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[26-Nov-2013 20:38:32 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:35
+[26-Nov-2013 20:46:11 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 107
+[26-Nov-2013 20:46:11 UTC] PHP Stack trace:
+[26-Nov-2013 20:46:11 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[26-Nov-2013 20:46:11 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:35
+[26-Nov-2013 20:48:58 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:105)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Nov-2013 20:49:56 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:105)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Nov-2013 20:51:00 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:105)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[26-Nov-2013 20:52:59 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/dev/public_html/misc/bulk-import.php:105)  in /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php on line 123' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'session_start()...', '/home/dev/publi...', 123, Array)
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(123): session_start()
+#2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
+#3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
+#4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
