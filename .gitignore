@@ -1,7 +1,9 @@
 .modgit/
 var/*
 var/cache/*
+var/cache/*/*
 var/log/*
+var/log/system.log
 var/*/*
 app/code/community/Phoenix/
 app/code/community/Cm/
