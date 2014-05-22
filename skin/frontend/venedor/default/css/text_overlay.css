@@ -1,4 +1,18 @@
-.something
-{
-    font-size: 12pt;
+/*@import url("//hello.myfonts.net/count/2af64e");*/
+@import url("../fonts/2AF64E_0_0.eot");
+@import url("../fonts/2AF64E_0_0.ttf");
+@import url("../fonts/2AF64E_0_0.woff");
+
+@font-face {font-family: 'CommercialScriptTL-Regular';src: url('../fonts/2AF64E_0_0.eot');src: url('../fonts/2AF64E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AF64E_0_0.woff') format('woff'),url('../fonts/2AF64E_0_0.ttf') format('truetype');}
+
+.CommercialScriptTL-Regular {
+    font-family: CommercialScriptTL-Regular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: CommercialScriptTL-Regular;
+    font-weight: normal;
+    font-style: normal;
 }
