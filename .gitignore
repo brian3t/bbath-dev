@@ -1,4 +1,8 @@
 .modgit/
+var/*
+var/cache/*
+var/log/*
+var/*/*
 app/code/community/Phoenix/
 app/code/community/Cm/
 app/code/core/
