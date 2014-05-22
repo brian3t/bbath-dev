@@ -1,5 +1,5 @@
 <?php
-
+echo "test";
 require_once '../app/Mage.php';
 
 Mage::app();
