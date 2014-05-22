@@ -2,6 +2,7 @@
 @import url("../fonts/2AF64E_0_0.eot");
 @import url("../fonts/2AF64E_0_0.ttf");
 @import url("../fonts/2AF64E_0_0.woff");
+@import url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css");
 
 @font-face {font-family: 'CommercialScriptTL-Regular';src: url('../fonts/2AF64E_0_0.eot');src: url('../fonts/2AF64E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AF64E_0_0.woff') format('woff'),url('../fonts/2AF64E_0_0.ttf') format('truetype');}
 
@@ -11,8 +12,11 @@
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: CommercialScriptTL-Regular;
-    font-weight: normal;
-    font-style: normal;
-}
+.to_box {position: absolute; width:300px; height: 200px; border: 1px black solid; top: 210px; z-index:10; left: 0px;}
+.to_containerbox {position: absolute; width:300px; height: 200px; top: 210px; z-index:10; left: 0px;}
+.to_box1 {background-color: #d0d0d0;}
+.to_box2 {position: absolute; top: 30px; left: 10px; width:200px; height: 150px; border: 1px blue solid; background-color: white;}
+.to_box.ui-resizable-disabled { opacity: 1.0; filter: Alpha(Opacity=100);}
+.to_infobox {position: absolute; width:400px; height: 175px; border: 1px green solid; font-size: 10px}
+li.to{ list-style-type:none; padding: 0; margin-left: 36px;}
+button.to {position: relative; left: 20px;top:110px}
