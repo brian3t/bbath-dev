@@ -1,3 +1,4 @@
+jQuery.noConflict();
 jQuery(function() {
     //instructions and change log is in the jquery.transformable.js
     //click "Manage Resouces to the left to get the link.
