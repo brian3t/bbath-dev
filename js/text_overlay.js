@@ -1,8 +1,8 @@
-$(function() {
+jQuery(function() {
     //instructions and change log is in the jquery.transformable.js
     //click "Manage Resouces to the left to get the link.
-    var b=$('.to_box');
-    var ib=$('.to_infobox');
+    var b=jQuery('.to_box');
+    var ib=jQuery('.to_infobox');
     b.draggable({stop: showinfo});
     b.resizable({stop: showinfo});
     b.transformable( {
@@ -14,7 +14,7 @@ $(function() {
     });
 
     //containment is still a bit expiramental
-    $('#to_box3').draggable('option','containment','parent')
+    jQuery('#to_box3').draggable('option','containment','parent')
         .transformable('option','containment',true)
         .resizable('option','containment','parent');
 
@@ -25,21 +25,21 @@ $(function() {
     }
 
     function showrotate(e,ui) {
-        $('#rotate').html(ui.angle.rad);
+        jQuery('#rotate').html(ui.angle.rad);
         //uncomment these to see how you can set the value to constrain angle
         //if(ui.angle.rad>1)ui.angle.rad=1;
         //if(ui.angle.rad<-1) ui.angle.rad=-1;
     }
 
     function showinfo (e,ui) {
-        var u=$(this).getTransform();
-        var o=$(this).tOffset();
+        var u=jQuery(this).getTransform();
+        var o=jQuery(this).tOffset();
         function xytostr(c) {
             return(parseInt(c.x)+','+parseInt(c.y));
         }
         ib.html(
             'Div Transformation Info:<ul>Current Matrix:<li>'
-                + $(this).matrixToArray()+'</li></ul><ul>Rotation:<li id="rotate">'
+                + jQuery(this).matrixToArray()+'</li></ul><ul>Rotation:<li id="rotate">'
                 +u.rotate+'</li></ul><ul>Skew:<li>'
                 +u.skew+"</li></ul><ul>Scale:<li>"
                 +u.scale+'</li></ul><ul>Offset:<li>'
@@ -52,12 +52,12 @@ $(function() {
                 +', lb:'+xytostr(o.corners[3])
         );
     }
-    $('.reset').click(function() {
-        $(this).parent().transformable('reset');
-        showinfo.call($(this).parent());
+    jQuery('.reset').click(function() {
+        jQuery(this).parent().transformable('reset');
+        showinfo.call(jQuery(this).parent());
     });
 });
-$(document).ready(function(){
+jQuery(document).ready(function(){
 //    <div id="to_container" class='to_containerbox to_box1'>
 //        <div id='to_box3' class='to_box to_box2'>
 //            <button class='reset to'>Reset Positioning</button><br></br>
