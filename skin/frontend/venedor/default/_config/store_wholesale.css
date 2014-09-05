@@ -1,5 +1,5 @@
 /* System Config Styles */
-/* Created at 2014-03-07 22:45:36 */
+/* Created at 2014-07-28 23:59:14 */
 
 /*========== Common Styles ==========*/
 body {
@@ -794,7 +794,7 @@ div.column {
 }
 .footer-tweets .twitter-icon {
     bottom: -15px;
-    background-image: url(http://10.0.0.30/media/eternal/venedor/icon/icon_twitter.png);
+    background-image: url(http://dev.bloomingbath.com/media/eternal/venedor/icon/icon_twitter.png);
 }
 .footer-top {
     border-bottom: 1px solid #383938;

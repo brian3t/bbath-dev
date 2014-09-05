@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Medma_Ship>
+            <version>0.1.0</version>
+        </Medma_Ship>
+    </modules>
+    <frontend>
+        <routers>
+            <ship>
+                <use>standard</use>
+                <args>
+                    <module>Medma_Ship</module>
+                    <frontName>ship</frontName>
+                </args>
+            </ship>
+        </routers>
+    </frontend>
+    <adminhtml>
+		
+		<layout>
+			<updates>
+				<ship>
+					<file>ship.xml</file>
+				</ship>
+			</updates>
+		</layout>
+    </adminhtml>		
+    <global>
+        <helpers>
+            <ship>
+                <class>Medma_Ship_Helper</class>
+            </ship>
+        </helpers>
+    </global>
+</config>

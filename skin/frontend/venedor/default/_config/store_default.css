@@ -1,5 +1,5 @@
 /* System Config Styles */
-/* Created at 2014-03-07 22:45:36 */
+/* Created at 2014-07-28 23:59:14 */
 
 /*========== Common Styles ==========*/
 body {
@@ -73,6 +73,8 @@ p.desc {
     }
 
 .slider-arrow,
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .flex-next,
 .button-arrow,
 .pager .button,
 .toolbar .button,
@@ -105,9 +107,6 @@ p.desc {
 .toolbar .button-arrow,
 .toolbar .dropdown .button .arrow {
     background-color: #f2f2f2;
-}
-.pager .button, .sorter .button{
-	display: inline-block; margin-left: 0px;
 }
 .toolbar .button-dark,
 .toolbar .btn-dark,
@@ -155,6 +154,10 @@ p.desc {
 .slider-arrow:focus,
 .button-arrow:hover,
 .button-arrow:focus,
+.flex-direction-nav .flex-prev:hover,
+.flex-direction-nav .flex-prev:focus,
+.flex-direction-nav .flex-next:hover,
+.flex-direction-nav .flex-next:focus,
 .dropdown.open .arrow,
 .toolbar .dropdown.open .arrow,
 .elastislide-next:hover,
@@ -214,7 +217,6 @@ p.desc {
     border-color: #e0e0e0 !important;
     background-color: #fff !important;
     color: #757575 !important;
-	padding-left:20px;
 }
 .toolbar span.button-active {
     border-color: #7bae23;
@@ -267,6 +269,7 @@ form h3,
 .main .page-title h1,
 .footer-banner h2.subtitle {
     color: #5ac5f1;
+    border-left: 4px solid #7bae23;
 }
 .main h2.subtitle .line,
 .main .widget .widget-title h2 .line, 
@@ -340,7 +343,7 @@ form h3,
 .dropdown-submenu:hover > a {
     background-color: #ffffff !important;
     background-image: none;
-    color: #5acadd;
+    color: #ffffff;
 }
 .block-currency .block-content > a, 
 .block-language .block-content > a,
@@ -791,7 +794,7 @@ div.column {
 }
 .footer-tweets .twitter-icon {
     bottom: -15px;
-    background-image: url(http://10.0.0.30/media/eternal/venedor/icon/icon_twitter.png);
+    background-image: url(http://dev.bloomingbath.com/media/eternal/venedor/icon/icon_twitter.png);
 }
 .footer-top {
     border-bottom: 1px solid #383938;
@@ -1013,6 +1016,7 @@ a.product-name:focus,
     background-image: url(../images/icons/white/icon_arrow_up_large.png);
 }
 .slider-arrow.prev,
+.large-icons .flex-direction-nav .flex-prev,
 .fraction-slider .prev,
 .tp-leftarrow {
     background-image: url(../images/icons/grey/icon_arrow_prev_large.png);        
@@ -1022,6 +1026,8 @@ a.product-name:focus,
 }
 .slider-arrow.prev:hover,
 .slider-arrow.prev:focus,
+.large-icons .flex-direction-nav .flex-prev:hover,
+.large-icons .flex-direction-nav .flex-prev:focus,
 .fraction-slider .prev:hover,
 .fraction-slider .prev:focus,
 .tp-leftarrow:hover,
@@ -1033,6 +1039,7 @@ a.product-name:focus,
     background-image: url(../images/icons/white/icon_arrow_prev_big.png);
 }
 .slider-arrow.next,
+.large-icons .flex-direction-nav .flex-next,
 .fraction-slider .next,
 .tp-rightarrow {
     background-image: url(../images/icons/grey/icon_arrow_next_large.png);    
@@ -1042,6 +1049,8 @@ a.product-name:focus,
 }
 .slider-arrow.next:hover,
 .slider-arrow.next:focus,
+.large-icons .flex-direction-nav .flex-next:hover,
+.large-icons .flex-direction-nav .flex-next:focus,
 .fraction-slider .next:hover,
 .fraction-slider .next:focus,
 .tp-rightarrow:hover,
@@ -1051,6 +1060,20 @@ a.product-name:focus,
 .bx-wrapper .bx-controls-direction .bx-next:hover,
 .bx-wrapper .bx-controls-direction .bx-next:focus {
     background-image: url(../images/icons/white/icon_arrow_next_big.png);    
+}
+.flex-direction-nav .flex-prev {
+    background-image: url(../images/icons/grey/icon_arrow_prev_small.png);        
+}
+.flex-direction-nav .flex-prev:hover,
+.flex-direction-nav .flex-prev:focus {
+    background-image: url(../images/icons/white/icon_arrow_prev_small.png);        
+}
+.flex-direction-nav .flex-next {
+    background-image: url(../images/icons/grey/icon_arrow_next_small.png);    
+}
+.flex-direction-nav .flex-next:hover,
+.flex-direction-nav .flex-next:focus {
+    background-image: url(../images/icons/white/icon_arrow_next_small.png);    
 }
 .button-asc {
     background-image: url(../images/icons/grey/icon_asc.png);

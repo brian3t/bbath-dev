@@ -956,3 +956,206 @@ Stack trace:
 [06-Jan-2014 21:09:44 UTC] PHP  21. Mage_Core_Block_Template->renderView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:286
 [06-Jan-2014 21:09:44 UTC] PHP  22. Mage_Core_Block_Template->fetchView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:272
 [06-Jan-2014 21:09:44 UTC] PHP  23. include() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:241
+[30-May-2014 22:42:56 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dev/public_html/app/design/frontend/venedor/default/template/catalog/product/view/type/options/configurable.phtml on line 12
+[30-May-2014 22:42:56 UTC] PHP Stack trace:
+[30-May-2014 22:42:56 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[30-May-2014 22:42:56 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[30-May-2014 22:42:56 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:683
+[30-May-2014 22:42:56 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[30-May-2014 22:42:56 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:176
+[30-May-2014 22:42:56 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[30-May-2014 22:42:56 UTC] PHP   7. Mage_Catalog_ProductController->viewAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:419
+[30-May-2014 22:42:56 UTC] PHP   8. Mage_Catalog_Helper_Product_View->prepareAndRender() /home/dev/public_html/app/code/core/Mage/Catalog/controllers/ProductController.php:132
+[30-May-2014 22:42:56 UTC] PHP   9. Mage_Core_Controller_Varien_Action->renderLayout() /home/dev/public_html/app/code/core/Mage/Catalog/Helper/Product/View.php:147
+[30-May-2014 22:42:56 UTC] PHP  10. Mage_Core_Model_Layout->getOutput() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:390
+[30-May-2014 22:42:56 UTC] PHP  11. Mage_Core_Block_Abstract->toHtml() /home/dev/public_html/app/code/core/Mage/Core/Model/Layout.php:555
+[30-May-2014 22:42:56 UTC] PHP  12. Mage_Core_Block_Template->_toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:863
+[30-May-2014 22:42:56 UTC] PHP  13. Mage_Core_Block_Template->renderView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:286
+[30-May-2014 22:42:56 UTC] PHP  14. Mage_Core_Block_Template->fetchView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:272
+[30-May-2014 22:42:56 UTC] PHP  15. include() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:241
+[30-May-2014 22:42:56 UTC] PHP  16. Mage_Core_Block_Abstract->getChildHtml() /home/dev/public_html/app/design/frontend/venedor/default/template/page/1column.phtml:95
+[30-May-2014 22:42:56 UTC] PHP  17. Mage_Core_Block_Abstract->_getChildHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:526
+[30-May-2014 22:42:56 UTC] PHP  18. Mage_Core_Block_Abstract->toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:582
+[30-May-2014 22:42:56 UTC] PHP  19. Mage_Core_Block_Text_List->_toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:863
+[30-May-2014 22:42:56 UTC] PHP  20. Mage_Core_Block_Abstract->toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Text/List.php:43
+[30-May-2014 22:42:56 UTC] PHP  21. Mage_Core_Block_Template->_toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:863
+[30-May-2014 22:42:56 UTC] PHP  22. Mage_Core_Block_Template->renderView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:286
+[30-May-2014 22:42:56 UTC] PHP  23. Mage_Core_Block_Template->fetchView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:272
+[30-May-2014 22:42:56 UTC] PHP  24. include() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:241
+[30-May-2014 22:42:56 UTC] PHP  25. Mage_Core_Block_Abstract->getChildChildHtml() /home/dev/public_html/app/design/frontend/venedor/default/template/catalog/product/view.phtml:75
+[30-May-2014 22:42:56 UTC] PHP  26. Mage_Core_Block_Abstract->getChildHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:546
+[30-May-2014 22:42:56 UTC] PHP  27. Mage_Core_Block_Abstract->_getChildHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:522
+[30-May-2014 22:42:56 UTC] PHP  28. Mage_Core_Block_Abstract->toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:582
+[30-May-2014 22:42:56 UTC] PHP  29. Mage_Core_Block_Template->_toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:863
+[30-May-2014 22:42:56 UTC] PHP  30. Mage_Core_Block_Template->renderView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:286
+[30-May-2014 22:42:56 UTC] PHP  31. Mage_Core_Block_Template->fetchView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:272
+[30-May-2014 22:42:56 UTC] PHP  32. include() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:241
+[30-May-2014 22:42:56 UTC] PHP  33. Mage_Core_Block_Abstract->getChildHtml() /home/dev/public_html/app/design/frontend/base/default/template/catalog/product/view/options/wrapper.phtml:28
+[30-May-2014 22:42:56 UTC] PHP  34. Mage_Core_Block_Abstract->_getChildHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:522
+[30-May-2014 22:42:56 UTC] PHP  35. Mage_Core_Block_Abstract->toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:582
+[30-May-2014 22:42:56 UTC] PHP  36. Mage_Core_Block_Template->_toHtml() /home/dev/public_html/app/code/core/Mage/Core/Block/Abstract.php:863
+[30-May-2014 22:42:56 UTC] PHP  37. Mage_Core_Block_Template->renderView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:286
+[30-May-2014 22:42:56 UTC] PHP  38. Mage_Core_Block_Template->fetchView() /home/dev/public_html/app/code/core/Mage/Core/Block/Template.php:272
+[04-Jun-2014 20:27:04 UTC] PHP Fatal error:  Call to a member function getModel() on a non-object in /home/dev/public_html/app/code/core/Mage/Admin/Model/Session.php on line 117
+[04-Jun-2014 20:27:04 UTC] PHP Stack trace:
+[04-Jun-2014 20:27:04 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[04-Jun-2014 20:27:04 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[04-Jun-2014 20:27:04 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:683
+[04-Jun-2014 20:27:04 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[04-Jun-2014 20:27:04 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:176
+[04-Jun-2014 20:27:04 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[04-Jun-2014 20:27:04 UTC] PHP   7. Mage_Adminhtml_Controller_Action->preDispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:408
+[04-Jun-2014 20:27:04 UTC] PHP   8. Mage_Core_Controller_Varien_Action->preDispatch() /home/dev/public_html/app/code/core/Mage/Adminhtml/Controller/Action.php:160
+[04-Jun-2014 20:27:04 UTC] PHP   9. Mage::dispatchEvent() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:528
+[04-Jun-2014 20:27:04 UTC] PHP  10. Mage_Core_Model_App->dispatchEvent() /home/dev/public_html/app/Mage.php:447
+[04-Jun-2014 20:27:04 UTC] PHP  11. Mage_Core_Model_App->_callObserverMethod() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1317
+[04-Jun-2014 20:27:04 UTC] PHP  12. Mage_Admin_Model_Observer->actionPreDispatchAdmin() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1338
+[04-Jun-2014 20:27:04 UTC] PHP  13. Mage_Admin_Model_Session->login() /home/dev/public_html/app/code/core/Mage/Admin/Model/Observer.php:69
+[04-Jun-2014 20:31:27 UTC] PHP Fatal error:  Call to a member function getModel() on a non-object in /home/dev/public_html/app/code/core/Mage/Admin/Model/Session.php on line 117
+[04-Jun-2014 20:31:27 UTC] PHP Stack trace:
+[04-Jun-2014 20:31:27 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[04-Jun-2014 20:31:27 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[04-Jun-2014 20:31:27 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:683
+[04-Jun-2014 20:31:27 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[04-Jun-2014 20:31:27 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:176
+[04-Jun-2014 20:31:27 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[04-Jun-2014 20:31:27 UTC] PHP   7. Mage_Adminhtml_Controller_Action->preDispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:408
+[04-Jun-2014 20:31:27 UTC] PHP   8. Mage_Core_Controller_Varien_Action->preDispatch() /home/dev/public_html/app/code/core/Mage/Adminhtml/Controller/Action.php:160
+[04-Jun-2014 20:31:27 UTC] PHP   9. Mage::dispatchEvent() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:528
+[04-Jun-2014 20:31:27 UTC] PHP  10. Mage_Core_Model_App->dispatchEvent() /home/dev/public_html/app/Mage.php:447
+[04-Jun-2014 20:31:27 UTC] PHP  11. Mage_Core_Model_App->_callObserverMethod() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1317
+[04-Jun-2014 20:31:27 UTC] PHP  12. Mage_Admin_Model_Observer->actionPreDispatchAdmin() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:1338
+[04-Jun-2014 20:31:27 UTC] PHP  13. Mage_Admin_Model_Session->login() /home/dev/public_html/app/code/core/Mage/Admin/Model/Observer.php:69
+[04-Jun-2014 20:51:37 UTC] PHP Fatal error:  Class 'Mage_Googlecheckout_Helper_Data' not found in /home/dev/public_html/app/Mage.php on line 547
+[04-Jun-2014 20:51:37 UTC] PHP Stack trace:
+[04-Jun-2014 20:51:37 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[04-Jun-2014 20:51:37 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[04-Jun-2014 20:51:37 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[04-Jun-2014 20:51:37 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[04-Jun-2014 20:51:37 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[04-Jun-2014 20:51:37 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[04-Jun-2014 20:51:37 UTC] PHP   7. Mage_Adminhtml_System_ConfigController->editAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[04-Jun-2014 20:51:37 UTC] PHP   8. Mage_Adminhtml_Block_System_Config_Tabs->initTabs() /home/dev/public_html/app/code/core/Mage/Adminhtml/controllers/System/ConfigController.php:104
+[04-Jun-2014 20:51:37 UTC] PHP   9. Mage::helper() /home/dev/public_html/app/code/core/Mage/Adminhtml/Block/System/Config/Tabs.php:117
+[04-Jun-2014 21:03:23 UTC] PHP Fatal error:  Class 'Mage_Googlecheckout_Helper_Data' not found in /home/dev/public_html/app/Mage.php on line 547
+[04-Jun-2014 21:03:23 UTC] PHP Stack trace:
+[04-Jun-2014 21:03:23 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[04-Jun-2014 21:03:23 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[04-Jun-2014 21:03:23 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[04-Jun-2014 21:03:23 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[04-Jun-2014 21:03:23 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[04-Jun-2014 21:03:23 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[04-Jun-2014 21:03:23 UTC] PHP   7. Mage_Adminhtml_System_ConfigController->editAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[04-Jun-2014 21:03:23 UTC] PHP   8. Mage_Adminhtml_Block_System_Config_Tabs->initTabs() /home/dev/public_html/app/code/core/Mage/Adminhtml/controllers/System/ConfigController.php:104
+[04-Jun-2014 21:03:23 UTC] PHP   9. Mage::helper() /home/dev/public_html/app/code/core/Mage/Adminhtml/Block/System/Config/Tabs.php:117
+[10-Jul-2014 00:52:14 UTC] PHP Fatal error:  Call to undefined method Mage_Sales_Model_Order_Process::formatPrice() in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 798
+[10-Jul-2014 00:52:14 UTC] PHP Stack trace:
+[10-Jul-2014 00:52:14 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[10-Jul-2014 00:52:14 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[10-Jul-2014 00:52:14 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[10-Jul-2014 00:52:14 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[10-Jul-2014 00:52:14 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[10-Jul-2014 00:52:14 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[10-Jul-2014 00:52:14 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediinvoiceAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[10-Jul-2014 00:52:14 UTC] PHP   8. Mage_Sales_Model_Order_Process->ediInvoice() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:204
+[10-Jul-2014 00:52:14 UTC] PHP   9. Mage_Sales_Model_Order_Process->getCommonOrderValues() /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php:308
+[10-Jul-2014 00:54:32 UTC] PHP Fatal error:  Call to undefined method Mage_Sales_Model_Order_Process::getItemTotal() in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 318
+[10-Jul-2014 00:54:32 UTC] PHP Stack trace:
+[10-Jul-2014 00:54:32 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[10-Jul-2014 00:54:32 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[10-Jul-2014 00:54:32 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[10-Jul-2014 00:54:32 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[10-Jul-2014 00:54:32 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[10-Jul-2014 00:54:32 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[10-Jul-2014 00:54:32 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediinvoiceAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[10-Jul-2014 00:54:32 UTC] PHP   8. Mage_Sales_Model_Order_Process->ediInvoice() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:204
+[11-Jul-2014 17:59:40 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 460
+[11-Jul-2014 17:59:40 UTC] PHP Stack trace:
+[11-Jul-2014 17:59:40 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[11-Jul-2014 17:59:40 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[11-Jul-2014 17:59:40 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[11-Jul-2014 17:59:40 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[11-Jul-2014 17:59:40 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[11-Jul-2014 17:59:40 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[11-Jul-2014 17:59:40 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediasnAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[11-Jul-2014 17:59:40 UTC] PHP   8. Mage::getModel() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:218
+[11-Jul-2014 17:59:40 UTC] PHP   9. Mage_Core_Model_Config->getModelInstance() /home/dev/public_html/app/Mage.php:463
+[11-Jul-2014 17:59:40 UTC] PHP  10. class_exists() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:1346
+[11-Jul-2014 17:59:40 UTC] PHP  11. Varien_Autoload->autoload() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:0
+[11-Jul-2014 18:01:50 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 460
+[11-Jul-2014 18:01:50 UTC] PHP Stack trace:
+[11-Jul-2014 18:01:50 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[11-Jul-2014 18:01:50 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[11-Jul-2014 18:01:50 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[11-Jul-2014 18:01:50 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[11-Jul-2014 18:01:50 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[11-Jul-2014 18:01:50 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[11-Jul-2014 18:01:50 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediasnAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[11-Jul-2014 18:01:50 UTC] PHP   8. Mage::getModel() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:218
+[11-Jul-2014 18:01:50 UTC] PHP   9. Mage_Core_Model_Config->getModelInstance() /home/dev/public_html/app/Mage.php:463
+[11-Jul-2014 18:01:50 UTC] PHP  10. class_exists() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:1346
+[11-Jul-2014 18:01:50 UTC] PHP  11. Varien_Autoload->autoload() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:0
+[11-Jul-2014 18:02:15 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 732
+[11-Jul-2014 18:02:15 UTC] PHP Stack trace:
+[11-Jul-2014 18:02:15 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[11-Jul-2014 18:02:15 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[11-Jul-2014 18:02:15 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[11-Jul-2014 18:02:15 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[11-Jul-2014 18:02:15 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[11-Jul-2014 18:02:15 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[11-Jul-2014 18:02:15 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediasnAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[11-Jul-2014 18:02:15 UTC] PHP   8. Mage::getModel() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:218
+[11-Jul-2014 18:02:15 UTC] PHP   9. Mage_Core_Model_Config->getModelInstance() /home/dev/public_html/app/Mage.php:463
+[11-Jul-2014 18:02:15 UTC] PHP  10. class_exists() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:1346
+[11-Jul-2014 18:02:15 UTC] PHP  11. Varien_Autoload->autoload() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:0
+[24-Jul-2014 20:55:47 UTC] PHP Fatal error:  Call to undefined function ftp_put_edi_files() in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 545
+[24-Jul-2014 20:55:47 UTC] PHP Stack trace:
+[24-Jul-2014 20:55:47 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[24-Jul-2014 20:55:47 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[24-Jul-2014 20:55:47 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[24-Jul-2014 20:55:47 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[24-Jul-2014 20:55:47 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[24-Jul-2014 20:55:47 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[24-Jul-2014 20:55:47 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediasnAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[24-Jul-2014 20:55:47 UTC] PHP   8. Mage_Sales_Model_Order_Process->ediAsn() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:218
+[28-Jul-2014 21:24:51 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 1126
+[28-Jul-2014 21:24:51 UTC] PHP Stack trace:
+[28-Jul-2014 21:24:51 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[28-Jul-2014 21:24:51 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[28-Jul-2014 21:24:51 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[28-Jul-2014 21:24:51 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[28-Jul-2014 21:24:51 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[28-Jul-2014 21:24:51 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[28-Jul-2014 21:24:51 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediinvoiceAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[28-Jul-2014 21:24:51 UTC] PHP   8. Mage::getModel() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:204
+[28-Jul-2014 21:24:51 UTC] PHP   9. Mage_Core_Model_Config->getModelInstance() /home/dev/public_html/app/Mage.php:463
+[28-Jul-2014 21:24:51 UTC] PHP  10. class_exists() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:1346
+[28-Jul-2014 21:24:51 UTC] PHP  11. Varien_Autoload->autoload() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:0
+[28-Jul-2014 21:25:35 UTC] PHP Parse error:  syntax error, unexpected T_PROTECTED in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 1260
+[28-Jul-2014 21:25:35 UTC] PHP Stack trace:
+[28-Jul-2014 21:25:35 UTC] PHP   1. {main}() /home/dev/public_html/index.php:0
+[28-Jul-2014 21:25:35 UTC] PHP   2. Mage::run() /home/dev/public_html/index.php:87
+[28-Jul-2014 21:25:35 UTC] PHP   3. Mage_Core_Model_App->run() /home/dev/public_html/app/Mage.php:684
+[28-Jul-2014 21:25:35 UTC] PHP   4. Mage_Core_Controller_Varien_Front->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Model/App.php:354
+[28-Jul-2014 21:25:35 UTC] PHP   5. Mage_Core_Controller_Varien_Router_Standard->match() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php:172
+[28-Jul-2014 21:25:35 UTC] PHP   6. Mage_Core_Controller_Varien_Action->dispatch() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php:250
+[28-Jul-2014 21:25:35 UTC] PHP   7. Moogento_Pickpack_Sales_OrderController->ediinvoiceAction() /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php:418
+[28-Jul-2014 21:25:35 UTC] PHP   8. Mage::getModel() /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php:204
+[28-Jul-2014 21:25:35 UTC] PHP   9. Mage_Core_Model_Config->getModelInstance() /home/dev/public_html/app/Mage.php:463
+[28-Jul-2014 21:25:35 UTC] PHP  10. class_exists() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:1346
+[28-Jul-2014 21:25:35 UTC] PHP  11. Varien_Autoload->autoload() /home/dev/public_html/app/code/core/Mage/Core/Model/Config.php:0
+[03-Aug-2014 06:00:14 UTC] PHP Warning:  SoapServer::SoapServer() [<a href='soapserver.soapserver'>soapserver.soapserver</a>]: I/O warning : failed to load external entity &quot;http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1&quot; in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[03-Aug-2014 06:00:14 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1' : failed to load external entity "http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1"
+ in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[03-Aug-2014 06:19:14 UTC] PHP Warning:  SoapServer::SoapServer() [<a href='soapserver.soapserver'>soapserver.soapserver</a>]: I/O warning : failed to load external entity &quot;http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1&quot; in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[03-Aug-2014 06:19:14 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1' : failed to load external entity "http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1"
+ in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[03-Aug-2014 15:14:50 UTC] PHP Warning:  SoapServer::SoapServer() [<a href='soapserver.soapserver'>soapserver.soapserver</a>]: I/O warning : failed to load external entity &quot;http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1&quot; in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[03-Aug-2014 15:14:50 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1' : failed to load external entity "http://dev.bloomingbath.com/index.php/api/index/index/?wsdl=1"
+ in /home/dev/public_html/lib/Zend/Soap/Server.php on line 811
+[11-Aug-2014 17:50:27 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/dev/public_html/app/code/local/Mage/Sales/Model/Order/Process.php on line 1347
+[02-Sep-2014 23:47:16 UTC] PHP Fatal error:  Class 'Mage_Lesson08_Helper_Data' not found in /home/dev/public_html/app/Mage.php on line 547
+[02-Sep-2014 23:48:15 UTC] PHP Fatal error:  Class 'Mage_Lesson08_Helper_Data' not found in /home/dev/public_html/app/Mage.php on line 547
+[02-Sep-2014 23:50:59 UTC] PHP Fatal error:  Class 'Varien_Data_Form_Element_Date_field' not found in /home/dev/public_html/lib/Varien/Data/Form/Abstract.php on line 146
+[02-Sep-2014 23:52:35 UTC] PHP Fatal error:  Class 'Varien_Data_Form_Element_Daet' not found in /home/dev/public_html/lib/Varien/Data/Form/Abstract.php on line 146
+[03-Sep-2014 00:16:40 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/dev/public_html/app/code/local/Moogento/Pickpack/controllers/Sales/OrderController.php on line 230

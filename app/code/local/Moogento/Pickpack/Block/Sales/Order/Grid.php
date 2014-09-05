@@ -238,6 +238,47 @@ $this->addColumn('shipping_name', array(
 		     'label'=> Mage::helper('sales')->__('Update Status To Awaiting Payment'),
 		     'url'  => $this->getUrl('pickpack/sales_order/awaiting'),
 		));
+		
+		$this->getMassactionBlock()->addItem('mark_complete', array(
+		     'label'=> Mage::helper('sales')->__('Update Status To Complete'),
+		     'url'  => $this->getUrl('pickpack/sales_order/complete'),
+		));
+		
+		$this->getMassactionBlock()->addItem('seperator5', array(
+		     'label'=> Mage::helper('sales')->__('---------------'),
+		     'url'  => '',
+		));
+
+		$this->getMassactionBlock()->addItem('get_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('Get EDI Orders'),
+		     'url'  => $this->getUrl('pickpack/sales_order/getedi'),
+		));
+		
+		$this->getMassactionBlock()->addItem('asn_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('Create ASN(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/createasn'),
+		     'additional' => array(
+				'visibility' => array(
+					'name' => 'asn_date',
+					'type' => 'date',
+					'class' => 'required-entry',
+					'label' => 'ASN Date',
+					'gmtoffset' => true,
+		            'image'    => '/skin/adminhtml/default/default/images/grid-cal.gif',
+		            'format'    => '%m/%d/%Y'
+				)
+			)
+		));
+		
+		$this->getMassactionBlock()->addItem('send_asn_orders', array(
+		     'label'=> Mage::helper('sales')->__('Send ASN(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/sendasn'),
+		));
+		
+		$this->getMassactionBlock()->addItem('invoice_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('Create & Send EDI Invoice(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/ediinvoice'),
+		));
 		//** END
 		
 		return $this;

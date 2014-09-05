@@ -15,28 +15,53 @@ Mage::app();
 if(isset($_FILES['uploadedfile']['name'])) {
 
 	$target_path = 'upload/orders.csv';
+	define(TARGET_ID, 3994);
+	define(BBB_ID, 1115);
+	define(TARGET_COM_ID, 1849);
+	define(TOYSRUS, 850);
 	
 	if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 		
 		unset($errors);
-	    csv_file_to_mysql_table('upload/orders.csv', 'bulk_import');
+	    $file_contents = file_get_contents('upload/orders.csv');
+        $file_contents = str_replace('\\', '~' ,$file_contents);
+        file_put_contents('upload/orders.csv', $file_contents);
+        
+	    csv_file_to_mysql_table('upload/orders.csv', 'bulk_po_import');
+	    
+	    $customer = $_POST["CUSTOMER"];
+	    if($customer == "BBB") {
+		    $customer_id = BBB_ID;
+	    } elseif($customer == "TARGET") {
+		    $customer_id = TARGET_ID;
+		} elseif($customer == "TARGET_COM") {
+		    $customer_id = TARGET_COM_ID;
+		} elseif($customer == "TOYSRUS") {
+		    $customer_id = TOYSRUS;
+	    } else {
+		    echo 'Customer Not Found';
+		    exit;
+	    }
 	    $db = Mage::getSingleton('core/resource')->getConnection('core_read');
-		$orders = $db->query('SELECT `PO Number`, `Ship-To Location`, `Delivery Date Requested` from bulk_import group by `Ship-To Location`');
-		//$pos = $db->fetchAssoc('SELECT po_number from sales_flat_order_payment where po_number is not null');
-		//unset($pos['po_number']);
-		//$poFilter = array_keys($pos);
+		$orders = $db->query('SELECT `PO Number`, `Ship To Code`, `Ship To Address 1`, `Ship Not Before Date` from bulk_po_import group by `PO Number`');
+		$pos = $db->fetchAssoc('SELECT po_number, customer_id from sales_flat_order_payment LEFT JOIN sales_flat_order ON sales_flat_order_payment.parent_id = sales_flat_order.entity_id where po_number is not NULL AND customer_id = ' . $customer_id);	
+		unset($pos['po_number']);
+		$poFilter = array_keys($pos);
+		//print_r($poFilter);
 
 	    foreach($orders as $order) {
-	    	//$errors .= createOrder($order['PO Number'], $order['Ship-To Address 1']);
-	    	//if(in_array($order['PO Number'], $poFilter)) {
-		    	//$errors .= 'PO ' . $order['PO Number'] . ' has already been used before - Order not created.<br>';
-	    	//} else {
-		    	//if(strtotime($order['Delivery Date Requested']) < strtotime('+1 Day')){
-					$errors .= createOrder($order['PO Number'], $order['Ship-To Location']);
-				//} else {
-					//$errors .= 'Ship date is too far in advance for PO ' . $order['PO Number'] . ' - Order not created.<br>';
-				//}
-	    	//}
+	    	$storeId = trim($order['Ship To Code']);
+	    	
+	    	if(in_array($order['PO Number'], $poFilter)) {
+		    	$errors .= 'PO ' . $order['PO Number'] . ' has already been used before - Order not created.<br>';
+	    	} else {
+		    	if(strtotime($order['Delivery Date Requested']) > strtotime('+1 Day')){
+					$errors .= 'Ship date is future for PO ' . $order['PO Number'] . ' - Order Still Created And Place ON HOLD.<br>';
+					$hold = true;
+				} 
+					$errors .= createOrder($order['PO Number'], $customer_id, $storeId, $hold);
+					//echo $order['PO Number'] . ' - ' . $storeId . '<br>';
+	    	}
 		}
 
 		echo $errors;
@@ -45,115 +70,182 @@ if(isset($_FILES['uploadedfile']['name'])) {
 	}
 }
 
-function createOrder($poNumber,$storeId) {
+function createOrder($poNumber, $customer_id, $storeId, $hold = false) {
 
 	$quote = Mage::getModel('sales/quote')->setStoreId(2);
-	
-	if ('do customer orders') {
-		// for customer orders:
-		$customer = Mage::getModel('customer/customer')->setWebsiteId(2)->setStoreId(2)->loadByEmail('supportbbb@bloomingbath.com');
-		$quote->assignCustomer($customer);
-	} else {
-		// for guesr orders only:
-		$quote->setCustomerEmail('supportbbb@bloomingbath.com');
-	}
-	foreach ($customer->getAddresses() as $address) {
-		if(substr($address->company, strpos($address->company, "#")+1, 4) == $storeId) {
-			$addressData = array(
-				'firstname' => $address->firstname,
-				'lastname' => $address->lastname,
-				'street' => $address->street,
-				'city' => $address->city,
-				'postcode' => $address->postcode,
-				'telephone' => $address->telephone,
-				'country_id' => $address->country_id,
-				'region_id' => $address->region_id,
-				'company' => $address->company
-			);
-		}
-	}
-	if(isset($addressData)) {
-		
-		$db1 = Mage::getSingleton('core/resource')->getConnection('core_read');
-		$items = $db1->query("SELECT `Buyer Item Nbr`, `Quantity` from bulk_import where `Ship-To Location` = '" . $storeId . "'");
-		
-		$date = time();
-		$dotw = $dotw = date('w', $date);
-		$end = ($dotw == 5 /* Friday */) ? $date : strtotime('next Friday', $date);
-		$weekStart = $end - (7 * 24*60*60);
-		$weekStart = date('Y-m-d', $weekStart);
-		
-		/*
-$orders = Mage::getModel('sales/order')->getCollection()
-		    	->addAttributeToFilter('created_at', array('from'  => $weekStart))
-				->addAttributeToFilter('customer_id', array('eq'  => 1115));
-				
-		foreach($orders as $order) {
-			if($order->getShippingAddress()->getCompany() == $addressData['company']) {
-				$order_error = 'WARNING - ' . $order->getShippingAddress()->getCompany() . ' already ordered this week.  Order was still created.<br>';
-			}
-	        $order_data[$i] = array(
-	            $order->getCreatedAt(),
-	            $order->getIncrementId(),
-	            $order->getShippingAddress()->getCompany()
-	        );
-	        $i++;
-	        //print_r($order_data);
-		}
-*/
 
-		
-		foreach($items as $item) {
-	    	$orderItem = Mage::getModel('catalog/product')->loadByAttribute('upc', $item['Buyer Item Nbr']);	
-			// add product(s)
-			$product = Mage::getModel('catalog/product')->load($orderItem->getId());
-			$buyInfo = array(
-				'qty' => $item['Quantity'],
-				// custom option id => value id
-				// or
-				// configurable attribute id => value id
-			);
-			$quote->addProduct($product, new Varien_Object($buyInfo));
+	$customer = Mage::getModel('customer/customer')->setWebsiteId(2)->setStoreId(2)->load($customer_id);
+	$quote->assignCustomer($customer);
+
+	$date = time();
+	$dotw = $dotw = date('w', $date);
+	$end = ($dotw == 5 /* Friday */) ? $date : strtotime('next Friday', $date);
+	$weekStart = $end - (7 * 24*60*60);
+	$weekStart = date('Y-m-d', $weekStart);
+	
+	$orders = Mage::getModel('sales/order')->getCollection()
+	    	->addAttributeToFilter('created_at', array('from'  => $weekStart))
+			->addAttributeToFilter('customer_id', array('eq'  => $customer_id));
+			
+	foreach($orders as $order) {
+		$orderStoreId = preg_replace("/[^0-9]/","", $order->getShippingAddress()->getCompany());
+		if($storeId == $orderStoreId) {
+			$order_error = 'WARNING - ' . $order->getShippingAddress()->getCompany() . ' already ordered this week.  Order was still created so put ON HOLD.<br>';
+			$hold = true;
 		}
-		
-		$billingAddress = $quote->getBillingAddress()->addData($addressData);
-		$shippingAddress = $quote->getShippingAddress()->addData($addressData);
-		
-		$shippingAddress->setFreeShipping(true)
-		        ->setCollectShippingRates(true)->collectShippingRates()
-		        ->setShippingMethod('freeshipping_freeshipping')
-		        ->setPaymentMethod('purchaseorder');
-		
-		$quote->getPayment()->importData(array('method' => 'purchaseorder', 'po_number' => $poNumber));
-		
-		$quote->collectTotals()->save();
-		
-		$service = Mage::getModel('sales/service_quote', $quote);
-		$service->submitAll();
-		$order = $service->getOrder();
-		$order_id = $order->getIncrementId();
-		
-		$orderInvoice = Mage::getModel('sales/order')->loadByIncrementId($order_id);
-		
-		if(!$orderInvoice->canInvoice()) {
-			Mage::throwException(Mage::helper('core')->__('Cannot create an invoice.'));
-		}
-		$invoice = Mage::getModel('sales/service_order', $orderInvoice)->prepareInvoice();
-		if (!$invoice->getTotalQty()) {
-			Mage::throwException(Mage::helper('core')->__('Cannot create an invoice without products.'));
-		}
-		$invoice->setRequestedCaptureCase(Mage_Sales_Model_Order_Invoice::CAPTURE_ONLINE);
-		$invoice->register();
-		$transactionSave = Mage::getModel('core/resource_transaction')->addObject($invoice)->addObject($invoice->getOrder());
-		$transactionSave->save();
-		
-		$orderInvoice->setState(Mage_Sales_Model_Order::STATE_PROCESSING, true)->save();
-		
-		echo 'Created order ' . $order_id .  ' for PO ' . $poNumber . '.<br>';
-		unset($addressData);
-	} else {
-		$order_error = 'Store address not found for PO ' . $poNumber . '  - Order not created.<br>';
+/*
+        $order_data[$i] = array(
+            $order->getCreatedAt(),
+            $order->getIncrementId(),
+            $order->getShippingAddress()->getCompany()
+        );
+        $i++;
+*/
+        //print_r($order_data);
 	}
+	
+	$db1 = Mage::getSingleton('core/resource')->getConnection('core_read');
+	
+	$addresses = $db1->fetchAll("SELECT * from bulk_po_import where `PO Number` = '" . $poNumber . "' LIMIT 1");
+	
+	if($customer_id == BBB_ID) {
+		foreach ($addresses as $address) {
+			$regionModel = Mage::getModel('directory/region')->loadByCode($address['Ship To State'], 'US');
+			$regionId = $regionModel->getId();
+			$addressData = array(
+				'firstname' => 'Receiving',
+				'lastname' => 'Department #' . $storeId,
+				'street' => $address['Ship To Address 1'],
+				'city' => $address['Ship To City'],
+				'postcode' => $address['Ship To ZipCode'],
+				'telephone' => '(000) 000-0000',
+				'country_id' => 'US',
+				'region_id' => $regionId,
+				'company' => 'buybuyBaby #' . $storeId
+			);
+			//$shipMethod = $address['SCAC Code'];
+		}
+	} elseif($customer_id == TARGET_ID || $customer_id == TARGET_COM_ID || $customer_id == TOYSRUS) {
+		foreach ($addresses as $address) {
+			$regionModel = Mage::getModel('directory/region')->loadByCode($address['Ship To State'], 'US');
+			$regionId = $regionModel->getId();
+			$addressData = array(
+				'firstname' => 'Receiving',
+				'lastname' => 'Department #' . $storeId,
+				'street' => $address['Ship To Address 1'],
+				'city' => $address['Ship To City'],
+				'postcode' => $address['Ship To ZipCode'],
+				'telephone' => '(000) 000-0000',
+				'country_id' => 'US',
+				'region_id' => $regionId,
+				'company' => $address['Ship To Name']
+			);
+			//$shipMethod = $address['SCAC Code'];
+			//$covalent_path = $address['Covalent Path File Reference'];
+		}
+	}
+
+	$items = $db1->query("SELECT `UPC/EAN Code`, `Ordered Quantity`, `Covalent Path File Reference` from bulk_po_import where `PO Number` = '" . $poNumber . "'");
+	
+	foreach($items as $item) {
+
+		// add product(s)
+		$covalent_path = $item['Covalent Path File Reference'];
+		$orderItem = Mage::getModel('catalog/product')->loadByAttribute('upc', $item['UPC/EAN Code']);
+		$product = Mage::getModel('catalog/product')->load($orderItem->getId());
+		$buyInfo = array(
+			'qty' => $item['Ordered Quantity'],
+			'file' => $item['Covalent Path File Reference'],
+		);
+		$quote->addProduct($product, new Varien_Object($buyInfo));
+		$total_qty = $total_qty + $item['Ordered Quantity'];
+	}
+	
+	$billingAddress = $quote->getBillingAddress()->addData($addressData);
+	$shippingAddress = $quote->getShippingAddress()->addData($addressData);
+	
+	if($customer_id == TARGET_ID || $customer_id == TARGET_COM_ID) {
+		if($total_qty > 85) {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'NLRT',
+		)));
+		} else {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'FDEG',
+		)));
+		}
+		
+	} elseif($customer_id == BBB_ID) {
+		if($total_qty > 120) {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'UPGF',
+		)));
+		} else {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'FDEG',
+		)));
+		}
+	} elseif($customer_id == TOYSRUS) {
+		if($total_qty > 80) {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'UPGF',
+		)));
+		} else {
+			Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'UPSN',
+		)));
+		}
+	} else {
+		Mage::register('adminship_data', new Varien_Object(array(
+	        'shipping_amount'  => '0',
+	        'shipping_description' => 'CHECK',
+		)));
+	}
+	
+	$shippingAddress->setCollectShippingRates(true)->collectShippingRates()
+	        ->setShippingMethod('adminshipping_adminshipping')
+	        ->setPaymentMethod('purchaseorder');
+	
+	$quote->getPayment()->importData(array('method' => 'purchaseorder', 'po_number' => $poNumber));
+	
+	$quote->collectTotals()->save();
+	
+	$service = Mage::getModel('sales/service_quote', $quote);
+	$service->submitAll();
+	$order = $service->getOrder();
+	$order_id = $order->getIncrementId();
+	//$order->setOnestepcheckoutCustomercomment($covalent_path)->save();
+	
+	$orderInvoice = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+	
+	if(!$orderInvoice->canInvoice()) {
+		Mage::throwException(Mage::helper('core')->__('Cannot create an invoice.'));
+	}
+	$invoice = Mage::getModel('sales/service_order', $orderInvoice)->prepareInvoice();
+	if (!$invoice->getTotalQty()) {
+		Mage::throwException(Mage::helper('core')->__('Cannot create an invoice without products.'));
+	}
+	$invoice->setRequestedCaptureCase(Mage_Sales_Model_Order_Invoice::CAPTURE_ONLINE);
+	$invoice->register();
+	$transactionSave = Mage::getModel('core/resource_transaction')->addObject($invoice)->addObject($invoice->getOrder());
+	$transactionSave->save();
+	
+	$orderInvoice->setState(Mage_Sales_Model_Order::STATE_PROCESSING, true)->save();
+	if($hold == true) {
+		$orderInvoice->hold()->save();
+	}
+	
+	echo 'Created order ' . $order_id .  ' for PO ' . $poNumber . '.<br>';
+	unset($addressData);
+	unset($hold);
+	Mage::unregister('adminship_data');
+
 	return $order_error;
 
 }
@@ -161,10 +253,11 @@ $orders = Mage::getModel('sales/order')->getCollection()
 function csv_file_to_mysql_table($source_file, $target_table, $max_line_length=10000) {
   $db = Mage::getSingleton('core/resource')->getConnection('core_read');
   $db->query("TRUNCATE TABLE $target_table");
+  $replace_chars = array(".","(",")");
   if (($handle = fopen("$source_file", "r")) !== FALSE) {
       $columns = fgetcsv($handle, $max_line_length, ",");
       foreach ($columns as &$column) {
-          $column = "`" . str_replace(".","",$column) . "`";
+          $column = "`" . trim(str_replace($replace_chars,"",$column)) . "`";
       }
       $insert_query_prefix = "INSERT INTO $target_table (".join(",",$columns).")\nVALUES";
       while (($data = fgetcsv($handle, $max_line_length, ",")) !== FALSE) {
@@ -223,6 +316,19 @@ function quote_all($value) {
     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     z-index: 100;
   }
+  select {
+	  -webkit-appearance: none;
+	  font-size: 20px;
+	  padding: 10px;
+  }
+  input[type="submit"] {
+	  -webkit-appearance: none;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: rgb(50, 205, 235);
+	border: 1px solid #ccc;
+	padding: 10px;
+  }
   </style>
 </head>
 <body>
@@ -230,8 +336,22 @@ function quote_all($value) {
   <img style="clear:both" src="logo.png" alt="Egghead Ventures" />
   <form enctype="multipart/form-data" action="bulk-import.php" method="POST" style="width: 600px;float: left;text-align: left;">
     <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
-    Choose the BuyBuyBaby file you downloaded from Covalentworks: <input name="uploadedfile" type="file" /><br />
-    <input type="submit" value="Upload File" />
+    <p>Choose the file you downloaded from Covalentworks:</p>
+    <p>
+    <select name="CUSTOMER">
+    	<option value="">--Select Customer--</option>
+    	<option value="BBB">buybuyBaby</option>
+    	<option value="TARGET">Target Stores</option>
+    	<option value="TARGET_COM">Target.com</option>
+    	<option value="TOYSRUS">Babies R Us</option>
+    </select>
+    </p>
+    <p>
+    	<input name="uploadedfile" type="file" />
+    </p>
+    <p>
+    	<input type="submit" value="Upload File" />
+    </p>
   </form>
   </div>
 </body>

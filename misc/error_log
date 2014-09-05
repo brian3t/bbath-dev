@@ -601,3 +601,323 @@ Stack trace:
 #2 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(166): Mage_Core_Model_Session_Abstract_Varien->start(NULL)
 #3 /home/dev/public_html/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('customer_base', NULL)
 #4 /home/dev/public_html/app/code/core/Mage/Customer/Model/Session.php(74): Mage_Core_Mod in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[29-May-2014 21:11:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Sub-Line Item' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(176): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc/bulk-import.php( in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[03-Jun-2014 00:03:26 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Recoverable Error: Argument 1 passed to Varien_Object::addData() must be an array, null given, called in /home/dev/public_html/misc/bulk-import.php on line 118 and defined  in /home/dev/public_html/lib/Varien/Object.php on line 243' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/dev/public_html/lib/Varien/Object.php(243): mageCoreErrorHandler(4096, 'Argument 1 pass...', '/home/dev/publi...', 243, Array)
+#1 /home/dev/public_html/misc/bulk-import.php(118): Varien_Object->addData(NULL)
+#2 /home/dev/public_html/misc/bulk-import.php(38): createOrder('BZ77426', '3053')
+#3 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[03-Jun-2014 00:09:27 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the state/province.' in /home/dev/public_html/app/Mage.php:594
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(129): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(38): createOrder('BZ77426', '3053')
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 594
+[06-Jun-2014 23:39:05 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 151
+[06-Jun-2014 23:39:05 UTC] PHP Stack trace:
+[06-Jun-2014 23:39:05 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[06-Jun-2014 23:39:05 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:59
+[06-Jun-2014 23:39:53 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 154
+[06-Jun-2014 23:39:53 UTC] PHP Stack trace:
+[06-Jun-2014 23:39:53 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[06-Jun-2014 23:39:53 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:59
+[06-Jun-2014 23:44:40 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 151
+[06-Jun-2014 23:44:40 UTC] PHP Stack trace:
+[06-Jun-2014 23:44:40 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[06-Jun-2014 23:44:40 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:59
+[09-Jun-2014 15:12:46 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the street.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(171): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 1115, '', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 20:31:04 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(173): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 20:33:16 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(174): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 20:34:18 UTC] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/dev/public_html/misc/bulk-import.php on line 168
+[09-Jun-2014 20:34:36 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(176): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 20:40:59 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(173): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 20:43:58 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(174): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 22:56:17 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(179): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 22:58:13 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(180): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 23:36:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/dev/public_html/misc/bulk-import.php on line 172
+[09-Jun-2014 23:37:06 UTC] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/dev/public_html/misc/bulk-import.php on line 173
+[09-Jun-2014 23:37:23 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(180): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jun-2014 23:58:44 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(181): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jun-2014 00:03:08 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(182): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jun-2014 00:04:49 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(182): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jun-2014 00:05:35 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(175): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jun-2014 00:10:10 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please specify a shipping method.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(303): Mage::throwException('Please specify ...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(182): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE81739', 845, '3036', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jun-2014 00:11:36 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Mage registry key "adminship_data" already exists' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/Mage.php(223): Mage::throwException('Mage registry k...')
+#1 /home/dev/public_html/misc/bulk-import.php(164): Mage::register('adminship_data', Object(Varien_Object))
+#2 /home/dev/public_html/misc/bulk-import.php(59): createOrder('DE99421', 845, '3058', NULL)
+#3 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[12-Jun-2014 15:29:43 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 153
+[12-Jun-2014 15:29:43 UTC] PHP Stack trace:
+[12-Jun-2014 15:29:43 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[12-Jun-2014 15:29:43 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:59
+[09-Jul-2014 21:55:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Sender ID' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(231): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc/bulk-impor in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:00:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Volume per pack CF ' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(231): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc/ in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:01:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'Retail Price' specified twice' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(231): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:23:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(231): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc/bulk-import.php(24) in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:24:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Ship-To Location' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `PO Numb...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `PO Numb...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(36): Varien_Db_Adapter_Pdo_Mysql->query('SELECT `PO Numb...')
+#7 {main}
+
+Next exception 'Zend_Db in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:25:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Ship-To Location' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `PO Numb...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `PO Numb...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(36): Varien_Db_Adapter_Pdo_Mysql->query('SELECT `PO Numb...')
+#7 {main}
+
+Next exception 'Zend_Db in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:32:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Ship-To Address 1' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `PO Numb...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `PO Numb...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(36): Varien_Db_Adapter_Pdo_Mysql->query('SELECT `PO Numb...')
+#7 {main}
+
+Next exception 'Zend_D in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[09-Jul-2014 22:38:42 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dev/public_html/misc/bulk-import.php on line 138
+[09-Jul-2014 22:39:05 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the state/province.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(184): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('0030-3398429-05...', 1849, '0555', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[09-Jul-2014 22:40:36 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the state/province.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(184): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(59): createOrder('0030-3398429-05...', 1849, '0555', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[10-Jul-2014 17:45:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Subline Retail Price' in 'field list'' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO bul...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO bul...', Array)
+#6 /home/dev/public_html/misc/bulk-import.php(231): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO bul...')
+#7 /home/dev/public_html/misc in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[28-Jul-2014 17:07:20 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 161
+[28-Jul-2014 17:07:20 UTC] PHP Stack trace:
+[28-Jul-2014 17:07:20 UTC] PHP   1. {main}() /home/dev/public_html/misc/bulk-import.php:0
+[28-Jul-2014 17:07:20 UTC] PHP   2. createOrder() /home/dev/public_html/misc/bulk-import.php:66
+[28-Jul-2014 17:28:52 UTC] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/dev/public_html/misc/bulk-import.php on line 164
+[28-Jul-2014 19:39:14 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the street.' in /home/dev/public_html/app/Mage.php:595
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/dev/public_html/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/dev/public_html/misc/bulk-import.php(209): Mage_Sales_Model_Service_Quote->submitAll()
+#4 /home/dev/public_html/misc/bulk-import.php(66): createOrder('EJ55170', 1115, '', NULL)
+#5 {main}
+  thrown in /home/dev/public_html/app/Mage.php on line 595
+[06-Aug-2014 20:22:12 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Recoverable Error: Argument 1 passed to Varien_Object::addData() must be an array, null given, called in /home/dev/public_html/misc/bulk-import.php on line 163 and defined  in /home/dev/public_html/lib/Varien/Object.php on line 243' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/dev/public_html/lib/Varien/Object.php(243): mageCoreErrorHandler(4096, 'Argument 1 pass...', '/home/dev/publi...', 243, Array)
+#1 /home/dev/public_html/misc/bulk-import.php(163): Varien_Object->addData(NULL)
+#2 /home/dev/public_html/misc/bulk-import.php(62): createOrder('5601121490', 851, '0643364725601', NULL)
+#3 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[06-Aug-2014 20:29:26 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Recoverable Error: Argument 1 passed to Varien_Object::addData() must be an array, null given, called in /home/dev/public_html/misc/bulk-import.php on line 163 and defined  in /home/dev/public_html/lib/Varien/Object.php on line 243' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/dev/public_html/lib/Varien/Object.php(243): mageCoreErrorHandler(4096, 'Argument 1 pass...', '/home/dev/publi...', 243, Array)
+#1 /home/dev/public_html/misc/bulk-import.php(163): Varien_Object->addData(NULL)
+#2 /home/dev/public_html/misc/bulk-import.php(62): createOrder('5601121490', 850, '0643364725601', NULL)
+#3 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[06-Aug-2014 20:29:55 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Recoverable Error: Argument 1 passed to Varien_Object::addData() must be an array, null given, called in /home/dev/public_html/misc/bulk-import.php on line 163 and defined  in /home/dev/public_html/lib/Varien/Object.php on line 243' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 /home/dev/public_html/lib/Varien/Object.php(243): mageCoreErrorHandler(4096, 'Argument 1 pass...', '/home/dev/publi...', 243, Array)
+#1 /home/dev/public_html/misc/bulk-import.php(163): Varien_Object->addData(NULL)
+#2 /home/dev/public_html/misc/bulk-import.php(62): createOrder('5601121490', 850, '0643364725601', NULL)
+#3 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[06-Aug-2014 21:16:36 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/dev/public_html/misc/bulk-import.php on line 195
+[27-Aug-2014 22:18:28 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 155

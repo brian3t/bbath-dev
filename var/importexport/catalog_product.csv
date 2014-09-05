@@ -1,94 +1,45 @@
-email,_website,_store,confirmation,created_at,created_in,disable_auto_group_change,dob,firstname,gender,group_id,lastname,middlename,password_hash,prefix,rp_token,rp_token_created_at,store_id,suffix,taxvat,website_id,password,_address_city,_address_company,_address_country_id,_address_fax,_address_firstname,_address_lastname,_address_middlename,_address_postcode,_address_prefix,_address_region,_address_street,_address_suffix,_address_telephone,_address_vat_id,_address_default_billing_,_address_default_shipping_
-supportbbb@bloomingbath.com,wholesale,wholesale,,8/9/2012 23:18:12,Admin,0,,Accounts,,2,Payable,,,,,,2,,TBD,2,,Garden City,Buy Buy Baby,US,,Corporate,Headquarters,,11530,,New Jersey,895 East Gate Boulevard,,516-507-3400,,1,1
-,,,,,,,,,,,,,,,,,,,,,,Rockville,buybuyBaby #3001,US,881-3645,Receiving,Department #3001,,20852-1619,,Maryland,1683 Rockville Pike,,(301) 984-1122,,,
-,,,,,,,,,,,,,,,,,,,,,,Scarsdale,buybuyBaby #3002,US,725-9093,Receiving,Department #3002,,10583,,New York,1019 Central Park Ave,,(914) 725-9220,,,
-,,,,,,,,,,,,,,,,,,,,,,Paramus,buybuyBaby #3003,US,599-6516,Receiving,Department #3003,,07652-2925,,New Jersey,240 Route 17 North,,(201) 599-1900,,,
-,,,,,,,,,,,,,,,,,,,,,,Huntington Station,buybuyBaby #3004,US,425-0646,Receiving,Department #3004,,11746-8704,,New York,350 Route 110,,(631) 425-0404,,,
-,,,,,,,,,,,,,,,,,,,,,,Garden City,buybuyBaby #3005,US,507-3406,Receiving,Department #3005,,11530-2104,,New York,895 East Gate Blvd,,(516) 507-3400,,,
-,,,,,,,,,,,,,,,,,,,,,,Totowa,buybuyBaby #3006,US,826-1002,Receiving,Department #3006,,07512-1735,,New Jersey,545 Route 46 West,,(973) 826-1010,,,
-,,,,,,,,,,,,,,,,,,,,,,Secaucus,buybuyBaby #3007,US,344-1568,Receiving,Department #3007,,7094,,New Jersey,3 Enterprise Ave N Suite 3,,(917) 344-1555,,,
-,,,,,,,,,,,,,,,,,,,,,,Springfield,buybuyBaby #3008,US,923-9760,Receiving,Department #3008,,22150-3431,,Virginia,6398 Springfield Plaza,,(703) 923-9797,,,
-,,,,,,,,,,,,,,,,,,,,,,Downers Grove,buybuyBaby #3009,US,705-0837,Receiving,Department #3009,,60515-1003,,Illinois,1556 Butterfield Road,,(630) 705-0823,,,
-,,,,,,,,,,,,,,,,,,,,,,Cherry Hill,buybuyBaby #3010,US,354-5163,Receiving,Department #3010,,8034,,New Jersey,1590 Kings Highway North,,(856) 354-5162,,,
-,,,,,,,,,,,,,,,,,,,,,,Utica,buybuyBaby #3011,US,726-5831,Receiving,Department #3011,,48315-5884,,Michigan,"13361 Hall Road, Suite 102",,(586) 726-5464,,,
-,,,,,,,,,,,,,,,,,,,,,,Canton,buybuyBaby #3012,US,844-1262,Receiving,Department #3012,,48187-3381,,Michigan,42595 Ford Road,,(734) 844-1108,,,
-,,,,,,,,,,,,,,,,,,,,,,Columbus,buybuyBaby #3013,US,475-7098,Receiving,Department #3013,,43219-6023,,Ohio,3749 Easton Market,,(614) 475-7085,,,
-,,,,,,,,,,,,,,,,,,,,,,Rochester,buybuyBaby #3014,US,427-2902,Receiving,Department #3014,,14623-3254,,New York,"790 Jefferson Rd., Suite 300",,(585) 427-2896,,,
-,,,,,,,,,,,,,,,,,,,,,,Coral Springs,buybuyBaby #3015,US,575-7451,Receiving,Department #3015,,33071-6132,,Florida,2035 N. University Drive,,(954) 575-7449,,,
-,,,,,,,,,,,,,,,,,,,,,,Greenwood,buybuyBaby #3016,US,885-0116,Receiving,Department #3016,,46142-4501,,Indiana,"1230 N. US 31, Suite A",,(317) 885-0043,,,
-,,,,,,,,,,,,,,,,,,,,,,Schaumburg,buybuyBaby #3017,US,884-2037,Receiving,Department #3017,,60173-4442,,Illinois,580 E. Golf Road,,(847) 884-2023,,,
-,,,,,,,,,,,,,,,,,,,,,,Austin,buybuyBaby #3018,US,899-9347,Receiving,Department #3018,,78745-2526,,Texas,"5400 Brodie Lane, Suite 400",,(512) 892-3852,,,
-,,,,,,,,,,,,,,,,,,,,,,Augusta,buybuyBaby #3019,US,738-8517,Receiving,Department #3019,,30909,,Georgia,242  Robert C. Daniels Jr. Parkway,,(706) 738-6483,,,
-,,,,,,,,,,,,,,,,,,,,,,Batavia,buybuyBaby #3020,US,406-4476,Receiving,Department #3020,,60510,,Illinois,301 North Randall Road,,(630) 406-1959,,,
-,,,,,,,,,,,,,,,,,,,,,,Plano,buybuyBaby #3021,US,422-1546,Receiving,Department #3021,,75074,,Texas,2712 N. Central Expressway,,(972) 422-1542,,,
-,,,,,,,,,,,,,,,,,,,,,,Chandler,buybuyBaby #3022,US,786-0175,Receiving,Department #3022,,85224,,Arizona,2640 W. Chandler Blvd.,,(480) 899-9954,,,
-,,,,,,,,,,,,,,,,,,,,,,Scottsdale,buybuyBaby #3023,US,661-2145,Receiving,Department #3023,,85258,,Arizona,10080 N. 90th Street,,(480) 661-2123,,,
-,,,,,,,,,,,,,,,,,,,,,,Charlotte,buybuyBaby #3024,US,553-7815,Receiving,Department #3024,,28273-6901,,North Carolina,9555 South Blvd,,(704) 554-6997,,,
-,,,,,,,,,,,,,,,,,,,,,,Miami,buybuyBaby #3025,US,266-5319,Receiving,Department #3025,,33144,,Florida,"8241 West Flagler Street, Suite 100",,(305) 266-5324,,,
-,,,,,,,,,,,,,,,,,,,,,,Whitehall,buybuyBaby #3026,US,264-2827,Receiving,Department #3026,,18052,,Pennsylvania,1915 Whitehall Mall,,(610) 266-5875,,,
-,,,,,,,,,,,,,,,,,,,,,,Dallas,buybuyBaby #3027,US,661-8386,Receiving,Department #3027,,75240-4323,,Texas,13900 Dallas Parkway,,(972) 386-9902,,,
-,,,,,,,,,,,,,,,,,,,,,,Nashua,buybuyBaby #3028,US,888-4722,Receiving,Department #3028,,03060-6600,,New Hampshire,213 Daniel Webster Highway,,(603) 888-4761,,,
-,,,,,,,,,,,,,,,,,,,,,,Brandon,buybuyBaby #3029,US,661-7194,Receiving,Department #3029,,33511-2904,,Florida,11345 Causeway Blvd,,(813) 661-7169,,,
-,,,,,,,,,,,,,,,,,,,,,,Durham,buybuyBaby #3030,US,489-4215,Receiving,Department #3030,,27707,,North Carolina,5430 New Hope Commons Drive,,(919) 489-4095,,,
-,,,,,,,,,,,,,,,,,,,,,,Hoover,buybuyBaby #3031,US,403-3282,Receiving,Department #3031,,35244-5019,,Alabama,4351 Creekside Ave.,,(205) 988-3027,,,
-,,,,,,,,,,,,,,,,,,,,,,Greenville,buybuyBaby #3032,US,286-0694,Receiving,Department #3032,,29607-4162,,South Carolina,1125 Woodruff Road Suite 600,,(864) 213-9426,,,
-,,,,,,,,,,,,,,,,,,,,,,Alpharetta,buybuyBaby #3033,US,475-9936,Receiving,Department #3033,,30022-8255,,Georgia,7121 North Point Parkway,,(770) 475-0633,,,
-,,,,,,,,,,,,,,,,,,,,,,San Jose,buybuyBaby #3034,US,267-2918,Receiving,Department #3034,,95118-3637,,California,5353 Almaden Expressway Suite A 100,,(408) 267-4205,,,
-,,,,,,,,,,,,,,,,,,,,,,Columbia,buybuyBaby #3035,US,407-2896,Receiving,Department #3035,,29212-2232,,South Carolina,238 Harbison Boulevard,,(803) 732-3984,,,
-,,,,,,,,,,,,,,,,,,,,,,Colonie,buybuyBaby #3036,US,438-1320,Receiving,Department #3036,,12205-5118,,New York,1440 Central Avenue,,(518) 489-0930,,,
-,,,,,,,,,,,,,,,,,,,,,,Bridgewater,buybuyBaby #3037,US,725-1739,Receiving,Department #3037,,08807-2401,,New Jersey,711 Route 28,,(908) 725-1501,,,
-,,,,,,,,,,,,,,,,,,,,,,Brookfield,buybuyBaby #3038,US,797-0379,Receiving,Department #3038,,53005,,Wisconsin,665 Main Street,,(262) 797-0116,,,
-,,,,,,,,,,,,,,,,,,,,,,Frisco,buybuyBaby #3039,US,705-8415,Receiving,Department #3039,,75034-9055,,Texas,2930 Preston Rd Suite 600,,(214) 705-1156,,,
-,,,,,,,,,,,,,,,,,,,,,,Crystal Lake,buybuyBaby #3040,US,459-4947,Receiving,Department #3040,,60014-8016,,Illinois,5540 Northwest Hwy,,(815) 459-4861,,,
-,,,,,,,,,,,,,,,,,,,,,,Orland Park,buybuyBaby #3041,US,403-2581,Receiving,Department #3041,,60462,,Illinois,290 Orland Park Place,,(708) 403-2575,,,
-,,,,,,,,,,,,,,,,,,,,,,Lexington,buybuyBaby #3042,US,264-9866,Receiving,Department #3042,,40509-2434,,Kentucky,2321 Sir Barton Way Suite 110,,(859) 263-9889,,,
-,,,,,,,,,,,,,,,,,,,,,,Temecula,buybuyBaby #3043,US,296-3495,Receiving,Department #3043,,92591,,California,40438 Winchester Road,,(951) 296-0052,,,
-,,,,,,,,,,,,,,,,,,,,,,Mason,buybuyBaby #3044,US,336-0323,Receiving,Department #3044,,45040-2509,,Ohio,5255 Deerfield Blvd.,,(513) 336-0104,,,
-,,,,,,,,,,,,,,,,,,,,,,Santa Clarita,buybuyBaby #3045,US,259-2972,Receiving,Department #3045,,91355,,California,24267 Magic Mountain Parkway,,(661) 259-0962,,,
-,,,,,,,,,,,,,,,,,,,,,,Newark,buybuyBaby #3046,US,738-5970,Receiving,Department #3046,,19702-1534,,Delaware,501 West Main St.,,(302) 894-9212,,,
-,,,,,,,,,,,,,,,,,,,,,,Kentwood,buybuyBaby #3047,US,957-2613,Receiving,Department #3047,,49512-1904,,Michigan,4100 28th Street SE,,(616) 957-2580,,,
-,,,,,,,,,,,,,,,,,,,,,,Fresno,buybuyBaby #3048,US,447-9182,Receiving,Department #3048,,93720-4301,,California,7458 N Blackstone Ave,,(559) 447-1594,,,
-,,,,,,,,,,,,,,,,,,,,,,Pembroke Pines,buybuyBaby #3049,US,450-4923,Receiving,Department #3049,,33026-4102,,Florida,11350-11360 Pines Blvd,,(954) 450-6257,,,
-,,,,,,,,,,,,,,,,,,,,,,Morrisville,buybuyBaby #3050,US,467-4520,Receiving,Department #3050,,27560,,North Carolina,3121 Market Center Drive,,(919) 467-5149,,,
-,,,,,,,,,,,,,,,,,,,,,,Indianapolis,buybuyBaby #3051,US,845-0546,Receiving,Department #3051,,46250,,Indiana,4030 East 82nd Street,,(317)-845-0509,,,
-,,,,,,,,,,,,,,,,,,,,,,Hurst,buybuyBaby #3052,US,595-7349,Receiving,Department #3052,,76053-4628,,Texas,1451 West Pipeline Road,,(817) 595-7361,,,
-,,,,,,,,,,,,,,,,,,,,,,Tulsa,buybuyBaby #3053,US,254-0109,Receiving,Department #3053,,74133-3210,,Oklahoma,10017 East 71st Street,,(918)-249-0307,,,
-,,,,,,,,,,,,,,,,,,,,,,Fort Worth,buybuyBaby #3054,US,377-0690,Receiving,Department #3054,,76109,,Texas,4648 SW Loop 820,,(817) 731-0355,,,
-,,,,,,,,,,,,,,,,,,,,,,Pleasant Hill,buybuyBaby #3055,US,472-0161,Receiving,Department #3055,,94523-7309,,California,3250 Buskirk Ave Suite 300A,,(925)-9382055,,,
-,,,,,,,,,,,,,,,,,,,,,,Overland Park,buybuyBaby #3057,US,663-0190,Receiving,Department #3057,,66213-1121,,Kansas,12055 Metcalf Avenue,,(913) 661-2675,,,
-,,,,,,,,,,,,,,,,,,,,,,Elk Grove,buybuyBaby #3058,US,691-0853,Receiving,Department #3058,,95758-5061,,California,7621 Laguna Blvd,,(916) 684-6647,,,
-,,,,,,,,,,,,,,,,,,,,,,Port Chester,buybuyBaby #3059,US,937-3249,Receiving,Department #3059,,10573-4738,,New York,441 Boston Post Road,,(914) 937-3473,,,
-,,,,,,,,,,,,,,,,,,,,,,Braintree,buybuyBaby #3060,US,848-0589,Receiving,Department #3060,,02184-1747,,Massachusetts,160 Granite St.,,(781) 848-1843,,,
-,,,,,,,,,,,,,,,,,,,,,,Farmington Hills,buybuyBaby #3061,US,737-3351,Receiving,Department #3061,,48334-1338,,Michigan,30995 Orchard Lake Road,,(248) 737-2894,,,
-,,,,,,,,,,,,,,,,,,,,,,Independence,buybuyBaby #3062,US,795-7530,Receiving,Department #3062,,64057-1568,,Missouri,20000 East Jackson Drive,,(816)795-3383,,,
-,,,,,,,,,,,,,,,,,,,,,,Encinitas,buybuyBaby #3063,US,634-2572,Receiving,Department #3063,,92024,,California,1014 N El Camino Real,,(760) 634-1587,,,
-,,,,,,,,,,,,,,,,,,,,,,Naperville bbBaby,buybuyBaby #3064,US,428-0778,Receiving,Department #3064,,60540-3924,,Illinois,324 S Route 59,,(630) 428-0755,,,
-,,,,,,,,,,,,,,,,,,,,,,Woodbury,buybuyBaby #3065,US,731-7943,Receiving,Department #3065,,55125-7001,,Minnesota,9160 Hudson Road,,(651) 735-0125,,,
-,,,,,,,,,,,,,,,,,,,,,,Sandy,buybuyBaby #3066,US,566-0352,Receiving,Department #3066,,84070-4115,,Utah,10230 South State Street,,(801) 566-0411,,,
-,,,,,,,,,,,,,,,,,,,,,,Webster,buybuyBaby #3067,US,,Receiving,Department #3067,,77598-3802,,Texas,"19801 Gulf Freeway 
-Suite 800",,(281) 316-4275,,,
-,,,,,,,,,,,,,,,,,,,,,,Princeton,buybuyBaby #3068,US,275-8734,Receiving,Department #3068,,08540-5938,,New Jersey,601 Nassau Park Blvd,,(609) 799-1442,,,
-,,,,,,,,,,,,,,,,,,,,,,Lincoln Park,buybuyBaby #3069,US,274-0562,Receiving,Department #3069,,60642,,Illinois,1419 N Kingsbury Street,,(312) 274-0517,,,
-,,,,,,,,,,,,,,,,,,,,,,Ballwin,buybuyBaby #3070,US,527-0281,Receiving,Department #3070,,63011-3026,,Missouri,15355A Manchester Road,,(636) 527-0154,,,
-,,,,,,,,,,,,,,,,,,,,,,Jacksonville,buybuyBaby #3071,US,363-1318,Receiving,Department #3071,,32256-0796,,Florida,8801 Southside Blvd Unit 10,,(904) 363-6014,,,
-,,,,,,,,,,,,,,,,,,,,,,Altamonte Springs,buybuyBaby #3072,US,332-0210,Receiving,Department #3072,,32701-4324,,Florida,130 E Altamonte Dr Suite 1000,,(407) 332-0156,,,
-,,,,,,,,,,,,,,,,,,,,,,W DESMOINES,buybuyBaby #3073,US,327-5053,Receiving,Department #3073,,50266-5958,,Iowa,4100 University Ave Ste 115,,(515) 223-3823,,,
-,,,,,,,,,,,,,,,,,,,,,,Orlando,buybuyBaby #3074,US,982-3694,Receiving,Department #3074,,32803-5121,,Florida,3206 East Colonial Drive,,(407) 895-7114,,,
-,,,,,,,,,,,,,,,,,,,,,,Royal Palm Beach,buybuyBaby #3075,US,790-4853,Receiving,Department #3075,,33411-3523,,Florida,550 North State Road 7,,(561) 790-0726,,,
-,,,,,,,,,,,,,,,,,,,,,,Torrance,buybuyBaby #3076,US,540-1963,Receiving,Department #3076,,90503-4808,,California,3700 Torrance Blvd.,,(310) 316-3794,,,
-,,,,,,,,,,,,,,,,,,,,,,Tucson,buybuyBaby #3079,US,742-4763,Receiving,Department #3079,,85741-2308,,Arizona,7401 North La Cholla Blvd,,(520) 297-1146,,,
-,,,,,,,,,,,,,,,,,,,,,,West Long Branch,buybuyBaby #3081,US,542-1708,Receiving,Department #3081,,07764-1026,,New Jersey,310 Route 36,,(732) 542-1953,,,
-,,,,,,,,,,,,,,,,,,,,,,ROCKAWAY,buybuyBaby #3082,US,366-1463,Receiving,Department #3082,,7866-1649,,New Jersey,327 Mount Hope Ave Suite 1003,,(973) 989-9120,,,
-,,,,,,,,,,,,,,,,,,,,,,AMHERST,buybuyBaby #3083,US,835-1510,Receiving,Department #3083,,14226-1160,,New York,1261 Niagara Falls Blvd Ste 1,,(716) 833-3714,,,
-,,,,,,,,,,,,,,,,,,,,,,Mission Viejo,buybuyBaby #3084,US,282-0097,Receiving,Department #3084,,92691-6906,,California,25322 El Paseo,,(949) 282-0024,,,
-,,,,,,,,,,,,,,,,,,,,,,Fredricksburg,buybuyBaby #3085,US,786-6090,Receiving,Department #3085,,224014915,,Virginia,1320 Carl D Silver Pkwy Ste100,,(540) 786-8746,,,
-,,,,,,,,,,,,,,,,,,,,,,Knoxville,buybuyBaby #3086,US,692-5432,Receiving,Department #3086,,37919-5876,,Tennessee,202 Morrell Road,,(865) 690-3357,,,
-,,,,,,,,,,,,,,,,,,,,,,Roseville,buybuyBaby #3088,US,791-2421,Receiving,Department #3088,,95678-1992,,California,"1120 Galleria Blvd
-Suite 160",,(916) 791-2400,,,
-,,,,,,,,,,,,,,,,,,,,,,Milford,buybuyBaby #3089,US,874-6391,Receiving,Department #3089,,06460-2703,,Connecticut,1201 Boston Post Road,,(203) 874-6438,,,
-,,,,,,,,,,,,,,,,,,,,,,Maplewood,buybuyBaby #3090,US,646-8742,Receiving,Department #3090,,63143-3709,,Missouri,3200 Laclede Station Suite D,,(314) 646-8716,,,
-,,,,,,,,,,,,,,,,,,,,,,GURNEE,Bed Bath & Beyond #0036,US,,Receiving,Department #0036,,60031,,Illinois,6132 GRAND AVE,,,,,
-,,,,,,,,,,,,,,,,,,,,,,Westminster,Bed Bath & Beyond #0355,US,,Receiving,Department #0355,,80021,,Colorado,7225 W. 88th Avenue,,,,,
-,,,,,,,,,,,,,,,,,,,,,,Port Reading,Bed Bath & Beyond #0653,US,,Receiving,Department #0653,,07064,,New Jersey,1001 W. Middlesex Avenue,,,,,
-,,,,,,,,,,,,,,,,,,,,,,Pendergrass,Bed Bath & Beyond #0657,US,,Receiving,Department #0657,,30567,,Georgia,860 John B Brooks Road,,,,,
-,,,,,,,,,,,,,,,,,,,,,,Lancaster,Bed Bath & Beyond #1331,US,,Receiving,Department #1331,,17602,,Pennsylvania,2350 Lincoln Highway East Suite 100,,,,,
+sku,_store,_attribute_set,_type,_category,_root_category,_product_websites,name,description,short_description,price,special_price,special_from_date,special_to_date,cost,weight,manufacturer,meta_title,meta_keyword,meta_description,image,small_image,thumbnail,media_gallery,color,news_from_date,news_to_date,gallery,status,tax_class_id,url_key,url_path,minimal_price,visibility,custom_design,custom_design_from,custom_design_to,custom_layout_update,page_layout,options_container,required_options,has_options,image_label,small_image_label,thumbnail_label,created_at,updated_at,enable_googlecheckout,gift_message_available,is_imported,product_type,country_of_manufacture,msrp_enabled,msrp_display_actual_price_type,msrp,volume_weight,upc,mpn,inchoo_featured_product,pinterest_image,pinterest_description,faqs,created_by,videos,exclude_promos,qty,min_qty,use_config_min_qty,is_qty_decimal,backorders,use_config_backorders,min_sale_qty,use_config_min_sale_qty,max_sale_qty,use_config_max_sale_qty,is_in_stock,notify_stock_qty,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,stock_status_changed_auto,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,enable_qty_increments,is_decimal_divided,_links_related_sku,_links_related_position,_links_crosssell_sku,_links_crosssell_position,_links_upsell_sku,_links_upsell_position,_associated_sku,_associated_default_qty,_associated_position,_tier_price_website,_tier_price_customer_group,_tier_price_qty,_tier_price_price,_group_price_website,_group_price_customer_group,_group_price_price,_media_attribute_id,_media_image,_media_lable,_media_position,_media_is_disabled
+BLOOMINGBATH-GREEN,,Default,simple,,,base,Blooming Bath Baby Bath - Green,"<p>Made from incredibly soft, cuddly materials, Blooming Bath's petals hug any sink to create an adorable, safe, fun and convenient bath time experience for your most precious possession. Blooming Bath’s plush materials cradle and cushion your baby like no other baby tub can. Forget about those hard plastic baby bath tubs or baby bath seats that are uncomfortable and don't cradle your child during bath time. It’s a unique, easy, hassle-free experience that allows you to enjoy those special moments bathing your infant.</p>
+<p>Using and caring for Blooming Bath couldn’t be easier. Push it into your sink and it creates the perfect cushioned cradle to wash your baby. When you're finished, gently squeeze out the excess water and throw it in the dryer for 10 to 15 minutes. Or, if you prefer, just use the hang tag on the back — your Blooming Bath will be dry in no time.</p>
+<ul class=""features"">
+<li><h3>Incredibly Soft</h3>
+<img src=""{{store_url}}images/blooming-bath-is-soft.jpg"" alt=""Blooming Bath is Incredibly Soft"" title=""Blooming Bath is Incredibly Soft"" />
+</li>
+<li><h3>Safe And Durable</h3>
+<img src=""{{store_url}}images/blooming-bath-is-durable.jpg"" alt=""Blooming Bath is Durable"" title=""Blooming Bath is Durable"" />
+</li>
+<li><h3>Very Comfortable</h3>
+<img src=""{{store_url}}images/blooming-bath-squeeze.jpg"" alt=""Blooming Bath is Incredibly Comfortable"" title=""Blooming Bath is Comfortable"" />
+</li>
+<li class=""last""></li>
+<ul>","<p>Blooming Bath is a cute, cuddly and convenient way to bathe your baby! Now available in four adorable colors!</p>
+<p><a class=""iframe"" title=""Blooming Bath Baby Bath Video""  rel=""video"" href=""http://www.youtube.com/embed/2hjCRVQfWDA?autoplay=1""><img src=""{{media url=""wysiwyg/blooming-bath-video-small.jpg""}}"" alt=""Blooming Bath Baby Bath Video"" /></a></p>
+<div id=""ptpa""><div class=""left""><a target=""_blank"" title=""Parent Tested Parent Approved Winner"" href=""http://www.ptpamedia.com/Product-page?PID=1878""><img src=""{{media url=""parent-tested-parent-approved-winner-small.jpg""}}"" alt=""Parent Tested Parent Approved Winner"" /></a></div><div class=""right"">Winner of the Parent Tested Parent Approved Award!  PTPA is the largest parent-testing community and seal of approval recognized worldwide.</div></div>
+",39.99,,8/24/2011 0:00:00,,11.26,2,Blooming Bath,"Blooming Bath Baby Bath -  Green - Baby Bath Seat, Baby Bath Tub, Baby Bath","blooming bath, baby bath, baby bathing, baby tub, baby baths, bathe baby, kid bath, baby bathing, washing baby, baby wash",The Green Blooming Bath offers a unique and comfortable way to bathe your baby.  Blooming Bath makes a great baby shower bath.,/i/m/img_0913-900_3.jpg,/i/m/img_0913-900_3.jpg,/i/m/img_0913-900_3.jpg,,Green,,,,1,2,blooming-bath-baby-bath-green,blooming-bath-baby-bath-green.html,,4,,,,,,Product Info Column,0,0,Blooming Bath - Green,Blooming Bath - Green,Blooming Bath - Green,11/14/2013 18:29:14,6/16/2014 16:31:49,1,,Yes,Baby & Toddler > Baby Bathing > Baby Bathtubs,,Use config,Use config,,,851238004120,4120,0,http://www.bloomingbath.com/images/blooming-bath-baby-bath-baby-in-sink.jpg,Blooming Bath Baby Bath,"<dl>
+	<dt>What are the dimensions of the Blooming Bath?</dt>
+		<dd>The Blooming Bath baby bath is 32 inches from tip to tip.  The center of the flower, where baby's bottom rests, is 10 inches across in diameter.</dd>
+	<dt>What is the recommended age for the Blooming Bath?</dt>
+		<dd>The Blooming Bath is ideal for newborns to 6 months. But because babies range so dramatically in size, there are no set age or weight limitations. The Blooming Bath is held up by the sides of the sink so it is more a matter of whether or not your sink can comfortably and safely accommodate your baby. Many parents also use Blooming Bath with traditional plastic tubs to create a plush, soft, safe and fun experience.</dd>
+	<dt>Does the Blooming Bath hold water?</dt>
+		<dd>The Blooming Bath does not hold water. You will need to first insert the stopper inside the drain, then fill up the sink to the desired level and desired temperature before inserting baby. Never run water directly on your baby as water temperature can change quickly.</dd>
+	<dt>What materials are the Blooming Bath made with?</dt>
+		<dd>Blooming Bath is made from a super soft, plush polyester material on the top, the center is a high quality polypropylene foam and the back is made from a durable polyester mesh back.</dd>
+	<dt>Are there any retail stores where I can go to purchase the Blooming Bath?</dt>
+		<dd>The Blooming Bath is available exclusively through our website, BloomingBath.com.</dd>
+	<dt>Is the Blooming Bath available in my country?</dt>
+		<dd>Currently sell through our website and do ship internationally but we are looking into international distributors around the world.  If you are interested in becoming an international distributor or would like to recommend one, please contact us at support@bloomingbath.com.</dd>
+	<dt>Why is international shipping so expensive?</dt>
+		<dd>We only ship via FedEx International to ensure your package arrives quickly and safely.  FedEx charges a dimensional weight on all international orders, so the cost is based on the size of the box.  Please understand that we do not make any profit from shipping charges.  We simply pass on the cost to the customer.</dd>
+	<dt>Where is the Blooming Bath manufactured?</dt>
+		<dd>Currently the Blooming Bath is manufactured in Mexico.  We would love to manufacture in the US and are actively looking for a cost effective option so if you have any recommendations, please contact us at support@bloomingbath.com.</dd>
+	<dt>Can I include a gift message with my order?</dt>
+		<dd>We would be happy to create a hand written note and put in with your order.  Once you place your order, please email us at support@bloomingbath.com right away with the gift message that you would like to include.  We will do our best to make sure the message is included inside the order before it ships.  Please note that orders are packaged fairly quickly once the order is placed, so we cannot guarantee your message will be included.  In most instances, however, we can accommodate your request!</dd>
+	<dt>I am shipping the Blooming Bath as a gift.  Will the recipient see the price of the Blooming Bath?</dt>
+		<dd>We never include price of the Blooming Bath inside the box. Your email receipt is the only place you will see prices.</dd>
+	<dt>How long will it take for my Blooming Bath to ship and be delivered?</dt>
+		<dd>We try to process all orders placed before 1PM on the same day Monday - Friday. Customers typically receive their order in 2-3 business days once the item is shipped.  Standard orders as are shipped Priority Mail via U.S. Postal Service.  We do offer expedited shipping options via FedEx at checkout.</dd>
+	<dt>Can I be a wholesaler or retailer for Blooming Bath and if so, who do I contact?</dt>
+		<dd>Due to the overwhelming response, we are currently devoting all of our inventory to our website.  We are in the process of expanding our manufacturing capabilities so if you are interested in selling Blooming Baths in the future, please email us your contact info and we will keep your name and information on file.  You will be contacted just as soon as we are ready to offer our product for wholesale distribution. </dd>
+</dl>",,"<p><a class=""iframe"" title=""Blooming Bath Baby Bath Video""  rel=""video"" href=""http://www.youtube.com/embed/jJY9iv2rWjc?autoplay=1""><img src=""{{media url=""wysiwyg/blooming-bath-video-small.jpg""}}"" alt=""Blooming Bath Baby Bath Video"" /></a></p>
+<p><a class=""iframe"" title=""Blooming Bath Baby Bath Video""  rel=""video"" href=""http://www.youtube.com/embed/_eoHFUBb5Bo?autoplay=1""><img src=""{{media url=""blooming-bath-baby-bath-video-thumb.jpg""}}"" alt=""Blooming Bath Baby Bath In Action"" /></a></p>
+<p><a class=""iframe"" title=""Blooming Bath Baby Bath Video""  rel=""video"" href=""http://www.youtube.com/embed/2hjCRVQfWDA?autoplay=1""><img src=""{{media url=""blooming-bath-in-store-video.jpg""}}"" alt=""Blooming Bath Baby Bath In Store Video"" /></a></p>",No,242,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,BABY-BEE-BUBBLE-BATH-12OZ ,0,BABY-BEE-BUBBLE-BATH-12OZ ,8,,,,,,all,2,1,20,,,,77,/i/m/img_0912-900_1.jpg,Blooming Bath - Green,1,0

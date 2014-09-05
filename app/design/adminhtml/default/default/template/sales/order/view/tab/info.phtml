@@ -23,6 +23,9 @@
  * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+$orderId     = $this->getRequest()->getParam('order_id');
+$getShippingURL	= Mage::helper('adminhtml')->getUrl('pickpack/sales_order/shipping');
+
 ?>
 <?php /** @var $this Mage_Adminhtml_Block_Sales_Order_View_Tab_Info */ ?>
 <?php $_order = $this->getOrder() ?>
@@ -54,8 +57,11 @@
         <div class="entry-edit">
             <div class="entry-edit-head">
                 <h4 class="icon-head head-shipping-method"><?php echo Mage::helper('sales')->__('Shipping &amp; Handling Information') ?></h4>
+		
             </div>
+		
             <fieldset>
+		
                 <?php  if ($_order->getTracksCollection()->count()) : ?>
                 <a href="#" id="linkId" onclick="popWin('<?php echo $this->helper('shipping')->getTrackingPopupUrlBySalesModel($_order) ?>','trackorder','width=800,height=600,resizable=yes,scrollbars=yes')" title="<?php echo $this->__('Track Order') ?>"><?php echo $this->__('Track Order') ?></a>
                 <br/>
@@ -77,8 +83,21 @@
                 <?php else: ?>
                     <?php echo $this->helper('sales')->__('No shipping information available'); ?>
                 <?php endif; ?>
+				<br/><span><a href="#" onclick="$('shipping_method_update').show();return false;">Change shipping method</a></span>
+				<div id="shipping_method_update" style="display:none">
+					<form id="shipping_method_form" method="post" action="<?php echo $getShippingURL ?>">
+						<input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>" />
+						<input type="hidden" value="<?php echo $orderId ?>" id="order_id" name="order_id"/>
+						<input class="input-text" type="text" id="shipping_method" name="shipping_method" />
+						<button id="ship_method_submit" title="Update Shipping" type="button" class="scalable save" onclick="$('shipping_method_form').submit()" style="">
+							<span><span><span>Update Shipping</span></span></span>
+						</button>
+					</form>
+				</div>
             </fieldset>
+		
         </div>
+	
     </div>
     <?php endif; ?>
     <div class="clear"></div>
