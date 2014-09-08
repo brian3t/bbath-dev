@@ -33,7 +33,7 @@
             <action method="addItem"><type>js</type><name>eternal/html5shiv.js</name><params/><if>lt IE 9</if></action>
             
             <!-- jquery plugins -->
-			<action method="addJs"><script>eternal/jquery/jquery.easing.min.js</script></action>
+			<!--<action method="addJs"><script>eternal/jquery/jquery.easing.min.js</script></action>-->
             <action method="addJs"><script>eternal/jquery/jquery.imgpreload.min.js</script></action>
             <action method="addJs"><script>eternal/jquery/jquery.bgpos.js</script></action>
             <action method="addJs"><script>eternal/jquery/jquery.mousewheel.js</script></action>
@@ -42,7 +42,7 @@
             <action method="addJs"><script>eternal/jquery/jquery.jscrollpane.min.js</script></action>
             <action method="addJs"><script>eternal/jquery/prettyCheckable.js</script></action>
             <action method="addJs"><script>eternal/jquery/scrolltopcontrol.js</script></action>
-            <action method="addJs"><script>egghead/personalization_bb.js</script></action>
+            <!--<action method="addJs"><script>egghead/personalization_bb.js</script></action>-->
             
             <!-- custom script -->
             <action method="addJs"><script>eternal/venedor.js</script></action>
