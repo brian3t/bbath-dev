@@ -7,7 +7,7 @@
             <!-- js -->
             <action method="addJs"><script>eternal/jquery/jquery-1.8.2.min.js</script></action>
             <action method="addJs"><script>eternal/jquery/jquery-noconflict.js</script></action>
-            <!--<action method="addJs"><script>eternal/jquery/jquery.easing.min.js</script></action>-->
+            <action method="addJs"><script>eternal/jquery/jquery.easing.min.js</script></action>
             <action method="addJs"><script>eternal/modernizr.js</script></action>
             <action method="addJs"><file helper="eternal_homeslider/data/getJsPluginFile" /></action>
             

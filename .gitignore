@@ -92,4 +92,5 @@ skin/frontend/enterprise
 skin/install/
 var/
 var/*
+var/locks/*
 wp/*

@@ -178,3 +178,4 @@ div#social-buttons {
 a.dropdown-toggle.button {
     display: inline-block;
 }
+ul.dropdown-menu > li > a:hover{color: inherit !important;}
