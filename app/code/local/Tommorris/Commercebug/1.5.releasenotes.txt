@@ -1,0 +1,11 @@
+Fixed a few cases of infinite function nesting levels during early stages of the bootstrap
+ 
+Added CMD Page ID information for CMS pages
+
+Moved phtml templates into Html block function calls to fix Allow Symlinks issue
+
+Removed jQuery UI Samples
+
+Ships with a Access Class (commercebug/developerip) which ties Commerce Bug into Magento's Developer Client Restrictions feature
+
+Fixed JSON error when reporting on models generated with eval'd code

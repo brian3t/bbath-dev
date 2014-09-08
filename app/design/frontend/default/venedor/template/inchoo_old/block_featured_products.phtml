@@ -1,0 +1,43 @@
+<?php 
+/**
+ *
+ * @category   Inchoo
+ * @package    Inchoo Featured Products
+ * @author     Domagoj Potkoc, Inchoo Team <web@inchoo.net>
+ */
+?>
+<?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+<div class="block recommended-products">
+    <div class="block-title"><strong><span><?php echo $this->__('Recommended Products') ?></span></strong></div>
+    <?php $i=0;$row=0; foreach ($_products->getItems() as $_product): ?>
+        
+        <?php if($i==0):?>
+        <?php $row++;?>
+        <div class="block-content center">
+       <?php endif;?> 
+            
+                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><img class="product-img" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(80, 80) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+            	<div class="product-description">
+                <p><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)"><?php echo $this->htmlEscape($_product->getName()) ?></a></p>
+                <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                <?php echo $this->getPriceHtml($_product, true, '-new') ?>
+                <?php if($_product->isSaleable()): ?>
+                <button type="button" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                <?php else: ?>
+                <div class="out-of-stock"><?php echo $this->__('Out of stock') ?></div>
+                <?php endif; ?>
+                
+                
+                </div>
+         
+         <?php 
+         	$i++;
+         
+         	if($i==$this->getItemsPerRow()):
+         	$i=0;
+         ?>
+        		</div>
+       <?php endif;?>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>

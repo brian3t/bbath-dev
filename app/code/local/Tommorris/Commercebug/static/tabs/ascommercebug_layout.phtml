@@ -1,0 +1,18 @@
+<?php
+	$data = new stdClass();
+	$data->dot = Alanstormdotcom_Commercebug_Model_Observer_Dot::renderGraph();
+?>
+
+<script type="text/javascript">	
+	var as_commercebug_display_dot = function(){
+		var as_commercebug_dot = <?php echo json_encode($data);?>;		
+		jQueryCommercebug('#as_commercebug_dot_console').val(as_commercebug_dot.dot);
+		jQueryCommercebug('#as_commercebug_dot_console').toggle();
+	}
+</script>
+
+<textarea style="display:none;width:500px;height:300px" name="as_commercebug_dot_console" id="as_commercebug_dot_console"></textarea>
+
+<div id="ascommercebug_layout_results">
+</div>		
+
