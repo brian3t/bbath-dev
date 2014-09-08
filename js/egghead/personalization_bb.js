@@ -2,7 +2,7 @@ jQuery.noConflict();
 
 if(typeof String.prototype.trim !== 'function') {
   String.prototype.trim = function() {
-    return this.replace(/^\s+|\s+$/g, ''); 
+    return this.replace(/^\s+|\s+$/g, '');
   };
 }
 
@@ -79,16 +79,16 @@ function levenshtein(s1, s2) {
 var lookupTitle = function(titleToLook4, ele){
 	var result = false;
 	if (!(ele instanceof jQuery)) {ele = jQuery(ele);}
-	
-	var leastDistance = Number.MAX_VALUE;	
+
+	var leastDistance = Number.MAX_VALUE;
 	var foundExact = false;
-	
+
 	ele.each(function(e){
 		if (foundExact === true){
 			return false;
 		}
 		var title = jQuery(this).attr("title");
-		title = title.trim(); 
+		title = title.trim();
 		title = title.slice("Blooming Bath ".length);
 		title = title.replace(/ /g,'');
 		titleToLook4 = titleToLook4.replace(/ /g,'');
@@ -97,12 +97,12 @@ var lookupTitle = function(titleToLook4, ele){
 			result = this;
 		}
 		else{
-		
+
 			if (levenshtein(title, titleToLook4) < leastDistance){
 				//only assign if title is close enough
 				if ((levenshtein(title, titleToLook4) / title.length) < 0.7) {
-					result = this;	
-				} 
+					result = this;
+				}
 				leastDistance = levenshtein(title, titleToLook4);
 			}
 		}
@@ -118,7 +118,7 @@ jQuery(document).ready(function() {
 	var updateImage = function(e) {
 			var selColor = jQuery(e).children('option:selected').text();
 			selColor = selColor.replace(/\ \/ /g, "/");
-			
+
 			var matchedEle = lookupTitle(selColor, '.slides > li > a');
 			if (matchedEle) {
 				matchedEle.click();
