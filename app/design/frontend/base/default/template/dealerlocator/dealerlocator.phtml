@@ -278,16 +278,26 @@
 	$i = 1;
 	ksort($groups);
 	foreach (array_keys($groups) as $key) {
-		$tabs .= '<li><a href="#tab-' . $i . '">' . $key . '</a></li>';
+		$tabs .= '<li><a href="#tab-' . $i . '" data-toggle="tab">' . $key . '</a></li>';
 		$i++;
 	}
 ?>
 	<div class="list-all-dealer">
 		<h2 class="legend"><?php echo $this->__('All Blooming Bath Retailers') ?></h2>
 		<div id="tabs">
-			<ul class="product-tabs">
+<!--			<ul class="product-tabs">-->
+<!--				--><?php //echo $tabs ?>
+<!--			</ul>-->
+			<ul class="button-tabs">
 				<?php echo $tabs ?>
 			</ul>
+<!--			<ul id="our-products-tabs" class="button-tabs">-->
+<!--				<li class="active"><a href="#all" data-toggle="tab">All</a></li>-->
+<!--				<li class=""><a href="#latest" data-toggle="tab">Latest</a></li>-->
+<!--				<li class=""><a href="#new" data-toggle="tab">News</a></li>-->
+<!--				<li class=""><a href="#bestsellers" data-toggle="tab">Bestsellers</a></li>-->
+<!--				<li class=""><a href="#specials" data-toggle="tab">Specials</a></li>-->
+<!--			</ul>-->
 			<?php if($locations) : $i=1; $h=1 ?>
 				<?php foreach ($groups as $item) { ?>
 					<div id="tab-<?php echo $i ?>">
