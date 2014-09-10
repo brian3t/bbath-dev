@@ -266,10 +266,13 @@ form h3,
 }
 .main h2.subtitle,
 .main .widget .widget-title h2,
-.main .page-title h1,
+/*.main .page-title h1,*/
 .footer-banner h2.subtitle {
     color: #5ac5f1;
     border-left: 4px solid #7bae23;
+}
+.main .page-title h1{
+    color: #5ac5f1;
 }
 .main h2.subtitle .line,
 .main .widget .widget-title h2 .line, 
@@ -1619,3 +1622,9 @@ div.Growler-notice .cart-success {
         background-image: url(../images/icons/white/icon_arrow_next.png);    
     }
     }
+div#social-at-header>a:hover {
+    opacity: 0.7;
+}
+.line {
+    display: none;
+}

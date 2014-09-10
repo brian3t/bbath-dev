@@ -6,6 +6,16 @@
         </Egghead_TextOverlay>
     </modules>
     <global>
+        <page>
+            <layouts>
+                <COMING_SOON_LAYOUT translate="label">
+                    <label>Coming Soon</label>
+                    <template>page/comingsoon.phtml</template>
+                    <!--<layout_handle>page_comingsoon</layout_handle>-->
+                </COMING_SOON_LAYOUT>
+                <!-- add more layouts here -->
+            </layouts>
+        </page>
         <helpers>
             <textOverlay>
                 <class>Egghead_TextOverlay_Helper</class>

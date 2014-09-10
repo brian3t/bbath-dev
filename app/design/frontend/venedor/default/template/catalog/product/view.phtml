@@ -204,11 +204,11 @@ $_helper = $this->helper('catalog/output');
 
     <div class="product-collateral">
 
+		<?php echo $this->getChildHtml('upsell_products') ?>
+
         <div class="product-info <?php //echo $rowClass ?>">
        		<?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?>
         </div>
-        
-		<?php echo $this->getChildHtml('upsell_products') ?>
 
         <?php //echo $this->getChildHtml('crosssell_products') ?>
                 
