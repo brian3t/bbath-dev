@@ -206,14 +206,12 @@
 							</div>
 						</div>
 						<div class="field">
-							<label for="distance"><?php echo $this->__('Distance') ?></label>
-							<div class="input-box">
-								<select name="distance" id="distance" title="<?php echo $this->__('Distance') ?>">
-									<option value="25" <?php if($distance == '25') { echo 'selected'; }?>>25 Miles</option>
-									<option value="50" <?php if($distance == '50') { echo 'selected'; }?>>50 Miles</option>
-									<option value="100" <?php if($distance == '100') { echo 'selected'; }?>>100 Miles</option>
-								</select>
-							</div>
+						<select class="form-control" name="distance" id="distance" title="<?php echo $this->__('Distance')?>">
+							<option value="">Distance</option>
+							<option value="25" <?php if($distance == '25') { echo 'selected'; }?>>25 Miles</option>
+							<option value="50" <?php if($distance == '50') { echo 'selected'; }?>>50 Miles</option>
+							<option value="100" <?php if($distance == '100') { echo 'selected'; }?>>100 Miles</option>
+						</select>
 						</div>
 						<div class="field" style="margin-top: 5px">
 							<button type="submit" class="button" title="<?php echo $this->__('Search') ?>"><span><span><?php echo $this->__('Search') ?></span></span></button>

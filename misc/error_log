@@ -921,3 +921,101 @@ Stack trace:
   thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
 [06-Aug-2014 21:16:36 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/dev/public_html/misc/bulk-import.php on line 195
 [27-Aug-2014 22:18:28 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/dev/public_html/misc/bulk-import.php on line 155
+[04-Feb-2015 18:09:43 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:14:13 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:16:38 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:16:45 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:30:25 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 248' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 248, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(248): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:30:29 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 248' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 248, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(248): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:32:16 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:32:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dev_magento`.`sales_flat_shipment_track`, CONSTRAINT `FK_BCD2FA28717D29F37E10A153E6F2F841` FOREIGN KEY (`parent_id`) REFERENCES `sales_flat_shipment` (`entity_id`) ON DELETE CASCADE ON UPDATE)' in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/dev/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/dev/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/dev/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /home/dev/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `sa...', Array)
+#5 /home/dev/public_html/lib/Varien/Db/Adapter/Pdo in /home/dev/public_html/lib/Zend/Db/Statement/Pdo.php on line 234
+[04-Feb-2015 18:33:04 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 249' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 249, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(249): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:41:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:41:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:45:51 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:45:53 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:50:56 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:50:59 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245
+[04-Feb-2015 18:53:29 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Warning: opendir(/home/dev/public_html/misc/import/labels) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory  in /home/dev/public_html/misc/bulk-process.php on line 251' in /home/dev/public_html/app/code/core/Mage/Core/functions.php:245
+Stack trace:
+#0 [internal function]: mageCoreErrorHandler(2, 'opendir(/home/d...', '/home/dev/publi...', 251, Array)
+#1 /home/dev/public_html/misc/bulk-process.php(251): opendir('/home/dev/publi...')
+#2 {main}
+  thrown in /home/dev/public_html/app/code/core/Mage/Core/functions.php on line 245

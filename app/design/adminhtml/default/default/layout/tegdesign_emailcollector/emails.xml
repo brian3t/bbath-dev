@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_emails_index>
+        <reference name="content">
+            <block type="tegdesign_emailcollector/adminhtml_emails" name="tegdesign_emailcollector_emails" />
+        </reference>
+    </adminhtml_emails_index>
+</layout>

@@ -1,0 +1,80 @@
+2015-02-10T12:51:26+00:00 ERR (3): 
+exception 'Exception' with message 'No content was set for the comment' in /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Comment.php:30
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(423): Fishpig_Wordpress_Model_Resource_Post_Comment->_beforeSave(Object(Fishpig_Wordpress_Model_Post_Comment))
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Fishpig_Wordpress_Model_Post_Comment))
+#2 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Abstract.php(155): Mage_Core_Model_Abstract->save()
+#3 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Post/Abstract.php(187): Fishpig_Wordpress_Model_Resource_Post_Abstract->postComment(Object(Fishpig_Wordpress_Model_Post), 'fplifhug74', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#4 /home/dev/public_html/app/code/community/Fishpig/Wordpress/controllers/Post/CommentController.php(33): Fishpig_Wordpress_Model_Post_Abstract->postComment('fplifhug74', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#5 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Fishpig_Wordpress_Post_CommentController->postAction()
+#6 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(181): Mage_Core_Controller_Varien_Action->dispatch('post')
+#7 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(102): Fishpig_Wordpress_Controller_Router_Abstract->forceDispatch()
+#8 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Fishpig_Wordpress_Controller_Router_Abstract->match(Object(Mage_Core_Controller_Request_Http))
+#9 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /home/dev/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /home/dev/public_html/index.php(87): Mage::run('', 'store')
+#12 {main}
+2015-02-10T16:22:34+00:00 ERR (3): 
+exception 'Exception' with message 'No content was set for the comment' in /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Comment.php:30
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(423): Fishpig_Wordpress_Model_Resource_Post_Comment->_beforeSave(Object(Fishpig_Wordpress_Model_Post_Comment))
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Fishpig_Wordpress_Model_Post_Comment))
+#2 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Abstract.php(155): Mage_Core_Model_Abstract->save()
+#3 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Post/Abstract.php(187): Fishpig_Wordpress_Model_Resource_Post_Abstract->postComment(Object(Fishpig_Wordpress_Model_Post), 'tgkhaxxn11', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#4 /home/dev/public_html/app/code/community/Fishpig/Wordpress/controllers/Post/CommentController.php(33): Fishpig_Wordpress_Model_Post_Abstract->postComment('tgkhaxxn11', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#5 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Fishpig_Wordpress_Post_CommentController->postAction()
+#6 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(181): Mage_Core_Controller_Varien_Action->dispatch('post')
+#7 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(102): Fishpig_Wordpress_Controller_Router_Abstract->forceDispatch()
+#8 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Fishpig_Wordpress_Controller_Router_Abstract->match(Object(Mage_Core_Controller_Request_Http))
+#9 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /home/dev/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /home/dev/public_html/index.php(87): Mage::run('', 'store')
+#12 {main}
+2015-02-11T08:32:04+00:00 ERR (3): 
+exception 'Exception' with message 'No content was set for the comment' in /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Comment.php:30
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(423): Fishpig_Wordpress_Model_Resource_Post_Comment->_beforeSave(Object(Fishpig_Wordpress_Model_Post_Comment))
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Fishpig_Wordpress_Model_Post_Comment))
+#2 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Abstract.php(155): Mage_Core_Model_Abstract->save()
+#3 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Post/Abstract.php(187): Fishpig_Wordpress_Model_Resource_Post_Abstract->postComment(Object(Fishpig_Wordpress_Model_Post), 'ghwzqenm12', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#4 /home/dev/public_html/app/code/community/Fishpig/Wordpress/controllers/Post/CommentController.php(33): Fishpig_Wordpress_Model_Post_Abstract->postComment('ghwzqenm12', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#5 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Fishpig_Wordpress_Post_CommentController->postAction()
+#6 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(181): Mage_Core_Controller_Varien_Action->dispatch('post')
+#7 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(102): Fishpig_Wordpress_Controller_Router_Abstract->forceDispatch()
+#8 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Fishpig_Wordpress_Controller_Router_Abstract->match(Object(Mage_Core_Controller_Request_Http))
+#9 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /home/dev/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /home/dev/public_html/index.php(87): Mage::run('', 'store')
+#12 {main}
+2015-02-12T03:29:45+00:00 ERR (3): 
+exception 'Exception' with message 'No content was set for the comment' in /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Comment.php:30
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(423): Fishpig_Wordpress_Model_Resource_Post_Comment->_beforeSave(Object(Fishpig_Wordpress_Model_Post_Comment))
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Fishpig_Wordpress_Model_Post_Comment))
+#2 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Abstract.php(155): Mage_Core_Model_Abstract->save()
+#3 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Post/Abstract.php(187): Fishpig_Wordpress_Model_Resource_Post_Abstract->postComment(Object(Fishpig_Wordpress_Model_Post), 'tmaiexim41', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#4 /home/dev/public_html/app/code/community/Fishpig/Wordpress/controllers/Post/CommentController.php(33): Fishpig_Wordpress_Model_Post_Abstract->postComment('tmaiexim41', 'canadagoose.par...', 'http://www.alfa...', '', NULL)
+#5 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Fishpig_Wordpress_Post_CommentController->postAction()
+#6 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(181): Mage_Core_Controller_Varien_Action->dispatch('post')
+#7 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(102): Fishpig_Wordpress_Controller_Router_Abstract->forceDispatch()
+#8 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Fishpig_Wordpress_Controller_Router_Abstract->match(Object(Mage_Core_Controller_Request_Http))
+#9 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /home/dev/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /home/dev/public_html/index.php(87): Mage::run('', 'store')
+#12 {main}
+2015-02-14T09:48:28+00:00 ERR (3): 
+exception 'Exception' with message 'No content was set for the comment' in /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Comment.php:30
+Stack trace:
+#0 /home/dev/public_html/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(423): Fishpig_Wordpress_Model_Resource_Post_Comment->_beforeSave(Object(Fishpig_Wordpress_Model_Post_Comment))
+#1 /home/dev/public_html/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Fishpig_Wordpress_Model_Post_Comment))
+#2 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Resource/Post/Abstract.php(155): Mage_Core_Model_Abstract->save()
+#3 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Model/Post/Abstract.php(187): Fishpig_Wordpress_Model_Resource_Post_Abstract->postComment(Object(Fishpig_Wordpress_Model_Post), 'jjajyitq64', 'canadag.o.osepa...', 'http://www.alfa...', '', NULL)
+#4 /home/dev/public_html/app/code/community/Fishpig/Wordpress/controllers/Post/CommentController.php(33): Fishpig_Wordpress_Model_Post_Abstract->postComment('jjajyitq64', 'canadag.o.osepa...', 'http://www.alfa...', '', NULL)
+#5 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Fishpig_Wordpress_Post_CommentController->postAction()
+#6 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(181): Mage_Core_Controller_Varien_Action->dispatch('post')
+#7 /home/dev/public_html/app/code/community/Fishpig/Wordpress/Controller/Router/Abstract.php(102): Fishpig_Wordpress_Controller_Router_Abstract->forceDispatch()
+#8 /home/dev/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Fishpig_Wordpress_Controller_Router_Abstract->match(Object(Mage_Core_Controller_Request_Http))
+#9 /home/dev/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /home/dev/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /home/dev/public_html/index.php(87): Mage::run('', 'store')
+#12 {main}

@@ -267,5 +267,36 @@ class Moogento_Pickpack_Sales_OrderController extends Mage_Adminhtml_Sales_Order
 		$this->_redirectReferer('');
 
 	}
+	
+	public function changeshipAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$ship_method = 'Shipping - ' . $this->getRequest()->getParam('ship_method');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->updateShipping($orderId, $ship_method);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function bolshipAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$ship_method = $this->getRequest()->getParam('ship_method');
+		$bol = $this->getRequest()->getParam('bol');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->bolship($orderId, $ship_method, $bol);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
 	//** END
 }

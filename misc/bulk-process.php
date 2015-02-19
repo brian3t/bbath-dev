@@ -37,7 +37,7 @@
       $db = Mage::getSingleton('core/resource')->getConnection('core_read');
       $write = Mage::getSingleton('core/resource')->getConnection('core_write');
       
-      $result = $db->query('SELECT b.order_id as order_id, s.entity_id as entity_id, b.tracking_number as tracking_number, b.service_type as service_type, b.carrier as carrier FROM tracking_numbers b LEFT JOIN sales_flat_order s on b.order_id = s.increment_id INNER JOIN (SELECT MAX(id) AS id FROM tracking_numbers group by order_id) c on b.id = c.id where b.processed is null');
+      $result = $db->query('SELECT b.order_id AS order_id, s.entity_id AS entity_id, b.service_type as service_type FROM tracking_numbers b LEFT JOIN sales_flat_order s ON b.order_id = s.increment_id WHERE b.processed IS NULL AND entity_id IS NOT null GROUP BY order_id');
       if($result){
           foreach($result as $fedex_order) {
             if($fedex_order['carrier'] == 'UPS') {
@@ -45,7 +45,7 @@
             } else {
               $carrier = 'fedex';
             }
-          updateOrder($fedex_order['entity_id'], $fedex_order['order_id'], $fedex_order['tracking_number'], $carrier, $fedex_order['service_type']);
+          updateOrder($fedex_order['entity_id'], $fedex_order['order_id'], $carrier, $fedex_order['service_type']);
           
 		  $write->query('update tracking_numbers set processed = 1 where order_id = "' . $fedex_order['order_id'] . '"');
           echo $fedex_order['order_id'] . ' Processed<br>';
@@ -55,15 +55,17 @@
     }
   }
 
-    function updateOrder($entityId, $orderId, $tracking_number, $carrier, $carrierTitle) {
+    function updateOrder($entityId, $orderId, $carrier, $carrierTitle) {
 		global $db;
 		
+/*
 		if($entityId == '') {
 			$order_by_po = $db->query("SELECT so.entity_id AS order_id FROM sales_flat_order so left join sales_flat_order_payment pay on pay.parent_id = so.entity_id where po_number = '" . $orderId . "'");
 		    foreach ($order_by_po as $order_po) {
 		    	$entityId = $order_po['order_id'];
 		    }
 		}
+*/
 		
 		$order = Mage::getModel('sales/order')->load($entityId);
 			    
@@ -107,16 +109,21 @@
 		    $data = array();
 		    $data['carrier_code'] = $carrier;
 		    $data['title'] = $carrierTitle;
-		    $data['number'] = $tracking_number;
-		
-		    $track = Mage::getModel('sales/order_shipment_track')->addData($data);
-		    $shipment->addTrack($track);
-		
+		    
+		    $tracking_numbers = $db->query("SELECT tracking_number FROM tracking_numbers WHERE order_id = " . $orderId . " GROUP BY tracking_number");
+		    
+		    foreach($tracking_numbers as $tracking_number) {
+			    //var_dump($tracking_number);
+			    //$track = Mage::getModel('sales/order_shipment_api')->addTrack($shipmentId,$carrier,$carrierTitle,$tracking_number);
+			    $track = Mage::getModel('sales/order_shipment_track')->addData(array('carrier_code' => $carrier, 'title' => $carrierTitle, 'number' => $tracking_number['tracking_number']));
+				$shipment->addTrack($track);
+				
+		    }
+		    		
 		    if( $orderStatus == "processing" || $orderStatus == "pending" || $orderStatus == "payment_expected") {
 		      $shipment->register();
 		      $shipment->setEmailSent(true);
 		      $shipment->getOrder()->setIsInProcess(true);
-		
 		      $transactionSave = Mage::getModel('core/resource_transaction')->addObject($shipment)->addObject($shipment->getOrder())->save();
 		    }
 		
@@ -198,6 +205,32 @@
     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     z-index: 100;
   }
+  .frame {
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    height: 3em;
+    line-height: 1em;
+    margin: auto;
+    width: 1600px;
+}
+
+.frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.frame::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
   </style>
 </head>
 <body>
@@ -214,5 +247,29 @@
   </form>
   </div>
   <div style="clear:both"><iframe style="width: 820px;border: 0;margin-top: 40px;height:375px" src="dashboard/index.php"></iframe></div>
+  <div class="frame" style="height:500px;overflow:auto;">
+  <?php if ($handle = opendir(Mage::getBaseDir('base') . '/misc/import/labels')) {
+			$files = array();
+			$i = 0;	
+		    while (false !== ($entry = readdir($handle))) {
+		    	if ($entry != "." && $entry != ".." ) {
+		    		$files[] = Mage::getBaseDir('base') . '/misc/import/labels/' . $entry;
+		    		//echo date("F d Y H:i:s.",filemtime(Mage::getBaseDir('base') . '/misc/import/labels/' . $entry)) . ' <a target="_blank" href="http://www.bloomingbath.com/misc/import/labels/' . $entry . '">' . $entry . '</a><br>';
+		    		$i++;
+		    	}
+		    }
+		    closedir($handle);
+			//krsort($files);
+			usort($files, function($a, $b) {
+			    return filemtime($a) < filemtime($b);
+			});
+			//print_r($files);
+			
+			foreach($files as $entry) {
+				echo date("F d Y",filemtime($entry)) . ' <a target="_blank" href="http://www.bloomingbath.com/misc/import/labels/' . str_replace(Mage::getBaseDir('base') . '/misc/import/labels/', '', $entry) . '">' . str_replace(Mage::getBaseDir('base') . '/misc/import/labels/', '', $entry) . '</a><br>';
+			}
+		}
+	?>
+  </div>
 </body>
 </html>

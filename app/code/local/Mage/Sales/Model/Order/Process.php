@@ -1463,5 +1463,54 @@ class Mage_Sales_Model_Order_Process {
 		$setShipment = $order->setShippingDescription($customShipTitle)->save();
 		
     }
+    
+    public function bolship($orderId, $ship_method, $bol) {
+    		
+		$order = Mage::getModel('sales/order')->load($orderId);
+		$orderNumber = $order->getIncrementId();
+		
+		$orderStatus = $order->getStatus();
+	
+		//This converts the order to "Completed".
+		if( $orderStatus == 'processing') {
+			$converter = Mage::getModel('sales/convert_order');
+			$shipment = $converter->toShipment($order);
+	
+			foreach ($order->getAllItems() as $orderItem) {
+			
+				if (!$orderItem->getQtyToShip()) {
+				    continue;
+				}
+				if ($orderItem->getIsVirtual()) {
+				    continue;
+				}
+		
+				$item = $converter->itemToShipmentItem($orderItem);
+		
+				$qty = $orderItem->getQtyToShip();
+		
+				$item->setQty($qty);
+				$shipment->addItem($item);
+			}
+			
+			$data = array();
+			$data['carrier_code'] = 'Custom Value';
+			$data['title'] = $ship_method;
+			$data['number'] = $bol;
+			
+			$track = Mage::getModel('sales/order_shipment_track')->addData($data);
+			$shipment->addTrack($track);
+			$shipment->register();
+			$shipment->getOrder()->setIsInProcess(true);
+			$transactionSave = Mage::getModel('core/resource_transaction')->addObject($shipment)->addObject($shipment->getOrder())->save();
+			$track->save();
+			$order->setStatus('complete'); 
+			$order->addStatusToHistory('complete', '', false);
+			$order->save();
+	
+		} else {
+			return;
+		}
+    }
 
 }

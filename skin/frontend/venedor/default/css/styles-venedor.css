@@ -477,7 +477,6 @@ table .button.nav {
 /*========== Header ==========*/
 .header-container {
 	position:relative;
-	z-index:10001;
 }
 
 .header {
@@ -3468,7 +3467,7 @@ body.mobile .products-grid .addlinks-block .add-to-links,.products-grid .hover-d
 	top:50px;
 }
 
-.form-list input.input-text {
+.form-list input.input-text, .form-list select.input-text {
 	width:100%;
 	padding:13px 15px 13px 165px;
 	margin-bottom:0;
@@ -3488,6 +3487,7 @@ body.mobile .products-grid .addlinks-block .add-to-links,.products-grid .hover-d
 	width:100%;
 	line-height:20px;
 	height:48px;
+    text-indent: 155px;
 }
 
 .form-list .bootstrap-select {
@@ -4116,4 +4116,7 @@ div.shipping-form > * > * > * > * > * > *
 bottom: 0px;
 position: absolute;
 width: 100%;
+}
+#social-at-header a:hover {
+    opacity: 0.7;
 }

@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <tegdesign translate="label">
+            <label><![CDATA[Bronto Email Collector]]></label>
+            <sort_order>650</sort_order>
+        </tegdesign>
+    </tabs>
+    <sections>
+        <tegdesign_emailcollector_options translate="label" module="tegdesign_emailcollector">
+            <label>Email Collector Settings</label>
+            <tab>tegdesign</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <promosettings translate="label">
+                    <label>Promotion Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <module_enabled>
+                            <label>Email Collector Enabled</label>
+                            <comment><![CDATA[Set this to "Yes" to turn on the email collector popup.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </module_enabled>
+                        <debug_mode>
+                            <label>Debug Mode</label>
+                            <comment><![CDATA[Set debug mode to on and the popup will show up everytime. No cookie check is performed. It will also place a log file in the var/log folder.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </debug_mode>
+						<cms_block_1>
+                            <label>Home Page 1</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </cms_block_1>
+                        <cms_block_2>
+                            <label>Home Page 2 (Optional)</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </cms_block_2>
+                        <thankyou_block>
+                            <label>Home Thank You</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </thankyou_block>
+                        <popup_btntxt>
+                            <label>Submit Button text</label>
+                            <comment><![CDATA[Enter a label for your submit button]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </popup_btntxt>
+                        <url_var_name>
+                            <label>URL Var Name For Alternate Popup</label>
+                            <comment><![CDATA[Example: utm_source, utm_campaign, email_trigger (all lowercase)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_var_name>
+                        <url_var_value>
+                            <label>URL Var Value For Alternate Popup</label>
+                            <comment><![CDATA[Example: nestedbean (all lowercase)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_var_value>
+                        <cms_block_1_additional>
+                            <label>Additional Page Form (Optional)</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </cms_block_1_additional>
+                        <cms_block_2_additional>
+                            <label>Additional Page Form 2 (Optional)</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </cms_block_2_additional>
+                        <thankyou_block_additional>
+                            <label>Additional Thank You (Optional)</label>
+                            <comment><![CDATA[Enter Static Block ID]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Staticblocks</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                 
+                        </thankyou_block_additional>
+                        <redirect_url>
+                            <label>Redirect URL After Additional Form Complete (Optional)</label>
+                            <comment><![CDATA[Example: some-url.html]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </redirect_url>
+                        <use_coupon>
+                            <label>Send a dyanmically generated coupon in autoresponder email</label>
+                            <comment><![CDATA[Setting this to "Yes" will allow you to send a dynamically generated coupon in the email autoresponder that the customer.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>52</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </use_coupon>
+                        <promocoupon>
+                            <label>Coupon Code</label>
+                            <comment><![CDATA[Select the coupon code that will be used to base your dynamically created coupons on. This coupon code is used as the basis for dynamically generating codes from your sales promotions that you want to use in the autoresponder emails sent to your customer.]]></comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>53</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Coupons</source_model>
+                            <validate>required-entry</validate>
+                        </promocoupon>
+
+                        <cookie_expires>
+                            <label>Cookie Expiration</label>
+                            <comment><![CDATA[Prevent the popup from showing to the same user for X days.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Tegdesign_Emailcollector_Model_System_Config_Source_Cookie</source_model>
+                            <sort_order>57</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </cookie_expires>
+                        <show_close_x>
+                            <label>Show Close X button</label>
+                            <comment><![CDATA[Turn this on to include a X button in top right hand corner of the popup. This gives the customer another way to exit the modal window.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>62</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </show_close_x>
+                    </fields>
+                </promosettings>
+
+                <settings translate="label">
+                    <label>Email Settings</label>
+                     <comment><![CDATA[<script src="/js/tegdesign/emailcollector/system.js"></script>]]>
+                    </comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <magento_email>
+                            <label><![CDATA[Use Magento for Sending Email Autoresponder <small style="color: #1A8D76;">(recommended)</small>]]></label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </magento_email>
+                        <emailcollector_template translate="label">
+                            <label>Magento Email template to use for sending autoresponder</label>
+                            <comment><![CDATA[<strong style="color:red;">IMPORTANT:</strong> Make sure to follow the directions in the <a href="http://www.tegdesign.com/email-collector/readme-setup-emails.png" target="_blank">README</a>. The default template WILL NOT SEND EMAILS. You need to setup a new transactional template based on the default template.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </emailcollector_template>
+                        <mailchimp_enabled>
+                            <label>Mailchimp - Subscribe Collected Emails</label>
+                            <comment><![CDATA[If you want the emails you collect to be added to your Mailchimp list enable this.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_enabled>
+						<mailchimp_apikey>
+							<label>Mailchimp - API Key</label>
+                            <comment><![CDATA[Where can I find my API key? <span class="notice"><a href="http://kb.mailchimp.com/article/where-can-i-find-my-api-key" target="_blank">click here</a></span>]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+						</mailchimp_apikey>
+                        <mailchimp_listid>
+                            <label>Mailchimp - List ID</label>
+                            <comment><![CDATA[Where can I find my List ID? <span class="notice"><a href="http://kb.mailchimp.com/article/how-can-i-find-my-list-id" target="_blank">click here</a></span>]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_listid>
+                        <mailchimp_autoresponder_enabled>
+                            <label><![CDATA[Mailchimp - Use for Autoresponder <small style="color: #B1862B;">(experimental)</small>]]></label>
+                            <comment><![CDATA[If you wish to use Mailchimp for your autoresponder enable this option]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_autoresponder_enabled>
+                        <mailchimp_autoresponderfield>
+                            <label>Mailchimp - Autoresponder - Merge Field for Popup Collector</label>
+                            <comment><![CDATA[<strong>Note:</strong> Instructions on setting up your autoresponder available. <span class="notice"><a href="http://www.tegdesign.com/email-collector/autoresponder.png" target="_blank">Click here</a></span><br>How do I add more fields to my list? <span class="notice"><a href="http://kb.mailchimp.com/article/how-do-i-add-more-fields-to-my-list" target="_blank">click here</a></span>]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_autoresponderfield>
+                        <mailchimp_send_coupon_enabled>
+                            <label>Mailchimp - Send Dynamically Generated Coupon to Merge Field</label>
+                            <comment><![CDATA[Set this to "Yes" if you want the dynamically generated coupon to be sent to Mailchimp. Note you must define the coupon Merge field in the option below.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_send_coupon_enabled>
+                        <mailchimp_coupon_merge_field>
+                            <label>Mailchimp - Merge Field for Coupon Code</label>
+                            <comment><![CDATA[You need to create a Merge field at Mailchimp to hold the dynamically generated coupon if you have this feature enabled. This field needs to be set to the tag value of your merge field in Mailchimp.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </mailchimp_coupon_merge_field>
+					</fields>
+                </settings>
+
+                <regopts translate="label">
+                    <label>Customer Registration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <forcereg>
+                            <label>Force Registration</label>
+                            <comment><![CDATA[Turning this setting on adds the customer registration fields to your popup, forcing the customer to create a Magento customer account to recieve an offer.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </forcereg>
+                        <capture_name>
+                            <label>Capture First/Last Name Without Registering</label>
+                            <comment><![CDATA[Turning this on will allow you to capture the first and last name, but it wont register the customer in Magento.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><forcereg>0</forcereg></depends>            
+                        </capture_name>
+                        <extra_fields>
+                            <label>Additional Customer Attributes Codes</label>
+                            <comment><![CDATA[List attribute_codes in the order you want them to appear on the registration popup. Place a comma between each attribute_code. Example: firstname,lastname,dob,gender<br><br><strong>Note:</strong>These customer attributes must exist in your system. This version of the extension only supports the following attribute input types: Select, Text, Date, and Textarea.<br><br><i>There are many extensions to facilitate the adding of additional customer attributes to Magento.</i><br><a href="http://amasty.com/customer-attributes.html" target="_blank">Here is a good one</a>.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><forcereg>1</forcereg></depends>    
+                        </extra_fields>
+                        <addtonewsletter>
+                            <label>Add to Magento Newsletter List</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </addtonewsletter>
+                    </fields>
+                </regopts>
+
+                <advancedsettings translate="label">
+                    <label>Advanced Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>0</expanded>
+                    <fields>
+                        <manual_popup_mode_enabled>
+                            <label>Enable Manual Popup Mode</label>
+                            <comment><![CDATA[Enable this setting if you want to use your own javascript to trigger opening the popup. With this enabled you can call the popup manually by adding an onclick handler to a href tag like this: &lt;a href=&quot;#&quot; onclick=&quot;showEmailCollector()&quot;&gt;Open Popup&lt;/a&gt;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </manual_popup_mode_enabled>
+                    </fields>
+                </advancedsettings>
+
+            </groups>
+        </tegdesign_emailcollector_options>
+    </sections>     
+</config>

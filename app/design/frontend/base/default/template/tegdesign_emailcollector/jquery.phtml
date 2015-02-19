@@ -1,0 +1,168 @@
+<?php
+/**
+ * jquery.phtml
+ * Controls the display of the popup collector on your store.
+ *
+ * When customizing first start by modifying the styles.css file.
+ * Located: skin/frontend/rwd/default/css/tegdesign_emailcollector/styles.css
+ * 
+ * Please note HERDOC style strings are used throughout this template.
+ *
+ * @category    Tegdesign
+ * @package     Emailcollector
+ * @author      Tegan Snyder <tsnyder@tegdesign.com>
+ *
+ */
+
+// is this module enabled, if not dont display the popup.
+$epc = Mage::helper('tegdesign_emailcollector');
+
+// modal JS code found in the controller here:
+// app/code/community/Tegdesign/Emailcollector/controllers/JsController.php
+
+//Mage::getBaseDir() 
+?>
+<script src="<?php echo $epc->getBaseRelativePath(); ?>emailcollector/js/modal"></script>
+
+<?php
+// initialize variables
+$epc_fields = $epc->getFieldLabels();
+$store_id = $epc->getStoreId();
+$debug_mode = $epc->getDebugEnabled();
+$cookie_expires = $epc->getCookieExpiration();
+$epc_label = $epc_fields['epc_label'];
+$email_placeholder = $epc_fields['email_placeholder'];
+$forcereg = $epc->getForceRegEnabled();
+$capture_name = $epc->getCaptureNameEnabled();
+$join_url = $epc->getPostUrl();
+$update_url = $epc->getPostUrl('update');
+$cms_block_1 = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/cms_block_1');
+$cms_block_2 = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/cms_block_2');
+$thankyou_block = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/thankyou_block');
+$cms_block_1_additional = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/cms_block_1_additional');
+$cms_block_2_additional = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/cms_block_2_additional');
+$thankyou_block_additional = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/thankyou_block_additional');
+$popup_btntxt = $epc->getPopupBtnTxt();
+$redirect_url = Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/redirect_url');
+
+if($this->path == 'home') {
+	$modal_content = '<form action="' . $join_url .'" method="POST" id="email_collector_form">
+						<input type="hidden" id="store_id" name="store_id" value="' . $store_id .'">'
+						 . $this->getLayout()->createBlock('cms/block')->setBlockId($cms_block_1)->toHtml() .
+						'<input id="modal_ok_button" class="button email_collector_popup_ok_button" type="submit" name="ok" value="' . $popup_btntxt . '">
+					</form>';
+	if($cms_block_2 != 0) {
+		$modal_content2 = '<form action="' . $update_url .'" method="POST" id="email_collector_form_update">'
+								 . $this->getLayout()->createBlock('cms/block')->setBlockId($cms_block_2)->toHtml() .
+								'<input id="modal_ok_button" class="button email_collector_popup_ok_button" type="submit" name="ok" value="Submit">
+							</form>';
+	} else {
+		$modal_content2 = $this->getLayout()->createBlock('cms/block')->setBlockId($thankyou_block)->toHtml();
+	}
+	
+	$thanks_content = $this->getLayout()->createBlock('cms/block')->setBlockId($thankyou_block)->toHtml();
+} else {
+	$modal_content = '<form action="' . $join_url .'" method="POST" id="email_collector_form">
+						<input type="hidden" id="store_id" name="store_id" value="' . $store_id .'">'
+						 . $this->getLayout()->createBlock('cms/block')->setBlockId($cms_block_1_additional)->toHtml() .
+						'<input id="modal_ok_button" class="button email_collector_popup_ok_button" type="submit" name="ok" value="' . $popup_btntxt . '">
+					</form>';
+	if($cms_block_2_additional != 0) {
+		$modal_content2 = '<form action="' . $update_url .'" method="POST" id="email_collector_form_update">'
+								 . $this->getLayout()->createBlock('cms/block')->setBlockId($cms_block_2_additional)->toHtml() .
+								'<input id="modal_ok_button" class="button email_collector_popup_ok_button" type="submit" name="ok" value="Submit">
+							</form>';
+	} else {
+		$modal_content2 = $this->getLayout()->createBlock('cms/block')->setBlockId($thankyou_block_additional)->toHtml();
+		$second_form = false;
+	}
+	
+	$thanks_content = $this->getLayout()->createBlock('cms/block')->setBlockId($thankyou_block_additional)->toHtml();
+}
+
+// remove line breaks from html
+$modal_content = $epc->cleanHtml($modal_content);
+$modal_content2 = json_encode($modal_content2);
+$thanks_content = json_encode($thanks_content);
+
+?>
+
+<div class="epc-modal-container" style="display:none">
+	<div class="remodal" data-remodal-id="email_popup_collector">
+		<?php echo $modal_content; ?>
+	</div>
+</div>
+
+<script>
+	
+	function epcValidateEmail() {
+		try {
+		    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		    if (!re.test(jQuery('#popup_email').val())) {
+		    	alert('The email address you entered is invalid.');
+				return false;
+			} else {
+				return true;
+			}
+		} catch(err) {
+			return true;
+		}
+	}
+	
+	jQuery("#email_collector_form").submit(function(e)
+	{
+		e.preventDefault(); //STOP default action
+		
+	    if (!epcValidateEmail()) {
+	    	alert('The email address you entered is invalid.');
+			return false;
+		} else {
+			var postData = jQuery(this).serializeArray();
+		    var formURL = jQuery(this).attr("action");
+		    var email = jQuery("#popup_email").val();
+		    jQuery.ajax(
+		    {
+		        url : formURL,
+		        type: "POST",
+		        data : postData,
+		        success:function(data, textStatus, jqXHR) 
+		        {
+		            jQuery("#email_collector_form").replaceWith(<?php echo $modal_content2; ?>);
+		            jQuery("#email_collector_form_update").prepend('<input type="hidden" name="popup_email" id="popup_email" value="' + email + '">');
+		            <?php if((!$second_form) && $redirect_url != '') : ?>
+							setTimeout(function(){ window.location = "<?php echo $redirect_url; ?>"; }, 1500);	
+			        <?php endif; ?>
+		        },
+		        error: function(jqXHR, textStatus, errorThrown) 
+		        {
+		            //if fails      
+		        }
+		    });
+		}
+	});
+	
+	jQuery(document).on("submit","#email_collector_form_update", function(e)
+	{
+		e.preventDefault(); //STOP default action
+		var postData = jQuery(this).serializeArray();
+	    var formURL = jQuery(this).attr("action");
+	    jQuery.ajax(
+	    {
+	        url : formURL,
+	        type: "POST",
+	        data : postData,
+	        success:function(data, textStatus, jqXHR) 
+	        {
+	            jQuery("#email_collector_form_update").replaceWith(<?php echo $thanks_content; ?>);
+	            <?php if($redirect_url != '') : ?>
+						setTimeout(function(){ window.location = "<?php echo $redirect_url; ?>"; }, 1500);	
+	            <?php endif; ?>
+	        },
+	        error: function(jqXHR, textStatus, errorThrown) 
+	        {
+	            //if fails      
+	        }
+	    });
+	});
+	
+</script>

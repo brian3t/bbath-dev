@@ -270,6 +270,25 @@ $this->addColumn('shipping_name', array(
 			)
 		));
 		
+		$this->getMassactionBlock()->addItem('add_bol_ship', array(
+		     'label'=> Mage::helper('sales')->__('Add BOL and Ship'),
+		     'url'  => $this->getUrl('pickpack/sales_order/bolship'),
+		     'additional' => array(
+				'ship_method' => array(
+					'name' => 'ship_method',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'SCAC Code'
+				),
+				'bol' => array(
+					'name' => 'bol',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'BOL#'
+				)
+			)
+		));
+		
 		$this->getMassactionBlock()->addItem('send_asn_orders', array(
 		     'label'=> Mage::helper('sales')->__('Send ASN(s)'),
 		     'url'  => $this->getUrl('pickpack/sales_order/sendasn'),
@@ -280,6 +299,19 @@ $this->addColumn('shipping_name', array(
 		     'url'  => $this->getUrl('pickpack/sales_order/ediinvoice'),
 		));
 		//** END
+		
+		$this->getMassactionBlock()->addItem('change_shipping_method', array(
+		     'label'=> Mage::helper('sales')->__('Change Shipping Method'),
+		     'url'  => $this->getUrl('pickpack/sales_order/changeship'),
+		     'additional' => array(
+				'visibility' => array(
+					'name' => 'ship_method',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'SCAC Code'
+				)
+			)
+		));
 		
 		return $this;
 	}
