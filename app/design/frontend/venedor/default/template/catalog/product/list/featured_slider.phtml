@@ -29,7 +29,7 @@ $blockDescription = $this->getBlockDescription();
 $blockId = $this->getFrontHash();
 ?>
 <div class="featured-products">
-    <?php if ($blockName) : ?><h2 class="subtitle"><span class="inline-title"><?php echo $this->__($blockName);; ?></span><?php if ($_productCollection->count() > 2) echo '<div class="line"></div>'; ?></h2><?php endif; ?>
+    <?php if ($blockName) : ?><h2 class="subtitle"><span class="inline-title"><?php echo $this->__($blockName);; ?></span></h2><?php endif; ?>
     <?php if ($blockDescription) : ?><p class="desc"><?php echo $this->getBlockDescription() ?></p><?php endif; ?>
     <?php if(!$_productCollection->count()): ?>
         <p class="note-msg"><?php echo $this->__('There are no products.') ?></p>
@@ -38,18 +38,18 @@ $blockId = $this->getFrontHash();
         <?php foreach ($_productCollection as $_product): ?>
             <li class="item<?php if (!$b['category']['grid_effect']) echo ' hover-disable' ?><?php if (!$b['category']['grid_addliks_inline']) echo ' addlinks-block' ?>"><div class="item-inner">
                 <div class="product-image">
-                    <?php 
+                    <?php
                     if ($b['category']['hover_image'])
-                        $hoverImgHtml = $venedor->getHoverImageHtml($_product, $imgWidth, $imgHeight); 
+                        $hoverImgHtml = $venedor->getHoverImageHtml($_product, $imgWidth, $imgHeight);
                     ?>
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($this->getImageLabel($_product, 'small_image')) ?>">
                         <img<?php if ($hoverImgHtml) echo ' class="primary-image"'; ?> src="<?php echo $venedor->getImage($_product, $imgWidth, $imgHeight, 'small_image'); ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" />
                         <?php echo $hoverImgHtml; ?>
-                        <?php 
+                        <?php
                         $labels_tl = ''; $labels_tr = ''; $labels_bl = ''; $labels_br = '';
                         $new_html = '';
                         if ($b['product']['new_label']) {
-                            // New Product 
+                            // New Product
                             $newsFromDate = $_product->getNewsFromDate();
                             $newsToDate = $_product->getNewsToDate();
                             $new_html = '';
@@ -95,7 +95,7 @@ $blockId = $this->getFrontHash();
                     <div class="price-review">
                         <?php echo $this->getPriceHtml($_product, true, '-featured-slider') ?>
                     <?php endif; ?>
-                    
+
                     <div class="reviews-wrap">
                         <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                     </div>
@@ -117,7 +117,7 @@ $blockId = $this->getFrontHash();
                         </span>
                         <?php endif; ?>
                     </div>
-                    
+
                     <?php if (!$b['product']['price_on_image']) : ?></div><?php endif; ?>
                 </div>
             </div></li>
@@ -131,29 +131,7 @@ $blockId = $this->getFrontHash();
             var bp = 963;
             if ($('body').hasClass('bv3'))
                 bp = 975;
-            $('#featured-products-list-<?php echo $blockId ?>').flexslider({
-                controlNav: false,
-                animation: 'slide',
-                animationLoop: false,
-                <?php if ($isWideSlider) : ?>
-                minItems: 4,
-                maxItems: 4,
-                <?php else : ?>
-                minItems: 3,
-                maxItems: 3,
-                <?php endif; ?>
-                itemWidth: 228
-            })
-            <?php if ($isWideSlider) : ?>
-            .data("break_default", [4, 228])
-            <?php else : ?>
-            .data("break_default", [3, 228])
-            <?php endif; ?>
-            <?php if ($isWideSlider) : ?>
-            .data("break_points", [ [bp, 3, 190], [750, 2, 190], [530, 1, 228] ] );
-            <?php else : ?>
-            .data("break_points", [ [bp, 2, 190], [750, 2, 190], [530, 1, 228] ] );
-            <?php endif; ?>
+
         });
         //]]>
         </script>

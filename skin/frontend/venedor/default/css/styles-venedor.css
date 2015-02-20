@@ -2361,7 +2361,7 @@ body.mobile .products-grid .addlinks-block .add-to-links,.products-grid .hover-d
 	right:-10px;
 }
 
-#brand-slider .flex-direction-nav a,.featured-products .flex-direction-nav a {
+#brand-slider .flex-direction-nav a{
 	width:50px;
 	height:40px;
 	top:0;

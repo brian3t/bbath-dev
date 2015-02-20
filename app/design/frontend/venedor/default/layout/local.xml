@@ -16,7 +16,15 @@
             <block type="core/text_list" name="footer-banner" as="footer-banner" translate="label">
                 <label>Page Footer Banner</label>
             </block>
-            
+
+            <block type="venedor/product_list_featured" name="featured.products.slider" template="catalog/product/list/featured_slider.phtml">
+                <!--<action method="setIsNew"><src>1</src></action>-->
+                <action method="setIsRandom"><src>1</src></action>
+                <action method="setProductCount"><src>16</src></action>
+                <action method="setBlockName"><src>Featured Products</src></action>
+                <action method="setIsWide"><src>false</src></action>
+            </block>
+
         </reference>
 	
 		<reference name="head">

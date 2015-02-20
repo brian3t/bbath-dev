@@ -13,6 +13,12 @@
                     <template>page/comingsoon.phtml</template>
                     <!--<layout_handle>page_comingsoon</layout_handle>-->
                 </COMING_SOON_LAYOUT>
+                <VIDEOS_PAGE_LAYOUT translate="label">
+                    <label>Bloomingbath Videos</label>
+                    <template>page/videos_page.phtml</template>
+                    <!--<layout_handle>page_comingsoon</layout_handle>-->
+                </VIDEOS_PAGE_LAYOUT>
+
                 <!-- add more layouts here -->
             </layouts>
         </page>

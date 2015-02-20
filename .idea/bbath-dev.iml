@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/var" />
       <excludeFolder url="file://$MODULE_DIR$/var/locks" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -18,4 +19,3 @@
     </orderEntry>
   </component>
 </module>
-

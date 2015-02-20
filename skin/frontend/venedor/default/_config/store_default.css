@@ -1,5 +1,5 @@
 /* System Config Styles */
-/* Created at 2015-02-04 20:24:46 */
+/* Created at 2015-02-20 16:53:46 */
 
 /*========== Common Styles ==========*/
 body {
@@ -269,7 +269,7 @@ form h3,
 .main .page-title h1,
 .footer-banner h2.subtitle {
     color: #5ac5f1;
-/*  border-left: 4px solid #7bae23; */
+    border-left: 4px solid #7bae23;
 }
 .main h2.subtitle .line,
 .main .widget .widget-title h2 .line, 
@@ -515,7 +515,7 @@ div.eternal-custom-menu-popup a.level1,
     font-family: 'Whitney SSm A', 'Whitney SSm B',helvetica,arial;
 }
 div.column {
-    width: 33.3333333333%;
+    width: 33.333333333333%;
 }
 #menu-button .btn-navbar .icon-bar {
     background-color: #ffffff;
@@ -794,7 +794,7 @@ div.column {
 }
 .footer-tweets .twitter-icon {
     bottom: -15px;
-    background-image: url(http://dev.bloomingbath.com/media/eternal/venedor/icon/icon_twitter.png);
+    background-image: url(http://10.0.0.185/media/eternal/venedor/icon/icon_twitter.png);
 }
 .footer-top {
     border-bottom: 1px solid #383938;

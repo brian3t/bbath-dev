@@ -1,0 +1,30 @@
+#videos_page li{
+    list-style-image: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+#videos_page ul{
+    padding-left: 0;
+}
+#videos_page li img{
+    /*width: 90%;*/
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    /*padding-top: 30px; *//* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* TODO find out missing css */
