@@ -1,10 +1,4 @@
 .modgit/
-var/**
-var/cache/**
-var/cache/**/**
-var/log/**
-var/log/system.log
-var/**/**
 app/code/community/Phoenix/
 app/code/community/Cm/
 app/code/core/
@@ -32,10 +26,8 @@ js/enterprise/
 js/extjs/
 js/firebug/
 js/flash/
-js/index.php
 js/jscolor/
 js/lib/
-js/mage/
 js/prototype/
 js/scriptaculous/
 js/spacer.gif
@@ -91,10 +83,6 @@ skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
 var/
-var/*
-var/locks/*
 wp/*
 
-var/locks
 .idea
-.idea/*
