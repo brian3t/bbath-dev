@@ -1,0 +1,16 @@
+"Invoice Number","Originating Order Number",Store,"Customer ID",Date,Name,SKU,QTY,Subtotal,Discount,Tax
+250006044,250006254,Wholesale,850,"Nov 18, 2014 8:25:04 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,48.0000,$960.00,$0.00,$0.00
+250006043,250006253,Wholesale,850,"Nov 18, 2014 8:25:03 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,128.0000,"$2,560.00",$0.00,$0.00
+250006042,250006252,Wholesale,850,"Nov 18, 2014 8:25:03 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,72.0000,"$1,440.00",$0.00,$0.00
+250006041,250006251,Wholesale,850,"Nov 18, 2014 8:25:02 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,144.0000,"$2,880.00",$0.00,$0.00
+250006040,250006250,Wholesale,850,"Nov 18, 2014 8:25:02 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,72.0000,"$1,440.00",$0.00,$0.00
+250006039,250006249,Wholesale,850,"Nov 18, 2014 8:25:02 AM","Blooming Bath Baby Bath - Turquoise",BLOOMINGBATH-TURQUOISE,32.0000,$640.00,$0.00,$0.00
+250006039,250006249,Wholesale,850,"Nov 18, 2014 8:25:02 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,120.0000,"$2,400.00",$0.00,$0.00
+250005929,250006138,Wholesale,850,"Nov 6, 2014 11:13:09 AM","Blooming Bath Baby Bath - Hot Pink",BLOOMINGBATH-PINK,300.0000,"$6,000.00",$0.00,$0.00
+250005925,250006134,Wholesale,850,"Nov 5, 2014 8:17:58 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,44.0000,$880.00,$0.00,$0.00
+250005924,250006133,Wholesale,850,"Nov 5, 2014 8:17:55 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,68.0000,"$1,360.00",$0.00,$0.00
+250005923,250006132,Wholesale,850,"Nov 5, 2014 8:17:52 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,196.0000,"$3,920.00",$0.00,$0.00
+250005922,250006131,Wholesale,850,"Nov 5, 2014 8:17:47 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,40.0000,$800.00,$0.00,$0.00
+250005833,250006040,Wholesale,850,"Oct 22, 2014 9:53:38 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,176.0000,"$3,520.00",$0.00,$0.00
+250005832,250006039,Wholesale,850,"Oct 22, 2014 9:53:38 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,268.0000,"$5,360.00",$0.00,$0.00
+250005831,250006038,Wholesale,850,"Oct 22, 2014 9:53:37 AM","Blooming Bath Baby Bath - Canary Yellow",BLOOMINGBATH-YELLOW,212.0000,"$4,240.00",$0.00,$0.00

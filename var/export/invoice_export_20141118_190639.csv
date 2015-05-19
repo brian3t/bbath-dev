@@ -1,0 +1,4 @@
+"Invoice Number","Originating Order Number",Store,"Customer ID",Date,"Grand Total",Subtotal,Shipping,"Tax Amount","Discount Amount","PayPal Trans ID"
+250006044,250006254,Wholesale,850,"Nov 18, 2014 8:25:04 AM",$960.00,$960.00,$0.00,$0.00,$0.00,
+250006043,250006253,Wholesale,850,"Nov 18, 2014 8:25:03 AM","$2,560.00","$2,560.00",$0.00,$0.00,$0.00,
+250006042,250006252,Wholesale,850,"Nov 18, 2014 8:25:03 AM","$1,440.00","$1,440.00",$0.00,$0.00,$0.00,

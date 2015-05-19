@@ -1,0 +1,356 @@
+<?php
+$defaultLocation = Mage::getStoreConfig('magebuzz/google_map_options/default_location_address');
+$key = Mage::getStoreConfig('magebuzz/google_map_options/google_api_key');
+$limit = Mage::getStoreConfig('magebuzz/google_map_options/number_of_result');
+$load = Mage::getStoreConfig('magebuzz/google_map_options/show_map_on_page_load');
+$collection = Mage::getModel('dealerlocator/dealerlocator')->getCollection()->addFieldToFilter('status',1);
+
+$locations = array();
+// foreach($collection as $item) {
+// array_push($locations, $item->getData());
+// }
+
+//$defaultLatitude = 0;
+//$defaultLongitude = 0;
+if(!$defaultLocation && $locations) {
+	$defaultLatitude = $locations[0]['latitude'];
+	$defaultLongitude = $locations[0]['longitude'];
+} elseif ($defaultLocation) {
+	$address = urlencode($defaultLocation);
+	$json = file_get_contents(Mage::getStoreConfig('magebuzz/google_map_options/google_geo_api_url')."?address=$address&sensor=false");
+	$json = json_decode($json);
+	$defaultLatitude = 0;
+	$defaultLongitude = 0;
+	$zoom = 2;
+}
+
+if(Mage::getSingleton('core/session')->getIsSearch()) {
+	$locations = Mage::getSingleton('core/session')->getSearchLocations();
+	if(Mage::getSingleton('core/session')->getIsAddressSearch()) {
+		$defaultLatitude = Mage::getSingleton('core/session')->getSearchLatitude();
+		$defaultLongitude = Mage::getSingleton('core/session')->getSearchLongitude();
+		Mage::getSingleton('core/session')->setIsAddressSearch(false);
+	}
+	$distance = Mage::getSingleton('core/session')->getDistance();
+	$zoom = 10;
+}
+$count = count($locations);
+?>
+<?php if ($load) : ?>
+	<style type="text/css">	#map_canvas { height: 100%; width: 759px } #goto-intl {color: #03b1cd}</style>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?php echo $key ?>&sensor=true&v=3.8"></script>
+	<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+	<script type="text/javascript">
+		jQuery.noConflict();
+		jQuery(document).ready(function(){
+			initialize();
+			jQuery('#tabs div').hide();
+			jQuery('#tabs div:first').show();
+			jQuery('#tabs ul li:first').addClass('active');
+
+			jQuery('#tabs ul li a').click(function(){
+				jQuery('#tabs ul li').removeClass('active');
+				jQuery(this).parent().addClass('active');
+				var currentTab = jQuery(this).attr('href');
+				jQuery('#tabs div').hide();
+				jQuery(currentTab).show();
+				return false;
+			});
+			jQuery('#goto-intl').click(function(){
+				jQuery('html, body').animate({
+					scrollTop: jQuery("#tabs").offset().top
+				}, 500);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		var map;
+		var infoWindow;
+		function initialize() {
+			var myOptions = {
+				zoom: <? echo $zoom; ?>,
+				center: new google.maps.LatLng(<?php echo $defaultLatitude ?>, <?php echo $defaultLongitude ?>),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			infoWindow = new google.maps.InfoWindow;
+			map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			var onMarkerClick = function() {
+				var marker = this;
+				var latLng = marker.getPosition();
+				infoWindow.setContent(marker.title);
+				infoWindow.open(map, marker);
+			};
+
+			google.maps.event.addListener(map, 'click', function() {
+				infoWindow.close();
+			});
+
+			<?php if($count <= $limit) : ?>
+			<?php foreach($locations as $location):?>
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(<?php echo $location['latitude'] ?>, <?php echo $location['longitude'] ?>),
+				map: map,
+				icon: '../images/blooming-bath-marker.png',
+				title: '<?php echo addslashes($location['title'])?>'+
+				'<br/>'+"<?php echo addslashes($location['address'])?>"+
+				'<br/>'+"<?php echo addslashes($location['phone'])?>"+
+				'<br/>'+"<?php echo addslashes($location['distance'])?> miles"
+			});
+			google.maps.event.addListener(marker, 'click', onMarkerClick);
+			<?php endforeach; ?>
+			<?php else : ?>
+			<?php while($limit>0) : ?>
+			<?php $location = $locations[$limit--] ?>
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(<?php echo $location['latitude'] ?>, <?php echo $location['longitude'] ?>),
+				map: map,
+				icon: '../images/blooming-bath-marker.png',
+				title: '<?php echo addslashes($location['title'])?>'+
+				'<br/>'+"<?php echo addslashes($location['address'])?>"+
+				'<br/>'+"<?php echo addslashes($location['phone'])?>"+
+				'<br/>'+"<?php echo addslashes($location['distance'])?> miles"
+			});
+			google.maps.event.addListener(marker, 'click', onMarkerClick);
+			<?php endwhile; ?>
+			<?php endif;?>
+		}
+		function showLocationOnMap(i) {
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng($('info_location_latitude_'+i).innerHTML, $('info_location_longitude_'+i).innerHTML),
+				map: map,
+				icon: '../images/blooming-bath-marker.png',
+				title: $('info_location_title_'+i).innerHTML +
+				'<br/>'+ $('info_location_address_'+i).innerHTML +
+				'<br/>'+ $('info_location_phone_'+i).innerHTML
+			});
+			infoWindow.setContent(marker.title);
+			infoWindow.open(map, marker);
+			map.setZoom(12);
+			map.setCenter(marker.getPosition());
+		}
+		function showLocationOnMap2(i) {
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng($('info_2_location_latitude_'+i).innerHTML, $('info_2_location_longitude_'+i).innerHTML),
+				map: map,
+				icon: '../images/blooming-bath-marker.png',
+				title: $('info_2_location_title_'+i).innerHTML +
+				'<br/>'+ $('info_2_location_address_'+i).innerHTML +
+				'<br/>'+ $('info_2_location_phone_'+i).innerHTML +
+				'<br/>'+ $('info_2_location_distance_'+i).innerHTML
+			});
+			infoWindow.setContent(marker.title);
+			infoWindow.open(map, marker);
+
+		}
+	</script>
+	<!--Geolocation block-->
+	<script type="text/javascript">
+		var geocoder = new google.maps.Geocoder();
+		function getgeocode(){
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+			} else {
+				alert("Your broswer does not support this feature.  Please type in your address");
+			}
+
+			//Get the latitude and the longitude;
+			function successFunction(position) {
+				var lat = position.coords.latitude;
+				var lng = position.coords.longitude;
+				codeLatLng(lat, lng)
+			}
+
+			function errorFunction(){
+				alert("Sorry but we were unable to find your address. Please type in your address.");
+			}
+
+			function codeLatLng(lat, lng) {
+				var latlng = new google.maps.LatLng(lat, lng);
+				geocoder.geocode({'latLng': latlng}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+						if (results[1]) {
+							jQuery('#address').val(results[0].formatted_address);
+							jQuery('#latitude').val(lat);
+							jQuery('#longitude').val(lng);
+							jQuery('#submit_address').submit();
+						} else {
+							alert("No results found");
+						}
+					} else {
+						alert("Geocoder failed due to: " + status);
+					}
+				});
+			}
+		}
+	</script>
+
+<?php endif; ?>
+<div class="dealerlocator">
+	<div class="dealer-search">
+		<h1><?php echo $this->__('Find A Blooming Bath Retailer') ?></h1>
+		<div class="fieldset">
+			<form method="post" action="dealer-locator/index/search" id="submit_address">
+				<div class="row">
+				<input type="hidden" name="latitude" id="latitude" value=""/>
+				<input type="hidden" name="longitude" id="longitude" value=""/>
+				<ul class="form-list">
+					<li class="fields">
+						<p>Please type in your full address OR city, state/province OR zip/postal code to find the Blooming Bath retailer nearest you.  We can't guarantee that they will have the exact product you are looking for so it is best to call ahead to check their inventory.</p>
+						<p>Looking for international retailers?  <span id="goto-intl">Click Here</span> to see a list by country.</p>
+
+						<div class="col-md-12">
+								<div id="use-location" title="Use My Location" onclick="getgeocode()"></div>
+							<div class="field" style="width: 70%;">
+								<label for="address"><?php echo $this->__('Address/City, State/Zip or Postal Code') ?></label>
+								<div class="input-box">
+									<input type="text" size="25" name="address" id="address" title="<?php echo $this->__('Address') ?>" value="<?php echo Mage::getSingleton('core/session')->getSearchedAddress()?>" class="input-text" />
+								</div>
+							</div>
+							<div class="field">
+								<select class="form-control" name="distance" id="distance" title="<?php echo $this->__('Distance')?>">
+									<option value="">Distance</option>
+									<option value="25" <?php if($distance == '25') { echo 'selected'; }?>>25 Miles</option>
+									<option value="50" <?php if($distance == '50') { echo 'selected'; }?>>50 Miles</option>
+									<option value="100" <?php if($distance == '100') { echo 'selected'; }?>>100 Miles</option>
+								</select>
+							</div>
+							<div class="field" style="margin-top: 10px">
+								<button type="submit" class="button" title="<?php echo $this->__('Search') ?>"><span><span><?php echo $this->__('Search') ?></span></span></button>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</li>
+				</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="dealer-body">
+		<div id="dealer-search-result" class="fieldset">
+			<h2 class="legend"><?php echo $this->__('Locations') ?></h2>
+			<div class="list-result">
+				<div>
+					<?php if($locations) : $i=1;?>
+						<ul>
+							<?php foreach($locations as $location): ?>
+								<li>
+									<div id="info_2_location_latitude_<?php echo $i?>" class="hidden" value="<?php echo $location['latitude'] ?>"><?php echo $location['latitude'] ?></div>
+									<div id="info_2_location_longitude_<?php echo $i?>" class="hidden" value="<?php echo $location['longitude'] ?>"><?php echo $location['longitude'] ?></div>
+									<div id="info_2_location_title_<?php echo $i?>" class="hidden" value="<?php echo $location['title'] ?>"><?php echo $location['title'] ?></div>
+									<div id="info_2_location_address_<?php echo $i?>" class="hidden" value="<?php echo $location['address'] ?>"><?php echo $location['address'] ?></div>
+									<h5 onclick="showLocationOnMap2(<?php echo $i?>)" style="cursor:pointer"><?php echo $location['title']?></h5>
+									<address><?php echo $location['address']?></address>
+									<div id="info_2_location_phone_<?php echo $i?>"><?php echo $location['phone'] ?></div>
+									<div id="info_2_location_distance_<?php echo $i?>"><?php echo $location['distance'] ?> miles</div>
+								</li>
+								<?php $i++; endforeach; ?>
+						</ul>
+					<?php else:?>
+						<?php if(Mage::getSingleton('core/session')->getIsSearch()):?>
+							<?php echo "No results found. You may want to increase your search distance.";?>
+						<?php else:?>
+							<?php echo "Results will be displayed here.";?>
+						<?php endif;?>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+		<div id="map_canvas" style="float:right; width:650px; height:500px"></div>
+	</div>
+</div>
+
+<?php
+$collection = Mage::getModel('dealerlocator/dealerlocator')->getCollection()->addFieldToFilter('status',1);
+$locations = array();
+foreach($collection as $item) {
+	array_push($locations, $item->getData());
+}
+
+$groups = array();
+foreach ($locations as $item) {
+	$key = $item['country'];
+	if (!isset($groups[$key])) {
+		$groups[$key] = array($item);
+	} else {
+		$groups[$key][] = $item;
+	}
+}
+
+$i = 1;
+ksort($groups);
+foreach (array_keys($groups) as $key) {
+	$tabs .= '<li><a href="#tab-' . $i . '" data-toggle="tab">' . $key . '</a></li>';
+	$i++;
+}
+?>
+<div class="list-all-dealer">
+	<h2 class="legend"><?php echo $this->__('All Blooming Bath Retailers') ?></h2>
+	<div id="tabs">
+		<!--			<ul class="product-tabs">-->
+		<!--				--><?php //echo $tabs ?>
+		<!--			</ul>-->
+		<ul class="button-tabs">
+			<?php echo $tabs ?>
+		</ul>
+		<!--			<ul id="our-products-tabs" class="button-tabs">-->
+		<!--				<li class="active"><a href="#all" data-toggle="tab">All</a></li>-->
+		<!--				<li class=""><a href="#latest" data-toggle="tab">Latest</a></li>-->
+		<!--				<li class=""><a href="#new" data-toggle="tab">News</a></li>-->
+		<!--				<li class=""><a href="#bestsellers" data-toggle="tab">Bestsellers</a></li>-->
+		<!--				<li class=""><a href="#specials" data-toggle="tab">Specials</a></li>-->
+		<!--			</ul>-->
+		<?php if($locations) : $i=1; $h=1 ?>
+			<?php foreach ($groups as $item) { ?>
+				<div id="tab-<?php echo $i ?>">
+					<table class="data-table" id="dealer-list">
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col width="1">
+						</colgroup>
+						<thead>
+						<tr>
+							<th><?php echo $this->__('Store') ?></th>
+							<th><?php echo $this->__('Address') ?></th>
+							<th><?php echo $this->__('Phone') ?></th>
+							<?php if($item[0]['country'] != 'United States') { ?>
+								<th>Website</th>
+							<?php } ?>
+						</tr>
+						</thead>
+						<tbody>
+						<?php foreach ($item as $location) { ?>
+							<tr>
+								<td class="store-name" onclick="showLocationOnMap(<?php echo $h?>)" style="cursor:pointer">
+									<?php echo $location['title']?>
+									<div id="info_location_latitude_<?php echo $h?>" class="hidden" value="<?php echo $location['latitude'] ?>"><?php echo $location['latitude'] ?></div>
+									<div id="info_location_longitude_<?php echo $h?>" class="hidden" value="<?php echo $location['longitude'] ?>"><?php echo $location['longitude'] ?></div>
+									<div id="info_location_title_<?php echo $h?>" class="hidden" value="<?php echo $location['title'] ?>"><?php echo $location['title'] ?></div>
+									<div id="info_location_address_<?php echo $h?>" class="hidden" value="<?php echo $location['address'] ?>"><?php echo $location['address'] ?></div>
+									<div id="info_location_phone_<?php echo $h?>" class="hidden" value="<?php echo $location['phone'] ?>"><?php echo $location['phone'] ?></div>
+								</td>
+								<td class="dealer-address"><?php echo $location['address']?></td>
+								<td><?php echo $location['phone']?></td>
+								<?php if($item[0]['country'] != 'United States') { ?>
+									<td><a href="http://<?php echo $location['website'] ?>"><?php echo $location['website'] ?></a></td>
+								<?php } ?>
+							</tr>
+							<?php $h++; } $i++; ?>
+						</tbody>
+					</table>
+				</div>
+			<?php } ?>
+		<?php else : ?>
+			<p class="note-msg"><?php echo $this->__('There are no available dealers.') ?></p>
+		<?php endif; ?>
+	</div>
+	<?php
+	if(Mage::getSingleton('core/session')->getIsSearch()){
+		Mage::getSingleton('core/session')->unsSearchLocations();
+		Mage::getSingleton('core/session')->unsSearchLatitude();
+		Mage::getSingleton('core/session')->unsSearchLongitude();
+		Mage::getSingleton('core/session')->setIsSearch(false);
+	}
+	?>

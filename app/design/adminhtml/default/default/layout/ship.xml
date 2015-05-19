@@ -1,0 +1,7 @@
+<layout>
+<adminhtml_sales_order_view>
+	<reference name="order_tab_info">
+		<action method="setTemplate"><template>ship/sales/order/view/tab/info.phtml</template></action>
+	</reference>
+</adminhtml_sales_order_view>
+</layout>

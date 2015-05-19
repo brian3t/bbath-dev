@@ -1,0 +1,715 @@
+2015-04-20T00:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T00:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T00:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T00:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T00:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T00:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T00:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T00:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T00:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T00:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T00:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T00:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T00:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T00:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T00:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T00:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T01:06:25+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T01:06:25+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T01:06:25+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T01:06:25+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T01:06:25+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T01:06:25+00:00 DEBUG (7):   Processing Order ID: 41441 	 #200034275
+2015-04-20T01:06:28+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T01:06:28+00:00 DEBUG (7):   Success: 1
+2015-04-20T01:06:28+00:00 DEBUG (7):   Error:   0
+2015-04-20T01:06:28+00:00 DEBUG (7):   Total:   1
+2015-04-20T01:06:28+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T01:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T01:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T01:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T01:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T01:30:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T01:30:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T01:30:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T01:30:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T01:46:31+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T01:46:31+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T01:46:31+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T01:46:31+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T01:46:31+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T01:46:31+00:00 DEBUG (7):   Processing Order ID: 41443 	 #200034277
+2015-04-20T01:46:31+00:00 DEBUG (7):   Processing Order ID: 41442 	 #200034276
+2015-04-20T01:46:34+00:00 DEBUG (7):   Flush resulted in 2 orders processed
+2015-04-20T01:46:34+00:00 DEBUG (7):   Success: 2
+2015-04-20T01:46:34+00:00 DEBUG (7):   Error:   0
+2015-04-20T01:46:34+00:00 DEBUG (7):   Total:   2
+2015-04-20T01:46:34+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T02:00:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T02:00:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T02:00:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T02:00:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T02:16:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T02:16:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T02:16:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T02:16:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T02:31:31+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T02:31:31+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T02:31:31+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T02:31:31+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T02:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T02:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T02:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T02:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T03:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T03:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T03:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T03:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T03:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T03:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T03:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T03:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T03:30:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T03:30:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T03:30:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T03:30:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T03:51:40+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T03:51:40+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T03:51:40+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T03:51:40+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T03:51:40+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T03:51:40+00:00 DEBUG (7):   Processing Order ID: 41445 	 #200034279
+2015-04-20T03:51:40+00:00 DEBUG (7):   Processing Order ID: 41444 	 #200034278
+2015-04-20T03:51:46+00:00 DEBUG (7):   Flush resulted in 2 orders processed
+2015-04-20T03:51:46+00:00 DEBUG (7):   Success: 2
+2015-04-20T03:51:46+00:00 DEBUG (7):   Error:   0
+2015-04-20T03:51:46+00:00 DEBUG (7):   Total:   2
+2015-04-20T03:51:46+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T04:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T04:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T04:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T04:00:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T04:00:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T04:00:02+00:00 DEBUG (7):   Processing Order ID: 41446 	 #200034280
+2015-04-20T04:00:05+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T04:00:05+00:00 DEBUG (7):   Success: 1
+2015-04-20T04:00:05+00:00 DEBUG (7):   Error:   0
+2015-04-20T04:00:05+00:00 DEBUG (7):   Total:   1
+2015-04-20T04:00:05+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T04:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T04:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T04:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T04:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T04:30:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T04:30:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T04:30:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T04:30:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T04:45:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T04:45:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T04:45:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T04:45:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T05:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T05:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T05:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T05:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T05:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T05:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T05:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T05:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T05:35:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T05:35:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T05:35:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T05:35:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T05:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T05:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T05:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T05:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T06:00:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T06:00:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T06:00:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T06:00:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T06:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T06:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T06:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T06:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T06:30:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T06:30:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T06:30:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T06:30:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T06:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T06:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T06:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T06:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T07:05:12+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T07:05:12+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T07:05:12+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T07:05:12+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T07:05:12+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T07:05:12+00:00 DEBUG (7):   Processing Order ID: 41447 	 #200034281
+2015-04-20T07:05:14+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T07:05:14+00:00 DEBUG (7):   Success: 1
+2015-04-20T07:05:14+00:00 DEBUG (7):   Error:   0
+2015-04-20T07:05:14+00:00 DEBUG (7):   Total:   1
+2015-04-20T07:05:14+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T07:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T07:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T07:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T07:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T07:35:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T07:35:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T07:35:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T07:35:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T07:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T07:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T07:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T07:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T08:00:31+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T08:00:31+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T08:00:31+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T08:00:31+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T08:00:31+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T08:00:31+00:00 DEBUG (7):   Processing Order ID: 41448 	 #200034282
+2015-04-20T08:00:33+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T08:00:33+00:00 DEBUG (7):   Success: 1
+2015-04-20T08:00:33+00:00 DEBUG (7):   Error:   0
+2015-04-20T08:00:33+00:00 DEBUG (7):   Total:   1
+2015-04-20T08:00:33+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T08:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T08:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T08:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T08:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T08:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T08:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T08:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T08:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T08:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T08:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T08:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T08:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T09:00:07+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T09:00:07+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T09:00:07+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T09:00:07+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T09:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T09:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T09:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T09:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T09:35:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T09:35:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T09:35:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T09:35:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T09:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T09:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T09:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T09:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T10:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T10:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T10:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T10:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T10:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T10:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T10:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T10:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T10:30:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T10:30:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T10:30:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T10:30:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T10:45:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T10:45:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T10:45:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T10:45:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T11:00:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T11:00:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T11:00:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T11:00:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T11:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T11:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T11:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T11:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T11:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T11:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T11:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T11:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T11:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T11:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T11:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T11:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T12:00:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T12:00:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T12:00:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T12:00:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T12:15:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T12:15:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T12:15:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T12:15:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T12:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T12:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T12:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T12:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T12:45:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T12:45:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T12:45:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T12:45:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T13:00:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T13:00:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T13:00:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T13:00:03+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T13:00:03+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T13:00:03+00:00 DEBUG (7):   Processing Order ID: 41449 	 #200034283
+2015-04-20T13:00:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T13:00:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T13:00:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T13:00:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T13:00:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T13:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T13:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T13:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T13:15:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T13:15:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T13:15:02+00:00 DEBUG (7):   Processing Order ID: 41449 	 #200034283
+2015-04-20T13:15:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T13:15:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T13:15:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T13:15:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T13:15:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T13:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T13:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T13:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T13:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T13:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T13:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T13:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T13:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T14:00:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T14:00:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T14:00:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T14:00:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T14:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T14:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T14:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T14:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T14:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T14:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T14:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T14:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T14:50:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T14:50:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T14:50:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T14:50:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T15:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T15:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T15:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T15:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T15:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T15:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T15:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T15:15:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T15:15:03+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T15:15:03+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41321 	 #250007478
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41322 	 #250007479
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41319 	 #250007476
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41320 	 #250007477
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41318 	 #250007475
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41326 	 #250007483
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41325 	 #250007482
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41324 	 #250007481
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41323 	 #250007480
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41330 	 #250007487
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41329 	 #250007486
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41328 	 #250007485
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41327 	 #250007484
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41333 	 #250007490
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41332 	 #250007489
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41331 	 #250007488
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41336 	 #250007493
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41335 	 #250007492
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41334 	 #250007491
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41340 	 #250007497
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41339 	 #250007496
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41338 	 #250007495
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41337 	 #250007494
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41342 	 #250007499
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41341 	 #250007498
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41385 	 #250007506
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41359 	 #250007503
+2015-04-20T15:15:03+00:00 DEBUG (7):   Processing Order ID: 41358 	 #250007502
+2015-04-20T15:16:02+00:00 DEBUG (7):   Flush resulted in 28 orders processed
+2015-04-20T15:16:02+00:00 DEBUG (7):   Success: 28
+2015-04-20T15:16:02+00:00 DEBUG (7):   Error:   0
+2015-04-20T15:16:02+00:00 DEBUG (7):   Total:   28
+2015-04-20T15:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T15:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T15:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T15:30:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T15:30:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T15:30:02+00:00 DEBUG (7):   Processing Order ID: 41450 	 #200034285
+2015-04-20T15:30:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T15:30:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T15:30:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T15:30:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T15:30:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T15:45:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T15:45:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T15:45:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T15:45:03+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T15:45:03+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T15:45:03+00:00 DEBUG (7):   Processing Order ID: 41451 	 #200034286
+2015-04-20T15:45:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T15:45:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T15:45:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T15:45:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T15:45:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T15:45:04+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T15:45:04+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T15:45:04+00:00 DEBUG (7):   Processing Order ID: 41453 	 #250007511
+2015-04-20T15:45:06+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T15:45:06+00:00 DEBUG (7):   Success: 1
+2015-04-20T15:45:06+00:00 DEBUG (7):   Error:   0
+2015-04-20T15:45:06+00:00 DEBUG (7):   Total:   1
+2015-04-20T16:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T16:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T16:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T16:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T16:00:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T16:00:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41460 	 #250007518
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41459 	 #250007517
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41458 	 #250007516
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41457 	 #250007515
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41456 	 #250007514
+2015-04-20T16:00:02+00:00 DEBUG (7):   Processing Order ID: 41455 	 #250007513
+2015-04-20T16:00:04+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T16:00:04+00:00 INFO (6):   Skipping order id  #: Invalid order
+2015-04-20T16:00:06+00:00 DEBUG (7):   Flush resulted in 5 orders processed
+2015-04-20T16:00:07+00:00 DEBUG (7):   Success: 7
+2015-04-20T16:00:07+00:00 DEBUG (7):   Error:   0
+2015-04-20T16:00:07+00:00 DEBUG (7):   Total:   6
+2015-04-20T16:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T16:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T16:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T16:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T16:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T16:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T16:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T16:30:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T16:30:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T16:30:02+00:00 DEBUG (7):   Processing Order ID: 41449 	 #200034283
+2015-04-20T16:30:02+00:00 DEBUG (7):   Processing Order ID: 41441 	 #200034275
+2015-04-20T16:30:02+00:00 DEBUG (7):   Processing Order ID: 41440 	 #200034274
+2015-04-20T16:30:02+00:00 DEBUG (7):   Processing Order ID: 41438 	 #200034272
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41437 	 #200034271
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41436 	 #200034270
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41434 	 #200034268
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41433 	 #200034267
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41432 	 #200034266
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41429 	 #200034262
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41428 	 #200034261
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41426 	 #200034259
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41425 	 #200034258
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41420 	 #200034253
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41418 	 #200034251
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41417 	 #200034250
+2015-04-20T16:30:03+00:00 DEBUG (7):   Processing Order ID: 41416 	 #200034249
+2015-04-20T16:30:13+00:00 DEBUG (7):   Flush resulted in 17 orders processed
+2015-04-20T16:30:13+00:00 DEBUG (7):   Success: 17
+2015-04-20T16:30:13+00:00 DEBUG (7):   Error:   0
+2015-04-20T16:30:13+00:00 DEBUG (7):   Total:   17
+2015-04-20T16:30:13+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T16:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T16:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T16:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T16:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T17:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T17:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T17:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T17:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T17:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T17:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T17:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T17:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T17:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T17:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T17:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T17:30:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T17:30:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T17:30:02+00:00 DEBUG (7):   Processing Order ID: 41461 	 #200034288
+2015-04-20T17:30:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T17:30:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T17:30:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T17:30:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T17:30:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T17:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T17:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T17:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T17:45:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T17:45:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41419 	 #200034252
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41462 	 #200034287
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41451 	 #200034286
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41450 	 #200034285
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41447 	 #200034281
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41445 	 #200034279
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41443 	 #200034277
+2015-04-20T17:45:02+00:00 DEBUG (7):   Processing Order ID: 41430 	 #200034264
+2015-04-20T17:45:03+00:00 DEBUG (7):   Processing Order ID: 41424 	 #200034257
+2015-04-20T17:45:03+00:00 DEBUG (7):   Processing Order ID: 41415 	 #200034248
+2015-04-20T17:45:10+00:00 DEBUG (7):   Flush resulted in 10 orders processed
+2015-04-20T17:45:10+00:00 DEBUG (7):   Success: 10
+2015-04-20T17:45:10+00:00 DEBUG (7):   Error:   0
+2015-04-20T17:45:10+00:00 DEBUG (7):   Total:   10
+2015-04-20T17:45:10+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T18:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T18:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T18:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T18:00:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T18:00:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41435 	 #200034269
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41431 	 #200034265
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41427 	 #200034260
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41439 	 #200034273
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41446 	 #200034280
+2015-04-20T18:00:02+00:00 DEBUG (7):   Processing Order ID: 41421 	 #200034254
+2015-04-20T18:00:07+00:00 DEBUG (7):   Flush resulted in 6 orders processed
+2015-04-20T18:00:07+00:00 DEBUG (7):   Success: 6
+2015-04-20T18:00:07+00:00 DEBUG (7):   Error:   0
+2015-04-20T18:00:07+00:00 DEBUG (7):   Total:   6
+2015-04-20T18:00:07+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T18:15:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T18:15:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T18:15:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T18:15:04+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T18:15:04+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T18:15:04+00:00 DEBUG (7):   Processing Order ID: 41463 	 #200034289
+2015-04-20T18:15:04+00:00 DEBUG (7):   Processing Order ID: 41461 	 #200034288
+2015-04-20T18:15:04+00:00 DEBUG (7):   Processing Order ID: 41462 	 #200034287
+2015-04-20T18:15:04+00:00 DEBUG (7):   Processing Order ID: 41444 	 #200034278
+2015-04-20T18:15:04+00:00 DEBUG (7):   Processing Order ID: 41448 	 #200034282
+2015-04-20T18:15:05+00:00 DEBUG (7):   Processing Order ID: 41442 	 #200034276
+2015-04-20T18:15:05+00:00 DEBUG (7):   Processing Order ID: 41423 	 #200034256
+2015-04-20T18:15:05+00:00 DEBUG (7):   Processing Order ID: 41422 	 #200034255
+2015-04-20T18:15:12+00:00 DEBUG (7):   Flush resulted in 8 orders processed
+2015-04-20T18:15:13+00:00 DEBUG (7):   Success: 8
+2015-04-20T18:15:13+00:00 DEBUG (7):   Error:   0
+2015-04-20T18:15:13+00:00 DEBUG (7):   Total:   8
+2015-04-20T18:15:13+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T18:15:13+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T18:15:13+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T18:15:13+00:00 DEBUG (7):   Processing Order ID: 41453 	 #250007511
+2015-04-20T18:15:15+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T18:15:15+00:00 DEBUG (7):   Success: 1
+2015-04-20T18:15:15+00:00 DEBUG (7):   Error:   0
+2015-04-20T18:15:15+00:00 DEBUG (7):   Total:   1
+2015-04-20T18:35:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T18:35:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T18:35:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T18:35:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T18:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T18:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T18:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T18:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T19:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T19:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T19:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T19:00:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T19:00:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T19:00:02+00:00 DEBUG (7):   Processing Order ID: 41464 	 #200034290
+2015-04-20T19:00:06+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T19:00:06+00:00 DEBUG (7):   Success: 1
+2015-04-20T19:00:06+00:00 DEBUG (7):   Error:   0
+2015-04-20T19:00:06+00:00 DEBUG (7):   Total:   1
+2015-04-20T19:00:06+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T19:15:05+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T19:15:05+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T19:15:05+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T19:15:05+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T19:15:05+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T19:15:05+00:00 DEBUG (7):   Processing Order ID: 41465 	 #200034291
+2015-04-20T19:15:07+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T19:15:07+00:00 DEBUG (7):   Success: 1
+2015-04-20T19:15:07+00:00 DEBUG (7):   Error:   0
+2015-04-20T19:15:07+00:00 DEBUG (7):   Total:   1
+2015-04-20T19:15:07+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T19:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T19:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T19:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T19:30:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T19:30:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T19:30:02+00:00 DEBUG (7):   Processing Order ID: 41465 	 #200034291
+2015-04-20T19:30:04+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T19:30:04+00:00 DEBUG (7):   Success: 1
+2015-04-20T19:30:04+00:00 DEBUG (7):   Error:   0
+2015-04-20T19:30:04+00:00 DEBUG (7):   Total:   1
+2015-04-20T19:30:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T19:30:04+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T19:30:04+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T19:30:04+00:00 DEBUG (7):   Processing Order ID: 41466 	 #250007519
+2015-04-20T19:30:05+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T19:30:05+00:00 DEBUG (7):   Success: 1
+2015-04-20T19:30:05+00:00 DEBUG (7):   Error:   0
+2015-04-20T19:30:05+00:00 DEBUG (7):   Total:   1
+2015-04-20T19:45:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T19:45:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T19:45:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T19:45:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T20:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T20:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T20:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T20:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T20:15:03+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T20:15:03+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T20:15:03+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T20:15:03+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T20:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T20:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T20:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T20:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T20:45:04+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T20:45:04+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T20:45:04+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T20:45:04+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T21:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T21:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T21:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T21:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T21:21:32+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T21:21:32+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T21:21:32+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T21:21:32+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T21:21:32+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T21:21:32+00:00 DEBUG (7):   Processing Order ID: 41467 	 #200034292
+2015-04-20T21:21:34+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T21:21:34+00:00 DEBUG (7):   Success: 1
+2015-04-20T21:21:34+00:00 DEBUG (7):   Error:   0
+2015-04-20T21:21:34+00:00 DEBUG (7):   Total:   1
+2015-04-20T21:21:34+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T21:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T21:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T21:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T21:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T21:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T21:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T21:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T21:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T22:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T22:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T22:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T22:00:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T22:15:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T22:15:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T22:15:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T22:15:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T22:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T22:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T22:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T22:30:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T22:30:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T22:30:02+00:00 DEBUG (7):   Processing Order ID: 41465 	 #200034291
+2015-04-20T22:30:09+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T22:30:09+00:00 DEBUG (7):   Success: 1
+2015-04-20T22:30:09+00:00 DEBUG (7):   Error:   0
+2015-04-20T22:30:09+00:00 DEBUG (7):   Total:   1
+2015-04-20T22:30:09+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T22:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T22:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T22:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T22:45:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T23:00:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T23:00:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T23:00:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T23:00:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T23:00:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T23:00:02+00:00 DEBUG (7):   Processing Order ID: 41469 	 #200034294
+2015-04-20T23:00:02+00:00 DEBUG (7):   Processing Order ID: 41468 	 #200034293
+2015-04-20T23:00:08+00:00 DEBUG (7):   Flush resulted in 2 orders processed
+2015-04-20T23:00:08+00:00 DEBUG (7):   Success: 2
+2015-04-20T23:00:08+00:00 DEBUG (7):   Error:   0
+2015-04-20T23:00:08+00:00 DEBUG (7):   Total:   2
+2015-04-20T23:00:08+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T23:00:08+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T23:00:08+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T23:00:08+00:00 DEBUG (7):   Processing Order ID: 38841 	 #250006666
+2015-04-20T23:00:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:00:09+00:00 DEBUG (7):   Success: 1
+2015-04-20T23:00:09+00:00 DEBUG (7):   Error:   0
+2015-04-20T23:00:09+00:00 DEBUG (7):   Total:   1
+2015-04-20T23:20:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T23:20:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T23:20:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T23:20:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T23:20:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T23:20:02+00:00 DEBUG (7):   Processing Order ID: 41495 	 #200034296
+2015-04-20T23:20:02+00:00 DEBUG (7):   Processing Order ID: 41470 	 #200034295
+2015-04-20T23:20:08+00:00 DEBUG (7):   Flush resulted in 2 orders processed
+2015-04-20T23:20:08+00:00 DEBUG (7):   Success: 2
+2015-04-20T23:20:08+00:00 DEBUG (7):   Error:   0
+2015-04-20T23:20:08+00:00 DEBUG (7):   Total:   2
+2015-04-20T23:20:08+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T23:20:08+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T23:20:08+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T23:20:08+00:00 DEBUG (7):   Processing Order ID: 41494 	 #250007543
+2015-04-20T23:20:08+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:08+00:00 DEBUG (7):   Processing Order ID: 41491 	 #250007540
+2015-04-20T23:20:08+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:08+00:00 DEBUG (7):   Processing Order ID: 41492 	 #250007541
+2015-04-20T23:20:08+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:08+00:00 DEBUG (7):   Processing Order ID: 41493 	 #250007542
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41487 	 #250007536
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41488 	 #250007537
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41489 	 #250007538
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41490 	 #250007539
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41485 	 #250007534
+2015-04-20T23:20:09+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:09+00:00 DEBUG (7):   Processing Order ID: 41486 	 #250007535
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41482 	 #250007531
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41483 	 #250007532
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41484 	 #250007533
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41478 	 #250007527
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41479 	 #250007528
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41480 	 #250007529
+2015-04-20T23:20:10+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:10+00:00 DEBUG (7):   Processing Order ID: 41481 	 #250007530
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41475 	 #250007524
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41476 	 #250007525
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41477 	 #250007526
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41472 	 #250007521
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41473 	 #250007522
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41474 	 #250007523
+2015-04-20T23:20:11+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:11+00:00 DEBUG (7):   Processing Order ID: 41471 	 #250007520
+2015-04-20T23:20:12+00:00 DEBUG (7):   Successfully deleted order...
+2015-04-20T23:20:12+00:00 DEBUG (7):   Success: 24
+2015-04-20T23:20:12+00:00 DEBUG (7):   Error:   0
+2015-04-20T23:20:12+00:00 DEBUG (7):   Total:   24
+2015-04-20T23:30:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T23:30:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T23:30:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T23:30:02+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)
+2015-04-20T23:45:02+00:00 DEBUG (7): Starting Order Import process for store: Admin (0)
+2015-04-20T23:45:02+00:00 DEBUG (7): Starting Order Import process for store: International (3)
+2015-04-20T23:45:02+00:00 DEBUG (7): Starting Order Import process for store: Retail (1)
+2015-04-20T23:45:02+00:00 DEBUG (7):  Importing: New, Pending Payment, Processing, Complete, Payment Review
+2015-04-20T23:45:02+00:00 DEBUG (7):   Deleting: Closed, Canceled, On Hold
+2015-04-20T23:45:02+00:00 DEBUG (7):   Processing Order ID: 41496 	 #200034297
+2015-04-20T23:45:05+00:00 DEBUG (7):   Flush resulted in 1 orders processed
+2015-04-20T23:45:05+00:00 DEBUG (7):   Success: 1
+2015-04-20T23:45:05+00:00 DEBUG (7):   Error:   0
+2015-04-20T23:45:05+00:00 DEBUG (7):   Total:   1
+2015-04-20T23:45:05+00:00 DEBUG (7): Starting Order Import process for store: Wholesale (2)

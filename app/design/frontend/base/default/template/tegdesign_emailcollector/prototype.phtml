@@ -1,0 +1,245 @@
+<?php
+/**
+ * prototype.phtml
+ * Controls the display of the popup collector on your store.
+ *
+ * When customizing first start by modifying the styles.css file.
+ * Located: skin/frontend/base/default/css/tegdesign_emailcollector/styles.css
+ * 
+ * Please note HERDOC style strings are used throughout this template.
+ *
+ * @category    Tegdesign
+ * @package     Emailcollector
+ * @author      Tegan Snyder <tsnyder@tegdesign.com>
+ *
+ */
+
+// is this module enabled, if not dont display the popup.
+$epc = Mage::helper('tegdesign_emailcollector');
+
+// modal JS code found in the controller here:
+// app/code/community/Tegdesign/Emailcollector/controllers/JsController.php
+
+//Mage::getBaseDir() 
+?>
+<script src="<?php echo $epc->getBaseRelativePath(); ?>emailcollector/js/modal"></script>
+
+<?php
+// initialize variables
+$epc_fields = $epc->getFieldLabels();
+$store_id = $epc->getStoreId();
+$debug_mode = $epc->getDebugEnabled();
+$cookie_expires = $epc->getCookieExpiration();
+$epc_label = $epc_fields['epc_label'];
+$email_placeholder = $epc_fields['email_placeholder'];
+$forcereg = $epc->getForceRegEnabled();
+$capture_name = $epc->getCaptureNameEnabled();
+$post_url = $epc->getPostUrl();
+$popup_heading = $epc->getPopupHeading();
+$popup_subtxt = $epc->getPopupSubTxt();
+$popup_footertxt = $epc->getFooterTxt();
+$popup_btncancel = $epc->getPopupCancelTxt();
+$popup_btntxt = $epc->getPopupBtnTxt();
+$show_close_x = $epc->getShowCloseXEnabled();
+$input_fields = '';
+
+$email_label = $this->__('E-mail Address');
+$password_label = $this->__('Password');
+$fname_label = $this->__('First Name');
+$lname_label = $this->__('Last Name');
+
+/**
+Important HERDOC note:
+The HTML code below is incased in a HERDOC style PHP variable.
+This means the string delimiter needs to be by itself on a line,
+in the very first column. That is, you cannot add spacing or 
+tabs around it.
+*/
+$input_fields = <<<EOT
+	<div class="epc_input_wrapper epc_email_center">
+		<span class="epc_label" style="display:$epc_label;">$email_label:</span>
+		<input type="email" autocapitalize="off" autocorrect="off" name="popup_email" id="popup_email" size="25" $email_placeholder class="email_collector_box epc_input">
+	</div>
+
+EOT;
+
+	if ($capture_name) {
+
+$name_fields = <<<EOT
+	<div class="epc_input_wrapper epc_email_center">
+		<span class="epc_label" style="display:$epc_label;">$fname_label:</span>
+		<input type="text" autocapitalize="off" autocorrect="off" name="firstname" id="firstname" size="25" placeholder="$fname_label" class="email_collector_box epc_input">
+	</div>
+	<div class="epc_input_wrapper epc_email_center">
+		<span class="epc_label" style="display:$epc_label;">$lname_label:</span>
+		<input type="text" autocapitalize="off" autocorrect="off" name="lastname" id="lastname" size="25" placeholder="$lname_label" class="email_collector_box epc_input">
+	</div>
+EOT;
+
+$input_fields = $name_fields . $input_fields;
+		
+	}
+
+
+/**
+Optional customizations below:
+If you choose to force the customer to register by enabling
+"Force registration" in the Email Collector configuration settings
+you can customize the output below.
+*/
+	if ($forcereg) {
+
+$input_fields = <<<EOT
+
+	<div class="epc_input_wrapper">
+		<span class="epc_label" style="display:$epc_label;">$email_label:</span>
+		<input type="email" autocapitalize="off" autocorrect="off" name="popup_email" id="popup_email" size="25" $email_placeholder class="email_collector_box epc_input">
+	</div>
+
+	<div class="epc_input_wrapper">
+		<span class="epc_label" style="display:$epc_label;">$password_label:</span>
+		<input type="password" name="password" id="password" title="$password_label" class="epc_input">
+	</div>
+
+EOT;
+
+	if ($epc->getExtraFieldsEnabled()) {
+
+		$extra_fields = $epc->getExtraFields();
+		$extra_fields_html = '';
+
+		foreach ($extra_fields as $field) {
+
+			$field_type = $field['type'];
+			$field_txt = $field['field_txt'];
+			$field_id = $field['id'];
+			$field_options = $field['options'];
+
+
+$extra_fields_html .= <<<EOT
+	<div class="epc_input_wrapper">
+		<span class="epc_label" style="display:$epc_label;">
+			$field_txt:
+		</span>
+EOT;
+
+if ($field_type == 'select') {
+$extra_fields_html .= <<<EOT
+		<select name="$field_id" id="$field_id">
+			$field_options
+		</select>
+EOT;
+}
+
+if ($field_type == 'text') {
+$extra_fields_html .= <<<EOT
+		<input type="text" name="$field_id" id="$field_id" value="" placeholder="$field_txt" class="epc_input">
+EOT;
+}
+
+if ($field_type == 'date') {
+$extra_fields_html .= <<<EOT
+		<input type="text" name="epcdate_$field_id" id="$field_id" value="" placeholder="$field_txt" class="epc_input">
+EOT;
+}
+
+if ($field_type == 'textarea') {
+$extra_fields_html .= <<<EOT
+		<textarea name="$field_id" id="$field_id" class="epc_input"></textarea>
+EOT;
+}
+
+$extra_fields_html .= <<<EOT
+	</div>
+EOT;
+
+
+		} // end foreach
+
+
+		// append extra fields to standard fields
+		$input_fields = $input_fields . $extra_fields_html;
+
+
+	} // endif extra fields
+
+} // endif force registration
+
+
+
+
+/**
+Basic structure of modal is controled by the
+HTML markup outputed below.
+*/
+?>
+
+<div id="epc_legacy_popup" style="display: none;">
+
+	<?php if ($show_close_x) { ?>
+	<div class="btn_x_close" onclick="btn_x_close();">&nbsp;</div>
+	<?php } ?>
+
+	<form action="<?php echo $post_url; ?>" method="POST" id="email_collector_form">
+
+		<h1 style="text-align:center;" class="email_collector_heading" id="email_collector_heading">
+		
+			<?php echo $popup_heading; ?>
+		
+		</h1>
+
+		<div class="rwd_email_collector_popup_content">
+
+			<p class="email_collector_subtxt" id="email_collector_subtxt">
+
+				<?php echo $popup_subtxt; ?>
+
+			</p>
+
+			<?php echo $input_fields; ?>
+
+		</div>
+
+		<p class="email_collector_footer" id="email_collector_footer" style="text-align: center;">
+
+			<?php echo $popup_footertxt; ?>
+
+		</p>
+
+		<input type="hidden" id="store_id" name="store_id" value="<?php echo $store_id; ?>">
+
+	</form>
+
+</div>
+
+
+<script>
+
+function epcValidateEmail() {
+	try {
+	    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	    if (!re.test(jQuery('#popup_email').val())) {
+	    	alert('The email address you entered is invalid.');
+			return false;
+		} else {
+			return true;
+		}
+	} catch(err) {
+		return true;
+	}
+}
+
+function viewport(){
+    var e = window;
+    var a = 'inner';
+    if (!('innerWidth' in window)){
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+}
+function btn_x_close () {
+	$('modal_overlay').hide();
+	$('modal_window_wrapper').hide();
+}
+</script>

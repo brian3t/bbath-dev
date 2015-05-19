@@ -1,0 +1,65 @@
+<?php
+/**
+ * head.phtml
+ * Controls the display of the popup collector on your store.
+ *
+ * @category    Tegdesign
+ * @package     Emailcollector
+ * @author      Tegan Snyder <tsnyder@tegdesign.com>
+ *
+ */
+
+// is this module enabled, if not dont display the popup.
+$epc = Mage::helper('tegdesign_emailcollector');
+if ($epc->getModuleEnabled()) {
+	$render_data = renderPopupHtml($epc, $this->getLayout(), 'jquery');
+
+	if (isset($render_data['block'])) {
+		echo $render_data['block']->toHtml();
+	}
+
+} else {
+
+	if ($epc->getDebugEnabled()) {
+		Mage::log('not enabled', null, 'tegdesign_emailcollector_debug.log');
+	}
+
+}
+
+function renderPopupHtml($epc, $layout, $popup_template) {
+
+	$render_data = array();
+
+	$routeName = Mage::app()->getRequest()->getRouteName();
+	$identifier = Mage::getSingleton('cms/page')->getIdentifier();
+	
+	//$currentUrl = Mage::helper('core/url')->getCurrentUrl();
+	//$url = Mage::getSingleton('core/url')->parseUrl($currentUrl);
+	//$path = trim($url->getPath(), '/');
+	$path = Mage::app()->getRequest()->getParam(Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/url_var_name'));
+
+	//Mage::log('routeName: ' . $routeName, null, 'tegdesign_emailcollector_debug.log');
+	//Mage::log('identifier: ' . $identifier, null, 'tegdesign_emailcollector_debug.log');
+	//Mage::log('test: ' . $path, null, 'tegdesign_emailcollector_debug.log');
+
+	if ($routeName == 'cms' && $identifier == 'home' && Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/enable_home') == 1) {
+    	$block = renderBlockHtml($layout, 'home');
+		$render_data['block'] = $block;
+	} elseif($path ==  Mage::getStoreConfig('tegdesign_emailcollector_options/promosettings/url_var_value')) {
+		$block = renderBlockHtml($layout, 'alternate');
+		$render_data['block'] = $block;
+	}
+	
+	return $render_data;
+
+}
+
+function renderBlockHtml($layout, $path) {
+
+	//$block = $layout->createBlock('Mage_Core_Block_Template', 'epc_prototype', array('template' => 'tegdesign_emailcollector/jquery.phtml'));
+	$block = $layout->createBlock('core/template')->setData('path',$path)->setTemplate('tegdesign_emailcollector/jquery.phtml');
+	
+	return $block;
+}
+
+//$this->getResponse()->setBody($block->toHtml());

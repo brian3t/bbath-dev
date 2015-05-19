@@ -1,0 +1,88 @@
+.dealerlocator{}
+.dealerlocator .col2-set .col-1{
+	float: left;
+    width: 48.5%;
+}
+.dealerlocator .col2-set .col-2{
+	float: right;
+    width: 48.5%;
+}
+.dealerlocator .fieldset{
+	background:#FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin: 15px 0 28px 0;
+    padding: 22px 20px 12px;
+}
+.dealerlocator .fieldset .legend{
+	background:#FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #464646;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -40px 0 0 -10px;
+    padding: 5px 8px;
+    position: relative;
+}
+.dealerlocator h4{font-weight:normal; font-size:13px; color:#464646;}
+.dealerlocator .buttons-set{
+	clear: both;
+    float: left;
+    padding: 10px 0 0;
+    text-align: left;
+	margin:0;
+	border:0 none;
+}
+.dealerlocator .buttons-set button.button {
+    float: left;
+    margin-left: 0;
+}
+.dealer-body{float:left; width:100%; margin:0 0 15px;}
+#dealer-search-result{float:left; width:265px; height:477px; background:#FFFFFF; padding:22px 0 0 10px; border:1px solid #CCCCCC; margin:0;}
+#dealer-search-result .legend{margin: -40px 0 0;}
+#dealer-search-result .list-result{float:left; width:100%;height:453px; overflow-y:scroll;}
+#dealer-search-result .list-result ul li{float:left; width:100%; margin:0 0 5px; padding:0 0 5px; border-bottom: 1px dotted #CCCCCC;}
+#dealer-search-result .list-result ul li h5{color:#496ead; font-size:13px; font-weight:bold; }
+.dealerlocator .search-result{}
+.dealerlocator .search-result .list-result{}
+.dealerlocator .search-result .list-result .data-table{margin:0 0 10px;}
+.list-all-dealer .data-table thead th{background:#47C4EF; font-size:13px; font-weight:bold; color:#FFFFFF;}
+.list-all-dealer .data-table td {
+    padding: 6px 10px;
+	 vertical-align: middle;
+}
+.list-all-dealer .data-table tbody th, .list-all-dealer .data-table tbody td {
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+.list-all-dealer .data-table tbody td.store-name{color:#496ead; font-size:13px; font-weight:bold; border-left: 1px solid #ccc; }
+.list-all-dealer .dealer-email{color:#496ead; text-decoration:none;}
+.dealer-search .form-list .field {float: left; margin-right: 8px; margin-top: 2px;}
+#use-location {overflow: visible;
+border: 0;
+cursor: pointer;
+color: #fff;
+padding: 10px;
+    background-image: url('/images/usemylocation.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    float: left;
+    height: 46px;
+    width: 46px;
+    margin: 0px;
+}
+ul.button-tabs {
+    margin: 0px 0 2px;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+ul.button-tabs > li {float: left;margin-bottom: 1px;margin-top: 1px;}
+.dealerlocator-index-index .button-tabs li a{
+    margin: 0;
+}
+.dealerlocator-index-index .button-tabs li a:hover{
+    background-color: #3CAFF2;
+}
+

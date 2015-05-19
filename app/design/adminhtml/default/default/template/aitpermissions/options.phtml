@@ -1,0 +1,18 @@
+<?php
+/**
+ * Product:     Advanced Permissions v2.3.11
+ * Package:     Aitoc_Aitpermissions_2.3.11_2.0.3_370531
+ * Purchase ID: IdE1U6HnoZ1uVsL5XI63QxIw6UiCg3yWRooWxDrbgD
+ * Generated:   2012-09-23 04:03:35
+ * File path:   app/design/adminhtml/default/default/template/aitpermissions/options.phtml
+ * Copyright:   (c) 2012 AITOC, Inc.
+ */
+?>
+<br />
+<div style="background-color:whiteSmoke;">
+    <input type="checkbox" <?php echo $this->checkOption(Mage::app()->getRequest()->getParam('rid'), 'attribute') ? 'checked="checked"':''; ?> name="allowupdateglobalattrs" id="allowupdateglobalattrs" value="1"> <label for="allowupdateglobalattrs"><b><?php echo $this->__('Allow update global attributes'); ?></b></label>
+</div>
+<br />
+<div style="background-color:whiteSmoke;">
+    <input type="checkbox" <?php echo $this->checkOption(Mage::app()->getRequest()->getParam('rid'), 'product') ? 'checked="checked"':''; ?> name="caneditownproductsonly" id="caneditownproductsonly" value="1"> <label for="caneditownproductsonly"><b><?php echo $this->__('Allow manage own products only'); ?></b></label>
+</div>

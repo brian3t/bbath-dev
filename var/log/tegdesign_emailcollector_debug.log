@@ -1,0 +1,303 @@
+2015-02-17T21:11:43+00:00 DEBUG (7): LINE: 33 > postData - Array
+(
+    [store_id] => 1
+    [popup_email] => dude@bloomingbath.com
+    [0bce03e90000000000000000000000017022] => modal
+)
+
+2015-02-17T21:11:43+00:00 DEBUG (7): LINE: 328 > info - magento_template_mode
+2015-02-17T21:11:43+00:00 DEBUG (7): LINE: 361 > vars - Array
+2015-02-17T21:11:46+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+)
+
+2015-02-17T21:11:46+00:00 DEBUG (7): LINE: 158 > bronto_coupon - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+    [1] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017054
+            [content] => 1ATFTFW3FE8H
+        )
+
+    [2] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017809
+            [content] => 2015-02-17
+        )
+
+)
+
+2015-02-17T21:11:46+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 90959f3f-8086-4222-8bfe-84648230d03e
+2015-02-17T21:11:46+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>fb1e66ee-22ae-4489-b698-08614336b28c</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>dude@bloomingbath.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>0bce03e90000000000000000000000017022</fieldId><content>modal</content></fields><fields><fieldId>0bce03e90000000000000000000000017054</fieldId><content>1ATFTFW3FE8H</content></fields><fields><fieldId>0bce03e90000000000000000000000017809</fieldId><content>2015-02-17</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>90959f3f-8086-4222-8bfe-84648230d03e</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 33 > postData - Array
+(
+    [store_id] => 1
+    [popup_email] => tcmmorris@gmail.com
+    [0bce03e90000000000000000000000017022] => modal
+)
+
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 408 > error - email not fresh
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 55 > error - Email already exists in Magento
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+)
+
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:16:22+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>df08fc63-8d8c-432a-aa3c-f2e9ac65e4b4</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>0bce03e90000000000000000000000017022</fieldId><content>modal</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:16:35+00:00 DEBUG (7): LINE: 135 > postData - Array
+(
+    [popup_email] => tcmmorris@gmail.com
+    [bc278cdf-f23d-4e11-8992-2611d956c7bb] => Tom
+    [2a8aad8c-3153-439b-b043-2155e7870ede] => Morris
+    [0bce03e9000000000000000000000001704e] => 2015-10-10
+    [year] => 2015
+    [month] => 10
+    [day] => 10
+    [0bce03e90000000000000000000000017100] => Boy
+    [0bce03e900000000000000000000000170ba] => Yes
+)
+
+2015-02-17T21:16:35+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => bc278cdf-f23d-4e11-8992-2611d956c7bb
+            [content] => Tom
+        )
+
+    [1] => Array
+        (
+            [fieldId] => 2a8aad8c-3153-439b-b043-2155e7870ede
+            [content] => Morris
+        )
+
+    [2] => Array
+        (
+            [fieldId] => 0bce03e9000000000000000000000001704e
+            [content] => 2015-10-10
+        )
+
+    [3] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017100
+            [content] => Boy
+        )
+
+    [4] => Array
+        (
+            [fieldId] => 0bce03e900000000000000000000000170ba
+            [content] => Yes
+        )
+
+)
+
+2015-02-17T21:16:35+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:16:35+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>f4e0198d-81bb-48a7-b41d-c3eb47147653</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>bc278cdf-f23d-4e11-8992-2611d956c7bb</fieldId><content>Tom</content></fields><fields><fieldId>2a8aad8c-3153-439b-b043-2155e7870ede</fieldId><content>Morris</content></fields><fields><fieldId>0bce03e9000000000000000000000001704e</fieldId><content>2015-10-10</content></fields><fields><fieldId>0bce03e90000000000000000000000017100</fieldId><content>Boy</content></fields><fields><fieldId>0bce03e900000000000000000000000170ba</fieldId><content>Yes</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:25:47+00:00 DEBUG (7): LINE: 33 > postData - Array
+(
+    [store_id] => 1
+    [popup_email] => tcmmorris@gmail.com
+    [0bce03e90000000000000000000000017022] => modal
+)
+
+2015-02-17T21:25:47+00:00 DEBUG (7): LINE: 408 > error - email not fresh
+2015-02-17T21:25:47+00:00 DEBUG (7): LINE: 55 > error - Email already exists in Magento
+2015-02-17T21:25:47+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+)
+
+2015-02-17T21:25:48+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:25:48+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>532904aa-d6ec-4ab8-8326-402930f439dd</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>0bce03e90000000000000000000000017022</fieldId><content>modal</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:25:59+00:00 DEBUG (7): LINE: 135 > postData - Array
+(
+    [popup_email] => tcmmorris@gmail.com
+    [bc278cdf-f23d-4e11-8992-2611d956c7bb] => Tom
+    [2a8aad8c-3153-439b-b043-2155e7870ede] => Morris
+    [0bce03e9000000000000000000000001704e] => 2016-03-04
+    [year] => 2016
+    [month] => 03
+    [day] => 04
+    [0bce03e90000000000000000000000017100] => Girl
+    [0bce03e900000000000000000000000170ba] => No
+)
+
+2015-02-17T21:25:59+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => bc278cdf-f23d-4e11-8992-2611d956c7bb
+            [content] => Tom
+        )
+
+    [1] => Array
+        (
+            [fieldId] => 2a8aad8c-3153-439b-b043-2155e7870ede
+            [content] => Morris
+        )
+
+    [2] => Array
+        (
+            [fieldId] => 0bce03e9000000000000000000000001704e
+            [content] => 2016-03-04
+        )
+
+    [3] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017100
+            [content] => Girl
+        )
+
+    [4] => Array
+        (
+            [fieldId] => 0bce03e900000000000000000000000170ba
+            [content] => No
+        )
+
+)
+
+2015-02-17T21:25:59+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:25:59+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>9d271c9b-8e5f-4e4a-b575-fd4a25923e24</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>bc278cdf-f23d-4e11-8992-2611d956c7bb</fieldId><content>Tom</content></fields><fields><fieldId>2a8aad8c-3153-439b-b043-2155e7870ede</fieldId><content>Morris</content></fields><fields><fieldId>0bce03e9000000000000000000000001704e</fieldId><content>2016-03-04</content></fields><fields><fieldId>0bce03e90000000000000000000000017100</fieldId><content>Girl</content></fields><fields><fieldId>0bce03e900000000000000000000000170ba</fieldId><content>No</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 33 > postData - Array
+(
+    [store_id] => 1
+    [popup_email] => tcmmorris@gmail.com
+    [0bce03e90000000000000000000000017022] => modal
+)
+
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 408 > error - email not fresh
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 55 > error - Email already exists in Magento
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+)
+
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:26:20+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>ea5b661a-576d-4e74-8cf2-8d78090283d0</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>0bce03e90000000000000000000000017022</fieldId><content>modal</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:26:33+00:00 DEBUG (7): LINE: 135 > postData - Array
+(
+    [popup_email] => tcmmorris@gmail.com
+    [bc278cdf-f23d-4e11-8992-2611d956c7bb] => Tom
+    [2a8aad8c-3153-439b-b043-2155e7870ede] => Morris
+    [0bce03e9000000000000000000000001704e] => 2015-06-10
+    [year] => 2015
+    [month] => 06
+    [day] => 10
+    [0bce03e90000000000000000000000017100] => Surprise
+    [0bce03e900000000000000000000000170ba] => Yes
+)
+
+2015-02-17T21:26:33+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => bc278cdf-f23d-4e11-8992-2611d956c7bb
+            [content] => Tom
+        )
+
+    [1] => Array
+        (
+            [fieldId] => 2a8aad8c-3153-439b-b043-2155e7870ede
+            [content] => Morris
+        )
+
+    [2] => Array
+        (
+            [fieldId] => 0bce03e9000000000000000000000001704e
+            [content] => 2015-06-10
+        )
+
+    [3] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017100
+            [content] => Surprise
+        )
+
+    [4] => Array
+        (
+            [fieldId] => 0bce03e900000000000000000000000170ba
+            [content] => Yes
+        )
+
+)
+
+2015-02-17T21:26:33+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:26:33+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>75cd3f09-eadb-48fb-ba64-621971a3826d</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>bc278cdf-f23d-4e11-8992-2611d956c7bb</fieldId><content>Tom</content></fields><fields><fieldId>2a8aad8c-3153-439b-b043-2155e7870ede</fieldId><content>Morris</content></fields><fields><fieldId>0bce03e9000000000000000000000001704e</fieldId><content>2015-06-10</content></fields><fields><fieldId>0bce03e90000000000000000000000017100</fieldId><content>Surprise</content></fields><fields><fieldId>0bce03e900000000000000000000000170ba</fieldId><content>Yes</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:26:55+00:00 DEBUG (7): LINE: 33 > postData - Array
+(
+    [store_id] => 1
+    [popup_email] => tcmmorris@gmail.com
+    [0bce03e90000000000000000000000017022] => modal
+)
+
+2015-02-17T21:26:55+00:00 DEBUG (7): LINE: 408 > error - email not fresh
+2015-02-17T21:26:55+00:00 DEBUG (7): LINE: 55 > error - Email already exists in Magento
+2015-02-17T21:26:55+00:00 DEBUG (7): LINE: 151 > bronto - Array
+(
+    [0] => Array
+        (
+            [fieldId] => 0bce03e90000000000000000000000017022
+            [content] => modal
+        )
+
+)
+
+2015-02-17T21:26:56+00:00 DEBUG (7): LINE: 225 > bronto_update - The contact has been updated. 18893174-fbee-42f1-8ef8-fba9f0eefe00
+2015-02-17T21:26:56+00:00 DEBUG (7): LINE: 226 > request/response - <?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://api.bronto.com/v4"><SOAP-ENV:Header><ns1:sessionHeader><sessionId>a48e2798-54c7-43fe-bcac-6d5dff424055</sessionId></ns1:sessionHeader></SOAP-ENV:Header><SOAP-ENV:Body><ns1:addOrUpdateContacts><contacts><email>tcmmorris@gmail.com</email><listIds>0bce03ec000000000000000000000005e201</listIds><fields><fieldId>0bce03e90000000000000000000000017022</fieldId><content>modal</content></fields></contacts></ns1:addOrUpdateContacts></SOAP-ENV:Body></SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:addOrUpdateContactsResponse xmlns:ns2="http://api.bronto.com/v4"><return><results><id>18893174-fbee-42f1-8ef8-fba9f0eefe00</id><isNew>false</isNew><isError>false</isError><errorCode>0</errorCode></results></return></ns2:addOrUpdateContactsResponse></soap:Body></soap:Envelope>
+2015-02-17T21:47:21+00:00 DEBUG (7): not enabled
+2015-02-17T21:47:24+00:00 DEBUG (7): not enabled
+2015-02-17T21:47:35+00:00 DEBUG (7): not enabled
+2015-02-17T21:47:40+00:00 DEBUG (7): not enabled
+2015-02-17T21:47:43+00:00 DEBUG (7): not enabled
+2015-02-17T21:47:53+00:00 DEBUG (7): not enabled
+2015-02-17T21:48:02+00:00 DEBUG (7): not enabled
+2015-02-17T21:48:58+00:00 DEBUG (7): not enabled
+2015-02-17T21:52:06+00:00 DEBUG (7): not enabled
+2015-02-17T22:15:35+00:00 DEBUG (7): not enabled
+2015-02-17T22:32:45+00:00 DEBUG (7): not enabled
+2015-02-17T22:32:48+00:00 DEBUG (7): not enabled
+2015-02-17T22:59:06+00:00 DEBUG (7): not enabled

@@ -1,0 +1,260 @@
+2014-07-02T23:28:53+00:00 DEBUG (7): Array
+(
+    [email] => brian@bloomingbath.com
+    [euid] => 4ecf723498
+    [leid] => 317250829
+)
+
+2014-07-08T22:22:39+00:00 DEBUG (7): Array
+(
+    [email] => brpond@gmail.com
+    [euid] => 9eaf61f351
+    [leid] => 317253417
+)
+
+2014-07-08T22:45:48+00:00 DEBUG (7): Array
+(
+    [email] => brian@eggheadventures.com
+    [euid] => 4904fdb389
+    [leid] => 317253421
+)
+
+2014-07-08T22:47:23+00:00 DEBUG (7): Array
+(
+    [email] => test@brianpond.com
+    [euid] => 233a45d148
+    [leid] => 317253425
+)
+
+2014-07-09T00:56:14+00:00 DEBUG (7): Array
+(
+    [email] => brian@bloomingtest.com
+    [euid] => 499e92baa1
+    [leid] => 317253429
+)
+
+2014-07-16T15:58:19+00:00 DEBUG (7): Array
+(
+    [email] => ngxtri@gmail.com
+    [euid] => f76c72d72c
+    [leid] => 317253433
+)
+
+2014-07-16T17:08:20+00:00 DEBUG (7): Array
+(
+    [email] => someids@gmail.com
+    [euid] => 7a6396261e
+    [leid] => 317253437
+)
+
+2014-07-16T17:19:39+00:00 DEBUG (7): Array
+(
+    [email] => tri@eggheadventures.com
+    [euid] => e4a2254f80
+    [leid] => 317253441
+)
+
+2014-07-16T17:28:15+00:00 DEBUG (7): Array
+(
+    [status] => error
+    [code] => 220
+    [name] => List_InvalidImport
+    [error] => "test@gmail.com" has been banned
+)
+
+2014-07-16T17:37:41+00:00 DEBUG (7): Array
+(
+    [email] => tri@usvsolutions.com
+    [euid] => aa2b4f6202
+    [leid] => 317253445
+)
+
+2014-07-16T17:45:31+00:00 DEBUG (7): Array
+(
+    [email] => myname@bloomingtest.com
+    [euid] => 25cc59c8ee
+    [leid] => 317253449
+)
+
+2014-07-16T17:52:21+00:00 DEBUG (7): Array
+(
+    [email] => testing@bloomingtest.com
+    [euid] => 206829a020
+    [leid] => 317253453
+)
+
+2014-07-16T18:01:17+00:00 DEBUG (7): Array
+(
+    [email] => doesntmatter@gmail.com
+    [euid] => 05e0f4b1b6
+    [leid] => 317253457
+)
+
+2014-07-16T18:13:04+00:00 DEBUG (7): Array
+(
+    [email] => abcd@bloomingtest.com
+    [euid] => 808b6e3a47
+    [leid] => 317253461
+)
+
+2014-07-16T18:17:33+00:00 DEBUG (7): Array
+(
+    [email] => another@gmail.com
+    [euid] => 2f61a0b7e8
+    [leid] => 317253465
+)
+
+2014-07-16T18:18:58+00:00 DEBUG (7): Array
+(
+    [email] => mendizaandlemairemom@yahoo.com
+    [euid] => f8fc35a3d9
+    [leid] => 317253469
+)
+
+2014-07-16T18:28:19+00:00 DEBUG (7): Array
+(
+    [email] => rubbleprincess@hotmail.com
+    [euid] => 70b2c730d7
+    [leid] => 317253473
+)
+
+2014-07-16T19:21:34+00:00 DEBUG (7): Array
+(
+    [email] => thisisamail@bloomingtest.com
+    [euid] => f894de7539
+    [leid] => 317253477
+)
+
+2014-07-16T19:23:37+00:00 DEBUG (7): Array
+(
+    [email] => xuanthien1948@gmail.com
+    [euid] => 71ceaa961f
+    [leid] => 317253481
+)
+
+2014-07-16T22:03:41+00:00 DEBUG (7): Array
+(
+    [email] => ngxtri@yahoo.com
+    [euid] => e17c79b016
+    [leid] => 317253485
+)
+
+2014-07-16T22:04:05+00:00 DEBUG (7): Array
+(
+    [email] => someids@yahoo.com
+    [euid] => c327c4d477
+    [leid] => 317253489
+)
+
+2014-07-16T22:07:21+00:00 DEBUG (7): Array
+(
+    [email] => brp20@eggheadventures.com
+    [euid] => d93239844f
+    [leid] => 317253493
+)
+
+2014-07-16T22:15:01+00:00 DEBUG (7): Array
+(
+    [email] => support@bloomingbath.com
+    [euid] => c6f976ebdc
+    [leid] => 317253497
+)
+
+2014-07-16T22:15:31+00:00 DEBUG (7): Array
+(
+    [email] => ngxtri@mail.csufresno.edu
+    [euid] => 9c7fb586b8
+    [leid] => 317253501
+)
+
+2014-07-16T22:15:39+00:00 DEBUG (7): Array
+(
+    [email] => avelickoff08@yahoo.com
+    [euid] => 6f9431a39c
+    [leid] => 317253505
+)
+
+2014-07-17T06:49:23+00:00 DEBUG (7): Array
+(
+    [email] => ngxtri@mail.fresnostate.edu
+    [euid] => 6bfe15df4c
+    [leid] => 317253509
+)
+
+2014-07-17T15:31:45+00:00 DEBUG (7): Array
+(
+    [email] => ngxtri@gmail.com
+    [euid] => f76c72d72c
+    [leid] => 317253513
+)
+
+2014-07-18T05:23:34+00:00 DEBUG (7): Array
+(
+    [email] => michelleleija1@hotmail.com
+    [euid] => 56b27c06a1
+    [leid] => 317253517
+)
+
+2014-07-18T07:16:40+00:00 DEBUG (7): Array
+(
+    [email] => kenzoalfarro@gmail.com
+    [euid] => ec33135822
+    [leid] => 317253521
+)
+
+2014-07-18T08:42:05+00:00 DEBUG (7): Array
+(
+    [email] => suesmorgan@aol.com
+    [euid] => b0de6898bb
+    [leid] => 317253525
+)
+
+2014-07-18T12:27:04+00:00 DEBUG (7): Array
+(
+    [email] => lyritta@webmail.co.za
+    [euid] => b9f63d500e
+    [leid] => 317253529
+)
+
+2014-07-18T13:41:24+00:00 DEBUG (7): Array
+(
+    [email] => clarissahinojosa81@yahoo.com
+    [euid] => cad953ac51
+    [leid] => 317253533
+)
+
+2014-07-18T14:23:48+00:00 DEBUG (7): Array
+(
+    [email] => kbsmile05@gmail.com
+    [euid] => 05b5249975
+    [leid] => 317253537
+)
+
+2014-07-18T14:43:31+00:00 DEBUG (7): Array
+(
+    [email] => granma2four@gmail.com
+    [euid] => 4229a31f6b
+    [leid] => 317253541
+)
+
+2014-07-18T15:22:40+00:00 DEBUG (7): Array
+(
+    [email] => amorgan_1216@yahoo.com
+    [euid] => d0b2a21743
+    [leid] => 317253545
+)
+
+2014-07-18T16:25:36+00:00 DEBUG (7): Array
+(
+    [email] => ridhs22@gmail.com
+    [euid] => e8017ab8a7
+    [leid] => 317253549
+)
+
+2014-07-18T16:34:51+00:00 DEBUG (7): Array
+(
+    [email] => dmhallman@gmail.com
+    [euid] => 67874d4fde
+    [leid] => 317253553
+)
+

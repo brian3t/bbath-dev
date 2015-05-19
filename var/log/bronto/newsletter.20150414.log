@@ -1,0 +1,534 @@
+2015-04-14T00:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T00:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T00:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T00:00:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:00:05+00:00 INFO (6):   Setting Contact (trrylacerenza@aol.com) status to: active
+2015-04-14T00:00:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:00:05+00:00 INFO (6):   Setting Contact (ilovejesse1717@gmail.com) status to: active
+2015-04-14T00:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T00:11:51+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T00:15:06+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T00:15:06+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T00:15:06+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T00:15:06+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:15:06+00:00 INFO (6):   Setting Contact (youngmonica@gmx.com) status to: active
+2015-04-14T00:15:06+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:15:06+00:00 INFO (6):   Setting Contact (michelearambeau@hotmail.com) status to: active
+2015-04-14T00:15:06+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:15:06+00:00 INFO (6):   Setting Contact (jesulalubin@yahoo.com) status to: active
+2015-04-14T00:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T00:16:50+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T00:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T00:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T00:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T00:35:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:35:04+00:00 INFO (6):   Setting Contact (mcdowellcl89@gmail.com) status to: active
+2015-04-14T00:35:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:35:04+00:00 INFO (6):   Setting Contact (cabachil@comcast.net) status to: active
+2015-04-14T00:35:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T00:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T00:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T00:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T00:45:06+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:45:06+00:00 INFO (6):   Setting Contact (sylkirby@yahoo.com) status to: active
+2015-04-14T00:45:06+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T00:45:06+00:00 INFO (6):   Setting Contact (wgholw@gmail.com) status to: active
+2015-04-14T00:45:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T01:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T01:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T01:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T01:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T01:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T01:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T01:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T01:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T01:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T01:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T01:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T01:30:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:30:05+00:00 INFO (6):   Setting Contact (tyandoli@gmail.com) status to: active
+2015-04-14T01:30:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:30:05+00:00 INFO (6):   Setting Contact (chris.crispo@gmail.com) status to: active
+2015-04-14T01:30:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:30:05+00:00 INFO (6):   Setting Contact (smithjanice2735@yahoo.com) status to: active
+2015-04-14T01:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T01:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T01:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T01:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T01:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:03+00:00 INFO (6):   Setting Contact (mamamarie08@gmail.com) status to: active
+2015-04-14T01:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:04+00:00 INFO (6):   Setting Contact (hmatthews9110@yahoo.com) status to: active
+2015-04-14T01:45:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:07+00:00 INFO (6):   Setting Contact (amandacarrillo38@gmail.com) status to: active
+2015-04-14T01:45:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:07+00:00 INFO (6):   Setting Contact (sans82@live.com) status to: active
+2015-04-14T01:45:08+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:08+00:00 INFO (6):   Setting Contact (luqiemom@hotmail.com) status to: active
+2015-04-14T01:45:08+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T01:45:08+00:00 INFO (6):   Setting Contact (donnaandjerry8@aol.com) status to: active
+2015-04-14T01:45:08+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T02:05:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T02:05:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T02:05:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T02:05:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:05:03+00:00 INFO (6):   Setting Contact (clau1004@hotmail.com) status to: active
+2015-04-14T02:05:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:05:03+00:00 INFO (6):   Setting Contact (treicy.padilla24@gmail.com) status to: active
+2015-04-14T02:05:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T02:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T02:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T02:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T02:15:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:15:03+00:00 INFO (6):   Setting Contact (styo1226@gmail.com) status to: active
+2015-04-14T02:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T02:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T02:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T02:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T02:30:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:30:03+00:00 INFO (6):   Setting Contact (kersh037@aol.com) status to: active
+2015-04-14T02:30:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:30:05+00:00 INFO (6):   Setting Contact (timothyshaddox@yahoo.com) status to: active
+2015-04-14T02:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T02:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T02:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T02:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T02:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:45:03+00:00 INFO (6):   Setting Contact (tinamarie7491@gmail.com) status to: active
+2015-04-14T02:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T02:45:03+00:00 INFO (6):   Setting Contact (alexisastronaut@gmail.com) status to: active
+2015-04-14T02:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T03:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T03:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T03:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T03:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T03:00:04+00:00 INFO (6):   Setting Contact (teresabennett78@yahoo.com) status to: active
+2015-04-14T03:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T03:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T03:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T03:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T03:20:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T03:20:04+00:00 INFO (6):   Setting Contact (hercules0562@gmail.com) status to: active
+2015-04-14T03:20:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T03:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T03:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T03:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T03:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T03:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T03:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T03:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T03:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T03:45:03+00:00 INFO (6):   Setting Contact (geegee1950@yahoo.co) status to: active
+2015-04-14T03:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T04:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T04:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T04:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T04:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T04:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T04:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T04:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T04:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T04:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T04:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T04:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T04:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T04:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T04:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T04:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T04:45:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T05:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T05:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T05:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T05:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T05:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T05:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T05:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T05:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T05:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T05:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T05:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T05:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T05:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T05:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T05:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T05:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T05:45:03+00:00 INFO (6):   Setting Contact (mansi.chhoja@yahoo.com) status to: active
+2015-04-14T05:45:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T05:51:48+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T06:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T06:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T06:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T06:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T06:00:05+00:00 INFO (6):   Setting Contact (cookyelf@yahoo.com) status to: active
+2015-04-14T06:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T06:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T06:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T06:20:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T06:20:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T06:20:03+00:00 INFO (6):   Setting Contact (julie.thomas04@btinternet.com) status to: active
+2015-04-14T06:20:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T06:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T06:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T06:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T06:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T06:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T06:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T06:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T06:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T07:05:12+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T07:05:12+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T07:05:12+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T07:05:12+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T07:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T07:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T07:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T07:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T07:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T07:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T07:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T07:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T07:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T07:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T07:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T07:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T07:45:03+00:00 INFO (6):   Setting Contact (monkfiona4@gmail.com) status to: active
+2015-04-14T07:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T08:00:32+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T08:00:32+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T08:00:32+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T08:00:33+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T08:00:33+00:00 INFO (6):   Setting Contact (chane.mcguire@gmail.com) status to: active
+2015-04-14T08:00:33+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T08:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T08:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T08:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T08:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T08:35:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T08:35:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T08:35:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T08:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T08:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T08:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T08:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T08:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T08:45:04+00:00 INFO (6):   Setting Contact (lauracano123@yahoo.com) status to: active
+2015-04-14T08:45:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T09:00:09+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T09:00:09+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T09:00:09+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T09:00:09+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T09:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T09:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T09:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T09:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T09:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T09:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T09:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T09:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T09:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T09:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T09:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T09:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T10:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T10:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T10:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T10:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T10:12:53+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T10:15:08+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T10:15:08+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T10:15:08+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T10:15:09+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T10:15:09+00:00 INFO (6):   Setting Contact (falabdulla2011@gmail.com) status to: active
+2015-04-14T10:15:09+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T10:15:09+00:00 INFO (6):   Setting Contact (marleen1964@aol.com) status to: active
+2015-04-14T10:15:12+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T10:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T10:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T10:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T10:35:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T10:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T10:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T10:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T10:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T11:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T11:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T11:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T11:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T11:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T11:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T11:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T11:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T11:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T11:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T11:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T11:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T11:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T11:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T11:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T11:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T12:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T12:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T12:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T12:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T12:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T12:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T12:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T12:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T12:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T12:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T12:35:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T12:35:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T12:35:04+00:00 INFO (6):   Setting Contact (candice.inspiringdreams@gmail.com) status to: active
+2015-04-14T12:35:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T12:35:04+00:00 INFO (6):   Setting Contact (pigottj@apsu.edu) status to: active
+2015-04-14T12:35:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T12:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T12:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T12:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T12:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T13:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T13:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T13:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T13:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T13:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T13:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T13:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T13:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T13:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T13:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T13:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T13:30:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T13:30:04+00:00 INFO (6):   Setting Contact (clararotherham@yahoo.com) status to: active
+2015-04-14T13:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T13:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T13:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T13:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T13:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T13:45:04+00:00 INFO (6):   Setting Contact (kazunari_carol@yahoo.com.tw) status to: active
+2015-04-14T13:45:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T14:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T14:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T14:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T14:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T14:00:04+00:00 INFO (6):   Setting Contact (debleemc@hotmail.com) status to: active
+2015-04-14T14:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T14:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T14:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T14:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T14:15:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T14:15:05+00:00 INFO (6):   Setting Contact (brit-25@live.com) status to: active
+2015-04-14T14:15:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T14:15:05+00:00 INFO (6):   Setting Contact (b.san38@hotmail.com) status to: active
+2015-04-14T14:15:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T14:35:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T14:35:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T14:35:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T14:35:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T14:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T14:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T14:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T14:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T15:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T15:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T15:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T15:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T15:00:04+00:00 INFO (6):   Setting Contact (o_lauren8@hotmail.com) status to: active
+2015-04-14T15:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T15:00:04+00:00 INFO (6):   Setting Contact (cmslowes@aol.com) status to: active
+2015-04-14T15:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T15:00:04+00:00 INFO (6):   Setting Contact (Pheasmom@aol.com) status to: active
+2015-04-14T15:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T15:02:00+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T15:15:37+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T15:15:37+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T15:15:37+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T15:15:37+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T15:15:37+00:00 INFO (6):   Setting Contact (Demetria.fulton@yahoo.com) status to: active
+2015-04-14T15:15:38+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T15:30:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T15:30:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T15:30:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T15:30:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T15:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T15:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T15:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T15:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T16:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T16:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T16:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T16:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T16:15:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T16:15:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T16:15:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T16:15:13+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T16:15:13+00:00 INFO (6):   Setting Contact (haguer1957@yahoo.com) status to: active
+2015-04-14T16:15:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T16:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T16:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T16:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T16:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T16:50:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T16:50:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T16:50:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T16:50:06+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T17:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T17:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T17:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T17:00:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:00:05+00:00 INFO (6):   Setting Contact (valeriergz164@yahoo.com) status to: active
+2015-04-14T17:00:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T17:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T17:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T17:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T17:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T17:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T17:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T17:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T17:30:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:30:04+00:00 INFO (6):   Setting Contact (mariamteaib@gmail.com) status to: active
+2015-04-14T17:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T17:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T17:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T17:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T17:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:45:04+00:00 INFO (6):   Setting Contact (d02shadow@yahoo.com) status to: active
+2015-04-14T17:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:45:04+00:00 INFO (6):   Setting Contact (marcell2005@hotmail.co.uk) status to: active
+2015-04-14T17:45:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:45:04+00:00 INFO (6):   Setting Contact (shannon_mcfrlnd@yahoo.com) status to: active
+2015-04-14T17:45:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T17:45:05+00:00 INFO (6):   Setting Contact (smearman.amanda@yahoo.com) status to: active
+2015-04-14T17:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T18:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T18:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T18:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T18:00:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T18:00:04+00:00 INFO (6):   Setting Contact (justpip@xtra.co.nz) status to: active
+2015-04-14T18:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T18:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T18:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T18:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T18:15:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T18:15:04+00:00 INFO (6):   Setting Contact (misskiwithang@aol.com) status to: active
+2015-04-14T18:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T18:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T18:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T18:30:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T18:30:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T18:30:04+00:00 INFO (6):   Setting Contact (meagangcook8@aol.com) status to: active
+2015-04-14T18:30:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T18:30:04+00:00 INFO (6):   Setting Contact (greergalt@gmail.com) status to: active
+2015-04-14T18:30:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T18:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T18:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T18:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T18:45:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T19:05:26+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T19:05:26+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T19:05:26+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T19:05:26+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T19:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T19:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T19:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T19:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T19:30:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T19:30:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T19:30:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T19:30:14+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T19:30:14+00:00 INFO (6):   Setting Contact (stephaniearreola15@yahoo.com) status to: active
+2015-04-14T19:30:14+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T19:33:49+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T19:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T19:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T19:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T19:45:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T19:57:54+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T20:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T20:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T20:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T20:00:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T20:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T20:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T20:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T20:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T20:30:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T20:30:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T20:30:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T20:30:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T20:45:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T20:45:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T20:45:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T20:45:13+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T20:45:13+00:00 INFO (6):   Setting Contact (hlucas@carolina.rr.com) status to: active
+2015-04-14T20:45:13+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T20:45:13+00:00 INFO (6):   Setting Contact (jimmye4golf@yahoo.com) status to: active
+2015-04-14T20:45:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T21:00:22+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T21:00:22+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T21:00:22+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T21:00:23+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T21:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T21:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T21:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T21:15:05+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T21:15:05+00:00 INFO (6):   Setting Contact (foofoo_feefee@hotmail.com) status to: active
+2015-04-14T21:15:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T21:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T21:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T21:30:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T21:30:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T21:30:07+00:00 INFO (6):   Setting Contact (sbentley@comcast.net) status to: active
+2015-04-14T21:30:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T21:30:07+00:00 INFO (6):   Setting Contact (leonwendy8@gmail.com) status to: active
+2015-04-14T21:30:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T21:45:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T21:45:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T21:45:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T21:45:19+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T22:02:01+00:00 DEBUG (7): No subscription status found in session.
+2015-04-14T22:05:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T22:05:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T22:05:13+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T22:05:15+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T22:05:15+00:00 INFO (6):   Setting Contact (jlebeau@sthubertschool.org) status to: active
+2015-04-14T22:05:15+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T22:05:15+00:00 INFO (6):   Setting Contact (kailynncox@gmail.com) status to: active
+2015-04-14T22:05:16+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T22:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T22:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T22:15:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T22:15:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T22:15:04+00:00 INFO (6):   Setting Contact (duckninos@aol.com) status to: active
+2015-04-14T22:15:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T22:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T22:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T22:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T22:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T22:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T22:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T22:45:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T22:45:03+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T22:45:03+00:00 INFO (6):   Setting Contact (nandabear1@aol.com) status to: active
+2015-04-14T22:45:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T23:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T23:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T23:00:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T23:00:03+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T23:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T23:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T23:15:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T23:15:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T23:15:07+00:00 INFO (6):   Setting Contact (hlll5@aol.com) status to: active
+2015-04-14T23:15:07+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T23:15:07+00:00 INFO (6):   Setting Contact (gis86@live.com) status to: active
+2015-04-14T23:15:07+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T23:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T23:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T23:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T23:30:05+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)
+2015-04-14T23:50:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Admin (0)
+2015-04-14T23:50:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: International (3)
+2015-04-14T23:50:02+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Retail (1)
+2015-04-14T23:50:04+00:00 INFO (6):   Adding Contact to list: Bloomingbath.com
+2015-04-14T23:50:04+00:00 INFO (6):   Setting Contact (hot_chocolate115@hotmail.com) status to: active
+2015-04-14T23:50:04+00:00 DEBUG (7): Starting Subscriber Opt-In process for store: Wholesale (2)

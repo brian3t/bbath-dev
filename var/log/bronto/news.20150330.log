@@ -1,0 +1,8 @@
+2015-03-30T07:05:10+00:00 DEBUG (7): Processing releases RSS feed at http://app.bronto.com/public/?q=feed&id=5jodwr23wmaolrs5mpw6gq91zofp0&fn=Link&ssid=30245
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [releases] item: Version 2.4 Now Available!
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [releases] item: Version 2.3 Now Available!
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [releases] item: Please Upgrade Your Bronto Extension for Magento
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [releases] item: Version 2.2 Now Available!
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [releases] item: Version 2.1 Now Available
+2015-03-30T07:05:10+00:00 DEBUG (7): Processing general RSS feed at http://app.bronto.com/public/?q=feed&id=bimy41imold5nrca83kyqcuvbtru9&fn=Link&ssid=30245
+2015-03-30T07:05:10+00:00 DEBUG (7): Processed [general] item: [ALERT] Compatibility Warning for the Bronto Extension for Magento

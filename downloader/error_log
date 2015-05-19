@@ -1,0 +1,108 @@
+[04-Jun-2014 20:51:57 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 20:51:57 UTC] PHP Stack trace:
+[04-Jun-2014 20:51:57 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 20:51:57 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 20:51:57 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 20:51:57 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 20:51:57 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 20:51:57 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 20:51:57 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 20:51:58 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 20:51:58 UTC] PHP Stack trace:
+[04-Jun-2014 20:51:58 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 20:51:58 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 20:51:58 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 20:51:58 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 20:51:58 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 20:51:58 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 20:51:58 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 20:52:55 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 20:52:55 UTC] PHP Stack trace:
+[04-Jun-2014 20:52:55 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 20:52:55 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 20:52:55 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 20:52:55 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 20:52:55 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 20:52:55 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 20:52:55 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 20:53:13 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 20:53:13 UTC] PHP Stack trace:
+[04-Jun-2014 20:53:13 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 20:53:13 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 20:53:13 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 20:53:13 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 20:53:13 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 20:53:13 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 20:53:13 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:01:37 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:01:37 UTC] PHP Stack trace:
+[04-Jun-2014 21:01:37 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:01:37 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:01:37 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:01:37 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:01:37 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:01:37 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:01:37 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:02:11 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:02:11 UTC] PHP Stack trace:
+[04-Jun-2014 21:02:11 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:02:11 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:02:11 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:02:11 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:02:11 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:02:11 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:02:11 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:04:29 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:04:29 UTC] PHP Stack trace:
+[04-Jun-2014 21:04:29 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:04:29 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:04:29 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:04:29 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:04:29 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:04:29 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:04:29 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:06:27 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:06:27 UTC] PHP Stack trace:
+[04-Jun-2014 21:06:27 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:06:27 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:06:27 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:06:27 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:06:27 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:06:27 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:06:27 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:07:06 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:07:06 UTC] PHP Stack trace:
+[04-Jun-2014 21:07:06 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:07:06 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:07:06 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:07:06 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:07:06 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:07:06 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:07:06 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:07:23 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:07:23 UTC] PHP Stack trace:
+[04-Jun-2014 21:07:23 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:07:23 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:07:23 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:07:23 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:07:23 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:07:23 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:07:23 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:08:53 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:08:53 UTC] PHP Stack trace:
+[04-Jun-2014 21:08:53 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:08:53 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:08:53 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:08:53 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:08:53 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:08:53 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:08:53 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0
+[04-Jun-2014 21:08:58 UTC] PHP Fatal error:  include() [<a href='function.include'>function.include</a>]: Cannot redeclare class mage_connect_command_install in /home/dev/public_html/lib/Varien/Autoload.php on line 93
+[04-Jun-2014 21:08:58 UTC] PHP Stack trace:
+[04-Jun-2014 21:08:58 UTC] PHP   1. {main}() /home/dev/public_html/downloader/index.php:0
+[04-Jun-2014 21:08:58 UTC] PHP   2. Maged_Controller::run() /home/dev/public_html/downloader/index.php:36
+[04-Jun-2014 21:08:58 UTC] PHP   3. Maged_Controller->dispatch() /home/dev/public_html/downloader/Maged/Controller.php:497
+[04-Jun-2014 21:08:58 UTC] PHP   4. Maged_Controller->indexAction() /home/dev/public_html/downloader/Maged/Controller.php:813
+[04-Jun-2014 21:08:58 UTC] PHP   5. Maged_Connect->run() /home/dev/public_html/downloader/Maged/Controller.php:248
+[04-Jun-2014 21:08:58 UTC] PHP   6. Mage_Connect_Command::getInstance() /home/dev/public_html/downloader/Maged/Connect.php:258
+[04-Jun-2014 21:08:58 UTC] PHP   7. Varien_Autoload->autoload() /home/dev/public_html/downloader/Maged/Connect.php:0

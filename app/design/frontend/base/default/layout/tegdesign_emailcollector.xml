@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<layouts>
+    <default>
+        <reference name="head">
+        	<action method="addItem">
+        		<type>skin_css</type>
+                <name helper="tegdesign_emailcollector/data/getCSSFilename" />
+        	</action>
+        </reference>
+		<reference name="before_body_end">
+		    <block type="core/template" name="tegdesign_emailcollector_head" template="tegdesign_emailcollector/head.phtml"/>
+		</reference>
+    </default>
+</layouts>
+<!--
+<?xml version="1.0"?>
+<layouts>
+    <default>
+        <reference name="head">
+        	<action method="addItem">
+        		<type>skin_css</type>
+                <name helper="tegdesign_emailcollector/data/getCSSFilename" />
+        	</action>
+        	<block type="page/html_head" name="tegdesign_emailcollector_head" template="tegdesign_emailcollector/head.phtml" />
+        </reference>
+    </default>
+</layouts>
+-->
+<!-- START: example of loading the JS in the footer below -->
+
+
+<!-- END: example -->

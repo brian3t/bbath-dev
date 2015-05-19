@@ -1,0 +1,7 @@
+"Invoice Number","Originating Order Number",Store,"Customer ID",Date,Name,SKU,QTY,Subtotal,Discount,Tax
+200029458,200031825,Retail,,"Nov 30, 2014 10:26:08 PM","Blooming Bath Baby Bath",BLOOMINGBATH-PINK,1.0000,$39.99,$0.00,$0.00
+200029458,200031825,Retail,,"Nov 30, 2014 10:26:08 PM","Blooming Bath Baby Bath - Hot Pink",BLOOMINGBATH-PINK,1.0000,$0.00,$0.00,$0.00
+200029457,200031823,Retail,,"Nov 30, 2014 5:37:17 PM","Blooming Bath Bathing Kit",BLOOMINGBATH-KIT,1.0000,$59.99,$0.00,$0.00
+200029457,200031823,Retail,,"Nov 30, 2014 5:37:17 PM","Blooming Bath Baby Bath - Hot Pink",BLOOMINGBATH-PINK,1.0000,$0.00,$0.00,$0.00
+200029457,200031823,Retail,,"Nov 30, 2014 5:37:17 PM","Petals Baby Bath Washcloths - Hot Pink - 3 Pack",PETAL-WASHCLOTHS-3PK-PINK,1.0000,$0.00,$0.00,$0.00
+200029457,200031823,Retail,,"Nov 30, 2014 5:37:17 PM","Burt's Bees Getting Started Kit",GETTING-STARTED-KIT,1.0000,$0.00,$0.00,$0.00
