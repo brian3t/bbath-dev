@@ -32,7 +32,7 @@
 ## adjust memory limit
 
 #    php_value memory_limit 64M
-    php_value memory_limit 256M
+    php_value memory_limit 512M
     php_value max_execution_time 18000
 
 ############################################
@@ -115,6 +115,18 @@
 
     Options +FollowSymLinks
     RewriteEngine on
+    #RewriteCond %{HTTP_HOST} !^www\.bloomingbath\.com$ [NC]
+    #RewriteRule ^(.*)$ http://www.bloomingbath.com/$1 [L,R=301]
+    
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_USER_AGENT} !facebookexternalhit
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+	
+#	RewriteCond %{HTTP_USER_AGENT} !facebookexternalhit
+#    RewriteCond %{HTTP_HOST} !^$
+#	RewriteCond %{HTTP_HOST} !^www\. [NC]
+#	RewriteCond %{HTTPS}s ^on(s)|
+#	RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ############################################
 ## you can put here your magento root folder
@@ -261,3 +273,4 @@ allow from all
 
 deny from 75.238.149.116
 deny from 69.197.220.20
+deny from 188.143.233.220

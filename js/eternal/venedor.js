@@ -204,13 +204,13 @@ function products_grid_resize() {
     if (VENEDOR_RESPONSIVE) {
         var winWidth = $(window).outerWidth();
 
-        if ((!$('body').hasClass('bv3') && winWidth >= 963) || ($('body').hasClass('bv3') && winWidth >= 975)) {
+        if ((!$('body').hasClass('bv3') && winWidth >= 963) || ($('body').hasClass('bv3') && winWidth >= 975)) { /*
             if ($('.1column .products-grid .item').hasClass(SPAN_CSS + '4')) {
                 $('.1column .products-grid .item').removeClass('item-first');
                 $('.1column .products-grid .item').removeClass(SPAN_CSS + '4');
                 $('.1column .products-grid .item').addClass(SPAN_CSS + '3');
                 $('.1column .products-grid .col4-1').addClass('item-first');
-            }
+            }  */
             column_count = 4;
         } else {
             if ($('.1column .products-grid .item').hasClass(SPAN_CSS + '3')) {

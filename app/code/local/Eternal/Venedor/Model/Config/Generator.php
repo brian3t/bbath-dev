@@ -44,7 +44,7 @@ class Eternal_Venedor_Model_Config_Generator extends Mage_Core_Model_Abstract
         if (!Mage::app()->getStore($storeCode)->getIsActive()) 
             return false;
             
-        $fileName = 'store_' . $storeCode . '.css';
+        $fileName = 'store_' . $storeCode . '.css2';
         $file = Mage::helper('venedor/config')->getGeneratedCssDir() . $fileName;
         $templateFile = 'eternal/venedor/config.phtml';
         Mage::register('venedor_css_generate_store', $storeCode);

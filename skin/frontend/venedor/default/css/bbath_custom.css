@@ -1,0 +1,86 @@
+#videos_page li{
+    list-style-image: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+#video-list-owl .owl-item *{
+    cursor: pointer;
+}
+#videos_page ul{
+    padding-left: 0;
+}
+#videos_page li img{
+    /*width: 90%;*/
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    /*padding-top: 30px; *//* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cms-contact-us li {list-style-type: none}
+.breadcrumbs a:hover, .breadcrumbs a:focus {
+    color: inherit;
+    opacity: 0.7;
+}
+#distance{padding: 0}
+.dealerlocator-index-index #address{font-size: 100%}
+.dealerlocator-index-index label[for=address]
+{    width: auto;}
+.is-blog .pages li,.is-blog .pages li > a{display: inline-block}
+.is-blog li.item{list-style-type: none}
+.catalog-product-view #product-tabs ul.features > li{display: inline-block;  margin-right: 15px;}
+.catalog-product-view #product-options-wrapper > p.required{display:none}
+.catalog-product-view div.product-options-bottom{width: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;}
+.catalog-product-view #product-options-wrapper{width: 100%;    float: left;}
+.catalog-product-view [id^=bundle-option].qty-holder{display: none}
+.quote, blockquote {
+    color: #8f9290;
+}
+
+blockquote:before, .quote:before {
+    top: 15px;
+    left: 13px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    content: "\f10d";
+    position: absolute;
+    display: inline-block;
+    font-size: 28px;
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+}
+
+blockquote, .quote {
+    position: relative;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 27px 0 0 50px;
+    border-width: 0;
+}
+.product-options li, .cart li {list-style-type:none}
+@media (min-width: 990px){
+    .blog-search > input{  width: 80%;vertical-align: middle;margin-bottom: 4px}
+}
+body.checkout-cart-index .input-text.qty{float: left;  left: 0;  margin-top: 0;padding: 9px 15px;max-width: 74px}
+body.checkout-cart-index .checkout-types{clear: both;padding-left: 7px;}
+body.checkout-cart-index .checkout-types>li{margin-right: 6px;text-align:center;}
+body.checkout-cart-index .checkout-types button.button.btn-large.btn-proceed-checkout.btn-checkout{padding: 15px;margin-top: 15px;}
+body.checkout-cart-index .checkout-types span.paypal-or{margin-left: 8px}
+p.availability.out-of-stock {  color: red;}

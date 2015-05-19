@@ -77,7 +77,8 @@ class Eternal_Venedor_Helper_Data extends Mage_Core_Helper_Abstract
     // get jquery url
     public function getJqueryUrl()
     {
-        return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS) . 'eternal/jquery/jquery-1.8.2.min.js';
+        //return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS) . 'eternal/jquery/jquery-1.8.2.min.js';
+        return '//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js';
     }
     
     public function getJqueryNoConflictUrl()
@@ -487,9 +488,9 @@ class Eternal_Venedor_Helper_Data extends Mage_Core_Helper_Abstract
 
             $html .= '<div class="fb-person">';
             if ($link != "") {
-                $html .= "<a href=\"".$link."\" title=\"".$name."\" target=\"_blank\"><img src=\"".$img_in_base64."\" alt=\"\" /></a>";
+                $html .= "<a href=\"".$link."\" title=\"".$name."\" target=\"_blank\"><img src=\"".$image."\" alt=\"\" /></a>";
             } else {
-                $html .= "<span title=\"".$name."\"><img src=\"".$img_in_base64."\" alt=\"\" /></span>";
+                $html .= "<span title=\"".$name."\"><img src=\"".$image."\" alt=\"\" /></span>";
             }
             $html .= $name.'</div>';
         }

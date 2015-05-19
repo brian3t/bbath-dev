@@ -333,5 +333,23 @@ Dccode:[];</column_mapping>
 				</args>
 			</pickpack>
 		</routers>
-	</admin>		
+	</admin>
+	<crontab>
+	    <jobs>
+	        <Moogento_Pickpack>
+	            <schedule><cron_expr>*/15 * * * *</cron_expr></schedule>
+	            <run>
+	                <model>pickpack/getlabels::getLabels</model>
+	            </run>
+	        </Moogento_Pickpack>
+<!--
+	        <Moogento_Pickpack_Statements>
+	            <schedule><cron_expr>* 10 * * 5</cron_expr></schedule>
+	            <run>
+	                <model>pickpack/statements::createStatement</model>
+	            </run>
+	        </Moogento_Pickpack_Statements>
+-->
+	    </jobs>
+	</crontab>		
 </config>

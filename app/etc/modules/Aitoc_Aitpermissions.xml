@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aitoc_Aitpermissions>
+            <active>false</active>
+            <codePool>local</codePool>
+            <self_name>Advanced Permissions</self_name>
+            <priority>1250</priority>
+        </Aitoc_Aitpermissions>
+    </modules>
+</config>
+<!--
+/**
+ * Product:     Advanced Permissions v2.3.11
+ * Package:     Aitoc_Aitpermissions_2.3.11_2.0.3_370531
+ * Purchase ID: IdE1U6HnoZ1uVsL5XI63QxIw6UiCg3yWRooWxDrbgD
+ * Generated:   2012-09-23 04:03:35
+ * File path:   app/etc/modules/Aitoc_Aitpermissions.xml
+ * Copyright:   (c) 2012 AITOC, Inc.
+ */
+-->

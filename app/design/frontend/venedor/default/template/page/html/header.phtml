@@ -38,9 +38,21 @@ $cart_html = $this->getChildHtml('cart_sidebar');
 
 $c1 = ($cart_pos == 'top' && $switcher_pos == 'top') ? 'header-top-below' : 'left';
 ?>
+<!--
+<div class="hello-bar" style="
+    text-align: center;
+    background-color: #60cbff;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+">FREE 3-DAY SHIPPING</div>
+-->
 <div class="header-top">
+
     <div class="<?php echo $containerClass ?>">
+
 		<div class="left header-top-left">
+
 	        <div class="left customer-service">
 	            <span id="customer-service">Customer Service </span>
 				<br/>
@@ -51,7 +63,7 @@ $c1 = ($cart_pos == 'top' && $switcher_pos == 'top') ? 'header-top-below' : 'lef
 					Gift Registry
 				</div>
 				<span id="store-locator">
-					<a href="store-locator" title="Store Locator">Store Locator</a>
+					<a href="/dealer-locator" title="Store Locator">Store Locator</a>
 				</span>
 			</div>
 			
@@ -71,26 +83,24 @@ $c1 = ($cart_pos == 'top' && $switcher_pos == 'top') ? 'header-top-below' : 'lef
                      <?php echo $this->getAdditionalHtml() ?>
                 </p>
             </div>
-        </div>        
+        </div>
+		<div id="social-at-header">
+					<a target="_blank" href="https://www.facebook.com/bloomingbath" title="Blooming Bath Facebook"><img src="/images/icon-f.png"/></a>
+					<a target="_blank" href="https://twitter.com/bloomingbath" title="Blooming Bath Twitter"><img src="/images/icon-t.png"/></a>
+					<a target="_blank" href="//pinterest.com/bloomingbath" title="Blooming Bath Pinterest"><img src="/images/icon-p.png"/></a>
+					<a target="_blank" href="//plus.google.com/+Bloomingbath/" title="Blooming Bath Google Plus"><img src="/images/icon-g.png"/></a>
+		</div>                
     </div>    
 </div>
 <div class="clearfix"></div>
 <div class="header">
-    <div class="<?php echo $containerClass ?>">
-        <div class="clearfix">
+    <div class="<?php echo $containerClass ?> text-center">
             <?php if ($this->getIsHomePage()):?>
-            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $venedor->getLogo() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-				<div id="social-at-header">
-					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Facebook"><img src="/images/icon-f.png"/></a>
-					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Twitter"><img src="/images/icon-t.png"/></a>
-					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Pinterest"><img src="/images/icon-p.png"/></a>
-					<a href="https://www.facebook.com/bloomingbath" title="Blooming Bath Google Plus"><img src="/images/icon-g.png"/></a>
-				</div>
+            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $venedor->getLogo() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>	
 			</h1>
             <?php else:?>
             <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $venedor->getLogo() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
             <?php endif?>
-        </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
     </div>
     <div class="header-menu<?php if ($b['header']['menu_position'] == 'right') echo ' header-menu-right' ?>">

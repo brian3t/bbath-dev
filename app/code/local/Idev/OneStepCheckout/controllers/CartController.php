@@ -9,8 +9,8 @@ class Idev_OneStepCheckout_CartController extends Mage_Checkout_CartController
      */
     protected function _goBack()
     {
-
-        if ($returnUrl = $this->getRequest()->getParam('return_url')) {
+        $returnUrl = $this->getRequest()->getParam('return_url');
+        if ($returnUrl) {
             // clear layout messages in case of external url redirect
             if ($this->_isUrlInternal($returnUrl)) {
                 $this->_getSession()->getMessages(true);

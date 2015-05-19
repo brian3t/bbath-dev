@@ -66,9 +66,9 @@ if($helper->settings['hide_nonfree_payment_methods'])   {
     <dl id="checkout-payment-method-load" style="display: none">
         <?php foreach ($this->getMethods() as $_method): $_code = $_method->getCode() ?>
 
-        <dt>
-        <input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="hidden" name="payment[method]" title="<?php echo $this->escapeHtml($_method->getTitle()) ?>" class="radio" <?php if($this->getSelectedMethodCode()==$_code || ($hide_nonfree_methods && $_code == 'free')): ?> checked="checked"<?php endif; ?> />
-        <label for="p_method_<?php echo $_code ?>"><?php echo $_method->getTitle() ?></label></dt>
+        <dt class="radio">
+
+        <label for="p_method_<?php echo $_code ?>"><input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="hidden" name="payment[method]" title="<?php echo $this->escapeHtml($_method->getTitle()) ?>" class="radio" <?php if($this->getSelectedMethodCode()==$_code || ($hide_nonfree_methods && $_code == 'free')): ?> checked="checked"<?php endif; ?> /><?php echo $_method->getTitle() ?></label></dt>
         <?php endforeach; ?>
     </dl>
     <?php else:?>
@@ -76,13 +76,14 @@ if($helper->settings['hide_nonfree_payment_methods'])   {
         <dl id="checkout-payment-method-load">
         <?php foreach ($this->getMethods() as $_method): $_code = $_method->getCode() ?>
         <?php if($hide_nonfree_methods && $_code != 'free') continue; ?>
-            <dt>
+            <dt class="radio">
+                <label for="p_method_<?php echo $_code ?>">
             <?php if( sizeof($this->getMethods()) > 1 ): ?>
                 <input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio" name="payment[method]" title="<?php echo $this->escapeHtml($_method->getTitle()) ?>" class="radio validate-one-required-by-name" <?php if($this->getSelectedMethodCode()==$_code || ($hide_nonfree_methods && $_code == 'free')): ?> checked="checked"<?php endif; ?> />
             <?php else: ?>
                 <span class="no-display"><input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio" name="payment[method]" checked="checked" /></span>
             <?php endif; ?>
-                <label for="p_method_<?php echo $_code ?>"><?php echo $_method->getTitle() ?></label>
+                <?php echo $_method->getTitle() ?></label>
             </dt>
             <?php if($html = $this->getChildHtml('payment.method.'.$_code)): ?>
             <dd id="container_payment_method_<?php echo $_code; ?>" class="payment-method">

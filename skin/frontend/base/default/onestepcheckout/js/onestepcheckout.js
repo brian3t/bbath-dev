@@ -651,8 +651,9 @@ function addressPreview(templates, target) {
               } else {
                   value = s.getValue();
               }
-              value = '<span class="' + s.id.replace(':','-') + '">' + value.escapeHTML() + '</span>';
-
+              if(value){
+                  value = '<span class="' + s.id.replace(':','-') + '">' + value.escapeHTML() + '</span>';
+              }
               if(s.id == 'billing:region_id'){
                   bparams['billing:region'] = value;
               } else {
@@ -678,9 +679,9 @@ function addressPreview(templates, target) {
                 } else {
                     value = s.getValue();
                 }
-
-                value = '<span class="' + s.id.replace(':','-') + '">' + value.escapeHTML() + '</span>';
-
+                if(value){
+                    value = '<span class="' + s.id.replace(':','-') + '">' + value.escapeHTML() + '</span>';
+                }
                 if(s.id == 'shipping:region_id'){
                     sparams['shipping:region'] = value;
                 } else {

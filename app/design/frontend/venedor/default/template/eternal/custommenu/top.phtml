@@ -38,20 +38,76 @@ if (is_object($_categories)) $_categories = $this->getStoreCategories()->getNode
 ?>
 
 <nav class="navbar navbar-default" role="navigation">
-	<div class="navbar-header">
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="#">Menu</a>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>media/eternal/venedor/default/blooming-baby-logo_1.png"></a>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="main-navbar-collapse">
+			<ul class="nav navbar-nav">
+			<?php //echo $this->renderCategoriesMenuHtml(0,0) ?>
+		<!--  For retail site custom navigation  -->
+			<?php if(Mage::app()->getStore()->getCode() == 'default') : ?>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blooming Bath<span class="caret"></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>blooming-bath-baby-bath.html">Blooming Bath</a></li>
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>blooming-bath-baby-bath-kit.html">Blooming Bath Bathing Kit</a></li>
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>gift-cards.html">Blooming Bath Gift Card</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bath Accessories<span class="caret"></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>plush-hooded-towel.html">Hooded Towel</a></li>
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>burts-bees-baby-bath-products.html">Burt's Bees Baby Bath</a></li>
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>petals.html">Petals Baby Washcloths</a></li>
+						<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>mini-bloom-scrubbie.html">Mini Bloom Scrubbie</a></li>
+					</ul>
+				</li>
+				<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>blooming-baby-carrier.html">Baby Carrier</a></li>
+				<li><a  href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>blooming-baby-bags.html">Blooming Bags</a></li>
+			<?php else : ?>
+		<!--  For wholesale and International sites  -->
+				<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>blooming-bath-baby-products.html">Blooming Bath</a>
+				</li>
+				<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>baby-bath-accessories.html">Bath Accessories</a>
+				</li>	
+			<?php endif; ?>		
+			</ul>
+		</div>
 	</div>
-	<div class="collapse navbar-collapse" id="main-navbar-collapse">
-		<ul class="nav navbar-nav">
-		  <?php echo $this->renderCategoriesMenuHtml(0,0) ?>
-		</ul>
-	</div>
+		<script>
+		(function() {
+		var isBootstrapEvent = false;
+		if (window.jQuery) {
+		    var all = jQuery('*');
+		    jQuery.each(['hide.bs.dropdown', 
+		        'hide.bs.collapse', 
+		        'hide.bs.modal', 
+		        'hide.bs.tooltip',
+		        'hide.bs.popover'], function(index, eventName) {
+		        all.on(eventName, function( event ) {
+		            isBootstrapEvent = true;
+		        });
+		    });
+		}
+		var originalHide = Element.hide;
+		Element.addMethods({
+		    hide: function(element) {
+		        if(isBootstrapEvent) {
+		            isBootstrapEvent = false;
+		            return element;
+		        }
+		        return originalHide(element);
+		    }
+		});
+		})();
+		</script>
 </nav>
 
 

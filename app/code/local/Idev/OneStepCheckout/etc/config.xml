@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Idev_OneStepCheckout>
-            <version>4.1.0</version>
+            <version>4.1.3</version>
         </Idev_OneStepCheckout>
     </modules>
     <frontend>
@@ -18,8 +18,8 @@
                         <method>setCustomerComment</method>
                     </onestepcheckout_save_customercomment>
                 </observers>
-              </checkout_type_onepage_save_order>
-              <sales_quote_collect_totals_before>
+            </checkout_type_onepage_save_order>
+            <sales_quote_collect_totals_before>
                 <observers>
                     <onestepcheckout_set_address_defaults>
                         <type>model</type>
@@ -27,8 +27,8 @@
                         <method>setDefaults</method>
                     </onestepcheckout_set_address_defaults>
                 </observers>
-              </sales_quote_collect_totals_before>
-              <sales_quote_collect_totals_after>
+            </sales_quote_collect_totals_before>
+            <sales_quote_collect_totals_after>
                 <observers>
                     <onestepcheckout_set_shipping_defaults>
                         <type>model</type>
@@ -36,8 +36,8 @@
                         <method>setShippingIfDifferent</method>
                     </onestepcheckout_set_shipping_defaults>
                 </observers>
-              </sales_quote_collect_totals_after>
-              <customer_login>
+            </sales_quote_collect_totals_after>
+            <customer_login>
                 <observers>
                     <onestepcheckout_set_shipping_defaults_on_login>
                         <type>model</type>
@@ -45,8 +45,8 @@
                         <method>setDefaultsOnLogin</method>
                     </onestepcheckout_set_shipping_defaults_on_login>
                 </observers>
-              </customer_login>
-              <controller_action_layout_render_before_onestepcheckout_index_index>
+            </customer_login>
+            <controller_action_layout_render_before_onestepcheckout_index_index>
                 <observers>
                     <onestepcheckout_check_valid>
                         <type>model</type>
@@ -59,7 +59,7 @@
                         <method>compareDefaultsFromCart</method>
                     </onestepcheckout_compare_address_defaults>
                 </observers>
-              </controller_action_layout_render_before_onestepcheckout_index_index>
+            </controller_action_layout_render_before_onestepcheckout_index_index>
         </events>
         <routers>
             <onestepcheckout>
@@ -114,6 +114,17 @@
                 </admin>
             </resources>
         </acl>
+        <events>
+            <controller_action_predispatch_adminhtml_sales_order_create_save>
+                <observers>
+                    <onestepcheckout_save_customercomment_admin>
+                        <type>model</type>
+                        <class>Idev_OneStepCheckout_Helper_Data</class>
+                        <method>setCustomerCommentAdmin</method>
+                    </onestepcheckout_save_customercomment_admin>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_create_save>
+        </events>
     </adminhtml>
     <global>
         <models>
@@ -125,6 +136,11 @@
                     <quote>Idev_OneStepCheckout_Model_Sales_Quote</quote>
                 </rewrite>
             </sales>
+            <paypal>
+                <rewrite>
+                    <config>Idev_OneStepCheckout_Model_Paypal_Config</config>
+                </rewrite>
+            </paypal>
         </models>
         <resources>
             <onestepcheckout_setup>
@@ -165,6 +181,9 @@
                 <rewrite>
                     <sales_order_view_items>Idev_OneStepCheckout_Block_Adminhtml_Sales_Order_View_Comment</sales_order_view_items>
                 </rewrite>
+                <rewrite>
+                    <sales_order_create_comment>Idev_OneStepCheckout_Block_Adminhtml_Sales_Order_Create_Comment</sales_order_create_comment>
+                </rewrite>
             </adminhtml>
         </blocks>
         <helpers>
@@ -175,6 +194,24 @@
                 </rewrite>
             </checkout>
         </helpers>
+        <fieldsets>
+            <sales_convert_quote>
+                <onestepcheckout_customercomment>
+                    <to_order>*</to_order>
+                </onestepcheckout_customercomment>
+                <onestepcheckout_customerfeedback>
+                    <to_order>*</to_order>
+                </onestepcheckout_customerfeedback>
+            </sales_convert_quote>
+            <sales_convert_order>
+                <onestepcheckout_customercomment>
+                    <to_quote>*</to_quote>
+                </onestepcheckout_customercomment>
+                <onestepcheckout_customerfeedback>
+                    <to_order>*</to_order>
+                </onestepcheckout_customerfeedback>
+            </sales_convert_order>
+        </fieldsets>
     </global>
     <default>
         <onestepcheckout>
@@ -232,7 +269,6 @@
                 <password>16</password>
                 <confirm_password>17</confirm_password>
                 <save_in_address_book>18</save_in_address_book>
-                <use_for_shipping_yes>19</use_for_shipping_yes>
             </sortordering_fields>
             <feedback>
                 <enable_feedback>0</enable_feedback>

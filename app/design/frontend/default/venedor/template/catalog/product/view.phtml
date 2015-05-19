@@ -1,0 +1,257 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_modern
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '229694760416751', // App ID
+      channelUrl : '//www.bloomingbath.com/channel.php', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_product = $this->getProduct(); ?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="product-view" itemscope itemtype="http://schema.org/Product">
+    <div class="product-essential">
+    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+        <div class="no-display">
+            <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+            <input type="hidden" name="related_product" id="related-products-field" value="" />
+        </div>
+
+        <div class="product-shop">
+            <div class="product-name">
+                <h1 itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                <meta itemprop="url" content="<?php echo Mage::getUrl($_product->getUrlPath()) ?>" />
+            </div>
+            <? if(Mage::app()->getStore()->getCode() == 'default'): ?>
+				<?php if($_product->getResource()->getAttribute('pinterest_image')->getFrontend()->getValue($_product)):?>
+					<div id="pinterest_button">
+						<a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'><img src='http://s-passets-ec.pinimg.com/images/pinit_preview_none.png'/></a>
+					</div>
+				<?php endif; ?>
+				<div class="fb-like" data-send="true" data-width="375" data-show-faces="true"></div>
+			<?php endif; ?>
+            <?php if ($this->canEmailToFriend()): ?>
+                <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+            <?php endif; ?>
+
+            <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+            <?php echo $this->getChildHtml('alert_urls') ?>
+            <?php echo $this->getChildHtml('product_type_data') ?>
+            <?php echo $this->getTierPriceHtml() ?>
+            <?php echo $this->getChildHtml('extrahint') ?>
+
+            <?php if (!$this->hasOptions()):?>
+                <div class="add-to-box">
+                    <?php if($_product->isSaleable()): ?>
+                        <?php echo $this->getChildHtml('addtocart') ?>
+                        <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+                            <span class="or"><?php echo $this->__('OR') ?></span>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                    <?php echo $this->getChildHtml('addto') ?>
+                </div>
+            <?php endif; ?>
+            <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+            <?php endif;?>
+            <? if(Mage::app()->getStore()->getCode() == 'default'): ?>
+				<!-- Start AddToMyRegistry Button Tag --> 
+				 <script id='scriptMyRegistryWebWidgetButtonScript' type='text/javascript'> 
+				 document.write("<img id='ImgAddToMyRegistryButton' src='http://www.bloomingbath.com/images/add-to-registry.jpg' onmouseover='ImgAddToMyRegistryButton_onmouseover(this);' onmouseout='ImgAddToMyRegistryButton_onmouseout(this);' style='border-width: 0px; cursor: pointer;' onclick='CreateAddToMyRegistryWidget();' />"); 
+				 function ImgAddToMyRegistryButton_onmouseover(elementParam) 
+				 {elementParam.src = 'http://www.bloomingbath.com/images/add-to-registry.jpg';} 
+				 function ImgAddToMyRegistryButton_onmouseout(elementParam) 
+				 {elementParam.src = 'http://www.bloomingbath.com/images/add-to-registry.jpg';} 
+				 </script> 
+				 <!-- End AddToMyRegistry Button Tag -->
+				
+				<!-- Start AddToMyRegistry Tag -->
+				<script id='MyRegistryWebWidgetScript' type='text/javascript'> 
+				var mrUserCustom = new Object(); 
+				Assign_mrUserCustomObject_Values(); 
+				function Assign_mrUserCustomObject_Values() { 
+				mrUserCustom.isWebWidgetCall = true
+				mrUserCustom.storeName = null;
+				mrUserCustom.storeLogo  = null;
+				mrUserCustom.signUpLogo  = null;
+				mrUserCustom.imageSrc = GetElementByIdIfExists_src('main_img');
+				mrUserCustom.giftTitle = null;
+				mrUserCustom.giftPrice = null;
+				mrUserCustom.size = null;
+				mrUserCustom.sizeControl = null
+				mrUserCustom.sizerequired = false;
+				mrUserCustom.sizeincorrectvalue = false;
+				mrUserCustom.sizeerrormessage = 'Please select a value for Size';
+				mrUserCustom.color = null;
+				mrUserCustom.colorControl = GetElementByIdOrName('select_1');
+				mrUserCustom.colorrequired = false;
+				mrUserCustom.colorincorrectvalue = false;
+				mrUserCustom.colorerrormessage = 'Please select a value for Color';
+				mrUserCustom.notes = null;
+				mrUserCustom.notesControl = null
+				mrUserCustom.notesrequired = false;
+				mrUserCustom.notesincorrectvalue = false;
+				mrUserCustom.noteserrormessage = 'Please select a value for Notes';
+				mrUserCustom.currencySelectedIndex = 27;
+				mrUserCustom.giftLocation = null;
+				mrUserCustom.webwidgetBackgroundColor = null;
+				mrUserCustom.webwidgetButtonImageUrl = 'http://www.bloomingbath.com/images/add-to-registry.jpg';
+				mrUserCustom.mraddtoregistrypanelleft = null;
+				mrUserCustom.mraddtoregistrypaneltop = null;
+				} 
+				
+				function GetElementByIdOrName(elementIdOrName) {var mr_element = document.getElementById(elementIdOrName);if (mr_element == null) {if (document.getElementsByName(elementIdOrName).length > 0) {mr_element = document.getElementsByName(elementIdOrName)[0];}}if (mr_element == null) {return null;}else if (mr_element.type) {if (mr_element.type == 'select-one') {return mr_element;}else if (mr_element.type == 'text') {return mr_element;}else {}}else if (mr_element.innerHTML) {return mr_element;}else {return null;} }
+				function GetElementValueByIdOrName(elementIdOrName) {var mr_element = document.getElementById(elementIdOrName);if (mr_element == null) {if (document.getElementsByName(elementIdOrName).length > 0) {mr_element = document.getElementsByName(elementIdOrName)[0];}}if (mr_element == null) {return null;}else if (mr_element.type) {if (mr_element.type == 'select-one') {return mr_element.options[mr_element.selectedIndex].text;}else if (mr_element.type == 'text') {return mr_element.value;}else {}}else if (mr_element.innerHTML) {return mr_element.innerHTML;}else {return null;}}
+				function fControlFunction(controlClientId) { var control = document.getElementById(controlClientId); if (control != null && (control.type == 'text' || control.type == 'hidden')) { if (control.value != null) { return control.value; } else { return -1; } } else if (control != null && control.type == 'select-one') { var idx = control.selectedIndex; var selected_text = control.options[idx].text; if (selected_text != null) { return selected_text; } else { return -1; } } else if (control != null && control.type == 'radio') { if (getRadioCheckedValue(document.getElementsByName(controlClientId))) { return getRadioCheckedValue(document.getElementsByName(controlClientId)); } else { return -1; } } else if (control != null && control.type == 'checkbox') { if (getCheckedValue(document.getElementsByName(controlClientId))) { return getCheckedValue(document.getElementsByName(controlClientId)); } else { return -1; } } else if (control != null){return control.innerHTML;}} function getRadioCheckedValue(radioObj) { if (!radioObj) return null; var radioLength = radioObj.length; if (radioLength == undefined) if (radioObj.checked) return radioObj.value; else return null; for (var i = 0; i < radioLength; i++) { if (radioObj[i].checked) { return radioObj[i].value; } } return null; } function getCheckedValue(radioObj) { if (!radioObj) return null; var radioLength = radioObj.length; if (radioLength == undefined) if (radioObj.checked) return radioObj.value; else return null; var chbReturnval = ''; var datavail = false; for (var i = 0; i < radioLength; i++) { if (radioObj[i].checked) { datavail = true; chbReturnval += radioObj[i].value + ','; } } if (datavail) { return chbReturnval.substring(0, chbReturnval.length - 1); } else { return null; } }
+				function GetElementByIdIfExists_src(elementId) { if (document.getElementById(elementId)) { return document.getElementById(elementId).src; } else { return null; } }
+				function CreateAddToMyRegistryWidget() { Assign_mrUserCustomObject_Values(); var domainName = 'myregistry.com'; var documentBody = document.getElementsByTagName('body')[0];  var MrDragAndDrop = document.createElement('script'); MrDragAndDrop.id = 'mr_CreateAddToMyRegistryWidget'; MrDragAndDrop.type = 'text/javascript'; MrDragAndDrop.src = 'http://www.' + domainName + '/addgiftmr/widgetjs.aspx'; documentBody.appendChild(MrDragAndDrop); }
+				</script>
+				<!-- End AddToMyRegistry Tag -->  
+				<script id='AddToAUWLButton' type='text/javascript' src="http://www.bloomingbath.com/js/amazon-registry.js"></script> 
+			<?php endif;?>
+            <?php if ($_product->getShortDescription()):?>
+                <div class="short-description">
+                    <h2><?php echo $this->__('Quick Overview') ?></h2>
+                    <div class="std" itemprop="description"><?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?></div>
+                </div>
+            <?php endif;?>
+
+            <?php echo $this->getChildHtml('other');?>
+            
+        </div>
+
+        <div class="product-img-box">
+            <?php echo $this->getChildHtml('media') ?>
+        </div>
+
+        <div class="clearer"></div>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+        <?php endif;?>
+        <?php echo $this->getChildHtml('related'); ?>
+
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+    </div>
+
+    <div class="product-collateral">
+	    <?php echo $this->getChildHtml('product_additional_data') ?>	
+        <?php echo $this->getChildHtml('upsell_products') ?>
+        <?php echo $this->getChildHtml('info_tabs') ?>
+    </div>
+</div>
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+var google_tag_params = { 
+ecomm_prodid: '<?=$_product->getSku()?>',
+ecomm_pagetype: 'product',
+ecomm_totalvalue: '<? echo number_format($_product->getPrice(), 2) ?>'};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = <?=Mage::getStoreConfig('evrijn/evrijn_group/evrijn_input',Mage::app()->getStore())?>;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/<?=Mage::getStoreConfig('evrijn/evrijn_group/evrijn_input',Mage::app()->getStore());?>/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

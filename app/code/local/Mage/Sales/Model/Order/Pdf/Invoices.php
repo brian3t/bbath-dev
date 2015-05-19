@@ -2907,7 +2907,7 @@ $this->y -= 20;
 											}
 											else $display_name = htmlspecialchars_decode($name);
 										
-											$page->drawText($sku, $skuX, $this->y , 'UTF-8');
+											//$page->drawText($sku, $skuX, $this->y , 'UTF-8');
 											$page->drawText($qty_string, ($qtyX+8), $this->y , 'UTF-8');
 											if($prices_yn != '0')
 											{
@@ -3331,10 +3331,10 @@ $this->y -= 20;
 									$to_from = '';
 									if(isset($gift_recipient)){
 										if($gift_message_yn != 'yesnewpage') $to_from .= 'Message to '.$gift_recipient;
-										else $to_from .= 'To '.$gift_recipient;
-										if(isset($gift_sender)) $to_from .= ', from '.$gift_sender.' :';
+										else $to = 'To: '.$gift_recipient;
+										if(isset($gift_sender)) $from = 'From: '.$gift_sender;
 									}
-									elseif(isset($gift_sender)) $to_from .= 'From '.$gift_sender.' :';
+									elseif(isset($gift_sender)) $from = 'From '.$gift_sender.' :';
 
 									if($gift_message_yn == 'yesbox')
 									{
@@ -3345,12 +3345,12 @@ $this->y -= 20;
 									elseif($gift_message_yn == 'yesunder')
 									{
 										$msgX = 35;
-										$gift_message = wordwrap($gift_message, 115, "\n", false);
+										$gift_message = wordwrap($gift_message, 50, "\n", false);
 									}
 									elseif($gift_message_yn == 'yesnewpage')
 									{
 										$msgX = 35;
-										$gift_message = wordwrap($gift_message, 115, "\n", false);
+										$gift_message = wordwrap($gift_message, 50, "\n", false);
 									}
 
 									// wordwrap characters
@@ -3397,7 +3397,9 @@ $this->y -= 20;
 									}
 									else $this->_setFont($page, 'bold', ($font_size_gift_message), $font_family_gift_message, $non_standard_characters, $font_color_gift_message);
 									
-									$page->drawText(Mage::helper('sales')->__($to_from), ($msgX), $this->y, 'UTF-8');
+									$page->drawText(Mage::helper('sales')->__($to), ($msgX), $this->y, 'UTF-8');
+									$this->y = ($this->y - 10 - $font_size_gift_message);
+									$page->drawText(Mage::helper('sales')->__($from), ($msgX), $this->y, 'UTF-8');
 									// $page->drawText(Mage::helper('sales')->__($gift_sender), ($msgX+80), $this->y, 'UTF-8');
 									// $page->drawText(Mage::helper('sales')->__('Message to:'), ($msgX+147), $this->y, 'UTF-8');
 									// $page->drawText(Mage::helper('sales')->__($gift_recipient), ($msgX+185), $this->y, 'UTF-8');
@@ -4965,7 +4967,7 @@ $this->y -= 20;
 	
 							$page->drawText(Mage::helper('sales')->__($qty_title), $qtyX, $this->y, 'UTF-8');
 							$page->drawText(Mage::helper('sales')->__($items_title), ($productX+$productXInc+$first_item_title_shift_items), $this->y, 'UTF-8');
-							$page->drawText(Mage::helper('sales')->__($sku_title), ($skuX+$first_item_title_shift_sku), $this->y, 'UTF-8');
+							//$page->drawText(Mage::helper('sales')->__($sku_title), ($skuX+$first_item_title_shift_sku), $this->y, 'UTF-8');
 
 							if($product_options_yn == 'yescol')
 							{
@@ -5633,7 +5635,7 @@ $this->y -= 20;
 									$this->_setFont($page, $font_style_subtitles, $font_size_subtitles, $font_family_subtitles, $non_standard_characters, $font_color_subtitles);
 									$page->drawText(Mage::helper('sales')->__($qty_title), $qtyX, $this->y, 'UTF-8');
 									$page->drawText(Mage::helper('sales')->__($items_title), ($productX+$productXInc+$first_item_title_shift), $this->y, 'UTF-8');
-									$page->drawText(Mage::helper('sales')->__($sku_title), $skuX, $this->y, 'UTF-8');
+									//$page->drawText(Mage::helper('sales')->__($sku_title), $skuX, $this->y, 'UTF-8');
 									
 									if($product_options_yn == 'yescol')
 									{
@@ -5682,7 +5684,7 @@ $this->y -= 20;
 								if(isset($product_build_value['shelving2']) && $product_build_value['shelving2'] != '') $page->drawText(Mage::helper('sales')->__($product_build_value['shelving2']), $shelf3X, $this->y, 'UTF-8');
 								
 								$page->drawText($product_build_value['qty_string'], ($qtyX+8), $this->y , 'UTF-8');
-								$page->drawText($product_build_value['sku_print'], $skuX, $this->y , 'UTF-8');
+								//$page->drawText($product_build_value['sku_print'], $skuX, $this->y , 'UTF-8');
 								$page->drawText($product_build_value['display_name'], ($productX+$productXInc), $this->y , 'UTF-8');
 					
 								if($prices_yn != '0')
@@ -5827,7 +5829,7 @@ $this->y -= 20;
 											}
 											else $display_name = htmlspecialchars_decode($name);
 										
-											$page->drawText($sku, $skuX, $this->y , 'UTF-8');
+											//$page->drawText($sku, $skuX, $this->y , 'UTF-8');
 											$page->drawText($qty_string, ($qtyX+8), $this->y , 'UTF-8');
 											if($prices_yn != '0')
 											{

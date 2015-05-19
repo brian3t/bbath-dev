@@ -11,7 +11,7 @@
 .f-left,
 .left         { float:left !important; }
 .f-right,
-.right        { float:right !important; }
+.right        { float:right !important;}
 .f-none       { float:none !important; }
 .f-fix        { float:left; width:100%; }
 .no-display   { display:none; }
@@ -252,7 +252,7 @@ tr.summary-details-excluded { font-style:italic; }
 .std p,
 .std address,
 .std blockquote { margin:0 0 1em; padding:0; }
-.std ul { list-style:disc outside; padding-left:1.5em; }
+.std ul { list-style:disc outside; }
 .std ol { list-style:decimal outside; padding-left:1.5em; }
 .std ul ul { list-style-type:circle; }
 .std ul ul,
@@ -269,7 +269,8 @@ tr.summary-details-excluded { font-style:italic; }
 .std em { font-style:italic; }
 
 /* Misc */
-.links li { display:inline; }
+.links li {list-style: none; }
+ul.links{padding-left:5px;}
 .links li.first { padding-left:0 !important; }
 .links li.last { background:none !important; padding-right:0 !important; }
 
@@ -313,9 +314,17 @@ tr.summary-details-excluded { font-style:italic; }
 .logo { }
 .header-container {}
 .header {  }
-.header .logo { text-decoration:none !important; }
+.header .logo { text-decoration:none !important;}
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
-.header h1.logo { margin:0; padding:0; font-size:30px; }
+.header h1.logo { margin:0; font-size:30px; }
+.alogo {
+  margin-bottom: 5px;
+  float: none;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 45%;
+  z-index: 1;
 .header .welcome-msg { font-weight:bold; text-align:right; }
 .header .welcome-msg a {}
 .header .links { float:right; }
@@ -1357,3 +1366,15 @@ ul.menu_row > li.col > ul > li  a,#megamenu .inside a{ background: none !importa
 #megamenu ul.rows_outer ul.menu_row li.col li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul ul,
 #megamenu ul.rows_outer ul.menu_row li.col li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul ul,
 #megamenu ul.rows_outer ul.menu_row li.col li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul ul  { display:none !important;}
+/* ======================================================================================= */
+ .navbar .navbar-nav li a {
+	text-align:left;
+	padding-right: 20px;	
+}
+.container .navbar {
+	margin-bottom: 0px;
+}
+
+
+
+

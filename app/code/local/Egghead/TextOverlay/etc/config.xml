@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Egghead_TextOverlay>
+            <version>0.0.1</version>
+        </Egghead_TextOverlay>
+    </modules>
+    <global>
+        <page>
+            <layouts>
+                <COMING_SOON_LAYOUT translate="label">
+                    <label>Coming Soon</label>
+                    <template>page/comingsoon.phtml</template>
+                    <!--<layout_handle>page_comingsoon</layout_handle>-->
+                </COMING_SOON_LAYOUT>
+                <VIDEOS_PAGE_LAYOUT translate="label">
+                    <label>Bloomingbath Videos</label>
+                    <template>page/videos_page.phtml</template>
+                    <!--<layout_handle>page_comingsoon</layout_handle>-->
+                </VIDEOS_PAGE_LAYOUT>
+
+                <!-- add more layouts here -->
+            </layouts>
+        </page>
+        <helpers>
+            <textOverlay>
+                <class>Egghead_TextOverlay_Helper</class>
+            </textOverlay>
+        </helpers>
+        <blocks>
+            <textOverlay>
+                <class>Egghead_TextOverlay_Block</class>
+            </textOverlay>
+        </blocks>
+    </global>
+</config>

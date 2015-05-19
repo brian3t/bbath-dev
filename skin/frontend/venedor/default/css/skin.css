@@ -169,3 +169,13 @@
 .pink #popupmenu_custom_block .block2 .cell:hover .icon3    { background-position: -620px -372px; }
 .pink #popupmenu_custom_block .block2 .icon4                { background-position: -744px -372px; }
 .pink #popupmenu_custom_block .block2 .cell:hover .icon4    { background-position: -868px -372px; }
+div#social-buttons {
+    margin-bottom: 8px;
+}
+.revolution-slider > ul{list-style-type: none;}
+#social li { display:inline-block; padding-right: 20px; vertical-align:top;}
+#pinterest_button {margin-bottom: 10px}
+a.dropdown-toggle.button {
+    display: inline-block;
+}
+/* ul.dropdown-menu > li > a:hover{color: inherit !important;} */

@@ -27,7 +27,7 @@ if ($b['product']['aspect_ratio'])
 
 if($this->getItemCount()): ?>
 <div class="crosssell box-cross-sell">
-    <h2 class="subtitle"><span class="inline-title"><?php echo $this->__('Cross Sells') ?></span><?php if ($this->getItemCount() > 2) echo '<div class="line"></div>'; ?></h2>
+    <h2 class="subtitle"><span class="inline-title"><?php echo $this->__('Products You Might Like') ?></span><?php if ($this->getItemCount() > 2) echo '<div class="line"></div>'; ?></h2>
     <p class="desc"><?php echo $this->__('Based on your selection, you may be interested in the following items.') ?></p>
     
     <div id="crosssell-products-list" class="crosssell-products products-grid flexslider large-icons"><ul class="slides">

@@ -41,9 +41,9 @@
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[dev_magento]]></username>
+                    <username><![CDATA[dev]]></username>
                     <password><![CDATA[BF%tCA1~al!4]]></password>
-                    <dbname><![CDATA[dev_magento]]></dbname>
+                    <dbname><![CDATA[dev_magento2]]></dbname>
                     <active>1</active>
                 </connection>
             </default_setup>

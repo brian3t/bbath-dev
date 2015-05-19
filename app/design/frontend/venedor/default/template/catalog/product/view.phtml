@@ -82,7 +82,32 @@ $_helper = $this->helper('catalog/output');
                 <? if(Mage::app()->getStore()->getCode() == 'default'): ?>
 				<div id="social-product">
 					<div>
-						<a href="#" id="pin-it"></a>
+							<script>
+							window.fbAsyncInit = function() {
+							FB.init({
+							  appId      : '229694760416751', // App ID
+							  channelUrl : '//www.bloomingbath.com/channel.php', // Channel File
+							  status     : true, // check login status
+							  cookie     : true, // enable cookies to allow the server to access the session
+							  xfbml      : true  // parse XFBML
+							});
+							
+							// Additional initialization code here
+							};
+							
+							// Load the SDK Asynchronously
+							(function(d){
+							 var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+							 if (d.getElementById(id)) {return;}
+							 js = d.createElement('script'); js.id = id; js.async = true;
+							 js.src = "//connect.facebook.net/en_US/all.js";
+							 ref.parentNode.insertBefore(js, ref);
+							}(document));
+							</script>
+						<div id="pinterest_button">
+						<a data-pin-do="buttonFollow" href="http://www.pinterest.com/bloomingbath/">Blooming Bath</a>
+						<script type="text/javascript" async  data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+						</div>
 						<div class="fb-like" data-href="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true">
 						</div>
 					</div>
@@ -149,8 +174,86 @@ $_helper = $this->helper('catalog/output');
             </div>
         </div>
     </form>
+
     <script type="text/javascript">
     //<![CDATA[
+        //Tri added 04 30 get selected product so that stock status is displayed
+        if (typeof spConfig !== "undefined")  {
+            spConfig.getIdOfSelectedProduct = function(){};
+        }
+        <?php if ($_product->isConfigurable()) :?>
+            spConfig.getIdOfSelectedProduct = function()
+            {
+                var existingProducts = new Object();
+                for(var i=this.settings.length-1;i>=0;i--)
+                {
+                    var selected = this.settings[i].options[this.settings[i].selectedIndex];
+                    if(selected.config)
+                    {
+                        for(var iproducts=0;iproducts<selected.config.products.length;iproducts++)
+                        {
+                            var usedAsKey = selected.config.products[iproducts]+"";
+                            if(existingProducts[usedAsKey]==undefined)
+                            {
+                                existingProducts[usedAsKey]=1;
+                            }
+                            else
+                            {
+                                existingProducts[usedAsKey]=existingProducts[usedAsKey]+1;
+                            }
+                        }
+                    }
+                }
+                for (var keyValue in existingProducts)
+                {
+                    for ( var keyValueInner in existingProducts)
+                    {
+                        if(Number(existingProducts[keyValueInner])<Number(existingProducts[keyValue]))
+                        {
+                            delete existingProducts[keyValueInner];
+                        }
+                    }
+                }
+                var sizeOfExistingProducts=0;
+                var currentSimpleProductId = "";
+                for ( var keyValue in existingProducts)
+                {
+                    currentSimpleProductId = keyValue;
+                    sizeOfExistingProducts=sizeOfExistingProducts+1
+                }
+                if(sizeOfExistingProducts==1)
+                {
+                    console.log("Selected product is: "+currentSimpleProductId);
+                    new Ajax.Request('/misc/get_avail_by_product_id.php?product_id=' + currentSimpleProductId, {
+                        method:'get',
+                        onSuccess: function(response) {
+                            // Handle the response content...
+                            data = response.responseJSON;
+                            if (data === null){
+                                console.log("Can not get stock of this product id" + currentSimpleProductId);
+                            }
+                            else {
+                                if (Number.isInteger(data)){
+                                    if (data === 1){
+                                        jQuery('p.availability').animate({opacity:0.5},1000).removeClass('out-of-stock').addClass('in-stock').animate({opacity:1},1000).find('span').text('In Stock');
+                                    } else {
+                                        jQuery('p.availability').animate({opacity:0.5},1000).removeClass('in-stock').addClass('out-of-stock').animate({opacity:1},1000).find('span').text('Out Of Stock');
+                                    }
+                                }
+                            }
+                        },
+                        onFailure:function(){
+                            console.log('Can\'t get product\'s availability');
+                        }
+                    });
+                }
+                else
+                {
+                    jQuery('#avail-table').fadeOut(1000, function(){jQuery('p.availability').fadeIn(1000);});
+                }
+            };
+        <? endif;?>
+
         var productAddToCartForm = new VarienForm('product_addtocart_form');
         productAddToCartForm.submit = function(button, url) {
             if (this.validator.validate()) {
@@ -201,27 +304,8 @@ $_helper = $this->helper('catalog/output');
     //]]>
     </script>
     </div>
-
-    <div class="product-collateral">
-
-        <div class="product-info <?php //echo $rowClass ?>">
-       		<?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?>
-        </div>
-        
-		<?php echo $this->getChildHtml('upsell_products') ?>
-
-        <?php //echo $this->getChildHtml('crosssell_products') ?>
-                
-        <?php $_videos = $this->getProduct()->getVideos(); ?>
-		<?php if($_videos): ?>
-		<div id="videos">
-			<h2 class="subtitle"><span class="inline-title"><?php echo $this->__('Videos') ?></span><div class="line"></div></h2>
-			<div class="row">
-	        	<?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_videos, 'videos') ?>
-			</div>
-		</div>
-		<?php endif; ?>
-		<div class="row">
+    
+    		<div class="row">
 		    <div class="<?php echo $spanClass ?>12 product-tabs">
 		        <div class="box-additional box-tabs">
 		            <?php 
@@ -232,6 +316,31 @@ $_helper = $this->helper('catalog/output');
 		        </div>
 		    </div>
 		</div>
+
+<?php //echo $this->getChildHtml('crosssell_products') ?>
+                
+        <?php $_videos = $this->getProduct()->getVideos(); ?>
+		<?php if($_videos): ?>
+		<div id="videos">
+			<h2 class="subtitle"><span class="inline-title"><?php echo $this->__('Videos') ?></span>
+<!--				<div class="line"></div>-->
+			</h2>
+			<div class="row">
+	        	<?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_videos, 'videos') ?>
+			</div>
+		</div>
+		<?php endif; ?>    
+    
+    <div class="product-collateral">
+
+		<?php echo $this->getChildHtml('upsell_products') ?>
+
+<!--        <div class="product-info --><?php ////echo $rowClass ?><!--">-->
+<!--       		--><?php //echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?>
+<!--        </div>-->
+
+        
+		
             <script type="text/javascript">
             //<![CDATA[
             jQuery(function($){
@@ -272,11 +381,11 @@ $_helper = $this->helper('catalog/output');
             });
             //]]>
             </script>
-        </div>    
-
-
+        </div>   
         <?php echo $this->getChildHtml('product_additional_data') ?>
-
     </div>
+    	<div>
+	    <p><script id="pixlee_script" src="//assets.pixlee.com/assets/pixlee_widget_v3.js"></script><script>var pixlee = new PixleeWidget("https://photos.pixlee.com/bloomingbath/951/v2?horizontal=true&filter_sort_id=11914","pixlee_container", "https://photos.pixlee.com/", document.location.hash);pixlee.setupWidget(true);</script></p>
+    	</div>
 </div>
 

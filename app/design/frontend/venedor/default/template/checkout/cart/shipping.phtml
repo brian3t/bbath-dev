@@ -28,20 +28,20 @@
 <div class="shipping">
     <h2><?php echo $this->__('Estimate Shipping and Tax') ?></h2>
     <div class="shipping-form">
-       <form action="<?php echo $this->getUrl('checkout/cart/estimatePost') ?>" method="post" id="shipping-zip-form" class="col-sm-12">
+       <form action="<?php echo $this->getUrl('checkout/cart/estimatePost') ?>" method="post" id="shipping-zip-form" class="form-horizontal">
             <p><?php echo $this->__('Enter your destination to get a shipping estimate.') ?></p>
-            <ul class="form-list">
-                <li>
-                    <label for="country" class="required"><i class="icon-country"></i><?php echo $this->__('Country') ?><em>*</em></label>
-                    <div class="input-box">
+            <ul class="form-horizontal">
+                <li class="form-group">
+                    <label for="country" class="required col-md-2 control-label"><?php echo $this->__('Country') ?><em>*</em></label>
+                    <div class="input-box col-md-8">
                         <?php echo Mage::getBlockSingleton('directory/data')->getCountryHtmlSelect($this->getEstimateCountryId()) ?>
                     </div>
                 </li>
             <?php //if($this->getStateActive()): ?>
-                <li>
-                    <label for="region_id"<?php if ($this->isStateProvinceRequired()) echo ' class="required"' ?>><i class="icon-state"></i><?php echo $this->__('State/Province') ?><?php if ($this->isStateProvinceRequired()) echo '<em>*</em>' ?></label>
-                    <div class="input-box">
-                        <select id="region_id" name="region_id" title="<?php echo $this->__('State/Province') ?>" style="display:none;"<?php echo ($this->isStateProvinceRequired() ? ' class="validate-select"' : '') ?>>
+                <li class="form-group">
+                    <label class="col-md-2 control-label"for="region_id"<?php if ($this->isStateProvinceRequired()) echo ' class="required"' ?>><i class="icon-state"></i><?php echo $this->__('State/Province') ?><?php if ($this->isStateProvinceRequired()) echo '<em>*</em>' ?></label>
+                    <div class="input-box col-md-8">
+                        <select id="region_id" name="region_id" title="<?php echo $this->__('State/Province') ?>" <?php echo ($this->isStateProvinceRequired() ? ' class="validate-select"' : '') ?>>
                             <option value=""><?php echo $this->__('Please select region, state or province') ?></option>
                         </select>
                        <script type="text/javascript">
@@ -49,7 +49,7 @@
                            $('region_id').setAttribute('defaultValue',  "<?php echo $this->getEstimateRegionId() ?>");
                        //]]>
                        </script>
-                       <input type="text" id="region" name="region" value="<?php echo $this->escapeHtml($this->getEstimateRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class="input-text" style="display:none;" />
+                       <input type="text" id="region" name="region" value="<?php echo $this->escapeHtml($this->getEstimateRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class="input-text form-control" />
                    </div>
                 </li>
             <?php //endif; ?>
@@ -61,13 +61,16 @@
                     </div>
                 </li>
             <?php endif; ?>
-                <li>
-                    <label for="postcode"<?php if ($this->isZipCodeRequired()) echo ' class="required"' ?>><i class="icon-zipcode"></i><?php echo $this->__('Zip/Postal Code') ?><?php if ($this->isZipCodeRequired()) echo '<em>*</em>' ?></label>
-                    <div class="input-box">
-                        <input class="input-text validate-postcode<?php if ($this->isZipCodeRequired()):?> required-entry<?php endif;?>" type="text" id="postcode" name="estimate_postcode" value="<?php echo $this->escapeHtml($this->getEstimatePostcode()) ?>" />
+                <li class="form-group">
+                    <label class="col-md-2 control-label" for="postcode"<?php if ($this->isZipCodeRequired()) echo ' class="required"' ?>><i class="icon-zipcode"></i><?php echo $this->__('Zip/Postal Code') ?><?php if ($this->isZipCodeRequired()) echo '<em>*</em>' ?></label>
+                    <div class="col-md-8">
+                        <input class="input-text validate-postcode form-control <?php if ($this->isZipCodeRequired()):?> required-entry<?php endif;?> " type="text" id="postcode" name="estimate_postcode" value="<?php echo $this->escapeHtml($this->getEstimatePostcode()) ?>" />
                     </div>
                 </li>
             </ul>
+            <script>
+	        	jQuery("#country,#region_id,#postcode").addClass('form-control');
+            </script>            
             <div class="buttons-set">
                 <button type="button" title="<?php echo $this->__('Get a Quote') ?>" onclick="coShippingMethodForm.submit()" class="button"><span><span><?php echo $this->__('Get a Quote') ?></span></span></button>
             </div>

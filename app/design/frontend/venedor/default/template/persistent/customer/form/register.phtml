@@ -43,22 +43,28 @@ $spanClass = $venedor->getSpanClass();
     </div>
     <?php echo $this->getChildHtml('form_fields_before')?>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
+    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate" class="form-horizontal">
         <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
         <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
         <div class="<?php echo $rowClass ?>">
             <div class="<?php if($this->getShowAddressFields()) echo $spanClass.'6'; else echo $spanClass.'12'; ?>">
-                <h2><?php echo $this->__('Your Personal Details') ?></h2>
+                <h2><?php echo $this->__('Account Info.') ?></h2>
                 <ul class="form-list">
-                    <li class="fields">
+                    
+                	<div>
                         <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
-                    </li>
-                    <li>
-                        <label for="email_address" class="required"><i class="icon-email"></i><?php echo $this->__('Email') ?><em>*</em></label>
-                        <div class="input-box">
-                            <input type="text" name="email" id="email_address" value="<?php echo $this->escapeHtml($this->getFormData()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="input-text validate-email required-entry" />
+                	</div>
+                    
+       
+                    <div class="form-group form-group-lg">
+                        <label for="email_address" class="col-sm-2 control-label required"><i class=""></i><?php echo $this->__('Email') ?><em>*</em></label>
+                        <div class="col-sm-8">
+                            <input type="text" name="email" id="email_address" value="<?php echo $this->escapeHtml($this->getFormData()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="validate-email required-entry form-control" />
                         </div>
-                    </li>
+                    </div>
+                    
+
+                    
                 <?php $_dob = $this->getLayout()->createBlock('customer/widget_dob') ?>
                 <?php if ($_dob->isEnabled()): ?>
                     <li><?php echo $_dob->setDate($this->getFormData()->getDob())->toHtml() ?></li>
@@ -72,32 +78,35 @@ $spanClass = $venedor->getSpanClass();
                     <li><?php echo $_gender->setGender($this->getFormData()->getGender())->toHtml() ?></li>
                 <?php endif ?>
                 </ul>
-                <h2><?php echo $this->__('Your Password') ?></h2>
+                <h2><?php echo $this->__('Password') ?></h2>
+                
                 <ul class="form-list">
-                    <li class="fields">
-                        <div class="field">
-                            <label for="password" class="required"><i class="icon-password"></i><?php echo $this->__('Password') ?><em>*</em></label>
-                            <div class="input-box">
-                                <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="input-text required-entry validate-password" />
+                    
+                        <div class="form-group form-group-lg">
+                            <label for="password" class="required col-sm-2 control-label"></i><?php echo $this->__('Password') ?><em>*</em></label>
+                            <div class="col-sm-8">
+                                <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="required-entry validate-password form-control form-control	" />
                             </div>
                         </div>
-                        <div class="field">
-                            <label for="confirmation" class="required"><i class="icon-password"></i><?php echo $this->__('Re Password') ?><em>*</em></label>
-                            <div class="input-box">
-                                <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="input-text required-entry validate-cpassword" />
+                        <div class="form-group form-group-lg">
+                            <label for="confirmation" class="required col-sm-2 control-label"></i><?php echo $this->__('Confirm Password') ?><em>*</em></label>
+                            <div class="col-sm-8">
+                                <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="required-entry validate-cpassword form-control" />
                             </div>
                         </div>
-                    </li>
+                   
+                    
                     <?php echo $this->getChildHtml('form.additional.info'); ?>
                     <?php echo $this->getChildHtml('persistent.remember.me'); ?>
                     <?php if ($this->isNewsletterEnabled()): ?>
                     <h2><?php echo $this->__('Newsletter') ?></h2>
                     <li class="control">
-                        <input type="checkbox" name="is_subscribed" title="<?php echo $this->__('Sign Up for Newsletter') ?>" value="1" id="is_subscribed"<?php if($this->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif; ?> class="checkbox" />
-                        <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter') ?></label>
+                        <input type="checkbox" name="is_subscribed" title="<?php echo $this->__('Sign Up for Newsletter') ?>" value="1" id="is_subscribed"<?php if($this->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif; ?> class="checkbox" checked />
+                        <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter & Promotions') ?></label>
                     </li>
                     <?php endif ?>
                 </ul>
+                
                 <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
             </div>
             <?php if($this->getShowAddressFields()): ?>

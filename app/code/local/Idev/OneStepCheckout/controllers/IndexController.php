@@ -40,6 +40,12 @@ class Idev_OneStepCheckout_IndexController extends Mage_Core_Controller_Front_Ac
             $this->_redirect('checkout/cart');
             return;
         }
+
+        Mage::getSingleton('checkout/session')->setCartWasUpdated(false);
+        //@TODO: validate the necessity of this clause
+        //Mage::getSingleton('customer/session')->setBeforeAuthUrl(Mage::getUrl('*/*/*', array('_secure'=>true)));
+
+
         $this->loadLayout();
 
         if(Mage::helper('onestepcheckout')->isEnterprise() && Mage::helper('customer')->isLoggedIn()){

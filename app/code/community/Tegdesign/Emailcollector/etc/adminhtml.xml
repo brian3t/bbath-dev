@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <customer>
+            <children>
+                <tegdesign_emailcollector_emails translate="title" module="tegdesign_emailcollector">
+                    <title>Email Collector Emails</title>
+                    <action>adminhtml/emails</action>
+                    <sort_order>20</sort_order>
+                    <children>
+                        <cfg translate="title">
+                            <title>Settings</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/system_config/edit/section/tegdesign_emailcollector_options/</action>
+                        </cfg>
+                    </children>
+                </tegdesign_emailcollector_emails>
+            </children>
+        </customer>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customer>
+                        <children>
+                            <tegdesign_emailcollector_emails>
+                                <title>Email Collector Emails</title>
+                            </tegdesign_emailcollector_emails>
+                        </children>
+                    </customer>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

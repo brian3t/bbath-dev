@@ -452,10 +452,12 @@ color: #fff;}
 
 
 /* Header ================================================================================ */
-.logo { float:left; }
+.logo { float:left;
+		padding-top:5px
+		 }
 .header-container {background-image: url(../images/background/header_bg.jpg);background-repeat: no-repeat; height: 222px}
 
-.header { margin:0px; padding: 15px 0px 20px 0px; position: relative; }
+.header { margin:0px; padding: 15px 0px 70px 0px; position: relative; }
 .header .logo { float:left; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 
@@ -1057,7 +1059,7 @@ f/********** Product Prices > */
 .product-options ul.validation-failed { padding:0 7px; }
 .product-options p.required { margin-bottom:0; padding:15px 0 0; }
 .product-options ul.options-list .price-notice{ display: none; }
-.product-options ul.options-list input.bundle-option-1 {display: none}
+.product-options ul.options-list input.bundle-option-1, .product-options ul.options-list input.bundle-option-26 {display: none}
 .product-options .qty-holder {display: none}
 
 .product-options-bottom { padding:20px 0; }
@@ -1265,9 +1267,9 @@ f/********** Product Prices > */
 .cart .discount,
 .cart .shipping { padding:10px 0; margin:0 12px; }
 .cart .discount h2,
-.cart .shipping h2 { float:left; width:225px; font:normal 14px/16px Arial, Helvetica, sans-serif; color: #4F8100; }
+.cart .shipping h2 { float:left; width:210px; font:normal 14px/16px Arial, Helvetica, sans-serif; color: #4F8100; }
 .cart .discount .discount-form,
-.cart .shipping .shipping-form { margin-left:240px; }
+.cart .shipping .shipping-form { margin-left:210px; }
 .cart .discount .buttons-set,
 .cart .shipping .buttons-set { margin:10px 0 0; border:0; padding:0; text-align:left; }
 .cart .discount .buttons-set button.button,
@@ -1879,5 +1881,30 @@ background: transparent url("../images/quote.gif") no-repeat 0 0;
 #ptpa .right {width: 240px}
 
 #media-images li {float: left; margin-right: 15px; margin-bottom: 15px}
-    
+
+label[for="s_method_premiumrate_FREE_Upgrade_To_Priority_Mail_(3_day)"] { color: red; }
+#social li { display:inline-block; padding-right: 20px; vertical-align:top;}
+#pinterest_button {margin-bottom: 10px;}
+
+#announcement {
+	background-color: #00b6c9;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: white;
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+#announcement span {
+	width: 980px;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+#navigation {bottom: 50px !important; }
+
+.header {padding-top: 40px !important}
+
+#pixlee_container #widget_header_row {display: none;}
+
 /* ======================================================================================= */

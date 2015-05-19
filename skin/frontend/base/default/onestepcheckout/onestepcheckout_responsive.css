@@ -155,19 +155,16 @@ div.onestepcheckout-threecolumns div.onestepcheckout-column-left {
 }
 
 div.onestepcheckout-threecolumns div.onestepcheckout-column-middle {
-    width: 29%;
+    width: 31%;
     float: left;
-    margin-right: 15px;
-    padding-right: 15px;
     background: transparent url(images/line-gradient.gif) no-repeat scroll
         right top;
-    padding-top: 15px;
 }
 
 div.onestepcheckout-threecolumns div.onestepcheckout-column-right {
     width: 32%;
-    float: left;
-    padding-top: 15px;
+    float: right;
+    margin-top: 21px;
 }
 
 p.onestepcheckout-login-link {
@@ -563,7 +560,7 @@ div.onestepcheckout-skin-magento p.onestepcheckout-numbers-4 {
     font-weight: bold;
     position: absolute;
     right: 10px;
-    bottom: -5px;
+    bottom: 8px;
 }
 
 #onestepcheckout-login-popup p.close a,#onestepcheckout-login-popup p.close a:link,#onestepcheckout-login-popup p.close a:visited,#onestepcheckout-toc-popup p.close a,#onestepcheckout-toc-popup p.close a:link,#onestepcheckout-toc-popup p.close a:visited
@@ -796,12 +793,17 @@ div.onestepcheckout-comments textarea {
     text-align:left;
 }
 
-
+label.required:after, span.required:after {
+    content: '' !important;
+}
+label.required, span.required {
+    color: #F00;
+}
 /* Responsive styles */
-@media screen and (min-width : 954px) {
-    div.checkoutcontainer div.input-city { width: 45%!important; }
-    div.checkoutcontainer div.input-country select { width: 83%!important; }
-    div.checkoutcontainer div.input-city { width: 100%!important; }
+
+@media only screen and (min-width: 916px) and (max-width: 1199px) {
+    div.checkoutcontainer div.input-country select { width: 91%!important; }
+    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { margin: 21px 0px 0px 0px !important; padding: 0px !important;}
     div.checkoutcontainer div.input-region { width: 55.8%!important; }
     div.checkoutcontainer div.input-address-short .input-text,
     div.checkoutcontainer div.input-firstname .input-text,
@@ -810,12 +812,16 @@ div.onestepcheckout-comments textarea {
     div.checkoutcontainer div.input-telephone .input-text,
     div.checkoutcontainer div.input-company .input-text,
     div.checkoutcontainer div.input-fax .input-text,
-    div.checkoutcontainer div.input-password .input-text { width: 69.5%!important; }
+    div.checkoutcontainer div.input-password .input-text { width: 85%!important; }
+    div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.input-city .input-text {
+        width: 91%;
+    }
+    div.checkoutcontainer div.input-region .input-text {
+        width: 93%;
+    }
     .v-fix { margin-right: 5%; }
-
 }
-
-@media screen and (min-width : 581px) and (max-width : 953px) {
+@media only screen and (min-width: 651px) and (max-width: 915px) {
     div.checkoutcontainer div.input-address-short .input-text,
     div.checkoutcontainer div.input-firstname .input-text,
     div.checkoutcontainer div.input-lastname .input-text,
@@ -823,109 +829,53 @@ div.onestepcheckout-comments textarea {
     div.checkoutcontainer div.input-telephone .input-text,
     div.checkoutcontainer div.input-company .input-text,
     div.checkoutcontainer div.input-fax .input-text,
-    div.checkoutcontainer div.input-password .input-text,
-    div.checkoutcontainer div.input-postcode .input-text { width: 80%!important; }
+    div.checkoutcontainer div.input-password .input-text ,
+    div.checkoutcontainer div.input-company .input-text { width: 85%!important; }
     div.wrapper {min-width: 581px}
-}
-
-@media screen and (min-width : 460px) and (max-width : 953px) {
-    div.checkoutcontainer div.input-city { width: 50%!important; }
-    div.checkoutcontainer div.input-country select { width: 87%; }
     div.onestepcheckout-enable-newsletter { width: 60%!important; }
-    div.input-password { width: 55%!important;}
-    div.checkoutcontainer div.input-city { width: 50%!important; }
-    div.checkoutcontainer div.input-country select { width: 87%; }
-    div.onestepcheckout-enable-newsletter { width: 60%!important; }
-    div.input-password { width: 55%!important;}
-    div.checkoutcontainer div.input-company .input-text { width: 77%!important; }
-    div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.input-city .input-text, div.checkoutcontainer div.input-country select { width: 88.2%;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-left { width: 112%!important; background: none!important; margin-bottom: 18px;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { width: 112%!important; background: none!important; border-top: 1px solid #D8D2C7; margin-bottom: 18px;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-right { width: 112%!important; border-top: 1px solid #D8D2C7}
-    div.checkoutcontainer div.input-postcode, div.checkoutcontainer div.input-region { width: 49%; }
+     { width: 77%!important; }
+    div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.input-city .input-text, div.checkoutcontainer div.input-country select { width: 91%;}
+    .onestepcheckout-threecolumns div.onestepcheckout-column-left { width: 45%!important; background: none!important; margin-bottom: 18px;}
+    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { width: 45%!important; background: none!important; float: right;
+        background: transparent url(images/line-gradient.gif) no-repeat scroll right top;
+        padding: 21px 0 0 0 !important;
+        margin: 0 !mportant;
+    }
+    .onestepcheckout-threecolumns div.onestepcheckout-column-right { width: 100%!important; border-top: 1px solid #D8D2C7}
     div.checkoutcontainer li.taxvat div.input-box { width: 42%!important;}
-    div.checkoutcontainer div.input-city { width: 100%!important;}
-    div.wrapper {min-width: 460px}
-    div.main {width: auto; max-width : 1000px}
+    div.checkoutcontainer div.input-region .input-text {
+        width: 86%;
+    }
+    div.wrapper {min-width: 500px}
+    div.main {width: auto; max-width : 915px}
 }
 
-@media screen and (min-width : 320px) and (max-width : 580px) {
-    div.checkoutcontainer div.input-address-short .input-text, div.checkoutcontainer div.input-firstname .input-text, div.checkoutcontainer div.input-lastname .input-text, div.checkoutcontainer div.input-email .input-text, div.checkoutcontainer div.input-telephone .input-text, div.checkoutcontainer div.input-password .input-text { width: 98%; }
-    div.checkoutcontainer div.input-fax .input-text, div.checkoutcontainer div.input-company .input-text, div.checkoutcontainer div.input-postcode .input-text  { width: 80%; }
+@media only screen and (min-width: 320px) and (max-width: 650px) {
     div.checkoutcontainer { border-top: none; }
     .onestepcheckout-threecolumns div.onestepcheckout-column-left { width: 95%!important; background: none!important;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { width: 95%!important; background: none!important; margin-bottom: 18px;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-right { width: 95%!important; }
-    div.checkoutcontainer div.input-city { width: 100%!important; }
-    div.checkoutcontainer div.input-firstname,
-    div.checkoutcontainer div.input-lastname,
-    div.checkoutcontainer div.input-email,
-    div.checkoutcontainer div.input-telephone { width: 90%!important; }
-    .onestepcheckout-address-line { }
-    table.onestepcheckout-summary { width: 90%!important;}
-    table.onestepcheckout-totals { width: 90%!important;}
-    .onestepcheckout-coupons input#id_couponcode {width: 90%!important; margin-bottom: 5px;}
+    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { width: 95%!important; background: none!important;}
+    .onestepcheckout-threecolumns div.onestepcheckout-column-right { width: 95%!important; float: left !important; }
+    div.checkoutcontainer div.input-box, div.checkoutcontainer .input-text , div.checkoutcontainer select {
+        width: 100% !important;
+        float: none !important;
+    }
+    .payment-methods {
+       margin-bottom: 5px;
+    }
+    table.onestepcheckout-summary { width: 100%!important;}
+    table.onestepcheckout-totals { width: 100%!important;}
+    .onestepcheckout-coupons input#id_couponcode {width: 100%!important; margin-bottom: 5px;}
     div.checkoutcontainer div.onestepcheckout-summary,
     div.checkoutcontainer div.onestepcheckout-coupons,
     div.checkoutcontainer div.onestepcheckout-place-order-wrapper { margin-left: 0;}
     #onestepcheckout-place-order { width: 90%!important; }
     #addressreview {width: 85%!important; padding: 10px 10px 10px 10px !important;}
     #addressreview_summary div.data {height: 275px;}
-    #addressreview .leftcol{width: 110%!important;}
-    #addressreview .rightcol{width: 110%!important;}
+    #addressreview .leftcol{width: 100%!important;}
+    #addressreview .rightcol{width: 100%!important;}
     .large.onestepcheckout-button{margin-top: 8px;}
     div.wrapper {min-width: 320px}
-    div.main {width: auto; max-width : 580px}
+    div.main {width: auto; max-width : 499px}
 }
 
-@media screen and (max-width : 459px) {
-    div.checkoutcontainer div.input-address-short .input-text, div.checkoutcontainer div.input-firstname .input-text, div.checkoutcontainer div.input-lastname .input-text, div.checkoutcontainer div.input-email .input-text, div.checkoutcontainer div.input-telephone .input-text, div.checkoutcontainer div.input-password .input-text { width: 100%; }
-    div.checkoutcontainer { border-top: none; }
-    .onestepcheckout-threecolumns div.onestepcheckout-column-left { width: 95%!important; border-top: 1px solid #D8D2C7; background: none!important;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-middle { width: 95%!important;  border-top: 1px solid #D8D2C7; background: none!important;  margin-bottom: 18px;}
-    .onestepcheckout-threecolumns div.onestepcheckout-column-right { width: 95%!important; border-top: 1px solid #D8D2C7;  padding-top: 0;}
-    div.checkoutcontainer div.input-firstname,
-    div.checkoutcontainer div.input-lastname,
-    div.checkoutcontainer div.input-email,
-    div.checkoutcontainer div.input-telephone,
-    div.checkoutcontainer div.input-address .input-text,
-    div.checkoutcontainer div.input-city .input-text,
-    div.checkoutcontainer div.input-country select { width: 100%!important; }
-    div.checkoutcontainer div.input-address, div.checkoutcontainer li.taxvat div.input-box { }
-    div.onestepcheckout-enable-newsletter { width: 60%!important;}
-    div.input-password { width: 55%!important;}
-    table.onestepcheckout-summary { width: 90%!important;}
-    table.onestepcheckout-totals { width: 90%!important;}
-    .onestepcheckout-coupons input#id_couponcode {width: 90%!important; margin-bottom: 5px;}
-    div.checkoutcontainer div.onestepcheckout-summary,
-    div.checkoutcontainer div.onestepcheckout-coupons,
-    div.checkoutcontainer div.onestepcheckout-place-order-wrapper { margin-left: 0;}
-    #onestepcheckout-place-order { width: 90%!important; }
-    div.checkoutcontainer div.input-region,
-    div.checkoutcontainer div.input-postcode { width: 49%; }
-    div.checkoutcontainer div.input-region,
-    div.checkoutcontainer div.input-postcode,
-    div.checkoutcontainer div.input-company,
-    div.checkoutcontainer div.input-fax,
-    div.checkoutcontainer div.input-address-short .input-text,
-    div.checkoutcontainer div.input-firstname .input-text,
-    div.checkoutcontainer div.input-lastname .input-text,
-    div.checkoutcontainer div.input-email .input-text,
-    div.checkoutcontainer div.input-telephone .input-text,
-    div.checkoutcontainer div.input-company .input-text,
-    div.checkoutcontainer div.input-fax .input-text,
-    div.checkoutcontainer div.input-password .input-text,
-    div.checkoutcontainer div.input-postcode .input-text,
-    div.checkoutcontainer div.input-region .input-text { float: none; width: 100%; }
-    div.checkoutcontainer div.input-city { width: 100%!important; }
-    div.checkoutcontainer div.input-box div.v-fix { width: 45%!important; }
-    #ccsave_expiration, #ccsave_expiration_yr { width: 95%!important; }
-    #addressreview {width: 85%!important; padding: 10px 10px 10px 10px !important;}
-    #addressreview_summary div.data {height: 275px;}
-    #addressreview .leftcol{width: 110%!important;}
-    #addressreview .rightcol{width: 110%!important;}
-    .large.onestepcheckout-button{margin-top: 8px;}
-    div.wrapper {min-width: 320px}
-    div.main {width: auto; max-width : 459px}
-}
 /* End of responsive design */

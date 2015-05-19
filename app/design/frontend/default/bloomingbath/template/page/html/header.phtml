@@ -24,6 +24,11 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<!--
+<?php if (Mage::app()->getStore()->getCode() == 'default') : ?>
+<div id="announcement"><span>FREE PRIORITY SHIPPING (1-3 Day Delivery)!</span></div>
+<?php endif; ?>
+-->
 <div class="header-container">
     <div class="header">
         <?php if ($this->getIsHomePage()):?>
@@ -33,7 +38,7 @@
         <?php endif?>
     
     	<div class="cms-links">
-    		<span id="customer-service">Sales &amp; Customer Service </span><span id="phone"><?php echo Mage::getStoreConfig('general/store_information/phone');?></span><em id="hours"> M-F 8AM-5PM PST</em>
+    		<span id="customerService">Sales &amp; Customer Service </span><span id="phoneNumber"><?php echo Mage::getStoreConfig('general/store_information/phone');?></span><em id="hours"> M-F 8AM-5PM PST</em>
 			  	<?php // echo $this->getLayout()->createBlock('cms/block')->setBlockId('toplinks')->toHtml() ?>
     	</div>
        

@@ -1,0 +1,6 @@
+<?php $_videos = $this->getProduct()->getVideos(); ?>
+<?php if ($_videos): ?>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_videos, 'videos') ?>
+    </div>
+<?php endif; ?>

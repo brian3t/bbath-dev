@@ -194,5 +194,146 @@ class Moogento_Pickpack_Sales_OrderController extends Mage_Adminhtml_Sales_Order
 
 		$this->_redirect('adminhtml/*/');
 	}
+	
+	public function completeAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->markComplete($orderId);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function ediinvoiceAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->ediInvoice($orderId);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function createasnAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->createAsn($orderId);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function edilabelAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$asn_date = $this->getRequest()->getParam('asn_date2');
+		$sendASN = 'NO';
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->ediAsn($orderId, $asn_date, $sendASN);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function ediasnAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$asn_date = $this->getRequest()->getParam('asn_date');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->ediAsn($orderId, $asn_date);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function getediAction(){
+		
+		Mage::getModel('sales/order_process')->getPos();
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function getlabelsAction(){
+		
+		Mage::getModel('sales/order_process')->getLabels();
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function shippingAction(){
+		
+		$orderId = $this->getRequest()->getPost('order_id');
+		$customShipTitle = 'Shipping - ' . $this->getRequest()->getPost('shipping_method');
+		Mage::getModel('sales/order_process')->updateShipping($orderId, $customShipTitle);
+		
+		$this->_redirectReferer('');
+
+	}
+	
+	public function changeshipAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$ship_method = 'Shipping - ' . $this->getRequest()->getParam('ship_method');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->updateShipping($orderId, $ship_method);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function bolshipAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+		$ship_method = $this->getRequest()->getParam('ship_method');
+		$bol = $this->getRequest()->getParam('bol');
+		$load_id = $this->getRequest()->getParam('load_id');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->bolship($orderId, $ship_method, $bol, $load_id);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
+	
+	public function printbolAction(){
+		$orderIds = $this->getRequest()->getPost('order_ids');
+				
+		if (!empty($orderIds)) {
+		
+			foreach($orderIds as $orderId) {			
+				Mage::getModel('sales/order_process')->printbol($orderId);
+
+			}
+		}
+
+		$this->_redirect('adminhtml/*/');
+	}
 	//** END
 }

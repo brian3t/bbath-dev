@@ -17,34 +17,24 @@ class Idev_OneStepCheckout_Helper_Data extends Mage_Core_Helper_Abstract
         $orderComment = $this->_getRequest()->getPost('onestepcheckout_comments');
         $orderComment = trim($orderComment);
 
-        if($enableComments && !$enableCommentsDefault) {
-            if ($orderComment != ""){
-                $observer->getEvent()->getOrder()->setOnestepcheckoutCustomercomment(Mage::helper('core')->escapeHtml($orderComment));
-            }
-        }
-
         if($enableComments && $enableCommentsDefault) {
             if ($orderComment != ""){
                 $observer->getEvent()->getOrder()->setState($observer->getEvent()->getOrder()->getStatus(), true, Mage::helper('core')->escapeHtml($orderComment), false );
             }
         }
+    }
 
-        if($enableFeedback){
+    public function setCustomerCommentAdmin($observer)
+    {
 
-            $feedbackValues = unserialize(Mage::getStoreConfig('onestepcheckout/feedback/feedback_values'));
-            $feedbackValue = $this->_getRequest()->getPost('onestepcheckout-feedback');
-            $feedbackValueFreetext = $this->_getRequest()->getPost('onestepcheckout-feedback-freetext');
+        $enableComments = Mage::getStoreConfig('onestepcheckout/exclude_fields/enable_comments');
+        $enableCommentsDefault = Mage::getStoreConfig('onestepcheckout/exclude_fields/enable_comments_default');
+        $enableFeedback = Mage::getStoreConfig('onestepcheckout/feedback/enable_feedback');
+        $orderComment = $this->_getRequest()->getPost('onestepcheckout_customercomment');
+        $orderComment = trim($orderComment);
 
-            if(!empty($feedbackValue)){
-                if($feedbackValue!='freetext'){
-                    $feedbackValue = $feedbackValues[$feedbackValue]['value'];
-                } else {
-                    $feedbackValue = $feedbackValueFreetext;
-                }
-
-                $observer->getEvent()->getOrder()->setOnestepcheckoutCustomerfeedback(Mage::helper('core')->escapeHtml($feedbackValue));
-            }
-
+        if($enableComments && !$enableCommentsDefault && $orderComment) {
+            Mage::getSingleton('adminhtml/sales_order_create')->getQuote()->setOnestepcheckoutCustomercomment(Mage::helper('core')->escapeHtml($orderComment))->save();
         }
     }
 

@@ -22,7 +22,7 @@ define("RADIO_LABEL_COLOR", serialize(array('Color','Blooming Bath Baby Bath Col
 
 	        <dd<?php if ($_attribute->decoratedIsLast){?> class="last"<?php }?>>
 	            <div class="input-box">
-	                <select style="display:none" name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]" id="attribute<?php echo $_attribute->getAttributeId() ?>" class="required-entry super-attribute-select">
+	                <select style="display:none" name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]" id="attribute<?php echo $_attribute->getAttributeId() ?>" class="required-entry super-attribute-select" onchange="spConfig.getIdOfSelectedProduct()">
                     <?php if ($_img = $this->helper('bubble_aop')->getAttributeImage($_attribute->getProductAttribute())): ?>
                 <dt style="background: url(<?php echo $_img; ?>) no-repeat left center;height: 31px;line-height: 31px;padding: 0 0 0 31px;">
                 <div class="imgwrap-layered-nav" style="background:url('<?php echo $_img?>')">
@@ -118,16 +118,16 @@ assignValuePuma = function(ele) {
 			    {}
 			    else
 			    {
-				
+
 					var spanHtml = "";
-					
+
 					var image_source = "";
 					for (var i in options){
 						if (options[i]['value_index'] == optionVal){
 							image_source = options[i]['image_source'];
 						}
 					}
-					
+
 					if (image_source !== "") {
 						spanHtml = '<span class="label color-option">';
 						spanHtml += '<span class="border-wrapper">';
@@ -139,7 +139,7 @@ assignValuePuma = function(ele) {
 					else {
 						spanHtml = '<label for=radio' + optionVal + ' class= " imgLabel ' + encodeURI(optionLabelClass) + '>' + encodeURI(optionLabel) + '</label>';
 					}
-				
+
 				    var inputEle = jQuery("<input type='radio' name='r" + attributeId + "' id=radio" + optionVal + " />")
 				        .attr("value", optionVal)
 				        .attr("checked", i == 0)
@@ -148,21 +148,21 @@ assignValuePuma = function(ele) {
 				        })
 				        .appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
 
-				        
+
 				        jQuery(spanHtml).appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
 					    inputEle.appendTo("#r<?php echo $_attribute->getAttributeId() ?>");
 						jQuery(inputEle).bind('change', function(event){
 								                event.preventDefault();
 								                jQuery(jQuery(this).parent().children('span').children('span.border-wrapper').children('label')).removeClass("selected");
 												jQuery(jQuery(this).prev().children('span.border-wrapper').children('label')).addClass("selected")
-			
+
 								                assignValuePuma(this);
 								           });
 				    }
-				    
+
 			});
-		
-		
+
+
 			//set the last input of radio group to have class validate-one-required-by-name
 			//only do this if it's not IE7 or IE8 . Those browsers can't handle
 			if ((navigator.userAgent.indexOf("MSIE 7") === -1) && (navigator.userAgent.indexOf("MSIE 8") === -1)) {
@@ -173,11 +173,11 @@ assignValuePuma = function(ele) {
 						var lastElement = jQuery(radioElements[i]).children('input').last();
 						lastElement.addClass("validate-one-required-by-name").addClass(" radio product-custom-option ").addClass("validation-failed");
 					}
-				
-				
+
+
 				}();
 			}
-			
+
 		});
 	
 	

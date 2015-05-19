@@ -2,7 +2,7 @@ jQuery.noConflict();
 
 if(typeof String.prototype.trim !== 'function') {
   String.prototype.trim = function() {
-    return this.replace(/^\s+|\s+$/g, ''); 
+    return this.replace(/^\s+|\s+$/g, '');
   };
 }
 
@@ -79,30 +79,28 @@ function levenshtein(s1, s2) {
 var lookupTitle = function(titleToLook4, ele){
 	var result = false;
 	if (!(ele instanceof jQuery)) {ele = jQuery(ele);}
-	
-	var leastDistance = Number.MAX_VALUE;	
+
+	var leastDistance = Number.MAX_VALUE;
 	var foundExact = false;
-	
+
 	ele.each(function(e){
 		if (foundExact === true){
 			return false;
 		}
 		var title = jQuery(this).attr("title");
-		title = title.trim(); 
-		title = title.slice("Blooming Bath ".length);
-		title = title.replace(/ /g,'');
-		titleToLook4 = titleToLook4.replace(/ /g,'');
+		title = title.trim().replace(/ /g,'').slice(-12);
+		titleToLook4 = titleToLook4.trim().replace(/ /g,'').slice(-12);
 		if (title.search(titleToLook4) !== -1){
 			foundExact = true;
 			result = this;
 		}
 		else{
-		
+
 			if (levenshtein(title, titleToLook4) < leastDistance){
 				//only assign if title is close enough
-				if ((levenshtein(title, titleToLook4) / title.length) < 0.7) {
-					result = this;	
-				} 
+				if ((levenshtein(title, titleToLook4) / title.length) < 0.5) {
+					result = this;
+				}
 				leastDistance = levenshtein(title, titleToLook4);
 			}
 		}
@@ -115,17 +113,34 @@ jQuery(document).ready(function() {
 
 	var colorLabel = jQuery('dl>>label:contains("Color")');
 	var colorSelect = colorLabel.parent().next().next().children().children();
+    //if it's bundle, catch the inputs instead
+    var colorSelectBundleOptions = colorLabel.parent().next().find('ul.options-list input');
 	var updateImage = function(e) {
 			var selColor = jQuery(e).children('option:selected').text();
 			selColor = selColor.replace(/\ \/ /g, "/");
-			
+
 			var matchedEle = lookupTitle(selColor, '.slides > li > a');
 			if (matchedEle) {
 				matchedEle.click();
 				}
 		};
-	jQuery(colorSelect).bind('change', function(event) {
+    var updateImageBundle = function(e) {
+        var selColor = jQuery(e).next().find('label').clone().children().remove().end().text();
+        selColor = selColor.trim().replace(/\ \/ /g, "/");
+
+        var matchedEle = lookupTitle(selColor, '.slides > li > a');
+        if (matchedEle) {
+            matchedEle.click();
+        }
+    };
+
+    jQuery(colorSelect).bind('change', function(event) {
 		event.preventDefault();
 		updateImage(this);
 	});
+    jQuery(colorSelectBundleOptions).bind('click', function(event) {
+        event.preventDefault();
+        updateImageBundle(this);
+    });
+
 });

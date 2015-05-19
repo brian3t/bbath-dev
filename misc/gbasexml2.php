@@ -35,7 +35,6 @@ try{
 			$price = $product->getFinalPrice();
 		}
 
-		if($product->getTypeId() == 'simple' && $product->getResource()->getAttribute('upc')->getFrontend()->getValue($product) != '') {
 		            
 			$product_d1['start']= '  <item>';
 			$feed_line = implode("\t", $product_d1)."\r\n";
@@ -95,7 +94,6 @@ try{
 			$heading = array('  </item>');
 			$feed_line=implode("\t", $heading)."\r\n\n";
 			fwrite($handle, $feed_line);
-		}
             
 	}
         

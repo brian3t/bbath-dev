@@ -4,7 +4,7 @@
     <catalog_category_view>
         <reference name="head">
             <!-- js -->
-            <action method="addJs"><script>eternal/jquery/jquery-1.8.2.min.js</script></action>
+<!--             <action method="addJs"><script>eternal/jquery/jquery-1.8.2.min.js</script></action> -->
             <action method="addJs"><script>eternal/jquery/jquery-noconflict.js</script></action>
             <action method="addJs"><script>eternal/jquery/jquery.slider.min.js</script></action>
             
@@ -20,7 +20,7 @@
     <catalogsearch_result_index>
         <reference name="head">
             <!-- js -->
-            <action method="addJs"><script>eternal/jquery/jquery-1.8.2.min.js</script></action>
+<!--             <action method="addJs"><script>eternal/jquery/jquery-1.8.2.min.js</script></action> -->
             <action method="addJs"><script>eternal/jquery/jquery-noconflict.js</script></action>
             <action method="addJs"><script>eternal/jquery/jquery.slider.min.js</script></action>
             

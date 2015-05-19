@@ -16,7 +16,15 @@
             <block type="core/text_list" name="footer-banner" as="footer-banner" translate="label">
                 <label>Page Footer Banner</label>
             </block>
-            
+
+            <block type="venedor/product_list_featured" name="featured.products.slider" template="catalog/product/list/featured_slider.phtml">
+                <!--<action method="setIsNew"><src>1</src></action>-->
+                <action method="setIsRandom"><src>1</src></action>
+                <action method="setProductCount"><src>16</src></action>
+                <action method="setBlockName"><src>Featured Products</src></action>
+                <action method="setIsWide"><src>false</src></action>
+            </block>
+
         </reference>
 	
 		<reference name="head">
@@ -70,7 +78,10 @@
             <action method="addCssIe"><css>css/styles-ie.css</css></action>
             <action method="addItem"><type>skin_css</type><name>css/styles-ie7.css</name><params/><if>lte IE 7</if></action>
             <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if>lte IE 8</if></action>
-            
+
+            <action method="addCss"><stylesheet>fonts/font-awesome.min.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/bbath_custom.css</stylesheet></action>
+
             <!-- Respond JS -->
             <action method="addItem"><type>js</type><name>eternal/respond.min.js</name><params/><if>lt IE 9</if></action>
 		</reference>
@@ -268,6 +279,7 @@
             <!-- add tabs -->
             <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs" template="catalog/product/view/tabs.phtml" >
                 <!-- short description -->
+                <action method="addTab" translate="title" module="catalog"><alias>productdescriptions</alias><title>Description</title><block>catalog/product_view_description</block><template>catalog/product/view/description.phtml</template></action>
                 <action method="addTab" translate="title" module="catalog"><alias>specifications</alias><title>Specifications</title><block>catalog/product_view_description</block><template>catalog/product/view/specifications.phtml</template></action>
                 <action method="addTab" translate="title" module="catalog"><alias>faqs</alias><title>FAQs</title><block>catalog/product_view_description</block><template>catalog/product/view/faqs.phtml</template></action>
                 <action method="addTab" translate="title" module="catalog"><alias>instructions</alias><title>Use and Care Instructions</title><block>catalog/product_view_description</block><template>catalog/product/view/instructions.phtml</template></action>

@@ -27,6 +27,7 @@ class Moogento_Pickpack_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_Sale
             '`sales/order`.entity_id=`main_table`.entity_id',
             array(
                 'shipping_description' => new Zend_Db_Expr('REPLACE(`sales/order`.shipping_description, \'Shipping Method - \', \'\')'),
+                'ship_date' => 'gomage_deliverydate_formated'
             )
         );
 
@@ -143,6 +144,12 @@ $this->addColumn('shipping_name', array(
             'width' => '100px',
             'filter_index' => 'sales_flat_order_payment.method'
         ));
+		$this->addColumn('ship_date', array(
+            'header' => Mage::helper('sales')->__('Ship Date'),
+            'index' => 'ship_date',
+            'width' => '100px',
+            'filter_index' => '`sales/order`.gomage_deliverydate_formated'
+        ));
 
         $this->addColumn('status', array(
             'header' => Mage::helper('sales')->__('Status'),
@@ -211,6 +218,11 @@ $this->addColumn('shipping_name', array(
 		     'url'  => $this->getUrl('pickpack/sales_order/pickcsv'),
 			));
 			
+		$this->getMassactionBlock()->addItem('print_bol', array(
+		     'label'=> Mage::helper('sales')->__('Print BOL'),
+		     'url'  => $this->getUrl('pickpack/sales_order/printbol'),
+		));
+			
 		//** Egghead Added
 		
 		
@@ -219,16 +231,18 @@ $this->addColumn('shipping_name', array(
 		     'url'  => '',
 		));
 		
+/*
 		$this->getMassactionBlock()->addItem('process_order', array(
 		     'label'=> Mage::helper('sales')->__('Process Orders'),
 		     'url'  => $this->getUrl('pickpack/sales_order/process'),
 		));
+
 		
 		$this->getMassactionBlock()->addItem('seperator4', array(
 		     'label'=> Mage::helper('sales')->__('---------------'),
 		     'url'  => '',
 		));
-		
+*/		
 		$this->getMassactionBlock()->addItem('delete_order', array(
 		     'label'=> Mage::helper('sales')->__('Delete Orders'),
 		     'url'  => $this->getUrl('pickpack/sales_order/delete'),
@@ -238,6 +252,120 @@ $this->addColumn('shipping_name', array(
 		     'label'=> Mage::helper('sales')->__('Update Status To Awaiting Payment'),
 		     'url'  => $this->getUrl('pickpack/sales_order/awaiting'),
 		));
+		
+		$this->getMassactionBlock()->addItem('mark_complete', array(
+		     'label'=> Mage::helper('sales')->__('Update Status To Complete'),
+		     'url'  => $this->getUrl('pickpack/sales_order/complete'),
+		));
+/*
+		
+		$this->getMassactionBlock()->addItem('seperator5', array(
+		     'label'=> Mage::helper('sales')->__('-------DEV ONLY--------'),
+		     'url'  => '',
+		));
+
+		$this->getMassactionBlock()->addItem('get_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('Get EDI Orders'),
+		     'url'  => $this->getUrl('pickpack/sales_order/getedi'),
+		));
+		
+		$this->getMassactionBlock()->addItem('get_ucc_labels', array(
+		     'label'=> Mage::helper('sales')->__('Get UCC Labels'),
+		     'url'  => $this->getUrl('pickpack/sales_order/getlabels'),
+		));
+		
+		$this->getMassactionBlock()->addItem('create_asn', array(
+		     'label'=> Mage::helper('sales')->__('Assign UCC Numbers'),
+		     'url'  => $this->getUrl('pickpack/sales_order/createasn'),
+		));
+*/
+		
+/*
+		$this->getMassactionBlock()->addItem('asn_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('1 - Send ASN(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/ediasn'),
+		));
+*/
+		$this->getMassactionBlock()->addItem('seperator6', array(
+		     'label'=> Mage::helper('sales')->__('---------------'),
+		     'url'  => '',
+		));
+		
+		$this->getMassactionBlock()->addItem('change_shipping_method', array(
+		     'label'=> Mage::helper('sales')->__('0 - Change Shipping Method'),
+		     'url'  => $this->getUrl('pickpack/sales_order/changeship'),
+		     'additional' => array(
+				'visibility' => array(
+					'name' => 'ship_method',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'SCAC Code'
+				)
+			)
+		));
+		
+		$this->getMassactionBlock()->addItem('add_bol_ship', array(
+		     'label'=> Mage::helper('sales')->__('1 - Add BOL and Ship (Target Stores & TRU)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/bolship'),
+		     'additional' => array(
+				'ship_method' => array(
+					'name' => 'ship_method',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'SCAC Code'
+				),
+				'bol' => array(
+					'name' => 'bol',
+					'type' => 'text',
+					'class' => 'required-entry',
+					'label' => 'BOL#'
+				),
+				'load_id' => array(
+					'name' => 'load_id',
+					'type' => 'text',
+					'label' => 'Load ID'
+				)
+			)
+		));
+		
+		$this->getMassactionBlock()->addItem('labelonly_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('2 - Create UCC Labels'),
+		     'url'  => $this->getUrl('pickpack/sales_order/edilabel'),
+		     'additional' => array(
+				'visibility' => array(
+					'name' => 'asn_date2',
+					'type' => 'date',
+					'class' => 'required-entry',
+					'label' => 'ASN Date',
+					'gmtoffset' => true,
+		            'image'    => '/skin/adminhtml/default/default/images/grid-cal.gif',
+		            'format'    => '%m/%d/%Y'
+				)
+			)
+		));
+		
+		$this->getMassactionBlock()->addItem('asn_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('3 - Send ASN(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/ediasn'),
+		     'additional' => array(
+				'visibility' => array(
+					'name' => 'asn_date',
+					'type' => 'date',
+					'class' => 'required-entry',
+					'label' => 'ASN Date',
+					'gmtoffset' => true,
+		            'image'    => '/skin/adminhtml/default/default/images/grid-cal.gif',
+		            'format'    => '%m/%d/%Y'
+				)
+			)
+		));
+		
+		$this->getMassactionBlock()->addItem('invoice_edi_orders', array(
+		     'label'=> Mage::helper('sales')->__('4 - Send EDI Invoice(s)'),
+		     'url'  => $this->getUrl('pickpack/sales_order/ediinvoice'),
+		));
+		
+		
 		//** END
 		
 		return $this;

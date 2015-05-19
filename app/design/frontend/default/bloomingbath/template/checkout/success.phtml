@@ -64,6 +64,13 @@
     <button type="button" class="button" title="<?php echo $this->__('Continue Shopping') ?>" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
 </div>
 
+<?php
+$order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId());
+$total = number_format($order->getGrandTotal(),2,'.',''); 
+$order_id = $this->getOrderId();
+?>
+
+
 <!-- Google Code for Sale Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -72,7 +79,7 @@ var google_conversion_language = "en";
 var google_conversion_format = "3";
 var google_conversion_color = "ffffff";
 var google_conversion_label = "_NIqCOW7igMQs8LG0gM";
-var google_conversion_value = 0;
+var google_conversion_value = <? echo $total; ?>;
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
@@ -85,19 +92,21 @@ var google_conversion_value = 0;
 <!-- Bing Code for Sale Conversion Page -->
 <script type="text/javascript"> if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};</script> <script id="mstag_tops" type="text/javascript" src="//flex.atdmt.com/mstag/site/01f22f5e-2d6f-4f93-943a-99e19aa37d78/mstag.js"></script> <script type="text/javascript"> mstag.loadTag("analytics", {dedup:"1",domainId:"2040263",type:"1",actionid:"105797"})</script> <noscript> <iframe src="//flex.atdmt.com/mstag/tag/01f22f5e-2d6f-4f93-943a-99e19aa37d78/analytics.html?dedup=1&domainId=2040263&type=1&actionid=105797" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden;display:none"> </iframe> </noscript>
 
-<!--Facebook Conversion Tracking-->
-<script type="text/javascript">
-var fb_param = {};
-fb_param.pixel_id = '6009686442468';
-fb_param.value = '0.00';
-fb_param.currency = 'USD';
-(function(){
-  var fpw = document.createElement('script');
-  fpw.async = true;
-  fpw.src = '//connect.facebook.net/en_US/fp.js';
-  var ref = document.getElementsByTagName('script')[0];
-  ref.parentNode.insertBefore(fpw, ref);
+<!-- Facebook Conversion Code for Facebook ad conversions -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
 })();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6014119187383', {'value':'<? echo $total; ?>','currency':'USD'}]);
 </script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6009686442468&amp;value=0&amp;currency=USD" /></noscript>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6014119187383&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
 

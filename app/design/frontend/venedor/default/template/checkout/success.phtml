@@ -1,0 +1,152 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="page-title">
+    <h1><?php echo $this->__('Your order has been received') ?></h1>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<h2 class="sub-title"><?php echo $this->__('Thank you for your purchase!') ?></h2>
+
+<?php if ($this->getOrderId()):?>
+<?php if ($this->getCanViewOrder()) :?>
+    <p><?php echo $this->__('Your order # is: %s.', sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getViewOrderUrl()), $this->escapeHtml($this->getOrderId()))) ?></p>
+<?php  else :?>
+    <p><?php echo $this->__('Your order # is: %s.', $this->escapeHtml($this->getOrderId())) ?></p>
+<?php endif;?>
+    <p><?php echo $this->__('You will receive an order confirmation email with details of your order and a link to track its progress.') ?></p>
+    <p><?php echo $this->__('<p>Thank you for ordering from Blooming Bath, We appreciate you taking the time to seek out the simplest, cuddliest, and best solution for bathing a baby. If you love our product, we are sure you will, then please tell your friends about us.</p><p>You will receive a confirmation email that your order is being processed and another once your order has been shipped including a tracking number.  Be sure to check your junk mail if it does not arrive in your inbox.</p><p>Orders typically ship out that day if received before 1pm Pacific time, or next day after 1pm Pacific time on weekdays.</p><p>Please share your your experience with us as we always love to hear what our customers have to say.</p>') ?></p>
+<?php if ($this->getViewOrder() && $this->getCanPrintOrder()) :?>
+    <p>
+        <?php echo $this->__('Click <a href="%s" onclick="this.target=\'_blank\'">here to print</a> a copy of your order confirmation.', $this->getPrintUrl()) ?>
+        <?php echo $this->getChildHtml() ?>
+    </p>
+<?php endif;?>
+<?php endif;?>
+
+<?php if ($this->getAgreementRefId()): ?>
+    <p><?php echo $this->__('Your billing agreement # is: %s.', sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getAgreementUrl()), $this->escapeHtml($this->getAgreementRefId())))?></p>
+<?php endif;?>
+
+<?php if ($profiles = $this->getRecurringProfiles()):?>
+<p><?php echo $this->__('Your recurring payment profiles:'); ?></p>
+<ul class="disc">
+<?php foreach($profiles as $profile):?>
+<?php $profileIdHtml = ($this->getCanViewProfiles() ? sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getProfileUrl($profile)), $this->escapeHtml($this->getObjectData($profile, 'reference_id'))) : $this->escapeHtml($this->getObjectData($profile, 'reference_id')));?>
+    <li><?php echo $this->__('Payment profile # %s: "%s".', $profileIdHtml, $this->escapeHtml($this->getObjectData($profile, 'schedule_description')))?></li>
+<?php endforeach;?>
+</ul>
+<?php endif;?>
+
+<div class="buttons-set">
+    <button type="button" class="button" title="<?php echo $this->__('Continue Shopping') ?>" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
+</div>
+
+<?php
+$order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId());
+$total = number_format($order->getGrandTotal(),2,'.',''); 
+$order_id = $this->getOrderId();
+?>
+
+
+<!-- Google Code for Sale Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 978428211;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "_NIqCOW7igMQs8LG0gM";
+var google_conversion_value = <? echo $total; ?>;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/978428211/?label=_NIqCOW7igMQs8LG0gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Bing Code for Sale Conversion Page -->
+<script type="text/javascript"> if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};</script> <script id="mstag_tops" type="text/javascript" src="//flex.atdmt.com/mstag/site/01f22f5e-2d6f-4f93-943a-99e19aa37d78/mstag.js"></script> <script type="text/javascript"> mstag.loadTag("analytics", {dedup:"1",domainId:"2040263",type:"1",actionid:"105797"})</script> <noscript> <iframe src="//flex.atdmt.com/mstag/tag/01f22f5e-2d6f-4f93-943a-99e19aa37d78/analytics.html?dedup=1&domainId=2040263&type=1&actionid=105797" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden;display:none"> </iframe> </noscript>
+
+<!-- Facebook Conversion Code for Facebook ad conversions -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6014119187383', {'value':'<? echo $total; ?>','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6014119187383&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+<?php
+$orderId = $this->getOrderId();
+$order = Mage::getModel('sales/order')->loadByIncrementId($orderId);
+$customer = Mage::getModel('customer/customer')->load($order->getCustomerId());
+$address = $order->getShippingAddress();
+$backorder = false; // some backorder logic
+$download = false; // some download logic
+$shipDate = $order->getCreatedAtDate()->addDay(3)->toString('yyyy-MM-dd');; // some logic to determine ship date
+?>
+
+<!-- START Trusted Stores Order -->
+<div id="gts-order" style="display:none;">
+ 
+    <!-- start order and merchant information -->
+    <span id="gts-o-id"><?php echo $orderId; ?></span>
+    <span id="gts-o-domain">www.bloomingbath.com</span>
+    <span id="gts-o-email"><?php echo htmlentities($customer->getEmail()); ?></span>
+    <span id="gts-o-country"><?php echo htmlentities($address->getCountryId()); ?></span>
+    <span id="gts-o-currency">USD</span>
+    <span id="gts-o-total"><?php echo $order->getGrandTotal(); ?></span>
+    <span id="gts-o-discounts">-<?php echo $order->getDiscountAmount(); ?></span>
+    <span id="gts-o-shipping-total"><?php echo $order->getShippingAmount(); ?></span>
+    <span id="gts-o-tax-total"><?php echo $order->getTaxAmount(); ?></span>
+    <span id="gts-o-est-ship-date"><?php echo $shipDate; ?></span>
+    <span id="gts-o-has-preorder"><?php echo $backorder ? 'Y' : 'N'; ?></span>
+    <span id="gts-o-has-digital"><?php echo $download ? 'Y' : 'N'; ?></span>
+    <!-- end order and merchant information -->
+ 
+    <!-- start repeated item specific information -->
+    <?php foreach ($order->getAllItems() as $item): ?>
+        <span class="gts-item">
+          <span class="gts-i-name"><?php echo htmlentities($item->getName()); ?></span>
+          <span class="gts-i-price"><?php echo $item->getBasePrice(); ?></span>
+          <span class="gts-i-quantity"><?php echo (int)$item->getQtyOrdered(); ?></span>
+          <span class="gts-i-prodsearch-country">US</span>
+          <span class="gts-i-prodsearch-language">en</span>
+        </span>
+    <?php endforeach; ?>
+    <!-- end repeated item specific information -->
+ 
+</div>
+<!-- END Trusted Stores -->

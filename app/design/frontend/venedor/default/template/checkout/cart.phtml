@@ -23,11 +23,13 @@ $spanClass = $venedor->getSpanClass();
         <h1><?php echo $this->__('Shopping Cart') ?></h1>
         <?php if(!$this->hasError()): ?>
         <ul class="checkout-types">
+<!--
         <?php foreach ($this->getMethods('top_methods') as $method): ?>
             <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
             <li><?php echo $methodHtml; ?></li>
             <?php endif; ?>
         <?php endforeach; ?>
+-->
         </ul>
         <?php endif; ?>
     </div>
@@ -149,8 +151,7 @@ $spanClass = $venedor->getSpanClass();
                 <?php endif; ?>
                 <?php $_html = $this->getChildHtml('coupon'); ?>
                 <?php if ($_html) : ?>
-					<div class="discount-codes col-lg-6 col-md-12 col-sm-12 col-xs-12">
-	                    <dt><?php echo $this->__('Discount Codes') ?></dt>
+					<div class="discount-codes col-lg-8 col-md-12 col-sm-12 col-xs-12">
 	                    <dd><?php echo $_html ?></dd>
 					</div>
                 <?php endif; ?>

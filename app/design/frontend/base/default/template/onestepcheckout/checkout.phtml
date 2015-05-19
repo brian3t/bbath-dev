@@ -40,14 +40,14 @@ $helper = Mage::helper('onestepcheckout/checkout');
     <?php echo $this->formErrors['unknown_source_error']; ?>
 </div>
 <?php endif; ?>
-<div class="onestepcheckout-threecolumns checkoutcontainer onestepcheckout-skin-<?php echo $this->settings['skin']; ?> <?php if(Mage::helper('onestepcheckout')->isEnterprise()): ?>onestepcheckout-enterprise<?php endif; ?>">
-    <div class="onestepcheckout-column-left">
+<div class="onestepcheckout-threecolumns row checkoutcontainer onestepcheckout-skin-<?php echo $this->settings['skin']; ?> <?php if(Mage::helper('onestepcheckout')->isEnterprise()): ?>onestepcheckout-enterprise<?php endif; ?>">
+    <div class="onestepcheckout-column-left col-sm-4">
         <div id="billing_address">
             <script type="text/javascript">
             var billing = new Billing();
 
             </script>
-            <ul>
+            <ul class="list-unstyled">
                 <li>
                     <p class="onestepcheckout-numbers onestepcheckout-numbers-<?php echo $step_counter++; ?>"><?php echo $this->__('Billing address'); ?></p>
                         <?php if(isset($this->formErrors['billing_error']) && count($this->formErrors['billing_errors']) > 0): ?>
@@ -66,7 +66,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
                 <?php endif; ?>
                 <li>
                     <div>
-                        <ul id="billing_address_list" <?php echo (($this->customerHasAddresses() && !$this->getNewAddressSelectValueOnError('billing')) ? 'style = "display:none"' : false ); ?>>
+                        <ul class="list-unstyled" id="billing_address_list" <?php echo (($this->customerHasAddresses() && !$this->getNewAddressSelectValueOnError('billing')) ? 'style = "display:none"' : false ); ?>>
                             <?php echo $this->getChildHtml('billing_address');?>
                             <?php $addressAttributes = $this->getChild('customer_form_billing_address_user_defined_attributes');?>
                             <?php if ($addressAttributes): ?>
@@ -86,9 +86,9 @@ $helper = Mage::helper('onestepcheckout/checkout');
                 <li>
                     <?php $uncheck = (!empty($_POST['billing']) && empty($_POST['billing']['use_for_shipping']));?>
                     <?php if($this->differentShippingAvailable()): ?>
-                        <div class="input-box input-different-shipping">
-                            <input type="checkbox" name="billing[use_for_shipping]" id="billing:use_for_shipping_yes" value="1" <?php echo (($this->sameAsBilling() && !$uncheck) ? 'checked="checked" ':'')?>/>
-                            <label for="billing:use_for_shipping_yes"><?php echo $this->__('Ship to the same address')?></label>
+                        <div class="input-box input-different-shipping checkbox">
+                            <label for="billing:use_for_shipping_yes"><input type="checkbox" name="billing[use_for_shipping]" id="billing:use_for_shipping_yes" value="1" <?php echo (($this->sameAsBilling() && !$uncheck) ? 'checked="checked" ':'')?>/>
+<?php echo $this->__('Ship to the same address')?></label>
                         </div>
                     <?php else: ?>
                         <input type="hidden" name="billing[use_for_shipping]" id="billing:use_for_shipping_yes" value="1" />
@@ -101,7 +101,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
             <script type="text/javascript">
                 var shipping = new Shipping();
             </script>
-            <ul>
+            <ul class="list-unstyled">
                 <li class="shipping-address-title">
                     <?php echo $this->__('Shipping address'); ?>
                 </li>
@@ -113,7 +113,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
                 <?php endif ?>
                 <li id="shipping_address_list" <?php if($this->customerHasAddresses() && !$this->getNewAddressSelectValueOnError('shipping')) { echo '  style="display: none;" '; } ?>>
                     <div id="">
-                        <ul>
+                        <ul class="list-unstyled">
                             <?php echo $this->getChildHtml('shipping_address');?>
                             <?php $addressAttributes = $this->getChild('customer_form_shipping_address_user_defined_attributes');?>
                             <?php if ($addressAttributes): ?>
@@ -131,7 +131,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
     <?php endif; ?>
 </div>
 
-    <div class="onestepcheckout-column-middle">
+    <div class="onestepcheckout-column-middle col-sm-4">
 
 
         <?php if(!$this->isVirtual()): ?>
@@ -198,7 +198,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
         <?php endif; ?>
     </div>
 
-    <div class="onestepcheckout-column-right">
+    <div class="onestepcheckout-column-right col-sm-4">
 
         <p class="onestepcheckout-numbers onestepcheckout-numbers-4"><?php echo $this->__('Review your order'); ?></p>
 
@@ -211,10 +211,10 @@ $helper = Mage::helper('onestepcheckout/checkout');
             <div id="coupon-notice" style="display: none;"></div>
             <?php $_couponcode = $this->getQuote()->getCouponCode(); ?>
             <label for="id_couponcode"><?php echo $this->__('Coupon code:'); ?></label><br/>
-            <input class="input-text" type="text" name="onestepcheckout-couponcode" id="id_couponcode" value="<?php echo Mage::helper('core')->escapeHtml($_couponcode); ?>" />
+            <input class="input-text form-control" type="text" name="onestepcheckout-couponcode" id="id_couponcode" value="<?php echo Mage::helper('core')->escapeHtml($_couponcode); ?>" />
             <br/>
-            <button id="onestepcheckout-coupon-add" class="form-button-alt button" type="button"><span><span><?php echo $this->__('Apply Coupon'); ?></span></span></button>
-            <button id="onestepcheckout-coupon-remove" class="form-button-alt button" type="button" style="<?php if($_couponcode == '') { echo 'display: none;'; } ?>"><span><span><?php echo $this->__('Cancel Coupon'); ?></span></span></button>
+            <button id="onestepcheckout-coupon-add" class="btn btn-sm" type="button"><span><span><?php echo $this->__('Apply Coupon'); ?></span></span></button>
+            <button id="onestepcheckout-coupon-remove" class="btn btn-sm" type="button" style="<?php if($_couponcode == '') { echo 'display: none;'; } ?>"><span><span><?php echo $this->__('Cancel Coupon'); ?></span></span></button>
             <script>
             Event.observe(window, 'load', function() {
                 $('onestepcheckout-coupon-add').observe('click', function(e)    {
@@ -624,15 +624,15 @@ $helper = Mage::helper('onestepcheckout/checkout');
 
         <?php $_extraProductsHelper = Mage::helper('onestepcheckout/extraproducts'); ?>
             <?php if($_extraProductsHelper->hasExtraProducts()): ?>
-            <div class="onestepcheckout-extraproducts">
-                <ul>
+            <div class="onestepcheckout-extraproducts" style="clear: both;">
+                <ul class="list-unstyled">
                 <?php foreach($_extraProductsHelper->getExtraProducts() as $product): ?>
-                    <li><input type="checkbox" class="onestepcheckout-extra-product"
+                    <li class="checkbox">
+                    <label for="id_extra_product_<?php echo $product->getId(); ?>"><input type="checkbox" class="onestepcheckout-extra-product"
                     <?php if($_extraProductsHelper->productInCart($product->getId())): ?>
                         checked="checked" <?php endif; ?>
                         name="extra_products_<?php echo $product->getId(); ?>"
-                        id="id_extra_product_<?php echo $product->getId(); ?>" /> &nbsp;
-                    <label for="id_extra_product_<?php echo $product->getId(); ?>"> <?php echo $product->getName(); ?>
+                        id="id_extra_product_<?php echo $product->getId(); ?>" /><?php echo $product->getName(); ?>
                     <span><?php echo Mage::helper('checkout')->formatPrice($product->getPrice()); ?></span>
                     </label></li>
                     <?php endforeach; ?>
@@ -809,7 +809,7 @@ $helper = Mage::helper('onestepcheckout/checkout');
         ?>
 
         <div class="onestepcheckout-place-order-wrapper">
-            <button type="button" title="<?php echo $this->__('Place order now'); ?>" id="onestepcheckout-place-order" class="large orange onestepcheckout-button onestepcheckout-place-order" onclick="javascript:void(0);"><span><span><?php echo $this->__('Place order now'); ?></span></span></button>
+            <button type="button" title="<?php echo $this->__('Place order now'); ?>" id="onestepcheckout-place-order" class="onestepcheckout-button onestepcheckout-place-order btn btn-lg" onclick="javascript:void(0);"><span><span><?php echo $this->__('Place order now'); ?></span></span></button>
         </div>
     </div>
     <div style="clear: both;">&nbsp;</div>
@@ -1157,7 +1157,7 @@ Event.observe(window, 'load', function() {
         var euvatid = $('billing:vat_id');
 
         if(euvatid !== null){
-            euvatid.observe('click', get_save_billing_function(url_save_billing, url_set_methods, update_payments, true));
+            euvatid.observe('change', get_save_billing_function(url_save_billing, url_set_methods, update_payments, true));
         }
 
         triggers = ['<?php echo implode ('\',\'',$triggers)?>'];
